@@ -13,7 +13,7 @@ def flatten(xs):
 
 # 1) Paths
 BASE_DIR     = os.path.dirname(os.path.abspath(__file__))
-STATIC_YAML  = os.path.join(BASE_DIR, "source", "_static", "methods.yaml")
+STATIC_YAML  = os.path.join(BASE_DIR, "methods.yaml")
 TEMPLATE_DIR = BASE_DIR
 TEMPLATE_FN  = "methods.rst.j2"
 OUTPUT_RST   = os.path.join(BASE_DIR, "source", "methods.rst")

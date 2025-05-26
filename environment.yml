@@ -1,0 +1,16 @@
+# environment.yml
+name: perspective
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas
+  - sphinx
+  - ipykernel
+  - jinja2
+  - pyyaml
+  - pip             # needed to install the theme & extensions
+  - pip:
+      - sphinx-book-theme
+      - sphinx-fontawesome
+      - sphinx-togglebutton

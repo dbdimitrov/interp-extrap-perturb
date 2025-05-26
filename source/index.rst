@@ -2,6 +2,7 @@ Interpretation, Extrapolation, and Perturbation of Single cells
 ================================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    methods
+   contribute
