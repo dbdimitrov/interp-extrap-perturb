@@ -150,9 +150,19 @@ html[data-theme="light"] .dataTables_scrollHead table thead th {
   box-shadow:       none   !important;  /* remove any drop-shadow */
 }
 
-/* also catch sorting states (arrows, hover, etc.) */
 html[data-theme="light"] table#methods-table.dataTable thead th.sorting,
 html[data-theme="light"] table#methods-table.dataTable thead th.sorting_asc,
 html[data-theme="light"] table#methods-table.dataTable thead th.sorting_desc {
   background-color: #ffffff !important;
+}
+
+
+/* ─── Force the page BELOW the fixed navbar ─── */
+body {
+  padding-top: var(--navbar-height) !important;
+}
+
+/* ─── Push every toctree caption (‘All Methods’) below the header ─── */
+.rst-content .toctree-wrapper {
+  margin-block-start: 2rem !important;
 }

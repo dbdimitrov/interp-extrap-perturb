@@ -51,6 +51,7 @@ template = env.get_template(TEMPLATE_FN)
 rst_out = template.render(
     methods=methods,
     all_tasks=all_tasks,
+    title='All Methods'
 )
 
 # 7) Write out

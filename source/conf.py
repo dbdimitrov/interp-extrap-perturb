@@ -17,17 +17,16 @@ exclude_patterns = []
 
 # —– theme —
 html_theme = "pydata_sphinx_theme"
+master_doc = "index"
 
 # —– basic colours —–
 html_theme_options = {
-    # your existing options…
-    "primary_color":    "#8B0000",
-    "secondary_color":  "#777777",
     "navbar_start":     ["navbar-logo"],
     "navbar_end":       ["theme-switcher", "navbar-icon-links"],
     "show_toc_level":   2,
-    "secondary_sidebar_items": [],  
+    "secondary_sidebar_items": ["page-toc"],  
 }
+
 
 html_static_path = ['_static']
 html_css_files = [
