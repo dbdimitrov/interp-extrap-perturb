@@ -21,8 +21,10 @@ Methods overview
 `{{ m.Method }} <{{ m.Publication }}>`__ ({{ m.Year }})
 {{ '-' * (m.Method|length + m.Year|string|length + 3) }}
 
-**Code availability:**  
-`GitHub repo <{{ m["Code Availability"] }}>`__
+.. image:: /_static/github-banner.svg
+   :target: {{ m["Code Availability"] }}
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 

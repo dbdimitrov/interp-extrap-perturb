@@ -29,8 +29,10 @@ Methods overview
 `cPCA <https://www.nature.com/articles/s41467-018-04608-8#Sec7>`__ (2018)
 -----------
 
-**Code availability:**  
-`GitHub repo <https://github.com/abidlabs/contrastive>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/abidlabs/contrastive
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -57,8 +59,10 @@ Methods overview
 `CSMF <https://academic.oup.com/nar/article/47/13/6606/5512984>`__ (2019)
 -----------
 
-**Code availability:**  
-`GitHub repo <https://www.zhanglab-amss.org/homepage/software.html>`__
+.. image:: /_static/github-banner.svg
+   :target: https://www.zhanglab-amss.org/homepage/software.html
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -85,8 +89,10 @@ Methods overview
 `cLVM <https://arxiv.org/abs/1811.06094>`__ (2019)
 -----------
 
-**Code availability:**  
-`GitHub repo <https://github.com/kseverso/contrastive-LVM>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/kseverso/contrastive-LVM
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -113,8 +119,10 @@ Methods overview
 `cVAE <https://arxiv.org/pdf/1902.04601>`__ (2019)
 -----------
 
-**Code availability:**  
-`GitHub repo <https://github.com/abidlabs/contrastive_vae>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/abidlabs/contrastive_vae
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -140,8 +148,10 @@ Methods overview
 `scPCA <https://academic.oup.com/bioinformatics/article/36/11/3422/5807607>`__ (2020)
 ------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/PhilBoileau/EHDBDscPCA>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/PhilBoileau/EHDBDscPCA
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -168,8 +178,10 @@ Methods overview
 `MichiGAN <https://link.springer.com/article/10.1186/s13059-021-02373-4>`__ (2021)
 ---------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/welch-lab/MichiGAN>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/welch-lab/MichiGAN
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -197,8 +209,10 @@ Methods overview
 `PCPCA <https://projecteuclid.org/journals/annals-of-applied-statistics/volume-18/issue-3/Probabilistic-contrastive-dimension-reduction-for-case-control-study-data/10.1214/24-AOAS1877.short>`__ (2024)
 ------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/andrewcharlesjones/pcpca>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/andrewcharlesjones/pcpca
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -224,8 +238,10 @@ Methods overview
 `CPLVMs <https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-3/Contrastive-latent-variable-modeling-with-application-to-case-control-sequencing/10.1214/21-AOAS1534.short>`__ (2022)
 -------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/andrewcharlesjones/cplvm>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/andrewcharlesjones/cplvm
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -254,8 +270,10 @@ Methods overview
 `sparseVAE <https://arxiv.org/pdf/2110.10804>`__ (2022)
 ----------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/gemoran/sparse-vae-code>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/gemoran/sparse-vae-code
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -283,8 +301,10 @@ Methods overview
 `ContrastiveVI <https://www.nature.com/articles/s41592-023-01955-3>`__ (2023)
 --------------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -316,8 +336,10 @@ Methods overview
 `mmVAE <https://arxiv.org/pdf/2202.10560>`__ (2022)
 ------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/suinleelab/MM-cVAE>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/suinleelab/MM-cVAE
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -343,8 +365,10 @@ Methods overview
 `MultiGroupVI <https://proceedings.mlr.press/v200/weinberger22a>`__ (2022)
 -------------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/Genentech/multiGroupVI>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/Genentech/multiGroupVI
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -372,8 +396,10 @@ Methods overview
 `inVAE <https://www.biorxiv.org/content/10.1101/2024.12.06.627196v1.full>`__ (2024)
 ------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/theislab/inVAE>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/theislab/inVAE
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -402,8 +428,10 @@ Methods overview
 `scDSA <https://openreview.net/pdf?id=fkoqMdTlEg>`__ (2023)
 ------------
 
-**Code availability:**  
-`GitHub repo <->`__
+.. image:: /_static/github-banner.svg
+   :target: -
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -435,8 +463,10 @@ Methods overview
 `SAMS-VAE <https://proceedings.neurips.cc/paper_files/paper/2023/hash/0001ca33ba34ce0351e4612b744b3936-Abstract-Conference.html>`__ (2023)
 ---------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/insitro/sams-vae>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/insitro/sams-vae
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -467,8 +497,10 @@ Methods overview
 `svae-ligr <https://openreview.net/pdf?id=8hptqO7sfG>`__ (2024)
 ----------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/theislab/svaeligr>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/theislab/svaeligr
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -497,8 +529,10 @@ Methods overview
 `sVAE+ <https://proceedings.mlr.press/v213/lopez23a/lopez23a.pdf>`__ (2023)
 ------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/Genentech/sVAE>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/Genentech/sVAE
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -526,8 +560,10 @@ Methods overview
 `CausCell <https://www.biorxiv.org/content/biorxiv/early/2024/12/17/2024.12.11.628077.full.pdf>`__ (2024)
 ---------------
 
-**Code availability:**  
-`GitHub repo <->`__
+.. image:: /_static/github-banner.svg
+   :target: -
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -555,8 +591,10 @@ Methods overview
 `SC-VAE <https://www.biorxiv.org/content/10.1101/2024.01.05.574421v1.full>`__ (2024)
 -------------
 
-**Code availability:**  
-`GitHub repo <->`__
+.. image:: /_static/github-banner.svg
+   :target: -
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
@@ -585,8 +623,10 @@ Methods overview
 `Celcomen <https://openreview.net/pdf?id=Tqdsruwyac>`__ (2025)
 ---------------
 
-**Code availability:**  
-`GitHub repo <https://github.com/Teichlab/celcomen>`__
+.. image:: /_static/github-banner.svg
+   :target: https://github.com/Teichlab/celcomen
+   :alt: Code Availability on GitHub
+   :class: github-banner
 
 .. toggle:: Description
 
