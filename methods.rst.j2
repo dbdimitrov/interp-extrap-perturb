@@ -1,0 +1,62 @@
+Methods overview
+================
+
+.. raw:: html
+
+   <div id="taskList" style="margin-bottom:1em;">
+     <strong>Filter by task:</strong>
+     <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:0.5em;">
+       <li><a href="#" class="task-link" data-task="all">All</a></li>
+   {% for task in all_tasks %}
+       <li><a href="#" class="task-link" data-task="{{ task }}">{{ task }}</a></li>
+   {% endfor %}
+     </ul>
+   </div>
+
+{% for m in methods %}
+.. raw:: html
+   <div class="method-entry" data-tasks="{{ m.Task|join(',') }}">
+...
+
+`{{ m.Method }} <{{ m.Publication }}>`__ ({{ m.Year }})
+{{ '-' * (m.Method|length + m.Year|string|length + 3) }}
+
+**Code availability:**  
+`GitHub repo <{{ m["Code Availability"] }}>`__
+
+.. toggle:: Description
+
+   {{ m.Description }}
+
+**Inspired by:**  
+{% if m["Inspired by"] %}
+{% for item in m["Inspired by"] %}
+- {{ item }}
+{% endfor %}
+{% else %}
+_None_
+{% endif %}
+
+**Model:**  
+{% if m.Model %}
+{% for item in m.Model %}
+- {{ item }}
+{% endfor %}
+{% else %}
+_None_
+{% endif %}
+
+**Task:**  
+{% if m.Task %}
+{% for item in m.Task %}
+- {{ item }}
+{% endfor %}
+{% else %}
+_None_
+{% endif %}
+
+.. raw:: html
+   </div>
+   <hr style="margin:2em 0;"/>
+
+{% endfor %}
