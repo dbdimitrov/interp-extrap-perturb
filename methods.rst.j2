@@ -1,64 +1,73 @@
-Methods overview
-================
+.. raw:: html
+
+   <style>
+   td.details-control {
+     width: 20px;
+     text-align: center;
+     cursor: pointer;
+   }
+   td.details-control::before {
+     content: '+';
+   }
+   tr.shown td.details-control::before {
+     content: '-';
+   }
+   </style>
+
+   <table id="methods-table" class="display" style="width:120%">
+     <thead>
+       <tr>
+         <th></th>           <!-- expand/collapse -->
+         <th>Method</th>
+         <th>Year</th>
+         <th>Task</th>
+         <th>Code</th>
+       </tr>
+     </thead>
+     <tbody>
+     {% for m in methods %}
+       <tr data-description="{{ m.Description|e }}">
+         <td class="details-control"></td>
+         <td>
+           <a href="{{ m.Publication }}">{{ m.Method }}</a>
+         </td>
+         <td>{{ m.Year }}</td>
+         <td>{{ m.Task }}</td>
+         <td>
+           <a href="{{ m['Code Availability'] }}">
+             <img src="_static/github-mark.png" height="24" alt="GitHub"/>
+           </a>
+         </td>
+       </tr>
+     {% endfor %}
+     </tbody>
+   </table>
 
 .. raw:: html
 
-   <div id="taskList" style="margin-bottom:1em;">
-     <strong>Filter by task:</strong>
-     <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; gap:0.5em;">
-       <li><a href="#" class="task-link" data-task="all">All</a></li>
-   {% for task in all_tasks %}
-       <li><a href="#" class="task-link" data-task="{{ task }}">{{ task }}</a></li>
-   {% endfor %}
-     </ul>
-   </div>
+   <script>
+   function format(desc) {
+     return '<div style="padding:0.5em;">'+desc+'</div>';
+   }
 
-{% for m in methods %}
-.. raw:: html
-   <div class="method-entry" data-tasks="{{ m.Task|join(',') }}">
-...
+   jQuery(function($){
+     var table = $('#methods-table').DataTable({
+       order: [[ 2, 'desc' ]],   // sort by Year desc
+       pageLength: 10,
+       lengthMenu: [5, 10, 25, 50]
+     });
 
-`{{ m.Method }} <{{ m.Publication }}>`__ ({{ m.Year }})
-{{ '-' * (m.Method|length + m.Year|string|length + 3) }}
+     $('#methods-table tbody').on('click', 'td.details-control', function(){
+       var tr  = $(this).closest('tr'),
+           row = table.row(tr);
 
-.. image:: /_static/github-banner.svg
-   :target: {{ m["Code Availability"] }}
-   :alt: Code Availability on GitHub
-   :class: github-banner
-
-.. toggle:: Description
-
-   {{ m.Description }}
-
-**Inspired by:**  
-{% if m["Inspired by"] %}
-{% for item in m["Inspired by"] %}
-- {{ item }}
-{% endfor %}
-{% else %}
-_None_
-{% endif %}
-
-**Model:**  
-{% if m.Model %}
-{% for item in m.Model %}
-- {{ item }}
-{% endfor %}
-{% else %}
-_None_
-{% endif %}
-
-**Task:**  
-{% if m.Task %}
-{% for item in m.Task %}
-- {{ item }}
-{% endfor %}
-{% else %}
-_None_
-{% endif %}
-
-.. raw:: html
-   </div>
-   <hr style="margin:2em 0;"/>
-
-{% endfor %}
+       if (row.child.isShown()) {
+         row.child.hide();
+         tr.removeClass('shown');
+       } else {
+         row.child(format(tr.data('description'))).show();
+         tr.addClass('shown');
+       }
+     });
+   });
+   </script>
