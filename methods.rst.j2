@@ -1,71 +1,158 @@
 .. raw:: html
 
    <style>
-   td.details-control {
-     width: 20px;
-     text-align: center;
-     cursor: pointer;
+   td.details-control { width:20px; text-align:center; cursor:pointer; }
+   td.details-control::before { content:'+'; }
+   tr.shown td.details-control::before { content:'-'; }
+   td.published { text-align:center; font-weight:bold; }
+   .table-container { width:100%; overflow-x:auto; }
+   a.github-link {
+     display:inline-block; font-size:1.2em; vertical-align:middle; color:inherit;
    }
-   td.details-control::before {
-     content: '+';
-   }
-   tr.shown td.details-control::before {
-     content: '-';
-   }
+   a.github-link:hover { color:#8B0000; }
    </style>
 
-   <table title="Method Overview" id="methods-table" class="display" style="width:120%">
-     <thead>
-       <tr>
-         <th>See More</th>           <!-- expand/collapse -->
-         <th>Method</th>
-         <th>Year</th>
-         <th>Task</th>
-         <th>Code</th>
-       </tr>
-     </thead>
-     <tbody>
-     {% for m in methods %}
-       <tr data-description="{{ m.Description|e }}">
-         <td class="details-control"></td>
-         <td>
-           <a href="{{ m.Publication }}">{{ m.Method }}</a>
-         </td>
-         <td>{{ m.Year }}</td>
-         <td>{{ m.Task }}</td>
-         <td>
-           <a href="{{ m['Code Availability'] }}">
-             <img src="_static/github-mark.png" height="24" alt="GitHub"/>
-           </a>
-         </td>
-       </tr>
-     {% endfor %}
-     </tbody>
-   </table>
+   <div class="table-container">
+     <table id="methods-table" class="display" style="width:100%">
+       <thead>
+         <tr>
+           <th></th><th>Method</th><th>Year</th><th>Task</th>
+           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+         </tr>
+       </thead>
+       <tbody>
+       {% for m in methods %}
+         <tr data-description="{{ m.Description|e }}">
+           <td class="details-control"></td>
+           <td><a href="{{ m.Publication }}">{{ m.Method }}</a></td>
+           <td>{{ m.Year }}</td>
+
+           {# — TASK column — #}
+           <td>
+            {%- set raw = m.Task|string -%}
+            {%- if raw -%}
+                {%- set clean = raw
+                    | replace("'", "")
+                    | replace('"', "")
+                    | replace("[", "")
+                    | replace("]", "")
+                -%}
+                {%- set parts = clean.split(',') -%}
+                {%- set items = parts
+                    | map('trim')
+                    | reject('equalto','')
+                    | reject('equalto','nan')
+                    | reject('equalto','NaN')
+                    | list
+                -%}
+                {%- if items -%}
+                <ul>
+                {%- for it in items -%}
+                    <li>{{ it }}</li>
+                {%- endfor -%}
+                </ul>
+                {%- else -%}
+                &nbsp;
+                {%- endif -%}
+            {%- else -%}
+                &nbsp;
+            {%- endif -%}
+            </td>
+
+           {# — MODEL column — #}
+           <td>
+             {%- set raw = m.Model|string -%}
+             {%- if raw -%}
+               {%- set clean = raw
+                     | replace("'", "")
+                     | replace("[", "")
+                     | replace("]", "")
+               -%}
+               {%- set parts = clean.split(',') -%}
+               {%- set items = parts
+                     | map('trim')
+                     | reject('equalto','')
+                     | reject('equalto','nan')
+                     | reject('equalto','NaN')
+                     | list
+               -%}
+               {%- if items -%}
+                 <ul>
+                   {%- for it in items -%}
+                   <li>{{ it }}</li>
+                   {%- endfor -%}
+                 </ul>
+               {%- else -%}
+                 &nbsp;
+               {%- endif -%}
+             {%- else -%}
+               &nbsp;
+             {%- endif -%}
+           </td>
+
+           {# — INSPIRED BY column — #}
+           <td>
+             {%- set raw = m["Inspired by"]|string -%}
+             {%- if raw -%}
+               {%- set clean = raw
+                     | replace("'", "")
+                     | replace("[", "")
+                     | replace("]", "")
+               -%}
+               {%- set parts = clean.split(',') -%}
+               {%- set items = parts
+                     | map('trim')
+                     | reject('equalto','')
+                     | reject('equalto','nan')
+                     | reject('equalto','NaN')
+                     | list
+               -%}
+               {%- if items -%}
+                 <ul>
+                   {%- for it in items -%}
+                   <li>{{ it }}</li>
+                   {%- endfor -%}
+                 </ul>
+               {%- else -%}
+                 &nbsp;
+               {%- endif -%}
+             {%- else -%}
+               &nbsp;
+             {%- endif -%}
+           </td>
+
+           <td class="published">{% if m["Published"] %}✓{% else %}✗{% endif %}</td>
+           <td>
+             <a href="{{ m['Code Availability'] }}" class="github-link">
+               <i class="fab fa-github" aria-hidden="true"></i>
+               <span class="sr-only">GitHub</span>
+             </a>
+           </td>
+         </tr>
+       {% endfor %}
+       </tbody>
+     </table>
+   </div>
 
 .. raw:: html
 
    <script>
-   function format(desc) {
-     return '<div style="padding:0.5em;">'+desc+'</div>';
-   }
-
    jQuery(function($){
-     var table = $('#methods-table').DataTable({
-       order: [[ 2, 'desc' ]],   // sort by Year desc
-       pageLength: 50,
-       lengthMenu: [5, 10, 25, 50]
+     $('#methods-table').DataTable({
+       columns: [null,null,null,null,null,null,null,null],
+       order:      [[2,'desc']],
+       pageLength: 20,
+       lengthMenu: [5,10,20,50,200],
+       scrollX:    true,
+       autoWidth:  false
      });
-
-     $('#methods-table tbody').on('click', 'td.details-control', function(){
-       var tr  = $(this).closest('tr'),
-           row = table.row(tr);
-
-       if (row.child.isShown()) {
-         row.child.hide();
-         tr.removeClass('shown');
+     $('#methods-table tbody').on('click','td.details-control',function(){
+       var tr = $(this).closest('tr'),
+           row = $('#methods-table').DataTable().row(tr);
+       if(row.child.isShown()){
+         row.child.hide(); tr.removeClass('shown');
        } else {
-         row.child(format(tr.data('description'))).show();
+         row.child('<div style="padding:0.5em;">'+tr.data('description')+'</div>').show();
          tr.addClass('shown');
        }
      });

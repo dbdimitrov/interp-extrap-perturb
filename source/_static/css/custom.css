@@ -12,8 +12,6 @@ table.dataTable {
 /* 2) Headers in “alert” red */
 table.dataTable th {
   color: #8B0000 !important;                 /* red headers */
-  border: 1px solid #444444 !important;
-  padding: 0.5em !important;
   text-align: left !important;
 }
 
@@ -56,14 +54,6 @@ table.dataTable td {
 }
 
 /* ─── Layout tweaks ─── */
-/* Hide any right-hand sidebar */
-div[role="complementary"],
-div.sphinxsidebarwrapper:nth-of-type(2),
-.sidebar-right,
-.wy-side-right {
-  display: none !important;
-}
-
 /* Let the main content fill the gap */
 .rst-content,
 .documentwrapper,
@@ -72,35 +62,12 @@ div.sphinxsidebarwrapper:nth-of-type(2),
   width: 100% !important;
 }
 
-/* Shrink the left (primary) sidebar to 200px */
-.bd-sidebar {
-  flex: 0 0 200px !important;
-  max-width: 200px !important;
-}
-
 /* Allow the article container to fill all available space */
 .bd-main .bd-content .bd-article-container {
   max-width: 100% !important;
 }
 .bd-page-width {
   max-width: 100% !important;
-}
-
-/* ─── Light-mode DataTable overrides ─── */
-html[data-theme="light"] table.dataTable {
-  background-color: #FFFFFF !important;    /* white background */
-  color: #444444 !important;               /* dark-grey text */
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  width: 100% !important;
-  table-layout: auto !important;
-}
-
-html[data-theme="light"] table.dataTable th {
-  color: #8B0000 !important;               /* dark-red headers */
-  border: 1px solid #CCCCCC !important;
-  padding: 0.5em !important;
-  text-align: left !important;
 }
 
 html[data-theme="light"] table.dataTable td {
@@ -129,20 +96,63 @@ html[data-theme="light"] .dataTables_paginate .paginate_button.current {
   color: #FFFFFF !important;
 }
 
-/* ─── Dark-mode headings & body text in your dark-red accent ─── */
-html[data-theme="dark"] .bd-article-container h1 {
-  color: #660000 !important;    /* extra-dark red for the main title */
+/* ─── Strongly scoped light-mode DataTable styling ─── */
+html[data-theme="light"] table#methods-table.dataTable {
+  background-color: #ffffff !important;   /* white background */
+  color:            #444444 !important;   /* dark-grey body text */
+  border-collapse:  separate   !important;
+  border-spacing:   0          !important;
+  width:            100%        !important;
+  table-layout:     auto       !important;
 }
-html[data-theme="dark"] .bd-article-container h2,
-html[data-theme="dark"] .bd-article-container h3,
-html[data-theme="dark"] .bd-article-container h4,
-html[data-theme="dark"] .bd-article-container h5,
-html[data-theme="dark"] .bd-article-container h6 {
-  color: #8B0000 !important;    /* match your table’s dark-red headers */ 
+
+/* Column headers stay red on white */
+html[data-theme="light"] table#methods-table.dataTable thead th {
+  color: #8B0000 !important;               /* dark-red headers */
+  border: 1px solid #CCCCCC !important;    /* light-grey borders */
+  background-color: #fff !important;
 }
-html[data-theme="dark"] .bd-article-container p,
-html[data-theme="dark"] .bd-article-container ul li,
-html[data-theme="dark"] .bd-article-container ol li,
-html[data-theme="dark"] .bd-article-container blockquote {
-  color: #8B0000 !important;    /* rest of text in the same accent red */ 
+
+/* Cells override to dark grey on white */
+html[data-theme="light"] table#methods-table.dataTable tbody td {
+  color: #444444 !important;
+  border: 1px solid #CCCCCC !important;
+  background-color: #ffffff !important;
+}
+
+/* Inputs & pagination in light mode */
+html[data-theme="light"] .dataTables_wrapper .dataTables_filter input,
+html[data-theme="light"] .dataTables_wrapper .dataTables_length select {
+  background-color: #ffffff !important;
+  color:            #444444 !important;
+  border: 1px solid #CCCCCC !important;
+}
+
+html[data-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button {
+  border: 1px solid #CCCCCC !important;
+  color:  #444444 !important;
+}
+html[data-theme="light"] .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background-color: #8B0000 !important;
+  color:            #ffffff !important;
+}
+
+html[data-theme="light"] table#methods-table.dataTable thead th {
+  background-color: #ffffff !important;   /* solid white background */
+  background-image: none !important;      /* remove any gradient */
+}
+
+/* ─── Light-mode: force header cells completely white ─── */
+html[data-theme="light"] table#methods-table.dataTable thead th,
+html[data-theme="light"] .dataTables_scrollHead table thead th {
+  background-color: #ffffff !important;  /* solid white bg */
+  background-image: none   !important;  /* kill any gradient */
+  box-shadow:       none   !important;  /* remove any drop-shadow */
+}
+
+/* also catch sorting states (arrows, hover, etc.) */
+html[data-theme="light"] table#methods-table.dataTable thead th.sorting,
+html[data-theme="light"] table#methods-table.dataTable thead th.sorting_asc,
+html[data-theme="light"] table#methods-table.dataTable thead th.sorting_desc {
+  background-color: #ffffff !important;
 }
