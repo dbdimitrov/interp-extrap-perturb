@@ -12,7 +12,7 @@ table.dataTable {
 /* 2) Headers in “alert” red */
 table.dataTable th {
   color: #8B0000 !important;                 /* red headers */
-  text-align: left !important;
+  text-align: center !important;
 }
 
 /* 3) Cells in light-grey */
@@ -154,15 +154,4 @@ html[data-theme="light"] table#methods-table.dataTable thead th.sorting,
 html[data-theme="light"] table#methods-table.dataTable thead th.sorting_asc,
 html[data-theme="light"] table#methods-table.dataTable thead th.sorting_desc {
   background-color: #ffffff !important;
-}
-
-
-/* ─── Force the page BELOW the fixed navbar ─── */
-body {
-  padding-top: var(--navbar-height) !important;
-}
-
-/* ─── Push every toctree caption (‘All Methods’) below the header ─── */
-.rst-content .toctree-wrapper {
-  margin-block-start: 2rem !important;
 }

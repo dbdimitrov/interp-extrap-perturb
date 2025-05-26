@@ -1,44 +1,27 @@
-project = 'Interpretation, Extrapolation, and Perturbation of Single cells'
+project   = 'Interpretation, Extrapolation, and Perturbation of Single cells'
 copyright = '2025, Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
-author = 'Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
-release = '0.0.1'
+author    = 'Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
+release   = '0.0.1'
+html_title = project
 
-# -- General configuration ---------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
-
-extensions = []
-extensions += [
-  "sphinx_fontawesome",
-  "sphinx_togglebutton"
-]
-
-templates_path = ['_templates']
-exclude_patterns = []
-
-# —– theme —
-html_theme = "pydata_sphinx_theme"
-master_doc = "index"
-
-# —– basic colours —–
+# ── Theme setup ──
+html_theme = "sphinx_book_theme"
 html_theme_options = {
-    "navbar_start":     ["navbar-logo"],
-    "navbar_end":       ["theme-switcher", "navbar-icon-links"],
-    "show_toc_level":   2,
-    "secondary_sidebar_items": ["page-toc"],  
+    # keep your sidebar TOC
+    "show_navbar_depth": 2,
+    "show_toc_level":    2,
+    "home_page_in_toc":  False,
+    # brand colours (dark grey & red accents)
+    "launch_buttons": {},    # disable binder, etc.
 }
 
-
+# static assets & your DataTables CSS/JS remain unchanged
 html_static_path = ['_static']
 html_css_files = [
-    # DataTables core stylesheet
     'https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css',
-    "css/custom.css"
+    "css/custom.css",
 ]
-
 html_js_files = [
-    # jQuery (DataTables dependency)
     'https://code.jquery.com/jquery-3.6.0.min.js',
-    # DataTables library
     'https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js',
 ]
-html_title = project
