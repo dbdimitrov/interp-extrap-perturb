@@ -1,11 +1,3 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Project information -----------------------------------------------------
-# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
 project = 'Interpretation, Extrapolation, and Perturbation of Single cells'
 copyright = '2025, Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
 author = 'Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
@@ -34,8 +26,6 @@ html_theme_options = {
     "navbar_start":     ["navbar-logo"],
     "navbar_end":       ["theme-switcher", "navbar-icon-links"],
     "show_toc_level":   2,
-
-    # ← add this to drop the right sidebar entirely:
     "secondary_sidebar_items": [],  
 }
 
@@ -46,13 +36,10 @@ html_css_files = [
     "css/custom.css"
 ]
 
-html_context = {
-    "default_mode": "dark",
-}
-
 html_js_files = [
     # jQuery (DataTables dependency)
     'https://code.jquery.com/jquery-3.6.0.min.js',
     # DataTables library
     'https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js',
 ]
+html_title = project

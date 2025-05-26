@@ -1,4 +1,4 @@
-/* ─── DataTable styling ─── */
+/* ─── DataTable styling (dark mode) ─── */
 /* 1) Darken the DataTable itself */
 table.dataTable {
   background-color: #2f2f2f !important;      /* dark slate background */
@@ -11,7 +11,7 @@ table.dataTable {
 
 /* 2) Headers in “alert” red */
 table.dataTable th {
-  color: #FF6347 !important;                 /* salmon/red headers */
+  color: #8B0000 !important;                 /* red headers */
   border: 1px solid #444444 !important;
   padding: 0.5em !important;
   text-align: left !important;
@@ -56,7 +56,7 @@ table.dataTable td {
 }
 
 /* ─── Layout tweaks ─── */
-/* Hide any right‐hand sidebar */
+/* Hide any right-hand sidebar */
 div[role="complementary"],
 div.sphinxsidebarwrapper:nth-of-type(2),
 .sidebar-right,
@@ -84,4 +84,65 @@ div.sphinxsidebarwrapper:nth-of-type(2),
 }
 .bd-page-width {
   max-width: 100% !important;
+}
+
+/* ─── Light-mode DataTable overrides ─── */
+html[data-theme="light"] table.dataTable {
+  background-color: #FFFFFF !important;    /* white background */
+  color: #444444 !important;               /* dark-grey text */
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;
+  table-layout: auto !important;
+}
+
+html[data-theme="light"] table.dataTable th {
+  color: #8B0000 !important;               /* dark-red headers */
+  border: 1px solid #CCCCCC !important;
+  padding: 0.5em !important;
+  text-align: left !important;
+}
+
+html[data-theme="light"] table.dataTable td {
+  color: #444444 !important;               /* dark-grey cells */
+  border: 1px solid #CCCCCC !important;
+  padding: 0.5em !important;
+}
+
+html[data-theme="light"] .dataTables_filter input,
+html[data-theme="light"] .dataTables_length select {
+  background: #FFFFFF !important;
+  color: #444444 !important;
+  border: 1px solid #CCCCCC !important;
+  border-radius: 4px !important;
+  padding: 0.2em 0.4em !important;
+}
+
+html[data-theme="light"] .dataTables_paginate .paginate_button {
+  background: transparent !important;
+  border: 1px solid #CCCCCC !important;
+  color: #444444 !important;
+}
+
+html[data-theme="light"] .dataTables_paginate .paginate_button.current {
+  background: #8B0000 !important;
+  color: #FFFFFF !important;
+}
+
+/* ─── Dark-mode headings & body text in your dark-red accent ─── */
+html[data-theme="dark"] .bd-article-container h1 {
+  color: #660000 !important;    /* extra-dark red for the main title */
+}
+html[data-theme="dark"] .bd-article-container h2,
+html[data-theme="dark"] .bd-article-container h3,
+html[data-theme="dark"] .bd-article-container h4,
+html[data-theme="dark"] .bd-article-container h5,
+html[data-theme="dark"] .bd-article-container h6 {
+  color: #8B0000 !important;    /* match your table’s dark-red headers */ 
+}
+html[data-theme="dark"] .bd-article-container p,
+html[data-theme="dark"] .bd-article-container ul li,
+html[data-theme="dark"] .bd-article-container ol li,
+html[data-theme="dark"] .bd-article-container blockquote {
+  color: #8B0000 !important;    /* rest of text in the same accent red */ 
 }
