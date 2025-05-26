@@ -1,4 +1,3 @@
-# environment.yml
 name: perspective
 channels:
   - conda-forge
@@ -6,6 +5,7 @@ dependencies:
   - python=3.12
   - pandas
   - sphinx
+  - yaml
   - ipykernel
   - jinja2
   - pyyaml
