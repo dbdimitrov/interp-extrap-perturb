@@ -1,28 +1,10 @@
 /* ─── DataTable styling (dark mode) ─── */
-/* 1) Darken the DataTable itself */
-table.dataTable {
-  background-color: #2f2f2f !important;      /* dark slate background */
-  color: #cccccc !important;                  /* light-grey body text */
-  border-collapse: separate !important;
-  border-spacing: 0 !important;
-  width: 100% !important;                    /* span full container */
-  table-layout: auto !important;             /* flex columns before overflow */
-}
-
-/* 2) Headers in “alert” red */
-table.dataTable th {
-  color: #8B0000 !important;                 /* red headers */
-  text-align: center !important;
-}
-
-/* 3) Cells in light-grey */
 table.dataTable td {
   color: #cccccc !important;
   border: 1px solid #444444 !important;
   padding: 0.5em !important;
 }
 
-/* 4) Inputs & pagination match */
 .dataTables_filter input,
 .dataTables_length select {
   background: #2f2f2f !important;
