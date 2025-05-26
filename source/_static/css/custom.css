@@ -1,0 +1,87 @@
+/* ─── DataTable styling ─── */
+/* 1) Darken the DataTable itself */
+table.dataTable {
+  background-color: #2f2f2f !important;      /* dark slate background */
+  color: #cccccc !important;                  /* light-grey body text */
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  width: 100% !important;                    /* span full container */
+  table-layout: auto !important;             /* flex columns before overflow */
+}
+
+/* 2) Headers in “alert” red */
+table.dataTable th {
+  color: #FF6347 !important;                 /* salmon/red headers */
+  border: 1px solid #444444 !important;
+  padding: 0.5em !important;
+  text-align: left !important;
+}
+
+/* 3) Cells in light-grey */
+table.dataTable td {
+  color: #cccccc !important;
+  border: 1px solid #444444 !important;
+  padding: 0.5em !important;
+}
+
+/* 4) Inputs & pagination match */
+.dataTables_filter input,
+.dataTables_length select {
+  background: #2f2f2f !important;
+  color: #cccccc !important;
+  border: 1px solid #444444 !important;
+  border-radius: 4px !important;
+  padding: 0.2em 0.4em !important;
+}
+.dataTables_paginate .paginate_button {
+  background: transparent !important;
+  border: 1px solid #444444 !important;
+  color: #cccccc !important;
+}
+.dataTables_paginate .paginate_button.current {
+  background: #8B0000 !important;            /* dark-red current page */
+  color: #ffffff !important;
+}
+
+/* 5) Force the DataTables wrapper to scroll instead of the page */
+.dataTables_wrapper {
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+/* 6) Prevent the main content area itself from scrolling */
+.bd-content {
+  overflow-x: hidden !important;
+  margin-right: 0 !important;
+}
+
+/* ─── Layout tweaks ─── */
+/* Hide any right‐hand sidebar */
+div[role="complementary"],
+div.sphinxsidebarwrapper:nth-of-type(2),
+.sidebar-right,
+.wy-side-right {
+  display: none !important;
+}
+
+/* Let the main content fill the gap */
+.rst-content,
+.documentwrapper,
+.document {
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+
+/* Shrink the left (primary) sidebar to 200px */
+.bd-sidebar {
+  flex: 0 0 200px !important;
+  max-width: 200px !important;
+}
+
+/* Allow the article container to fill all available space */
+.bd-main .bd-content .bd-article-container {
+  max-width: 100% !important;
+}
+.bd-page-width {
+  max-width: 100% !important;
+}

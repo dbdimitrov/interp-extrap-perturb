@@ -23,12 +23,32 @@ extensions += [
 templates_path = ['_templates']
 exclude_patterns = []
 
-html_theme = 'alabaster'
+# —– theme —
+html_theme = "pydata_sphinx_theme"
+
+# —– basic colours —–
+html_theme_options = {
+    # your existing options…
+    "primary_color":    "#8B0000",
+    "secondary_color":  "#777777",
+    "navbar_start":     ["navbar-logo"],
+    "navbar_end":       ["theme-switcher", "navbar-icon-links"],
+    "show_toc_level":   2,
+
+    # ← add this to drop the right sidebar entirely:
+    "secondary_sidebar_items": [],  
+}
+
 html_static_path = ['_static']
 html_css_files = [
     # DataTables core stylesheet
     'https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css',
+    "css/custom.css"
 ]
+
+html_context = {
+    "default_mode": "dark",
+}
 
 html_js_files = [
     # jQuery (DataTables dependency)

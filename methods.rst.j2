@@ -14,10 +14,10 @@
    }
    </style>
 
-   <table id="methods-table" class="display" style="width:120%">
+   <table title="Method Overview" id="methods-table" class="display" style="width:120%">
      <thead>
        <tr>
-         <th></th>           <!-- expand/collapse -->
+         <th>See More</th>           <!-- expand/collapse -->
          <th>Method</th>
          <th>Year</th>
          <th>Task</th>
