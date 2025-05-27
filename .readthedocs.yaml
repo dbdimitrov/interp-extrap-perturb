@@ -9,4 +9,4 @@ conda:
   environment: environment.yml
 
 sphinx:
-  configuration: source/conf.py
+  configuration: conf.py
