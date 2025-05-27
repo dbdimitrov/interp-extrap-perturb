@@ -1,12 +1,12 @@
 Interpretation, Extrapolation, and Perturbation of Single cells
 ===============================================================
 
-.. figure:: _static/ontology.png
-   :scale: 20%
+.. figure:: _static/overview.png
+   :scale: 50%
    :align: center
    :alt: OntologyFig
 
-   An Ontology of Emerging Causal and Mechanistic Single-Cell Modeling Methods
+   Goals of Emerging Causal and Mechanistic Single-Cell Methods
 
 .. toctree::
    :maxdepth: 2
