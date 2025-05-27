@@ -151,3 +151,9 @@ html[data-theme="light"] table#methods-table.dataTable thead th.sorting_asc,
 html[data-theme="light"] table#methods-table.dataTable thead th.sorting_desc {
   background-color: #ffffff !important;
 }
+
+.navbar-brand img,          /* top-left logo */
+.bd-sidebar-primary .sidebar-logo img {   /* sidebar logo, if used */
+  max-height: 40px;         /* pick the height you like */
+  width: auto;              /* keep aspect ratio */
+}

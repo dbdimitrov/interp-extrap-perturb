@@ -4,10 +4,21 @@ release   = '0.0.1'
 html_title = project
 root_doc = 'index'
 
+def _regenerate_rst(app):
+    from pathlib import Path
+    import runpy
+
+    project_root = Path(__file__).resolve().parent.parent
+    script = project_root / "generate_methods.py"
+    runpy.run_path(script, run_name="__main__")
+
+def setup(app):
+    app.connect("builder-inited", _regenerate_rst)
+
 # ── Theme setup ──
 html_theme = "sphinx_book_theme"
 html_theme_options = {
-    # keep your sidebar TOC
+    "logo_only": False,
     "show_navbar_depth": 2,
     "show_toc_level":    2,
     "home_page_in_toc":  False,

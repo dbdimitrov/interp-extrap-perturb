@@ -1,4 +1,4 @@
-name: perspective
+name: iep-singlecell
 channels:
   - conda-forge
   - defaults
