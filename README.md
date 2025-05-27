@@ -16,18 +16,18 @@ The project curates over 100 peer‑reviewed and pre‑print tools, classifies t
 | --------------------- | ---------------------------------------------------------------------------------------------- |
 | **Docs / Browser**    | [https://interp-extrap-perturb.readthedocs.io/](https://interp-extrap-perturb.readthedocs.io/) |
 | **YAML catalogue**    | [`methods.yaml`](methods.yaml)                                                                 |
-| **Generation script** | [`generate_methods_rst.py`](generate_methods.py)                                           |
+| **Generation script** | [`generate_methods.py`](generate_methods.py)                                           |
 
 ---
 
 ## Data flow
 
 ```
-methods.yaml ─▶ generate_methods_rst.py ─▶ docs/methods*.rst ─▶ Sphinx ▶ HTML ▶ Read the Docs
+methods.yaml ─▶ generate_methods.py ─▶ docs/methods*.rst ─▶ Sphinx ▶ Read the Docs
 ```
 
 1. **`methods.yaml`** — canonical metadata (method, year, tasks, code link, …).
-2. **`generate_methods_rst.py`** converts YAML → ReStructuredText via Jinja2:
+2. **`generate_methods.py`** converts YAML → ReStructuredText via Jinja2:
 
    * One overview page (`methods.rst`).
    * One page per task (slugified).
