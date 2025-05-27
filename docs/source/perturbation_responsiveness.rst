@@ -4,6 +4,12 @@ Perturbation Responsiveness
 
 .. raw:: html
 
+     <p style="margin:0.4em 0 0.8em;">
+       Press the&nbsp;
+       <span style="color:#8B0000;font-weight:bold;">+</span>
+       in the <em>first</em> column to expand a method’s description.
+     </p>
+
    <style>
    td.details-control { width:20px; text-align:center; cursor:pointer; }
    td.details-control::before { content:'+'; }
@@ -20,7 +26,7 @@ Perturbation Responsiveness
      <table id="methods-table" class="display" style="width:100%">
        <thead>
          <tr>
-           <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
+           <th></th><th>Method</th><th>Year</th><th>Task</th>
            <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
