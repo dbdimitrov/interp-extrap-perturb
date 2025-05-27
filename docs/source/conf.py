@@ -17,7 +17,9 @@ def setup(app):
 # ── Theme setup ──
 html_theme = "sphinx_book_theme"
 html_theme_options = {
-    "logo_only": False,
+    "logo": {
+        "text": "Interpretation, Extrapolation, and Perturbation of Single cells",
+    },
     "show_navbar_depth": 2,
     "show_toc_level":    2,
     "home_page_in_toc":  False,

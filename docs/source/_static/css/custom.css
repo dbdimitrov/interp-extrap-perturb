@@ -154,6 +154,10 @@ html[data-theme="light"] table#methods-table.dataTable thead th.sorting_desc {
 
 .navbar-brand img,          /* top-left logo */
 .bd-sidebar-primary .sidebar-logo img {   /* sidebar logo, if used */
-  max-height: 40px;         /* pick the height you like */
+  max-height: 50px;         /* pick the height you like */
   width: auto;              /* keep aspect ratio */
+}
+
+.bd-header .navbar-brand__title {   /* selector used by pydata-/book-theme */
+  font-size: 0.75rem;               /* adjust as needed */
 }

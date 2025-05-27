@@ -1,10 +1,11 @@
 # Interpretation, Extrapolation, and Perturbation of Single Cells
 
-[![Documentation Status](https://readthedocs.org/projects/interp-extrap-perturb/badge/?version=latest)](https://interp-extrap-perturb.readthedocs.io/en/latest/)
+[![Documentation Status](https://readthedocs.org/projects/interp-extrap-perturb/badge/?version=latest)](https://interp-extrap-perturb.readthedocs.io/en/latest/)reviewed and pre‑print tools, classifies them by task, and provides a browsable web interface with rich tables and inline descriptions.
+[![GitHub stars](https://img.shields.io/github/stars/dbdimitrov/interp-extrap-perturb?style=social)](https://github.com/dbdimitrov/interp-extrap-perturb/stargazers)
+[![License](https://img.shields.io/github/license/dbdimitrov/interp-extrap-perturb)](LICENSE)
 
 A **living catalogue** of computational methods that interpret or predict single‑cell perturbations.
-The project curates peer‑reviewed and pre‑print tools, classifies them by task, and provides a browsable web interface with rich tables and inline descriptions.
-
+The project curates peer‑
 ---
 
 ## Quick links
