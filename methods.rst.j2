@@ -1,6 +1,9 @@
 {{ title }}
 {{ '=' * (title|length) }}
 
+{#— compute which methods to show —#}
+{% set display_methods = methods %}
+
 .. raw:: html
 
    <style>
@@ -24,7 +27,7 @@
          </tr>
        </thead>
        <tbody>
-       {% for m in methods %}
+       {% for m in display_methods %}
          <tr data-description="{{ m.Description|e }}">
            <td class="details-control"></td>
            <td><a href="{{ m.Publication }}">{{ m.Method }}</a></td>
@@ -60,7 +63,7 @@
             {%- else -%}
                 &nbsp;
             {%- endif -%}
-            </td>
+           </td>
 
            {# — MODEL column — #}
            <td>
@@ -161,3 +164,15 @@
      });
    });
    </script>
+
+{% if title == 'All Methods' and tasks %}
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+   :hidden:
+
+{#  blank line above: keeps options separate from entries #}
+{%   for task, slug in tasks %}
+   {{ slug }}
+{%   endfor %}
+{% endif %}
