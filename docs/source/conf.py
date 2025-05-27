@@ -7,10 +7,9 @@ root_doc = 'index'
 def _regenerate_rst(app):
     from pathlib import Path
     import runpy
-
-    project_root = Path(__file__).resolve().parent.parent
-    script = project_root / "generate_methods.py"
-    runpy.run_path(script, run_name="__main__")
+    repo_root = Path(__file__).resolve().parent.parent.parent  # source → docs → repo
+    script = repo_root / "generate_methods.py"
+    runpy.run_path(script, run_name="__main__")          # executes the generator
 
 def setup(app):
     app.connect("builder-inited", _regenerate_rst)
