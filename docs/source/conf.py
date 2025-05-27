@@ -17,6 +17,9 @@ html_theme_options = {
 
 # static assets & your DataTables CSS/JS remain unchanged
 html_static_path = ['_static']
+html_logo = '_static/logo.png'
+html_favicon = '_static/logo.png'
+
 html_css_files = [
     'https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css',
     "css/custom.css",
