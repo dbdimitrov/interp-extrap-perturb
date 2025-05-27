@@ -199,7 +199,7 @@
   Publication: https://www.nature.com/articles/s41592-023-01955-3
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Contrastive Disentanglement
   Year: 2023
 - Code Availability: https://github.com/suinleelab/MM-cVAE
@@ -230,7 +230,7 @@
   Publication: https://proceedings.mlr.press/v200/weinberger22a
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Contrastive Disentanglement
   Year: 2022
 - Code Availability: https://github.com/theislab/inVAE
@@ -254,7 +254,7 @@
   Published: false
   Task:
   - Multi-component Disentanglement
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: '-'
   Description: 'A VAE that disentangles disease (case) from healthy (control) cells
@@ -281,7 +281,7 @@
   Publication: https://openreview.net/pdf?id=fkoqMdTlEg
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Contrastive Disentanglement
   Year: 2023
 - Code Availability: https://github.com/insitro/sams-vae
@@ -359,7 +359,7 @@
   - Seen Perturbation Prediction
   - Multi-component Disentanglement
   - Causal Structure
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2023
 - Code Availability: '-'
   Description: CausCell integrates causal representation learning with diffusion-based
@@ -458,7 +458,7 @@
   Task:
   - Perturbation Responsiveness
   - Contrastive Disentanglement
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/tcapraz/SOFA
   Description: A Group Factor Analysis for multi-omics data that separates latent
@@ -554,7 +554,7 @@
   Published: false
   Task:
   - Unsupervised Disentanglement
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/Genentech/fcr
   Description: 'The Factorized Causal Representation (FCR) framework disentangles
@@ -603,7 +603,7 @@
   Published: true
   Task:
   - Contrastive Disentanglement
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Seen Perturbation Prediction
   - Combinatorial Effect Prediction
   Year: 2024
@@ -653,7 +653,7 @@
   Publication: https://www.nature.com/articles/s41467-025-58089-7
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Unsupervised Disentanglement
   Year: 2025
 - Code Availability: github.com/theislab/trvae
@@ -1614,7 +1614,7 @@
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/HelloWorldLTY/scELMo
   Description: "scELMo first converts gene and cell metadata into textual descriptions\
@@ -1686,7 +1686,7 @@
   Publication: https://www.nature.com/articles/s41592-024-02305-7
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - Feature Relationships
@@ -1715,7 +1715,7 @@
   Publication: https://www.nature.com/articles/s41422-024-01034-y
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
@@ -2235,7 +2235,6 @@
   Published: true
   Task:
   - Linear Gene Programmes
-  - Multicellular Programmes
   Year: 2024
 - Code Availability: https://github.com/ZJUFanLab/scRank
   Description: scRank infers cell type-specific Gene Programmes from untreated scRNA-seq
@@ -2414,7 +2413,6 @@
   Published: true
   Task:
   - Linear Gene Programmes
-  - Multicellular Programmes
   Year: 2023
 - Code Availability: https://github.com/neurorestore/Vespucci
   Description: 'Vespucci builds on Augur, and similarly it trains a random forest
@@ -2460,18 +2458,15 @@
   Publication: https://openreview.net/forum?id=aKcS3xojnwY
   Published: true
   Task:
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2023
 - Code Availability: https://github.com/MarioniLab/miloDE
-  Description: "miloDE is a cluster-free framework for differential expression analysis\
-    \ in scRNA-seq data that builds on Milo. Similarly, MiloDE relies on pre-calculated\
-    \ latent representations to constructs overlapping neighborhoods on a kNN graph,\
-    \ now improved using a second-order approach to better capture local transcriptional\
-    \ similarity. Expression counts are aggregated within these neighborhoods and\
-    \ analyzed using edgeR\u2019s generalized linear model framework, with dual corrections\
-    \ applied across genes and neighborhoods to control for multiple testing. Additionally,\
-    \ a post hoc neighborhood refinement step ensures complete cell coverage and computational\
-    \ efficiency."
+  Description: 'GEASS is a causal feature selection framework in high-dimensional
+    spatal & temporal omics data that identifies nonlinear Granger causal interactions
+    by maximizing a sparsity-regularized modified transfer entropy. It enforces sparsity
+    using combinatorial stochastic gate layers that allow it to select a minimal subset
+    of features with causal interactions - i.e. two sets of of non-overlapping genes
+    as drivers (source) and receivers (sink). '
   Inspired by:
   - Milo (theirs)
   - edgeR
@@ -2504,7 +2499,7 @@
   Published: true
   Task:
   - Differential Analysis
-  - Non-linear Gene Programmess
+  - Nonlinear Gene Programmes
   Year: 2021
 - Code Availability: https://github.com/livnatje/DIALOGUE
   Description: "DIALOGUE identifies shared multicellular patterns across cell types\
@@ -2531,7 +2526,6 @@
   Published: true
   Task:
   - Linear Gene Programmes
-  - Multicellular Programmes
   Year: 2022
 - Code Availability: https://github.com/neurorestore/Augur
   Description: "Augur rank cell types by quantifying how accurately perturbation labels\

@@ -201,7 +201,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-023-01955-3">ContrastiveVI</a></td>
            <td>2023</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li><li>Contrastive Disentanglement</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Contrastive Disentanglement</li></ul></td>
 
            <td><ul><li>ZINB Likelihood</li><li>Protein-Count (totalVI) Likelihood</li><li>Contrastive VAE</li><li>Multi-modal</li></ul></td>
 
@@ -239,7 +239,7 @@ All Methods
            <td><a href="https://proceedings.mlr.press/v200/weinberger22a">MultiGroupVI</a></td>
            <td>2022</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li><li>Contrastive Disentanglement</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Contrastive Disentanglement</li></ul></td>
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
@@ -258,7 +258,7 @@ All Methods
            <td><a href="https://www.biorxiv.org/content/10.1101/2024.12.06.627196v1.full">inVAE</a></td>
            <td>2024</td>
 
-           <td><ul><li>Multi-component Disentanglement</li><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Multi-component Disentanglement</li><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>VAE</li><li>NB Likelihood</li></ul></td>
 
@@ -277,7 +277,7 @@ All Methods
            <td><a href="https://openreview.net/pdf?id=fkoqMdTlEg">scDSA</a></td>
            <td>2023</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li><li>Contrastive Disentanglement</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Contrastive Disentanglement</li></ul></td>
 
            <td><ul><li>NB likelihood</li><li>Domain-Adversarial NNs</li><li>VAE</li><li>Addative Shift</li></ul></td>
 
@@ -334,7 +334,7 @@ All Methods
            <td><a href="https://proceedings.mlr.press/v213/lopez23a/lopez23a.pdf">sVAE+</a></td>
            <td>2023</td>
 
-           <td><ul><li>Seen Perturbation Prediction</li><li>Multi-component Disentanglement</li><li>Causal Structure</li><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Seen Perturbation Prediction</li><li>Multi-component Disentanglement</li><li>Causal Structure</li><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li></ul></td>
 
@@ -410,7 +410,7 @@ All Methods
            <td><a href="https://arxiv.org/abs/2411.08072">ContrastiveVI+</a></td>
            <td>2024</td>
 
-           <td><ul><li>Perturbation Responsiveness</li><li>Contrastive Disentanglement</li><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Perturbation Responsiveness</li><li>Contrastive Disentanglement</li><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
@@ -486,7 +486,7 @@ All Methods
            <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/11/08/2024.11.06.622266.full.pdf">DRVI</a></td>
            <td>2024</td>
 
-           <td><ul><li>Unsupervised Disentanglement</li><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Unsupervised Disentanglement</li><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Addative Decoders</li><li>Multi-modal</li></ul></td>
 
@@ -524,7 +524,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41467-024-45227-w">scDisInFac</a></td>
            <td>2024</td>
 
-           <td><ul><li>Contrastive Disentanglement</li><li>Non-linear Gene Programmess</li><li>Seen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
+           <td><ul><li>Contrastive Disentanglement</li><li>Nonlinear Gene Programmes</li><li>Seen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Adversarial</li><li>Gaussian Mixture Model</li></ul></td>
 
@@ -562,7 +562,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41467-025-58089-7">SIMVI</a></td>
            <td>2025</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li><li>Unsupervised Disentanglement</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Unsupervised Disentanglement</li></ul></td>
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Spatially-informed</li><li>Multi-modal\n</li></ul></td>
 
@@ -1493,7 +1493,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-024-02201-0">scGPT</a></td>
            <td>2024</td>
 
-           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
 
@@ -1569,7 +1569,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-024-02305-7">scFoundation</a></td>
            <td>2024</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Feature Relationships</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Feature Relationships</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
@@ -1588,7 +1588,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41422-024-01034-y">GeneCompass</a></td>
            <td>2024</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
 
@@ -2082,7 +2082,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41587-024-02411-z">scITD</a></td>
            <td>2024</td>
 
-           <td><ul><li>Linear Gene Programmes</li><li>Multicellular Programmes</li></ul></td>
+           <td><ul><li>Linear Gene Programmes</li></ul></td>
 
            <td><ul><li>Tensor Decomposition (Tucker)</li></ul></td>
 
@@ -2234,7 +2234,7 @@ All Methods
            <td><a href="https://elifesciences.org/articles/93161">MOFAcell</a></td>
            <td>2023</td>
 
-           <td><ul><li>Linear Gene Programmes</li><li>Multicellular Programmes</li></ul></td>
+           <td><ul><li>Linear Gene Programmes</li></ul></td>
 
            <td><ul><li>Group Factor Analysis (MOFA+)</li></ul></td>
 
@@ -2272,7 +2272,7 @@ All Methods
            <td><a href="https://openreview.net/forum?id=aKcS3xojnwY">GEASS</a></td>
            <td>2023</td>
 
-           <td><ul><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>Non-linear Granger Causality</li><li>Stochastic Gate Layers (Feature Selectors)</li><li>Time-resolved / Spatially-informed</li></ul></td>
 
@@ -2286,7 +2286,7 @@ All Methods
              </a>
            </td>
          </tr>
-         <tr data-description="miloDE is a cluster-free framework for differential expression analysis in scRNA-seq data that builds on Milo. Similarly, MiloDE relies on pre-calculated latent representations to constructs overlapping neighborhoods on a kNN graph, now improved using a second-order approach to better capture local transcriptional similarity. Expression counts are aggregated within these neighborhoods and analyzed using edgeR’s generalized linear model framework, with dual corrections applied across genes and neighborhoods to control for multiple testing. Additionally, a post hoc neighborhood refinement step ensures complete cell coverage and computational efficiency.">
+         <tr data-description="GEASS is a causal feature selection framework in high-dimensional spatal &amp; temporal omics data that identifies nonlinear Granger causal interactions by maximizing a sparsity-regularized modified transfer entropy. It enforces sparsity using combinatorial stochastic gate layers that allow it to select a minimal subset of features with causal interactions - i.e. two sets of of non-overlapping genes as drivers (source) and receivers (sink). ">
            <td class="details-control"></td>
            <td><a href="https://link.springer.com/article/10.1186/s13059-024-03334-3">MiloDE</a></td>
            <td>2024</td>
@@ -2310,7 +2310,7 @@ All Methods
            <td><a href="https://www.sciencedirect.com/science/article/pii/S2405471221001149">Hotspot</a></td>
            <td>2021</td>
 
-           <td><ul><li>Differential Analysis</li><li>Non-linear Gene Programmess</li></ul></td>
+           <td><ul><li>Differential Analysis</li><li>Nonlinear Gene Programmes</li></ul></td>
 
            <td><ul><li>Autocorrelation</li><li>Pairwise Local Correlations</li></ul></td>
 
@@ -2329,7 +2329,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41587-022-01288-0">DIALOGUE</a></td>
            <td>2022</td>
 
-           <td><ul><li>Linear Gene Programmes</li><li>Multicellular Programmes</li></ul></td>
+           <td><ul><li>Linear Gene Programmes</li></ul></td>
 
            <td><ul><li>Sparse CCA</li><li>Partial Correlations</li><li>Mixed Linear Model</li></ul></td>
 
@@ -2727,10 +2727,9 @@ All Methods
    differential_analysis
    feature_relationships
    grn_inference
-   gene_programmes
    linear_gene_programmes
    multi_component_disentanglement
-   non_linear_gene_programmes
+   nonlinear_gene_programmes
    perturbation_responsiveness
    seen_perturbation_prediction
    unseen_perturbation_prediction
