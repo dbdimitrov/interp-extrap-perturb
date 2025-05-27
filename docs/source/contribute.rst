@@ -36,3 +36,5 @@ conda env create -f environment.yml
 conda activate iep-singlecell
 python generate_methods.py && make -C docs clean html
 ```
+
+Open `docs/_build/html/index.html` in a browser.
