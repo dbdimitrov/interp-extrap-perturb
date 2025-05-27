@@ -1,10 +1,8 @@
 project   = 'Interpretation, Extrapolation, and Perturbation of Single cells'
-copyright = '2025, Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
 author    = 'Daniel Dimitrov*†, Stefan Schrod*†, Martin Rohbeck & Oliver Stegle†'
 release   = '0.0.1'
 html_title = project
 root_doc = 'index'
-master_doc = 'index'
 
 # ── Theme setup ──
 html_theme = "sphinx_book_theme"
@@ -18,7 +16,7 @@ html_theme_options = {
 }
 
 # static assets & your DataTables CSS/JS remain unchanged
-html_static_path = ['_static']
+html_static_path = ['docs/_static']
 html_css_files = [
     'https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css',
     "css/custom.css",
