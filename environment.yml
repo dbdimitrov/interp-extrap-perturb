@@ -1,15 +1,15 @@
 name: perspective
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python=3.12
   - pandas
   - sphinx
-  - yaml
   - ipykernel
   - jinja2
   - pyyaml
-  - pip             # needed to install the theme & extensions
+  - pip
   - pip:
       - sphinx-book-theme
       - sphinx-fontawesome
