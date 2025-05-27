@@ -21,7 +21,7 @@ Multi-component Disentanglement
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>scVI</li><li>iVAE</li><li>β-TCVAE</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/theislab/inVAE" class="github-link">
@@ -51,7 +50,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Conditional Latent Embeddings</li><li>Addative Shift</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>CPA</li><li>SVAE/SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/sams-vae" class="github-link">
@@ -68,7 +66,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li><li>Generative/Experience Replay</li></ul></td>
 
-           <td><ul><li>SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/svaeligr" class="github-link">
@@ -85,7 +82,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>SVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/sVAE" class="github-link">
@@ -102,7 +98,6 @@ Multi-component Disentanglement
 
            <td><ul><li>Diffusion</li><li>Auxilary Classifiers</li></ul></td>
 
-           <td><ul><li>AnnealVAE</li><li>DDPM</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -116,7 +111,6 @@ Multi-component Disentanglement
 
            <td><ul><li>Group Factor Analysis</li></ul></td>
 
-           <td><ul><li>MOFA+</li><li>Supervised Factor Analysis</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/tcapraz/SOFA" class="github-link">
@@ -133,7 +127,6 @@ Multi-component Disentanglement
 
            <td><ul><li>Factor Analysis</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>Sparse Factor Analysis</li><li>Supervised factor analysis</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xinhe-lab/GSFA" class="github-link">
@@ -150,7 +143,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>scVI</li><li>IRM/ERM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/tardis" class="github-link">
@@ -167,7 +159,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>Adversarial</li><li>Perturbation-covariate Interactions</li></ul></td>
 
-           <td><ul><li>-iVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/fcr" class="github-link">
@@ -184,7 +175,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>Attention</li></ul></td>
 
-           <td><ul><li>CPA</li><li>PerturbNet</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/broadinstitute/CellCap" class="github-link">
@@ -201,7 +191,6 @@ Multi-component Disentanglement
 
            <td><ul><li>Probabilistic</li><li>ZINB likelihood</li><li>Protein-Count (totalVI) Likelihood</li></ul></td>
 
-           <td><ul><li>LORD (Gabbay & Hoshen)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/nitzanlab/biolord" class="github-link">
@@ -218,7 +207,6 @@ Multi-component Disentanglement
 
            <td><ul><li>Poisson Likelihood</li><li>Factor Analysis</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/dpeerlab/spectra" class="github-link">
@@ -235,7 +223,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>Disentanglement via Virtual Counterfactuals</li></ul></td>
 
-           <td><ul><li>DSCM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/uhlerlab/discrepancy_vae" class="github-link">
@@ -252,7 +239,6 @@ Multi-component Disentanglement
 
            <td><ul><li>Discrepancy-VAE architecture</li><li>VAE</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>Discrepancy-VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ML4BM-Lab/SENA" class="github-link">
@@ -269,7 +255,6 @@ Multi-component Disentanglement
 
            <td><ul><li>VAE</li><li>Spatially-informed</li><li>NB Likelihood</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>DIVA</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/hsmaan/SpatialDIVA" class="github-link">
@@ -285,14 +270,13 @@ Multi-component Disentanglement
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

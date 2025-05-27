@@ -21,7 +21,7 @@ Unsupervised Disentanglement
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Unsupervised Disentanglement
 
            <td><ul><li>VAE</li><li>conditioned GAN</li></ul></td>
 
-           <td><ul><li>scGEN</li><li>InfoGAN</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/welch-lab/MichiGAN" class="github-link">
@@ -51,7 +50,6 @@ Unsupervised Disentanglement
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>oi-VAE</li><li>VSC</li><li>beta-VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/gemoran/sparse-vae-code" class="github-link">
@@ -68,7 +66,6 @@ Unsupervised Disentanglement
 
            <td><ul><li>K-hop Convolution</li><li>Mean field estimation</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Teichlab/celcomen" class="github-link">
@@ -85,7 +82,6 @@ Unsupervised Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Addative Decoders</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>Addative Decoder ICA</li><li>scVI</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="http://github.com/theislab/drvi" class="github-link">
@@ -102,7 +98,6 @@ Unsupervised Disentanglement
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Spatially-informed</li><li>Multi-modal\n</li></ul></td>
 
-           <td><ul><li>Debiased ML</li><li>scVI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KlugerLab/SIMVI" class="github-link">
@@ -119,7 +114,6 @@ Unsupervised Disentanglement
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
-           <td><ul><li>Mixscape</li><li>OTT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/vandijklab/CINEMA-OT" class="github-link">
@@ -135,14 +129,13 @@ Unsupervised Disentanglement
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

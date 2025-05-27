@@ -21,7 +21,7 @@ Differential Analysis
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Differential Analysis
 
            <td><ul><li>Generalised Linear Model</li><li>NB Likelihood</li><li>Functional PCA</li><li>Fuzzy Clustering</li><li>Time-resolved</li><li>Perturbation-Covariate Interactions</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KANG-BIOINFO/CellDrift" class="github-link">
@@ -51,7 +50,6 @@ Differential Analysis
 
            <td><ul><li>Robust Rank Aggregate</li><li>Ridge Regression</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://bitbucket.org/weililab/scmageck/src/master/" class="github-link">
@@ -68,7 +66,6 @@ Differential Analysis
 
            <td><ul><li>Conditional Resampling</li><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Katsevich-Lab/sceptre" class="github-link">
@@ -85,7 +82,6 @@ Differential Analysis
 
            <td><ul><li>Gaussian Mixture Model</li><li>Weighted multivariate regression</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://longmanz.github.io/Mixscale/" class="github-link">
@@ -102,7 +98,6 @@ Differential Analysis
 
            <td><ul><li>Probabilistic</li><li>Sample-specific Decoders</li><li>PK Representations (optional)</li><li>RNA Velocity (optional)</li></ul></td>
 
-           <td><ul><li>PLIER (PK representation)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/csglab/GEDI" class="github-link">
@@ -119,7 +114,6 @@ Differential Analysis
 
            <td><ul><li>Hypergeometric test</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/yelabucsf/scrna-parameter-estimation" class="github-link">
@@ -136,7 +130,6 @@ Differential Analysis
 
            <td><ul><li>Graph Diffusion</li><li>K-means</li><li>Logistic Regression</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>MELD</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/C0nc/TAICHI" class="github-link">
@@ -153,7 +146,6 @@ Differential Analysis
 
            <td><ul><li>Non-linear Classifier</li><li>Feature Attribution</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/C0nc/River" class="github-link">
@@ -170,7 +162,6 @@ Differential Analysis
 
            <td><ul><li>Pipeline</li></ul></td>
 
-           <td><ul><li>scMageck (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/davidliwei/PS" class="github-link">
@@ -187,7 +178,6 @@ Differential Analysis
 
            <td><ul><li>Conditional Resampling</li><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Katsevich-Lab/sceptre" class="github-link">
@@ -204,7 +194,6 @@ Differential Analysis
 
            <td><ul><li>Random Forrest</li><li>Spatially-Informed</li></ul></td>
 
-           <td><ul><li>Augur (theirs)</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/neurorestore/Vespucci" class="github-link">
@@ -221,7 +210,6 @@ Differential Analysis
 
            <td><ul><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>Milo (theirs)</li><li>edgeR</li><li>Cydar</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/MarioniLab/miloDE" class="github-link">
@@ -238,7 +226,6 @@ Differential Analysis
 
            <td><ul><li>Autocorrelation</li><li>Pairwise Local Correlations</li></ul></td>
 
-           <td><ul><li>Spatial Autocorrelation Metrics (e.g. Morans I)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/YosefLab/Hotspot/tree/master" class="github-link">
@@ -255,7 +242,6 @@ Differential Analysis
 
            <td><ul><li>Random Forrest</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/neurorestore/Augur" class="github-link">
@@ -272,7 +258,6 @@ Differential Analysis
 
            <td><ul><li>Generalised Linear Model</li></ul></td>
 
-           <td><ul><li>AUGUR</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/phillipnicol/scDist" class="github-link">
@@ -288,14 +273,13 @@ Differential Analysis
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

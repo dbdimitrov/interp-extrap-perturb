@@ -21,7 +21,7 @@ Unseen Perturbation Prediction
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>AE framework inspired by CPA</li><li>Chemical representation embeddings</li></ul></td>
 
-           <td><ul><li>CPA (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/theislab/chemCPA" class="github-link">
@@ -51,7 +50,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>GNNs for co-expression and GO relationships</li><li>Label embeddings</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/snap-stanford/GEARS" class="github-link">
@@ -68,7 +66,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Transformer Model</li><li>GNN</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/BaiDing1234/AttentionPert" class="github-link">
@@ -85,7 +82,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>DNN</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -99,7 +95,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>DNN</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/sschrod/CODEX" class="github-link">
@@ -116,7 +111,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>GNN</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/mims-harvard/PDGrapher" class="github-link">
@@ -133,7 +127,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Probabilistic</li><li>ZINB likelihood</li><li>Protein-Count (totalVI) Likelihood</li></ul></td>
 
-           <td><ul><li>LORD (Gabbay & Hoshen)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/nitzanlab/biolord" class="github-link">
@@ -150,7 +143,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>AE</li></ul></td>
 
-           <td><ul><li>chemCPA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/hliulab/cycleCDR" class="github-link">
@@ -167,7 +159,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Diffusion Model</li></ul></td>
 
-           <td><ul><li>Diffusion</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/siyuh/squidiff" class="github-link">
@@ -184,7 +175,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Conditioned Dual (min-max) Formulation OT</li></ul></td>
 
-           <td><ul><li>Amos et al.</li><li>2017</li><li>Makkuva et al.</li><li>2020</li><li>CellOT (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bunnech/condot/tree/main" class="github-link">
@@ -201,7 +191,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>CellOT</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -215,7 +204,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
 
-           <td><ul><li>GPT series</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bowang-lab/scGPT" class="github-link">
@@ -232,7 +220,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
-           <td><ul><li>xTrimoGene</li><li>Performer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/biomap-research/scFoundation" class="github-link">
@@ -249,7 +236,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
 
-           <td><ul><li>Geneformer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xCompass-AI/GeneCompass" class="github-link">
@@ -266,7 +252,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Gaussian Process Model</li><li>Language embeddings</li></ul></td>
 
-           <td><ul><li>GenePT</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -280,7 +265,6 @@ Unseen Perturbation Prediction
 
            <td><ul><li>Active Learning</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -293,14 +277,13 @@ Unseen Perturbation Prediction
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

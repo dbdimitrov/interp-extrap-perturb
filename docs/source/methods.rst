@@ -21,7 +21,7 @@ All Methods
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ All Methods
 
            <td><ul><li>Modified PCA</li></ul></td>
 
-           <td><ul><li>PCA</li><li>Contrastive Mixture Models (Zou et al.</li><li>2013)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/abidlabs/contrastive" class="github-link">
@@ -51,7 +50,6 @@ All Methods
 
            <td><ul><li>NMF</li></ul></td>
 
-           <td><ul><li>iNMF</li><li>NMF</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://www.zhanglab-amss.org/homepage/software.html" class="github-link">
@@ -68,7 +66,6 @@ All Methods
 
            <td><ul><li>Factor Models</li><li>Contastive VAE</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kseverso/contrastive-LVM" class="github-link">
@@ -85,7 +82,6 @@ All Methods
 
            <td><ul><li>Contrastive VAE</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/abidlabs/contrastive_vae" class="github-link">
@@ -102,7 +98,6 @@ All Methods
 
            <td><ul><li>Modified PCA</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li><li>Probabilistic PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/PhilBoileau/EHDBDscPCA" class="github-link">
@@ -119,7 +114,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>conditioned GAN</li></ul></td>
 
-           <td><ul><li>scGEN</li><li>InfoGAN</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/welch-lab/MichiGAN" class="github-link">
@@ -136,7 +130,6 @@ All Methods
 
            <td><ul><li>modified PCA</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/andrewcharlesjones/pcpca" class="github-link">
@@ -153,7 +146,6 @@ All Methods
 
            <td><ul><li>NB likelihood</li><li>Factor Models</li></ul></td>
 
-           <td><ul><li>cPCA</li><li>cLVMs</li><li>scVI (hypothesis testing)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/andrewcharlesjones/cplvm" class="github-link">
@@ -170,7 +162,6 @@ All Methods
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>oi-VAE</li><li>VSC</li><li>beta-VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/gemoran/sparse-vae-code" class="github-link">
@@ -187,7 +178,6 @@ All Methods
 
            <td><ul><li>ZINB Likelihood</li><li>Protein-Count (totalVI) Likelihood</li><li>Contrastive VAE</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>scVI / totalVI</li><li>cVAE</li><li>Conditional VAE</li><li>mmVAE (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi" class="github-link">
@@ -204,7 +194,6 @@ All Methods
 
            <td><ul><li>Contrastive VAE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/suinleelab/MM-cVAE" class="github-link">
@@ -221,7 +210,6 @@ All Methods
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/multiGroupVI" class="github-link">
@@ -238,7 +226,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>scVI</li><li>iVAE</li><li>β-TCVAE</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/theislab/inVAE" class="github-link">
@@ -255,7 +242,6 @@ All Methods
 
            <td><ul><li>NB likelihood</li><li>Domain-Adversarial NNs</li><li>VAE</li><li>Addative Shift</li></ul></td>
 
-           <td><ul><li>DANN</li><li>DIVA</li><li>CPA</li><li>scVI</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -269,7 +255,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Conditional Latent Embeddings</li><li>Addative Shift</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>CPA</li><li>SVAE/SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/sams-vae" class="github-link">
@@ -286,7 +271,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li><li>Generative/Experience Replay</li></ul></td>
 
-           <td><ul><li>SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/svaeligr" class="github-link">
@@ -303,7 +287,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>SVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/sVAE" class="github-link">
@@ -320,7 +303,6 @@ All Methods
 
            <td><ul><li>Diffusion</li><li>Auxilary Classifiers</li></ul></td>
 
-           <td><ul><li>AnnealVAE</li><li>DDPM</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -334,7 +316,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li></ul></td>
 
-           <td><ul><li>ContrastiveVI</li><li>scVI</li><li>cVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -348,7 +329,6 @@ All Methods
 
            <td><ul><li>K-hop Convolution</li><li>Mean field estimation</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Teichlab/celcomen" class="github-link">
@@ -365,7 +345,6 @@ All Methods
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/contrastive_vi_plus" class="github-link">
@@ -382,7 +361,6 @@ All Methods
 
            <td><ul><li>Group Factor Analysis</li></ul></td>
 
-           <td><ul><li>MOFA+</li><li>Supervised Factor Analysis</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/tcapraz/SOFA" class="github-link">
@@ -399,7 +377,6 @@ All Methods
 
            <td><ul><li>Factor Analysis</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>Sparse Factor Analysis</li><li>Supervised factor analysis</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xinhe-lab/GSFA" class="github-link">
@@ -416,7 +393,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>scVI</li><li>IRM/ERM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/tardis" class="github-link">
@@ -433,7 +409,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Addative Decoders</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>Addative Decoder ICA</li><li>scVI</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="http://github.com/theislab/drvi" class="github-link">
@@ -450,7 +425,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Adversarial</li><li>Perturbation-covariate Interactions</li></ul></td>
 
-           <td><ul><li>-iVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/fcr" class="github-link">
@@ -467,7 +441,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Adversarial</li><li>Gaussian Mixture Model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZhangLabGT/scDisInFact" class="github-link">
@@ -484,7 +457,6 @@ All Methods
 
            <td><ul><li>NMF</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Vivianstats/scINSIGHT" class="github-link">
@@ -501,7 +473,6 @@ All Methods
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Spatially-informed</li><li>Multi-modal\n</li></ul></td>
 
-           <td><ul><li>Debiased ML</li><li>scVI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KlugerLab/SIMVI" class="github-link">
@@ -518,7 +489,6 @@ All Methods
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>scGen</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/theislab/trvae" class="github-link">
@@ -535,7 +505,6 @@ All Methods
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/rampasek/DrVAE" class="github-link">
@@ -552,7 +521,6 @@ All Methods
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>Conditional VAE (CVAE)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/scgen" class="github-link">
@@ -569,7 +537,6 @@ All Methods
 
            <td><ul><li>-ODE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/sanderlab/CellBox" class="github-link">
@@ -586,7 +553,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>DANN-based Adversary that attempts to eliminate treatment effects/ cellular context from latent representation</li></ul></td>
 
-           <td><ul><li>scGEN</li><li>DANN</li><li>CVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/cpa" class="github-link">
@@ -603,7 +569,6 @@ All Methods
 
            <td><ul><li>AE</li><li>GAN</li></ul></td>
 
-           <td><ul><li>scGEN</li><li>CPA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ JaneJiayiDong/scPreGAN" class="github-link">
@@ -620,7 +585,6 @@ All Methods
 
            <td><ul><li>AE framework inspired by CPA</li><li>Chemical representation embeddings</li></ul></td>
 
-           <td><ul><li>CPA (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/theislab/chemCPA" class="github-link">
@@ -637,7 +601,6 @@ All Methods
 
            <td><ul><li>AE framework inspired by CPA</li><li>totalVI likelihood</li></ul></td>
 
-           <td><ul><li>CPA (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/multicpa" class="github-link">
@@ -654,7 +617,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Attention</li></ul></td>
 
-           <td><ul><li>CPA</li><li>PerturbNet</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/broadinstitute/CellCap" class="github-link">
@@ -671,7 +633,6 @@ All Methods
 
            <td><ul><li>GNNs for co-expression and GO relationships</li><li>Label embeddings</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/snap-stanford/GEARS" class="github-link">
@@ -688,7 +649,6 @@ All Methods
 
            <td><ul><li>Transformer Model</li><li>GNN</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/BaiDing1234/AttentionPert" class="github-link">
@@ -705,7 +665,6 @@ All Methods
 
            <td><ul><li>DNN</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -719,7 +678,6 @@ All Methods
 
            <td><ul><li>DNN</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/sschrod/CODEX" class="github-link">
@@ -736,7 +694,6 @@ All Methods
 
            <td><ul><li>Graph attention</li><li>Regression</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/reem12345/Cell-Type-Specific-Graphs" class="github-link">
@@ -753,7 +710,6 @@ All Methods
 
            <td><ul><li>GNN</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/mims-harvard/PDGrapher" class="github-link">
@@ -770,7 +726,6 @@ All Methods
 
            <td><ul><li>Probabilistic</li><li>ZINB likelihood</li><li>Protein-Count (totalVI) Likelihood</li></ul></td>
 
-           <td><ul><li>LORD (Gabbay & Hoshen)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/nitzanlab/biolord" class="github-link">
@@ -787,7 +742,6 @@ All Methods
 
            <td><ul><li>Dual-branch variational bayes causal inference framework</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>VCI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/yulun-rayn/graphVCI" class="github-link">
@@ -804,7 +758,6 @@ All Methods
 
            <td><ul><li>AE</li></ul></td>
 
-           <td><ul><li>chemCPA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/hliulab/cycleCDR" class="github-link">
@@ -821,7 +774,6 @@ All Methods
 
            <td><ul><li>Dual-branch variational bayes causal inference framework</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/yulun-rayn/variational-causal-inference" class="github-link">
@@ -838,7 +790,6 @@ All Methods
 
            <td><ul><li>Additive Model</li><li>DNN</li></ul></td>
 
-           <td><ul><li>Linear Models</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -852,7 +803,6 @@ All Methods
 
            <td><ul><li>Diffusion Model</li></ul></td>
 
-           <td><ul><li>Diffusion</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/siyuh/squidiff" class="github-link">
@@ -869,7 +819,6 @@ All Methods
 
            <td><ul><li>Multi-condition PCA</li></ul></td>
 
-           <td><ul><li>PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/const-ae/pylemur" class="github-link">
@@ -886,7 +835,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>NB likelihood</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>Rybakov et al.</li><li>2020</li><li>VEGA</li><li>scVI</li><li>scArches (theirs)</li><li>oi-VAE</li><li>Conditional VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/scarches" class="github-link">
@@ -903,7 +851,6 @@ All Methods
 
            <td><ul><li>Multiple VAEs</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ratschlab/pmvae " class="github-link">
@@ -920,7 +867,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>DenseNet</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/hdsu-bioquant/onto-vae" class="github-link">
@@ -937,7 +883,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/LucasESBS/vega/" class="github-link">
@@ -954,7 +899,6 @@ All Methods
 
            <td><ul><li>Graph VAE</li><li>Linear Decoder</li><li>NB Likelihood</li><li>Spatially-informed</li><li>PK Representations</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>ExpiMap</li><li>GraphVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Lotfollahi-lab/nichecompass." class="github-link">
@@ -971,7 +915,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>VEGA</li><li>Cumulative link models</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/namini94/EXPORT" class="github-link">
@@ -988,7 +931,6 @@ All Methods
 
            <td><ul><li>Group Factor Model</li><li>PK Representations</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>MOFA+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/MLO-lab/MuVI" class="github-link">
@@ -1005,7 +947,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Embedding Topic Model</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>LDA</li><li>ETM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/hui2000ji/scETM" class="github-link">
@@ -1022,7 +963,6 @@ All Methods
 
            <td><ul><li>Poisson Likelihood</li><li>Factor Analysis</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/dpeerlab/spectra" class="github-link">
@@ -1039,7 +979,6 @@ All Methods
 
            <td><ul><li>Generalised Linear Model</li><li>NB Likelihood</li><li>Functional PCA</li><li>Fuzzy Clustering</li><li>Time-resolved</li><li>Perturbation-Covariate Interactions</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KANG-BIOINFO/CellDrift" class="github-link">
@@ -1056,7 +995,6 @@ All Methods
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
-           <td><ul><li>Mixscape</li><li>OTT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/vandijklab/CINEMA-OT" class="github-link">
@@ -1073,7 +1011,6 @@ All Methods
 
            <td><ul><li>Dual (min-max) Formulation OT</li></ul></td>
 
-           <td><ul><li>Makkuva et al</li><li>2020</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bunnech/cellot" class="github-link">
@@ -1090,7 +1027,6 @@ All Methods
 
            <td><ul><li>Conditioned Dual (min-max) Formulation OT</li></ul></td>
 
-           <td><ul><li>Amos et al.</li><li>2017</li><li>Makkuva et al.</li><li>2020</li><li>CellOT (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bunnech/condot/tree/main" class="github-link">
@@ -1107,7 +1043,6 @@ All Methods
 
            <td><ul><li>Optimal Transport</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://genentech.github.io/Perturb-OT/" class="github-link">
@@ -1124,7 +1059,6 @@ All Methods
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/Genentech/MMFM" class="github-link">
@@ -1141,7 +1075,6 @@ All Methods
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kksniak/metric-flow-matching.git" class="github-link">
@@ -1158,7 +1091,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -1172,7 +1104,6 @@ All Methods
 
            <td><ul><li>Diffusion\n-VAE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/EperLuo/scDiffusion" class="github-link">
@@ -1189,7 +1120,6 @@ All Methods
 
            <td><ul><li>Optimal Transport</li><li>Multi-modal</li><li>Conditional Flow Matching</li></ul></td>
 
-           <td><ul><li>CellFlow</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/CFGen" class="github-link">
@@ -1206,7 +1136,6 @@ All Methods
 
            <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>CellOT</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -1220,7 +1149,6 @@ All Methods
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/broadinstitute/wot" class="github-link">
@@ -1237,7 +1165,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/atong01/conditional-flow-matching" class="github-link">
@@ -1254,7 +1181,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -1268,7 +1194,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KrishnaswamyLab/MIOFlow" class="github-link">
@@ -1285,7 +1210,6 @@ All Methods
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>Low-rank OT</li><li>Sparse Map OT</li></ul></td>
 
-           <td><ul><li>Waddington-OT</li><li>NovoSpaRc</li><li>PASTE</li><li>OTT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/moscot" class="github-link">
@@ -1302,7 +1226,6 @@ All Methods
 
            <td><ul><li>Foundational Gene expression embeddings (from ~30M human cells)</li><li>Self-supervised masked regression</li><li>Standard transformer attention</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/jkobject/geneformer" class="github-link">
@@ -1319,7 +1242,6 @@ All Methods
 
            <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
 
-           <td><ul><li>GPT series</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bowang-lab/scGPT" class="github-link">
@@ -1336,7 +1258,6 @@ All Methods
 
            <td><ul><li>Converts gene/cell metadata into text embeddings</li><li>Integrates text and expression embeddings</li><li>Fine-tunes embeddings via a lightweight neural adaptor</li></ul></td>
 
-           <td><ul><li>GenePT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/HelloWorldLTY/scELMo" class="github-link">
@@ -1353,7 +1274,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -1367,7 +1287,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -1381,7 +1300,6 @@ All Methods
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
-           <td><ul><li>xTrimoGene</li><li>Performer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/biomap-research/scFoundation" class="github-link">
@@ -1398,7 +1316,6 @@ All Methods
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
 
-           <td><ul><li>Geneformer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xCompass-AI/GeneCompass" class="github-link">
@@ -1415,7 +1332,6 @@ All Methods
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>BERT-like Bidirectional transformers (with flashattention2)</li><li>Self-supervised masked regression</li><li>A classifier decoder</li><li>ZINB likelihood decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>BERT</li><li>scVI</li><li>UCE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/cantinilab/scPRINT" class="github-link">
@@ -1432,7 +1348,6 @@ All Methods
 
            <td><ul><li>Gaussian Process Model</li><li>Language embeddings</li></ul></td>
 
-           <td><ul><li>GenePT</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -1446,7 +1361,6 @@ All Methods
 
            <td><ul><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -1460,7 +1374,6 @@ All Methods
 
            <td><ul><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/aertslab/scenicplus" class="github-link">
@@ -1477,7 +1390,6 @@ All Methods
 
            <td><ul><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/morris-lab/CellOracle" class="github-link">
@@ -1494,7 +1406,6 @@ All Methods
 
            <td><ul><li>Continuous optimization for acyclicity</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xunzheng/notears" class="github-link">
@@ -1511,7 +1422,6 @@ All Methods
 
            <td><ul><li>Continuous optimization for acyclicity</li><li>DNN</li></ul></td>
 
-           <td><ul><li>NOTEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xunzheng/notears" class="github-link">
@@ -1528,7 +1438,6 @@ All Methods
 
            <td><ul><li>Continuous optimization for acyclicity</li><li>GNN</li></ul></td>
 
-           <td><ul><li>NOTEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/fishmoon1234/DAG-GNN" class="github-link">
@@ -1545,7 +1454,6 @@ All Methods
 
            <td><ul><li>Graph interventions</li><li>DNN</li><li>Normalizing-Flows</li></ul></td>
 
-           <td><ul><li>NOTEARS</li><li>Normalizing Flows</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/slachapelle/dcdi" class="github-link">
@@ -1562,7 +1470,6 @@ All Methods
 
            <td><ul><li>Graph interventions</li><li>DNN</li><li>Residual Flow\nSteady-State ODE</li></ul></td>
 
-           <td><ul><li>NOTEARS</li><li>DCDI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/nodags-flows" class="github-link">
@@ -1579,7 +1486,6 @@ All Methods
 
            <td><ul><li>Graph interventions</li><li>Ornstein–Uhlenbeck process\n-Steady-State ODE</li></ul></td>
 
-           <td><ul><li>Dictys</li><li>NODAGS-Flow</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/PMBio/bicycle" class="github-link">
@@ -1596,7 +1502,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Disentanglement via Virtual Counterfactuals</li></ul></td>
 
-           <td><ul><li>DSCM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/uhlerlab/discrepancy_vae" class="github-link">
@@ -1613,7 +1518,6 @@ All Methods
 
            <td><ul><li>Factor Model</li><li>DAGs</li><li>Latent DAGs</li></ul></td>
 
-           <td><ul><li>DCDI</li><li>NOTEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/dcdfg" class="github-link">
@@ -1630,7 +1534,6 @@ All Methods
 
            <td><ul><li>Ornstein–Uhlenbeck process</li><li>Steady-State ODE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/pinellolab/dictys" class="github-link">
@@ -1647,7 +1550,6 @@ All Methods
 
            <td><ul><li>Amortized pre-training</li><li>Variational Inference</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/larslorch/avici" class="github-link">
@@ -1664,7 +1566,6 @@ All Methods
 
            <td><ul><li>PC Algorithm</li></ul></td>
 
-           <td><ul><li>PC Algorithm</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="http://uhlerlab.github.io/causaldag/dci" class="github-link">
@@ -1681,7 +1582,6 @@ All Methods
 
            <td><ul><li>Amortized pre-training</li><li>Transfomer</li><li>Graph Attention</li></ul></td>
 
-           <td><ul><li>GIES</li><li>AVICI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/rmwu/sea" class="github-link">
@@ -1698,7 +1598,6 @@ All Methods
 
            <td><ul><li>Discrepancy-VAE architecture</li><li>VAE</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>Discrepancy-VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ML4BM-Lab/SENA" class="github-link">
@@ -1715,7 +1614,6 @@ All Methods
 
            <td><ul><li>Graph interventions</li><li>Graph-ODE</li></ul></td>
 
-           <td><ul><li>PC Algorithm</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KrishnaswamyLab/RiTINI" class="github-link">
@@ -1732,7 +1630,6 @@ All Methods
 
            <td><ul><li>Robust Rank Aggregate</li><li>Ridge Regression</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://bitbucket.org/weililab/scmageck/src/master/" class="github-link">
@@ -1749,7 +1646,6 @@ All Methods
 
            <td><ul><li>Conditional Resampling</li><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Katsevich-Lab/sceptre" class="github-link">
@@ -1766,7 +1662,6 @@ All Methods
 
            <td><ul><li>Gaussian Mixture Model</li><li>Weighted multivariate regression</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://longmanz.github.io/Mixscale/" class="github-link">
@@ -1783,7 +1678,6 @@ All Methods
 
            <td><ul><li>Manifold Learning</li><li>Vertex-frequency analysis</li><li>Graph Diffusion</li></ul></td>
 
-           <td><ul><li>PLIER (PK representation)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KrishnaswamyLab/MELD" class="github-link">
@@ -1800,7 +1694,6 @@ All Methods
 
            <td><ul><li>Probabilistic</li><li>Sample-specific Decoders</li><li>PK Representations (optional)</li><li>RNA Velocity (optional)</li></ul></td>
 
-           <td><ul><li>PLIER (PK representation)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/csglab/GEDI" class="github-link">
@@ -1817,7 +1710,6 @@ All Methods
 
            <td><ul><li>Hypergeometric test</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/yelabucsf/scrna-parameter-estimation" class="github-link">
@@ -1834,7 +1726,6 @@ All Methods
 
            <td><ul><li>Tensor Decomposition (Tucker)</li></ul></td>
 
-           <td><ul><li>Tucker Decomposition</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kharchenkolab/scITD" class="github-link">
@@ -1851,7 +1742,6 @@ All Methods
 
            <td><ul><li>PC Regression</li><li>Tensor Decomposition (PARAFAC)</li><li>Network Diffusion</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZJUFanLab/scRank" class="github-link">
@@ -1868,7 +1758,6 @@ All Methods
 
            <td><ul><li>Graph Diffusion</li><li>K-means</li><li>Logistic Regression</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>MELD</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/C0nc/TAICHI" class="github-link">
@@ -1885,7 +1774,6 @@ All Methods
 
            <td><ul><li>Non-linear Classifier</li><li>Feature Attribution</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/C0nc/River" class="github-link">
@@ -1902,7 +1790,6 @@ All Methods
 
            <td><ul><li>Topic Model</li></ul></td>
 
-           <td><ul><li>LDA</li><li>Correlated topic model</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bm2-lab/MUSIC" class="github-link">
@@ -1919,7 +1806,6 @@ All Methods
 
            <td><ul><li>Gaussian Mixture Model</li><li>LDA\n</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/satijalab/seurat" class="github-link">
@@ -1936,7 +1822,6 @@ All Methods
 
            <td><ul><li>Pipeline</li></ul></td>
 
-           <td><ul><li>scMageck (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/davidliwei/PS" class="github-link">
@@ -1953,7 +1838,6 @@ All Methods
 
            <td><ul><li>Conditional Resampling</li><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Katsevich-Lab/sceptre" class="github-link">
@@ -1970,7 +1854,6 @@ All Methods
 
            <td><ul><li>Group Factor Analysis (MOFA+)</li></ul></td>
 
-           <td><ul><li>MOFA+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/saezlab/MOFAcellulaR" class="github-link">
@@ -1987,7 +1870,6 @@ All Methods
 
            <td><ul><li>Random Forrest</li><li>Spatially-Informed</li></ul></td>
 
-           <td><ul><li>Augur (theirs)</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/neurorestore/Vespucci" class="github-link">
@@ -2004,7 +1886,6 @@ All Methods
 
            <td><ul><li>Non-linear Granger Causality</li><li>Stochastic Gate Layers (Feature Selectors)</li><li>Time-resolved / Spatially-informed</li></ul></td>
 
-           <td><ul><li>Transfer Entropy</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -2018,7 +1899,6 @@ All Methods
 
            <td><ul><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>Milo (theirs)</li><li>edgeR</li><li>Cydar</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/MarioniLab/miloDE" class="github-link">
@@ -2035,7 +1915,6 @@ All Methods
 
            <td><ul><li>Autocorrelation</li><li>Pairwise Local Correlations</li></ul></td>
 
-           <td><ul><li>Spatial Autocorrelation Metrics (e.g. Morans I)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/YosefLab/Hotspot/tree/master" class="github-link">
@@ -2052,7 +1931,6 @@ All Methods
 
            <td><ul><li>Sparse CCA</li><li>Partial Correlations</li><li>Mixed Linear Model</li></ul></td>
 
-           <td><ul><li>CCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/livnatje/DIALOGUE" class="github-link">
@@ -2069,7 +1947,6 @@ All Methods
 
            <td><ul><li>Random Forrest</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/neurorestore/Augur" class="github-link">
@@ -2086,7 +1963,6 @@ All Methods
 
            <td><ul><li>Generalised Linear Model</li></ul></td>
 
-           <td><ul><li>AUGUR</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/phillipnicol/scDist" class="github-link">
@@ -2103,7 +1979,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/czi-ai/sub-cell-embed" class="github-link">
@@ -2120,7 +1995,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/bunnelab/virtues" class="github-link">
@@ -2137,7 +2011,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="http://www.github.com/snap-stanford/BioDiscoveryAgent" class="github-link">
@@ -2154,7 +2027,6 @@ All Methods
 
            <td><ul><li>-</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -2168,7 +2040,6 @@ All Methods
 
            <td><ul><li>Active Learning</li></ul></td>
 
-           <td><ul><li>GEARS</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -2182,7 +2053,6 @@ All Methods
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/azizilab/decipher" class="github-link">
@@ -2199,7 +2069,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Spatially-informed</li><li>NB Likelihood</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>DIVA</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/hsmaan/SpatialDIVA" class="github-link">
@@ -2216,7 +2085,6 @@ All Methods
 
            <td><ul><li>ODE</li><li>Optimal Transp</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -2230,7 +2098,6 @@ All Methods
 
            <td><ul><li>Regression model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -2244,7 +2111,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>Schrödinger Bridge</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/daifengwanglab/ARTEMIS" class="github-link">
@@ -2261,7 +2127,6 @@ All Methods
 
            <td><ul><li>VAE</li><li>OT</li><li>Attention</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/jiang-q19/scPRAM" class="github-link">
@@ -2278,7 +2143,6 @@ All Methods
 
            <td><ul><li>Spatial Niches</li><li>Random Forrest (or other regression models)</li></ul></td>
 
-           <td><ul><li>SVCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://saezlab.github.io/mistyR/" class="github-link">
@@ -2295,7 +2159,6 @@ All Methods
 
            <td><ul><li>Generalised Gaussian Graphical Model</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/sschrod/SpaCeNet" class="github-link">
@@ -2312,7 +2175,6 @@ All Methods
 
            <td><ul><li>Spatially-informed</li><li>Random Forrest (or other regression models)</li><li>Convolution Operations</li></ul></td>
 
-           <td><ul><li>MISTy</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -2326,7 +2188,6 @@ All Methods
 
            <td><ul><li>TODO</li></ul></td>
 
-           <td><ul><li>TODO</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/gifford-lab/prescient" class="github-link">
@@ -2343,7 +2204,6 @@ All Methods
 
            <td><ul><li>TODO</li></ul></td>
 
-           <td><ul><li>TODO</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -2356,14 +2216,13 @@ All Methods
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

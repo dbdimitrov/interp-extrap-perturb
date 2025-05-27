@@ -21,7 +21,7 @@ Linear Gene Programmes
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Linear Gene Programmes
 
            <td><ul><li>Modified PCA</li></ul></td>
 
-           <td><ul><li>PCA</li><li>Contrastive Mixture Models (Zou et al.</li><li>2013)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/abidlabs/contrastive" class="github-link">
@@ -51,7 +50,6 @@ Linear Gene Programmes
 
            <td><ul><li>NMF</li></ul></td>
 
-           <td><ul><li>iNMF</li><li>NMF</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://www.zhanglab-amss.org/homepage/software.html" class="github-link">
@@ -68,7 +66,6 @@ Linear Gene Programmes
 
            <td><ul><li>Factor Models</li><li>Contastive VAE</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kseverso/contrastive-LVM" class="github-link">
@@ -85,7 +82,6 @@ Linear Gene Programmes
 
            <td><ul><li>Modified PCA</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li><li>Probabilistic PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/PhilBoileau/EHDBDscPCA" class="github-link">
@@ -102,7 +98,6 @@ Linear Gene Programmes
 
            <td><ul><li>modified PCA</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/andrewcharlesjones/pcpca" class="github-link">
@@ -119,7 +114,6 @@ Linear Gene Programmes
 
            <td><ul><li>NB likelihood</li><li>Factor Models</li></ul></td>
 
-           <td><ul><li>cPCA</li><li>cLVMs</li><li>scVI (hypothesis testing)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/andrewcharlesjones/cplvm" class="github-link">
@@ -136,7 +130,6 @@ Linear Gene Programmes
 
            <td><ul><li>Factor Analysis</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>Sparse Factor Analysis</li><li>Supervised factor analysis</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xinhe-lab/GSFA" class="github-link">
@@ -153,7 +146,6 @@ Linear Gene Programmes
 
            <td><ul><li>NMF</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Vivianstats/scINSIGHT" class="github-link">
@@ -170,7 +162,6 @@ Linear Gene Programmes
 
            <td><ul><li>VAE</li><li>Attention</li></ul></td>
 
-           <td><ul><li>CPA</li><li>PerturbNet</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/broadinstitute/CellCap" class="github-link">
@@ -187,7 +178,6 @@ Linear Gene Programmes
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>NB likelihood</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>Rybakov et al.</li><li>2020</li><li>VEGA</li><li>scVI</li><li>scArches (theirs)</li><li>oi-VAE</li><li>Conditional VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/scarches" class="github-link">
@@ -204,7 +194,6 @@ Linear Gene Programmes
 
            <td><ul><li>Multiple VAEs</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ratschlab/pmvae " class="github-link">
@@ -221,7 +210,6 @@ Linear Gene Programmes
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>DenseNet</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/hdsu-bioquant/onto-vae" class="github-link">
@@ -238,7 +226,6 @@ Linear Gene Programmes
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/LucasESBS/vega/" class="github-link">
@@ -255,7 +242,6 @@ Linear Gene Programmes
 
            <td><ul><li>Graph VAE</li><li>Linear Decoder</li><li>NB Likelihood</li><li>Spatially-informed</li><li>PK Representations</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>ExpiMap</li><li>GraphVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Lotfollahi-lab/nichecompass." class="github-link">
@@ -272,7 +258,6 @@ Linear Gene Programmes
 
            <td><ul><li>VAE</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>VEGA</li><li>Cumulative link models</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/namini94/EXPORT" class="github-link">
@@ -289,7 +274,6 @@ Linear Gene Programmes
 
            <td><ul><li>Group Factor Model</li><li>PK Representations</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>MOFA+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/MLO-lab/MuVI" class="github-link">
@@ -306,7 +290,6 @@ Linear Gene Programmes
 
            <td><ul><li>VAE</li><li>Embedding Topic Model</li><li>Linear Decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>LDA</li><li>ETM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/hui2000ji/scETM" class="github-link">
@@ -323,7 +306,6 @@ Linear Gene Programmes
 
            <td><ul><li>Poisson Likelihood</li><li>Factor Analysis</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/dpeerlab/spectra" class="github-link">
@@ -340,7 +322,6 @@ Linear Gene Programmes
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/broadinstitute/wot" class="github-link">
@@ -357,7 +338,6 @@ Linear Gene Programmes
 
            <td><ul><li>Probabilistic</li><li>Sample-specific Decoders</li><li>PK Representations (optional)</li><li>RNA Velocity (optional)</li></ul></td>
 
-           <td><ul><li>PLIER (PK representation)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/csglab/GEDI" class="github-link">
@@ -374,7 +354,6 @@ Linear Gene Programmes
 
            <td><ul><li>Hypergeometric test</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/yelabucsf/scrna-parameter-estimation" class="github-link">
@@ -391,7 +370,6 @@ Linear Gene Programmes
 
            <td><ul><li>Tensor Decomposition (Tucker)</li></ul></td>
 
-           <td><ul><li>Tucker Decomposition</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kharchenkolab/scITD" class="github-link">
@@ -408,7 +386,6 @@ Linear Gene Programmes
 
            <td><ul><li>PC Regression</li><li>Tensor Decomposition (PARAFAC)</li><li>Network Diffusion</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZJUFanLab/scRank" class="github-link">
@@ -425,7 +402,6 @@ Linear Gene Programmes
 
            <td><ul><li>Topic Model</li></ul></td>
 
-           <td><ul><li>LDA</li><li>Correlated topic model</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bm2-lab/MUSIC" class="github-link">
@@ -442,7 +418,6 @@ Linear Gene Programmes
 
            <td><ul><li>Gaussian Mixture Model</li><li>LDA\n</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/satijalab/seurat" class="github-link">
@@ -459,7 +434,6 @@ Linear Gene Programmes
 
            <td><ul><li>Group Factor Analysis (MOFA+)</li></ul></td>
 
-           <td><ul><li>MOFA+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/saezlab/MOFAcellulaR" class="github-link">
@@ -476,7 +450,6 @@ Linear Gene Programmes
 
            <td><ul><li>Sparse CCA</li><li>Partial Correlations</li><li>Mixed Linear Model</li></ul></td>
 
-           <td><ul><li>CCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/livnatje/DIALOGUE" class="github-link">
@@ -492,14 +465,13 @@ Linear Gene Programmes
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

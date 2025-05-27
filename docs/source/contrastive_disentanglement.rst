@@ -21,7 +21,7 @@ Contrastive Disentanglement
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Contrastive Disentanglement
 
            <td><ul><li>Modified PCA</li></ul></td>
 
-           <td><ul><li>PCA</li><li>Contrastive Mixture Models (Zou et al.</li><li>2013)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/abidlabs/contrastive" class="github-link">
@@ -51,7 +50,6 @@ Contrastive Disentanglement
 
            <td><ul><li>NMF</li></ul></td>
 
-           <td><ul><li>iNMF</li><li>NMF</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://www.zhanglab-amss.org/homepage/software.html" class="github-link">
@@ -68,7 +66,6 @@ Contrastive Disentanglement
 
            <td><ul><li>Factor Models</li><li>Contastive VAE</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kseverso/contrastive-LVM" class="github-link">
@@ -85,7 +82,6 @@ Contrastive Disentanglement
 
            <td><ul><li>Contrastive VAE</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/abidlabs/contrastive_vae" class="github-link">
@@ -102,7 +98,6 @@ Contrastive Disentanglement
 
            <td><ul><li>Modified PCA</li></ul></td>
 
-           <td><ul><li>Contrastive PCA</li><li>Probabilistic PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/PhilBoileau/EHDBDscPCA" class="github-link">
@@ -119,7 +114,6 @@ Contrastive Disentanglement
 
            <td><ul><li>modified PCA</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/andrewcharlesjones/pcpca" class="github-link">
@@ -136,7 +130,6 @@ Contrastive Disentanglement
 
            <td><ul><li>NB likelihood</li><li>Factor Models</li></ul></td>
 
-           <td><ul><li>cPCA</li><li>cLVMs</li><li>scVI (hypothesis testing)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/andrewcharlesjones/cplvm" class="github-link">
@@ -153,7 +146,6 @@ Contrastive Disentanglement
 
            <td><ul><li>ZINB Likelihood</li><li>Protein-Count (totalVI) Likelihood</li><li>Contrastive VAE</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>scVI / totalVI</li><li>cVAE</li><li>Conditional VAE</li><li>mmVAE (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi" class="github-link">
@@ -170,7 +162,6 @@ Contrastive Disentanglement
 
            <td><ul><li>Contrastive VAE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/suinleelab/MM-cVAE" class="github-link">
@@ -187,7 +178,6 @@ Contrastive Disentanglement
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/multiGroupVI" class="github-link">
@@ -204,7 +194,6 @@ Contrastive Disentanglement
 
            <td><ul><li>NB likelihood</li><li>Domain-Adversarial NNs</li><li>VAE</li><li>Addative Shift</li></ul></td>
 
-           <td><ul><li>DANN</li><li>DIVA</li><li>CPA</li><li>scVI</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -218,7 +207,6 @@ Contrastive Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li></ul></td>
 
-           <td><ul><li>ContrastiveVI</li><li>scVI</li><li>cVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -232,7 +220,6 @@ Contrastive Disentanglement
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/contrastive_vi_plus" class="github-link">
@@ -249,7 +236,6 @@ Contrastive Disentanglement
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Adversarial</li><li>Gaussian Mixture Model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZhangLabGT/scDisInFact" class="github-link">
@@ -266,7 +252,6 @@ Contrastive Disentanglement
 
            <td><ul><li>NMF</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Vivianstats/scINSIGHT" class="github-link">
@@ -282,14 +267,13 @@ Contrastive Disentanglement
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

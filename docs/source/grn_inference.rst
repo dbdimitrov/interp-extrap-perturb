@@ -21,7 +21,7 @@ GRN Inference
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ GRN Inference
 
            <td><ul><li>Foundational Gene expression embeddings (from ~30M human cells)</li><li>Self-supervised masked regression</li><li>Standard transformer attention</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/jkobject/geneformer" class="github-link">
@@ -51,7 +50,6 @@ GRN Inference
 
            <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
 
-           <td><ul><li>GPT series</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bowang-lab/scGPT" class="github-link">
@@ -68,7 +66,6 @@ GRN Inference
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
 
-           <td><ul><li>Geneformer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xCompass-AI/GeneCompass" class="github-link">
@@ -85,7 +82,6 @@ GRN Inference
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>BERT-like Bidirectional transformers (with flashattention2)</li><li>Self-supervised masked regression</li><li>A classifier decoder</li><li>ZINB likelihood decoder</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>BERT</li><li>scVI</li><li>UCE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/cantinilab/scPRINT" class="github-link">
@@ -102,7 +98,6 @@ GRN Inference
 
            <td><ul><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -116,7 +111,6 @@ GRN Inference
 
            <td><ul><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/aertslab/scenicplus" class="github-link">
@@ -133,7 +127,6 @@ GRN Inference
 
            <td><ul><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/morris-lab/CellOracle" class="github-link">
@@ -150,7 +143,6 @@ GRN Inference
 
            <td><ul><li>Ornstein–Uhlenbeck process</li><li>Steady-State ODE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/pinellolab/dictys" class="github-link">
@@ -167,7 +159,6 @@ GRN Inference
 
            <td><ul><li>Graph interventions</li><li>Graph-ODE</li></ul></td>
 
-           <td><ul><li>PC Algorithm</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KrishnaswamyLab/RiTINI" class="github-link">
@@ -184,7 +175,6 @@ GRN Inference
 
            <td><ul><li>PC Regression</li><li>Tensor Decomposition (PARAFAC)</li><li>Network Diffusion</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZJUFanLab/scRank" class="github-link">
@@ -201,7 +191,6 @@ GRN Inference
 
            <td><ul><li>ODE</li><li>Optimal Transp</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -215,7 +204,6 @@ GRN Inference
 
            <td><ul><li>Regression model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -228,14 +216,13 @@ GRN Inference
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

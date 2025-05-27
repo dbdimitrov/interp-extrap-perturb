@@ -21,7 +21,7 @@ Causal Structure
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Causal Structure
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Conditional Latent Embeddings</li><li>Addative Shift</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>CPA</li><li>SVAE/SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/sams-vae" class="github-link">
@@ -51,7 +50,6 @@ Causal Structure
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>SVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/sVAE" class="github-link">
@@ -68,7 +66,6 @@ Causal Structure
 
            <td><ul><li>Diffusion</li><li>Auxilary Classifiers</li></ul></td>
 
-           <td><ul><li>AnnealVAE</li><li>DDPM</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -82,7 +79,6 @@ Causal Structure
 
            <td><ul><li>Factor Analysis</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>Sparse Factor Analysis</li><li>Supervised factor analysis</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xinhe-lab/GSFA" class="github-link">
@@ -99,7 +95,6 @@ Causal Structure
 
            <td><ul><li>Continuous optimization for acyclicity</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xunzheng/notears" class="github-link">
@@ -116,7 +111,6 @@ Causal Structure
 
            <td><ul><li>Continuous optimization for acyclicity</li><li>DNN</li></ul></td>
 
-           <td><ul><li>NOTEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xunzheng/notears" class="github-link">
@@ -133,7 +127,6 @@ Causal Structure
 
            <td><ul><li>Continuous optimization for acyclicity</li><li>GNN</li></ul></td>
 
-           <td><ul><li>NOTEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/fishmoon1234/DAG-GNN" class="github-link">
@@ -150,7 +143,6 @@ Causal Structure
 
            <td><ul><li>Graph interventions</li><li>DNN</li><li>Normalizing-Flows</li></ul></td>
 
-           <td><ul><li>NOTEARS</li><li>Normalizing Flows</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/slachapelle/dcdi" class="github-link">
@@ -167,7 +159,6 @@ Causal Structure
 
            <td><ul><li>Graph interventions</li><li>DNN</li><li>Residual Flow\nSteady-State ODE</li></ul></td>
 
-           <td><ul><li>NOTEARS</li><li>DCDI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/nodags-flows" class="github-link">
@@ -184,7 +175,6 @@ Causal Structure
 
            <td><ul><li>Graph interventions</li><li>Ornstein–Uhlenbeck process\n-Steady-State ODE</li></ul></td>
 
-           <td><ul><li>Dictys</li><li>NODAGS-Flow</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/PMBio/bicycle" class="github-link">
@@ -201,7 +191,6 @@ Causal Structure
 
            <td><ul><li>VAE</li><li>Disentanglement via Virtual Counterfactuals</li></ul></td>
 
-           <td><ul><li>DSCM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/uhlerlab/discrepancy_vae" class="github-link">
@@ -218,7 +207,6 @@ Causal Structure
 
            <td><ul><li>Factor Model</li><li>DAGs</li><li>Latent DAGs</li></ul></td>
 
-           <td><ul><li>DCDI</li><li>NOTEARS</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/dcdfg" class="github-link">
@@ -235,7 +223,6 @@ Causal Structure
 
            <td><ul><li>Ornstein–Uhlenbeck process</li><li>Steady-State ODE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/pinellolab/dictys" class="github-link">
@@ -252,7 +239,6 @@ Causal Structure
 
            <td><ul><li>Amortized pre-training</li><li>Variational Inference</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/larslorch/avici" class="github-link">
@@ -269,7 +255,6 @@ Causal Structure
 
            <td><ul><li>PC Algorithm</li></ul></td>
 
-           <td><ul><li>PC Algorithm</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="http://uhlerlab.github.io/causaldag/dci" class="github-link">
@@ -286,7 +271,6 @@ Causal Structure
 
            <td><ul><li>Amortized pre-training</li><li>Transfomer</li><li>Graph Attention</li></ul></td>
 
-           <td><ul><li>GIES</li><li>AVICI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/rmwu/sea" class="github-link">
@@ -303,7 +287,6 @@ Causal Structure
 
            <td><ul><li>Discrepancy-VAE architecture</li><li>VAE</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>Discrepancy-VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ML4BM-Lab/SENA" class="github-link">
@@ -320,7 +303,6 @@ Causal Structure
 
            <td><ul><li>Graph interventions</li><li>Graph-ODE</li></ul></td>
 
-           <td><ul><li>PC Algorithm</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KrishnaswamyLab/RiTINI" class="github-link">
@@ -337,7 +319,6 @@ Causal Structure
 
            <td><ul><li>ODE</li><li>Optimal Transp</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -351,7 +332,6 @@ Causal Structure
 
            <td><ul><li>Regression model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -364,14 +344,13 @@ Causal Structure
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

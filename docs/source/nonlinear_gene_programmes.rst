@@ -21,7 +21,7 @@ Nonlinear Gene Programmes
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>ZINB Likelihood</li><li>Protein-Count (totalVI) Likelihood</li><li>Contrastive VAE</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>scVI / totalVI</li><li>cVAE</li><li>Conditional VAE</li><li>mmVAE (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi" class="github-link">
@@ -51,7 +50,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/multiGroupVI" class="github-link">
@@ -68,7 +66,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>VAE</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>scVI</li><li>iVAE</li><li>β-TCVAE</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/theislab/inVAE" class="github-link">
@@ -85,7 +82,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>NB likelihood</li><li>Domain-Adversarial NNs</li><li>VAE</li><li>Addative Shift</li></ul></td>
 
-           <td><ul><li>DANN</li><li>DIVA</li><li>CPA</li><li>scVI</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -99,7 +95,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>SVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/sVAE" class="github-link">
@@ -116,7 +111,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/contrastive_vi_plus" class="github-link">
@@ -133,7 +127,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Addative Decoders</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>Addative Decoder ICA</li><li>scVI</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="http://github.com/theislab/drvi" class="github-link">
@@ -150,7 +143,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Adversarial</li><li>Gaussian Mixture Model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZhangLabGT/scDisInFact" class="github-link">
@@ -167,7 +159,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Spatially-informed</li><li>Multi-modal\n</li></ul></td>
 
-           <td><ul><li>Debiased ML</li><li>scVI</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KlugerLab/SIMVI" class="github-link">
@@ -184,7 +175,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
 
-           <td><ul><li>GPT series</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bowang-lab/scGPT" class="github-link">
@@ -201,7 +191,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
-           <td><ul><li>xTrimoGene</li><li>Performer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/biomap-research/scFoundation" class="github-link">
@@ -218,7 +207,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
 
-           <td><ul><li>Geneformer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xCompass-AI/GeneCompass" class="github-link">
@@ -235,7 +223,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>Non-linear Granger Causality</li><li>Stochastic Gate Layers (Feature Selectors)</li><li>Time-resolved / Spatially-informed</li></ul></td>
 
-           <td><ul><li>Transfer Entropy</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -249,7 +236,6 @@ Nonlinear Gene Programmes
 
            <td><ul><li>Autocorrelation</li><li>Pairwise Local Correlations</li></ul></td>
 
-           <td><ul><li>Spatial Autocorrelation Metrics (e.g. Morans I)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/YosefLab/Hotspot/tree/master" class="github-link">
@@ -265,14 +251,13 @@ Nonlinear Gene Programmes
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

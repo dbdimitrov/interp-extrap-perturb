@@ -21,7 +21,7 @@ Perturbation Responsiveness
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Perturbation Responsiveness
 
            <td><ul><li>VAE</li><li>NB likelihood</li></ul></td>
 
-           <td><ul><li>ContrastiveVI</li><li>scVI</li><li>cVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -48,7 +47,6 @@ Perturbation Responsiveness
 
            <td><ul><li>ZINB Likelihood</li><li>VAE</li><li>Contrastive</li></ul></td>
 
-           <td><ul><li>ContrastiveVI (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/contrastive_vi_plus" class="github-link">
@@ -65,7 +63,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
-           <td><ul><li>Mixscape</li><li>OTT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/vandijklab/CINEMA-OT" class="github-link">
@@ -82,7 +79,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Dual (min-max) Formulation OT</li></ul></td>
 
-           <td><ul><li>Makkuva et al</li><li>2020</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bunnech/cellot" class="github-link">
@@ -99,7 +95,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Conditional Resampling</li><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Katsevich-Lab/sceptre" class="github-link">
@@ -116,7 +111,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Gaussian Mixture Model</li><li>Weighted multivariate regression</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://longmanz.github.io/Mixscale/" class="github-link">
@@ -133,7 +127,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Manifold Learning</li><li>Vertex-frequency analysis</li><li>Graph Diffusion</li></ul></td>
 
-           <td><ul><li>PLIER (PK representation)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/KrishnaswamyLab/MELD" class="github-link">
@@ -150,7 +143,6 @@ Perturbation Responsiveness
 
            <td><ul><li>PC Regression</li><li>Tensor Decomposition (PARAFAC)</li><li>Network Diffusion</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZJUFanLab/scRank" class="github-link">
@@ -167,7 +159,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Graph Diffusion</li><li>K-means</li><li>Logistic Regression</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>MELD</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/C0nc/TAICHI" class="github-link">
@@ -184,7 +175,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Topic Model</li></ul></td>
 
-           <td><ul><li>LDA</li><li>Correlated topic model</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bm2-lab/MUSIC" class="github-link">
@@ -201,7 +191,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Gaussian Mixture Model</li><li>LDA\n</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/satijalab/seurat" class="github-link">
@@ -218,7 +207,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Pipeline</li></ul></td>
 
-           <td><ul><li>scMageck (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/davidliwei/PS" class="github-link">
@@ -235,7 +223,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Conditional Resampling</li><li>Generalised Linear Model</li><li>NB Likelihood</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Katsevich-Lab/sceptre" class="github-link">
@@ -252,7 +239,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Random Forrest</li><li>Spatially-Informed</li></ul></td>
 
-           <td><ul><li>Augur (theirs)</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/neurorestore/Vespucci" class="github-link">
@@ -269,7 +255,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Random Forrest</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/neurorestore/Augur" class="github-link">
@@ -286,7 +271,6 @@ Perturbation Responsiveness
 
            <td><ul><li>Generalised Linear Model</li></ul></td>
 
-           <td><ul><li>AUGUR</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/phillipnicol/scDist" class="github-link">
@@ -302,14 +286,13 @@ Perturbation Responsiveness
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

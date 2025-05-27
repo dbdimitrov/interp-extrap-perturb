@@ -21,7 +21,7 @@ Seen Perturbation Prediction
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>conditioned GAN</li></ul></td>
 
-           <td><ul><li>scGEN</li><li>InfoGAN</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/welch-lab/MichiGAN" class="github-link">
@@ -51,7 +50,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Conditional Latent Embeddings</li><li>Addative Shift</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>CPA</li><li>SVAE/SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/insitro/sams-vae" class="github-link">
@@ -68,7 +66,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li><li>Generative/Experience Replay</li></ul></td>
 
-           <td><ul><li>SVAE+</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/svaeligr" class="github-link">
@@ -85,7 +82,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Sparse Mechanism Shift</li></ul></td>
 
-           <td><ul><li>SVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/sVAE" class="github-link">
@@ -102,7 +98,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Diffusion</li><li>Auxilary Classifiers</li></ul></td>
 
-           <td><ul><li>AnnealVAE</li><li>DDPM</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -116,7 +111,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Factor Analysis</li><li>Probabilistic</li></ul></td>
 
-           <td><ul><li>Sparse Factor Analysis</li><li>Supervised factor analysis</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/xinhe-lab/GSFA" class="github-link">
@@ -133,7 +127,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>Adversarial</li><li>Perturbation-covariate Interactions</li></ul></td>
 
-           <td><ul><li>-iVAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Genentech/fcr" class="github-link">
@@ -150,7 +143,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>NB likelihood</li><li>Adversarial</li><li>Gaussian Mixture Model</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ZhangLabGT/scDisInFact" class="github-link">
@@ -167,7 +159,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>scGen</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/theislab/trvae" class="github-link">
@@ -184,7 +175,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/rampasek/DrVAE" class="github-link">
@@ -201,7 +191,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>-ODE</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/sanderlab/CellBox" class="github-link">
@@ -218,7 +207,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>AE</li><li>GAN</li></ul></td>
 
-           <td><ul><li>scGEN</li><li>CPA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ JaneJiayiDong/scPreGAN" class="github-link">
@@ -235,7 +223,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Dual-branch variational bayes causal inference framework</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✗</td>
             <td><a href="https://github.com/yulun-rayn/variational-causal-inference" class="github-link">
@@ -252,7 +239,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Multi-condition PCA</li></ul></td>
 
-           <td><ul><li>PCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/const-ae/pylemur" class="github-link">
@@ -269,7 +255,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/Genentech/MMFM" class="github-link">
@@ -286,7 +271,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kksniak/metric-flow-matching.git" class="github-link">
@@ -303,7 +287,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Converts gene/cell metadata into text embeddings</li><li>Integrates text and expression embeddings</li><li>Fine-tunes embeddings via a lightweight neural adaptor</li></ul></td>
 
-           <td><ul><li>GenePT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/HelloWorldLTY/scELMo" class="github-link">
@@ -320,7 +303,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>VAE</li><li>Disentanglement via Virtual Counterfactuals</li></ul></td>
 
-           <td><ul><li>DSCM</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/uhlerlab/discrepancy_vae" class="github-link">
@@ -337,7 +319,6 @@ Seen Perturbation Prediction
 
            <td><ul><li>Discrepancy-VAE architecture</li><li>VAE</li><li>PK Representations</li></ul></td>
 
-           <td><ul><li>Discrepancy-VAE</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ML4BM-Lab/SENA" class="github-link">
@@ -353,14 +334,13 @@ Seen Perturbation Prediction
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

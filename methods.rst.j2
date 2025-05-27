@@ -23,7 +23,7 @@
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -96,7 +96,7 @@
              {%- endif -%}
            </td>
 
-           {# — INSPIRED BY column — #}
+           {# — Commented OUT INSPIRED BY column -
            <td>
              {%- set raw = m["Inspired by"]|string -%}
              {%- if raw -%}
@@ -126,6 +126,7 @@
                &nbsp;
              {%- endif -%}
            </td>
+           #}
 
            <td class="published">{% if m["Published"] %}✓{% else %}✗{% endif %}</td>
             <td>
@@ -149,14 +150,13 @@
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

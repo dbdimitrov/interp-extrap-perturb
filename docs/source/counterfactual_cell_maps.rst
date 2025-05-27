@@ -21,7 +21,7 @@ Counterfactual Cell Maps
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
-           <td><ul><li>Mixscape</li><li>OTT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/vandijklab/CINEMA-OT" class="github-link">
@@ -51,7 +50,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Dual (min-max) Formulation OT</li></ul></td>
 
-           <td><ul><li>Makkuva et al</li><li>2020</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bunnech/cellot" class="github-link">
@@ -68,7 +66,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Conditioned Dual (min-max) Formulation OT</li></ul></td>
 
-           <td><ul><li>Amos et al.</li><li>2017</li><li>Makkuva et al.</li><li>2020</li><li>CellOT (theirs)</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/bunnech/condot/tree/main" class="github-link">
@@ -85,7 +82,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Optimal Transport</li><li>Multi-modal</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://genentech.github.io/Perturb-OT/" class="github-link">
@@ -102,7 +98,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="github.com/Genentech/MMFM" class="github-link">
@@ -119,7 +114,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/kksniak/metric-flow-matching.git" class="github-link">
@@ -136,7 +130,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Optimal Transport</li><li>Multi-modal</li><li>Conditional Flow Matching</li></ul></td>
 
-           <td><ul><li>CellFlow</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/CFGen" class="github-link">
@@ -153,7 +146,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
-           <td><ul><li>CellOT</li></ul></td>
 
            <td class="published">✗</td>
             <td>✗</td>
@@ -167,7 +159,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/broadinstitute/wot" class="github-link">
@@ -184,7 +175,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>Low-rank OT</li><li>Sparse Map OT</li></ul></td>
 
-           <td><ul><li>Waddington-OT</li><li>NovoSpaRc</li><li>PASTE</li><li>OTT</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/theislab/moscot" class="github-link">
@@ -201,7 +191,6 @@ Counterfactual Cell Maps
 
            <td><ul><li>VAE</li><li>OT</li><li>Attention</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/jiang-q19/scPRAM" class="github-link">
@@ -217,14 +206,13 @@ Counterfactual Cell Maps
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);

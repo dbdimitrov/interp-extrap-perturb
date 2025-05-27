@@ -21,7 +21,7 @@ Feature Relationships
        <thead>
          <tr>
            <th>Expand</th><th>Method</th><th>Year</th><th>Task</th>
-           <th>Model</th><th>Inspired by</th><th>Published</th><th>Code</th>
+           <th>Model</th><th>Published</th><th>Code</th>
          </tr>
        </thead>
        <tbody>
@@ -34,7 +34,6 @@ Feature Relationships
 
            <td><ul><li>K-hop Convolution</li><li>Mean field estimation</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Teichlab/celcomen" class="github-link">
@@ -51,7 +50,6 @@ Feature Relationships
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
-           <td><ul><li>xTrimoGene</li><li>Performer</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/biomap-research/scFoundation" class="github-link">
@@ -68,7 +66,6 @@ Feature Relationships
 
            <td><ul><li>Spatial Niches</li><li>Random Forrest (or other regression models)</li></ul></td>
 
-           <td><ul><li>SVCA</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://saezlab.github.io/mistyR/" class="github-link">
@@ -85,7 +82,6 @@ Feature Relationships
 
            <td><ul><li>Generalised Gaussian Graphical Model</li><li>Spatially-informed</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
 
            <td class="published">✓</td>
             <td><a href="https://github.com/sschrod/SpaCeNet" class="github-link">
@@ -102,7 +98,6 @@ Feature Relationships
 
            <td><ul><li>Spatially-informed</li><li>Random Forrest (or other regression models)</li><li>Convolution Operations</li></ul></td>
 
-           <td><ul><li>MISTy</li></ul></td>
 
            <td class="published">✓</td>
             <td>✗</td>
@@ -115,14 +110,13 @@ Feature Relationships
 
    <script>
    jQuery(function($){
-     $('#methods-table').DataTable({
-       columns: [null,null,null,null,null,null,null,null],
-       order:      [[2,'desc']],
-       pageLength: 5,
-       lengthMenu: [5,10,20,50,200],
-       scrollX:    true,
-       autoWidth:  false
-     });
+      $('#methods-table').DataTable({
+        order:      [[2,'desc']],
+        pageLength: 5,
+        lengthMenu: [5,10,20,50,200],
+        scrollX:    true,
+        autoWidth:  false
+      });
      $('#methods-table tbody').on('click','td.details-control',function(){
        var tr = $(this).closest('tr'),
            row = $('#methods-table').DataTable().row(tr);
