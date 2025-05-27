@@ -128,12 +128,17 @@
            </td>
 
            <td class="published">{% if m["Published"] %}✓{% else %}✗{% endif %}</td>
-           <td>
-             <a href="{{ m['Code Availability'] }}" class="github-link">
-               <i class="fab fa-github" aria-hidden="true"></i>
-               <span class="sr-only">GitHub</span>
-             </a>
-           </td>
+            <td>
+              {%- set url = m['Code Availability'] -%}
+              {%- if url and url != '-' and url|lower not in ['nan', 'na', 'none'] -%}
+                <a href="{{ url }}" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a>
+              {%- else -%}
+                ✗
+              {%- endif -%}
+            </td>
          </tr>
        {% endfor %}
        </tbody>
