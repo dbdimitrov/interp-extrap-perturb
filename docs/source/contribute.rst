@@ -34,5 +34,5 @@ If you wish to preview the changes locally before pushing your PR:
 conda env create -f environment.yml
 # once created:
 conda activate iep-singlecell
-python generate_methods.py && make clean && make html
+python generate_methods.py && make -C docs clean html
 ```
