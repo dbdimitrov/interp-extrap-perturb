@@ -43,7 +43,7 @@ STATIC_YAML   = BASE_DIR / "methods.yaml"
 TASKLIST_TXT  = BASE_DIR / "tasklist.txt"
 TEMPLATE_DIR  = BASE_DIR
 TEMPLATE_FN   = "methods.rst.j2"
-OUTPUT_DIR    = BASE_DIR / "source"
+OUTPUT_DIR    = BASE_DIR / "docs" / "source"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 ################################################################################
