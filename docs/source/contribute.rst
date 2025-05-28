@@ -6,7 +6,7 @@ Thank you for considering contributions to this project! We welcome new methods,
 1. Add or update methods in the YAML file
 -----------------------------------------
 
-- **Location:** The `methods.yaml` file lives at the project root (one level above `source/` and `build/`).
+- **Location:** The `methods.yaml` file lives at the project root.
 - **Format:** Each method entry should include the fields:
   - `Method`: Name of the method
   - `Year`: Publication year
