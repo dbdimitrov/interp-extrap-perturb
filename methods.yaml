@@ -409,7 +409,7 @@
     spatial transcriptomics data by processing gene expression through two parallel
     interaction functions. One function uses a single graph convolution layer (1-hop
     GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling,
-    while the other applies a linear layer to model regulation within individual cells.
+    while the other uses a linear layer to model regulation within individual cells.
     Training maximises an approximate likelihood that aligns the model-predicted weight
     matrices to the average gene expression across all cells. Simcomen then leverages
     these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene
@@ -1989,7 +1989,6 @@
   Publication: https://openreview.net/forum?id=o16sYKHk3S&noteId=2EQ6cmfPHg
   Published: true
   Task:
-  - Causal Structure
   - Multi-component Disentanglement
   - Seen Perturbation Prediction
   - Combinatorial Effect Prediction
@@ -2220,7 +2219,6 @@
   Published: true
   Task:
   - Perturbation Responsiveness
-  - Perturbation Responsiveness
   Year: 2021
 - Code Availability: https://github.com/csglab/GEDI
   Description: GEDI learns a shared latent space and, for each sample, estimates a
@@ -2239,7 +2237,6 @@
   Publication: https://www.nature.com/articles/s41467-024-50963-0?fromPaywallRec=false
   Published: true
   Task:
-  - Differential Analysis
   - Linear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/yelabucsf/scrna-parameter-estimation
