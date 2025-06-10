@@ -63,14 +63,14 @@ Unsupervised Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Celcomen (CCE) disentangles intra- and inter-cellular gene regulation in spatial transcriptomics data by processing gene expression through two parallel interaction functions. One function uses a graph convolution layer (k-hop GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling, while the other applies a linear layer to model regulation within individual cells. During training, Celcomen combines a normalization term—computed via a mean field approximation that decomposes the overall likelihood into a mean contribution and an interaction contribution - with a similarity measure that directly compares each cell’s predicted gene expression (obtained via message passing) to its actual expression, thereby driving the model to adjust its interaction matrices so that the predictions closely match the observed data. Simcomen (SCE) then leverages these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico experiments.">
+         <tr data-description="Celcomen disentangles intra- and inter-cellular gene regulation in spatial transcriptomics data by processing gene expression through two parallel interaction functions. One function uses a single graph convolution layer (1-hop GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling, while the other applies a linear layer to model regulation within individual cells. Training maximises an approximate likelihood that aligns the model-predicted weight matrices to the average gene expression across all cells. Simcomen then leverages these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico experiments.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/pdf?id=Tqdsruwyac">Celcomen</a></td>
            <td>2025</td>
 
            <td><ul><li>Unsupervised Disentanglement</li><li>Feature Relationships</li></ul></td>
 
-           <td><ul><li>K-hop Convolution</li><li>Mean field estimation</li><li>Spatially-informed</li></ul></td>
+           <td><ul><li>K-hop Convolution</li><li>Spatially-informed</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -95,7 +95,7 @@ Unsupervised Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="SIMVI is a spatially-informed VAE that disentangles gene expression variability into two latent factors: an intrinsic variable z, which captures cell type–specific signals, and a spatial variable s, which quantifies spatial effects. The spatial latent variable s is inferred by aggregating the intrinsic representations of neighboring cells via a Graph Attention Network (GAT), thereby incorporating local spatial context. To promote independence between z and s, SIMVI employs an asymmetric regularization on z using maximum mean discrepancy (MMD) or, alternatively, a  mutual information estimator, ensuring that z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased machine learning principles, the model decomposes gene expression variance by treating s as a continuous treatment and z as confounding covariates, thereby quantifying the specific impact of spatial context on gene expression.">
+         <tr data-description="SIMVI is a spatially-informed VAE that disentangles gene expression variability into two latent factors: an intrinsic variable z, which captures cell type–specific signals, and a spatial variable s, which quantifies spatial effects. The spatial latent variable s is inferred by aggregating the intrinsic representations of neighboring cells via a Graph Attention Network, thereby incorporating local spatial context. To promote independence between z and s, SIMVI employs an asymmetric regularization on z using maximum mean discrepancy or, alternatively, a  mutual information estimator, ensuring that z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased machine learning principles, the model decomposes gene expression variance by treating s as a continuous treatment and z as confounding covariates, thereby quantifying the specific impact of spatial context on gene expression.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-025-58089-7">SIMVI</a></td>
            <td>2025</td>
@@ -116,13 +116,29 @@ Unsupervised Disentanglement
            <td><a href="https://www.nature.com/articles/s41592-023-02040-5#Sec11">CINEMA-OT</a></td>
            <td>2023</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Perturbation Responsiveness</li><li>Unsupervised Disentanglement</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Perturbation Responsiveness</li><li>Unsupervised Disentanglement</li></ul></td>
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
 
            <td class="published">✓</td>
             <td><a href="https://github.com/vandijklab/CINEMA-OT" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
+         </tr>
+         <tr data-description="Decipher is a hierarchical deep generative model to integrate and visualize single-cell RNA-seq data from both normal and perturbed conditions, identifying shared and disrupted cell-state trajectories. Its architecture includes dual latent spaces -a low-dimensional state for detailed cell-state modeling and a two-dimensional space for visualization-connected to gene expression through linear or single-layer neural network transformations. The model aligns trajectories by maintaining shared transcriptional programs for common biological processes across conditions.">
+           <td class="details-control"></td>
+           <td><a href="https://www.biorxiv.org/content/10.1101/2023.11.11.566719v2.full">Decipher</a></td>
+           <td>2024</td>
+
+           <td><ul><li>Unsupervised Disentanglement</li><li>Linear Gene Programmes</li></ul></td>
+
+           <td><ul><li>VAE</li><li>Linear Decoder</li></ul></td>
+
+
+           <td class="published">✗</td>
+            <td><a href="https://github.com/azizilab/decipher" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>

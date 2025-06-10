@@ -31,7 +31,7 @@ Linear Gene Programmes
          </tr>
        </thead>
        <tbody>
-         <tr data-description="A modified version of PCA, where the covariance matrix (COV) is the difference between COV(case/target) and αCOV(control/background). The hyperparameter α is used to balance having a high case variance and a low control variance. To provide some intuition, when α is 0, the model reduces to classic PCA on the case data.  Optimal alphas (equal to k clusters) are identified using spectral clustering over a range of cPCA runs with different alphas, with selection based on the similarity of cPCA outputs.">
+         <tr data-description="A modified version of PCA, where the covariance matrix (COV) is the difference between COV(case/perturbed) and αCOV(control/background). The hyperparameter α is used to balance having a high case variance and a low control variance. To provide some intuition, when α is 0, the model reduces to classic PCA on the case data. Optimal alphas (equal to k clusters) are identified using spectral clustering over a range of cPCA runs with different alphas, with selection based on the similarity of cPCA outputs.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-018-04608-8#Sec7">cPCA</a></td>
            <td>2018</td>
@@ -47,7 +47,7 @@ Linear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A non-negative matrix factorisation that decomposes gene expression matrices into common and specific patterns. For each condition, the observed expression matrix is approximated as the sum of a common component - represented by a common feature matrix (Wc) with condition-specific coefficient matrices (Hc₁, Hc₂) - and a specific component unique to each condition, represented by its own feature matrix (Wsᵢ) and coefficients (Hsᵢ). The model uses an alternating approach to minimize the combined reconstruction error (squared Frobenius norm) across common and shared components.">
+         <tr data-description="A non-negative matrix factorisation that decomposes gene expression matrices into common and condition-specific patterns. For each condition, the observed expression matrix is approximated as the sum of a common component - represented by a common feature matrix with condition-specific coefficient matrices - and a specific component unique to each condition, represented by its own feature matrix  and coefficients. The model uses an alternating approach to minimize the combined reconstruction error (squared Frobenius norm) across common and shared components.">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/nar/article/47/13/6606/5512984">CSMF</a></td>
            <td>2019</td>
@@ -63,7 +63,7 @@ Linear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A family of contrastive latent variable models (cLVMs), where case data are modeled as the sum of background and salient latent embeddings, while control data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust cLVM with a Student&#39;s t distribution - cLVM with automatic relevance determination (ARD) to regularize (select) the columns of the weight matrix - contrastive VAE, as a non-linear extension of the framework The shared concept across these models is that each model learns a shared set of latent variables for the background and target data, while salient latent variables are learnt solely for the target data.">
+         <tr data-description="A family of contrastive latent variable models (cLVMs), where case data are modeled as the sum of background and salient latent embeddings, while control data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust cLVM with a Student&#39;s t distribution - cLVM with automatic relevance determination to regularise the columns of the weight matrix - contrastive VAE, as a non-linear extension of the framework The shared concept across these models is that each model learns a shared set of latent variables for the background and target data, while salient latent variables are learnt solely for the target data.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/1811.06094">cLVM</a></td>
            <td>2019</td>
@@ -79,7 +79,7 @@ Linear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A sparse version of contrastive PCA that enhances interpretability in high-dimensional settings by integrating ℓ1regularization into an iterative procedure to estimate sparse loadings and principal components">
+         <tr data-description="A sparse version of contrastive PCA that enhances interpretability in high-dimensional settings by integrating l1 regularization into an iterative procedure to estimate sparse loadings and principal components">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/36/11/3422/5807607">scPCA</a></td>
            <td>2020</td>
@@ -159,14 +159,14 @@ Linear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CellCap is a deep generative model that extends CPA by incorporating cross-attention mechanisms between cell states, aimed at understanding transcriptional response programs and reconstructing perturbed profiles. Further, CellCap uses a variational autoencoder (VAE) framework with a linear decoder to identify sparse and interpretable latent factors.">
+         <tr data-description="CellCap is a deep generative model that extends CPA by incorporating cross-attention mechanisms between cell state and perturbation response (i.e., its basal latent space and the perturbation design matrix). Further, CellCap uses a variational autoencoder (VAE) framework with a linear decoder to identify sparse and interpretable latent factors.">
            <td class="details-control"></td>
            <td><a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(25)00078-X">CellCap</a></td>
            <td>2024</td>
 
            <td><ul><li>Multi-component Disentanglement</li><li>Linear Gene Programmes</li></ul></td>
 
-           <td><ul><li>VAE</li><li>Attention</li></ul></td>
+           <td><ul><li>VAE</li><li>Attention</li><li>Linear Decoder</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -241,7 +241,7 @@ Linear Gene Programmes
          </tr>
          <tr data-description="NicheCompass, the spatial sucessor of ExpiMap, employs multiple decoders: one graph decoder reconstructs the spatial adjacency matrix via an adjacency loss to ensure that spatially-neighboring observations have similar latent representations, while separate (masked) decoders - one for each cell’s own features and one for its aggregated neighborhood features - reconstruct the omics data. By masking the data reconstruction according to prior knowledge, each latent variable is associated with a gene program (subclassified according inter- or  intracellular signalling). Additionally, it learns de novo gene programs that capture novel, spatially coherent expression patterns, not covered by the prior knowledge. By default, it replaces the Group lasso loss of Expimap with a a dropout mechanism to prune uninformative prior knowledge sets.">
            <td class="details-control"></td>
-           <td><a href="https://scholar.google.com/scholar_url?url=https://www.nature.com/articles/s41588-025-02120-6&hl=en&sa=X&d=4385431678967561370&ei=jfHcZ9q4G5yV6rQP4Zul2Qo&scisig=AFWwaea2QWdmQLBJLz29SV6YD2cm&oi=scholaralrt&hist=dDujacgAAAAJ:12160454169637496643:AFWwaebf1S6Ukws-5zfatGcdJi9a&html=&pos=0&folt=art">NicheCompass</a></td>
+           <td><a href="https://www.nature.com/articles/s41588-025-02120-6">NicheCompass</a></td>
            <td>2024</td>
 
            <td><ul><li>Linear Gene Programmes</li></ul></td>
@@ -324,7 +324,7 @@ Linear Gene Programmes
            <td><a href="https://www.sciencedirect.com/science/article/pii/S009286741930039X?via%3Dihub">Waddington-OT</a></td>
            <td>2019</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Linear Gene Programmes</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Linear Gene Programmes</li></ul></td>
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li></ul></td>
 
@@ -415,7 +415,7 @@ Linear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Mixscape aims to classify CRISPR-targeted cells into perturbed and not perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature by subtracting each cell’s mRNA expression from the average of its k nearest NT (non-targeted) control neighbors. Differential expression testing between targeted and NT cells then identifies a set of DEGs that capture the perturbation response. These DEGs are used to define a perturbation vector—essentially, the average difference in expression between targeted and NT cells—which projects each cell’s DEG expression onto a single perturbation score. The Gaussian mixture model is applied to these perturbation scores, with one component fixed to match the NT distribution, while the other represents the perturbation effect. This model assigns probabilities that classify each targeted cell as either perturbed or escaping. Additionally, the authors propose visualization with Linear Discriminant Analysis (LDA) and UMAP, aiming to identify a low-dimensional subspace that maximally discriminates the mixscape-derived classes.">
+         <tr data-description="Mixscape aims to classify CRISPR-targeted cells into perturbed and not perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature by subtracting each cell’s mRNA expression from the average of its k nearest NT (non-targeted) control neighbors. Differential expression testing between targeted and NT cells then identifies a set of DEGs that capture the perturbation response. These DEGs are used to define a perturbation vector-essentially, the average difference in expression between targeted and NT cells, which projects each cell’s DEG expression onto a single perturbation score. The Gaussian mixture model is applied to these perturbation scores, with one component fixed to match the NT distribution, while the other represents the perturbation effect. This model assigns probabilities that classify each targeted cell as either perturbed or escaping. Additionally, the authors propose visualization with Linear Discriminant Analysis and UMAP, aiming to identify a low-dimensional subspace that maximally discriminates the mixscape-derived classes.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41588-021-00778-2#Sec11">Mixscape</a></td>
            <td>2021</td>
@@ -459,6 +459,22 @@ Linear Gene Programmes
 
            <td class="published">✓</td>
             <td><a href="https://github.com/livnatje/DIALOGUE" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
+         </tr>
+         <tr data-description="Decipher is a hierarchical deep generative model to integrate and visualize single-cell RNA-seq data from both normal and perturbed conditions, identifying shared and disrupted cell-state trajectories. Its architecture includes dual latent spaces -a low-dimensional state for detailed cell-state modeling and a two-dimensional space for visualization-connected to gene expression through linear or single-layer neural network transformations. The model aligns trajectories by maintaining shared transcriptional programs for common biological processes across conditions.">
+           <td class="details-control"></td>
+           <td><a href="https://www.biorxiv.org/content/10.1101/2023.11.11.566719v2.full">Decipher</a></td>
+           <td>2024</td>
+
+           <td><ul><li>Unsupervised Disentanglement</li><li>Linear Gene Programmes</li></ul></td>
+
+           <td><ul><li>VAE</li><li>Linear Decoder</li></ul></td>
+
+
+           <td class="published">✗</td>
+            <td><a href="https://github.com/azizilab/decipher" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>

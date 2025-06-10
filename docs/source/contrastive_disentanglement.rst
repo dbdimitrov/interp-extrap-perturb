@@ -31,7 +31,7 @@ Contrastive Disentanglement
          </tr>
        </thead>
        <tbody>
-         <tr data-description="A modified version of PCA, where the covariance matrix (COV) is the difference between COV(case/target) and αCOV(control/background). The hyperparameter α is used to balance having a high case variance and a low control variance. To provide some intuition, when α is 0, the model reduces to classic PCA on the case data.  Optimal alphas (equal to k clusters) are identified using spectral clustering over a range of cPCA runs with different alphas, with selection based on the similarity of cPCA outputs.">
+         <tr data-description="A modified version of PCA, where the covariance matrix (COV) is the difference between COV(case/perturbed) and αCOV(control/background). The hyperparameter α is used to balance having a high case variance and a low control variance. To provide some intuition, when α is 0, the model reduces to classic PCA on the case data. Optimal alphas (equal to k clusters) are identified using spectral clustering over a range of cPCA runs with different alphas, with selection based on the similarity of cPCA outputs.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-018-04608-8#Sec7">cPCA</a></td>
            <td>2018</td>
@@ -47,7 +47,7 @@ Contrastive Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A non-negative matrix factorisation that decomposes gene expression matrices into common and specific patterns. For each condition, the observed expression matrix is approximated as the sum of a common component - represented by a common feature matrix (Wc) with condition-specific coefficient matrices (Hc₁, Hc₂) - and a specific component unique to each condition, represented by its own feature matrix (Wsᵢ) and coefficients (Hsᵢ). The model uses an alternating approach to minimize the combined reconstruction error (squared Frobenius norm) across common and shared components.">
+         <tr data-description="A non-negative matrix factorisation that decomposes gene expression matrices into common and condition-specific patterns. For each condition, the observed expression matrix is approximated as the sum of a common component - represented by a common feature matrix with condition-specific coefficient matrices - and a specific component unique to each condition, represented by its own feature matrix  and coefficients. The model uses an alternating approach to minimize the combined reconstruction error (squared Frobenius norm) across common and shared components.">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/nar/article/47/13/6606/5512984">CSMF</a></td>
            <td>2019</td>
@@ -63,7 +63,7 @@ Contrastive Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A family of contrastive latent variable models (cLVMs), where case data are modeled as the sum of background and salient latent embeddings, while control data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust cLVM with a Student&#39;s t distribution - cLVM with automatic relevance determination (ARD) to regularize (select) the columns of the weight matrix - contrastive VAE, as a non-linear extension of the framework The shared concept across these models is that each model learns a shared set of latent variables for the background and target data, while salient latent variables are learnt solely for the target data.">
+         <tr data-description="A family of contrastive latent variable models (cLVMs), where case data are modeled as the sum of background and salient latent embeddings, while control data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust cLVM with a Student&#39;s t distribution - cLVM with automatic relevance determination to regularise the columns of the weight matrix - contrastive VAE, as a non-linear extension of the framework The shared concept across these models is that each model learns a shared set of latent variables for the background and target data, while salient latent variables are learnt solely for the target data.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/1811.06094">cLVM</a></td>
            <td>2019</td>
@@ -95,7 +95,7 @@ Contrastive Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A sparse version of contrastive PCA that enhances interpretability in high-dimensional settings by integrating ℓ1regularization into an iterative procedure to estimate sparse loadings and principal components">
+         <tr data-description="A sparse version of contrastive PCA that enhances interpretability in high-dimensional settings by integrating l1 regularization into an iterative procedure to estimate sparse loadings and principal components">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/36/11/3422/5807607">scPCA</a></td>
            <td>2020</td>
@@ -217,7 +217,7 @@ Contrastive Disentanglement
            <td class="published">✓</td>
             <td>✗</td>
          </tr>
-         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy (MMD) between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
+         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/2411.08072">ContrastiveVI+</a></td>
            <td>2024</td>

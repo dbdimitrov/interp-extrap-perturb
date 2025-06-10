@@ -95,7 +95,7 @@ Seen Perturbation Prediction
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph. The use of a diffusion model, instead of a traditional variational autoencoder, improves sample fidelity and better preserves underlying causal relationships during generation.">
+         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/12/17/2024.12.11.628077.full.pdf">CausCell</a></td>
            <td>2024</td>
@@ -106,7 +106,10 @@ Seen Perturbation Prediction
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/bm2-lab/CausCell" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="GSFA is a two-layer, guided Factor Analysis model that quantifies the effects of genetic perturbations on latent factors. The model first factorizes the expression matrix Y into a factor matrix Z (normal prior) and gene loadings W (normal-mixture prior). Then, it captures the effect (β) of perturbation on factors using multivariate linear regression. Spike-and-slab prior is used to enforce sparsity on β, which can also analogously be seen as a causal graph. The linearity of GSFA further enables perturbation-associated, differentially-expressed genes to be identified. GSFA uses Gibbs sampling for inference.">
            <td class="details-control"></td>
@@ -156,7 +159,7 @@ Seen Perturbation Prediction
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="trVAE enhances the scGEN model by incorporating condition embeddings and leveraging maximum mean discrepancy (MMD) regularization to manage distributions across binary conditions. By utilizing a conditional variational autoencoder (CVAE), trVAE aims to create a compact and consistent representation of cross-condition distributions, enhancing out-of-distribution (OOD) prediction accuracy. ">
+         <tr data-description="trVAE enhances the scGEN model by incorporating condition embeddings and leveraging maximum mean discrepancy regularization to manage distributions across binary conditions. By utilizing a conditional variational autoencoder, trVAE aims to create a compact and consistent representation of cross-condition distributions, enhancing out-of-distribution prediction accuracy. ">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055927#409207818">trVAE</a></td>
            <td>2020</td>
@@ -172,7 +175,7 @@ Seen Perturbation Prediction
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Dr.VAE uses a Variational Autoencoder (VAE) architecture to predict drug response from transcriptomic perturbation signatures. It models transcription change as a linear function within a low-dimensional latent space, defined by encoder and decoder neural networks. For paired expression samples from treated and control conditions, Dr.VAE accurately predicts treated expression.">
+         <tr data-description="Dr.VAE uses a Variational Autoencoder architecture to predict drug response from transcriptomic perturbation signatures. It models transcription change as a linear function within a low-dimensional latent space, defined by encoder and decoder neural networks. For paired expression samples from treated and control conditions, Dr.VAE accurately predicts treated expression.">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/35/19/3743/5372343">Dr.VAE</a></td>
            <td>2019</td>
@@ -195,7 +198,7 @@ Seen Perturbation Prediction
 
            <td><ul><li>Context Transfer</li><li>Seen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
-           <td><ul><li>-ODE</li></ul></td>
+           <td><ul><li>ODE</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -236,7 +239,7 @@ Seen Perturbation Prediction
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="LEMUR is a PCA based algorithm that defines condition dependent embedings to analyze differences in differentialy expressed genes across conditions. For each condition a separate embeding matrix is learned and reconstructed using a shared matrix. This is used to generate counterfactual estimates for each cell and condition, which is used to infer DE neighborhoods. ">
+         <tr data-description="LEMUR is a PCA based algorithm that defines condition dependent embedings to analyze differences in differentialy expressed genes across conditions. For each condition a separate embeding matrix is learned and reconstructed using a shared matrix. This is used to generate counterfactual estimates for each cell and condition, which is used to infer label-free DE genes and neighborhoods. ">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41588-024-01996-0">LEMUR</a></td>
            <td>2025</td>
@@ -257,7 +260,7 @@ Seen Perturbation Prediction
            <td><a href="https://openreview.net/pdf?id=hwnObmOTrV">MMFM</a></td>
            <td>2024</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
@@ -273,7 +276,7 @@ Seen Perturbation Prediction
            <td><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/f381114cf5aba4e45552869863deaaa7-Paper-Conference.pdf">MFM</a></td>
            <td>2024</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
@@ -300,7 +303,7 @@ Seen Perturbation Prediction
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings—a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice—once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
+         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings - a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice - once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/forum?id=o16sYKHk3S&noteId=2EQ6cmfPHg">discrepancy-VAE</a></td>
            <td>2023</td>
@@ -328,6 +331,22 @@ Seen Perturbation Prediction
 
            <td class="published">✓</td>
             <td><a href="https://github.com/ML4BM-Lab/SENA" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
+         </tr>
+         <tr data-description="PRESCIENT models cellular differentiation as a stochastic diffusion process, where the drift term is parameterised as the negative gradient of a neural network-learned potential function. The model is trained using time-series single-cell RNA-seq data, and fits the potential function by minimizing the regularised Wasserstein distance between simulated and observed cell populations at each time point, explicitly incorporating cell proliferation by weighting cells according to their expected number of descendants. PRESCIENT can simulate differentiation trajectories for both observed and (in silico) perturbed cell states, enabling the prediction of cell fate outcomes under various genetic interventions.">
+           <td class="details-control"></td>
+           <td><a href="https://www.nature.com/articles/s41467-021-23518-w">Prescient</a></td>
+           <td>2021</td>
+
+           <td><ul><li>Trace Cell Populations</li><li>Seen Perturbation Prediction</li><li>Context Transfer</li></ul></td>
+
+           <td><ul><li>Diffusion</li></ul></td>
+
+
+           <td class="published">✓</td>
+            <td><a href="https://github.com/gifford-lab/prescient" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>

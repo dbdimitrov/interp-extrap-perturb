@@ -95,7 +95,7 @@ Multi-component Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph. The use of a diffusion model, instead of a traditional variational autoencoder, improves sample fidelity and better preserves underlying causal relationships during generation.">
+         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/12/17/2024.12.11.628077.full.pdf">CausCell</a></td>
            <td>2024</td>
@@ -106,7 +106,10 @@ Multi-component Disentanglement
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/bm2-lab/CausCell" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="A Group Factor Analysis for multi-omics data that separates latent variables into guided factors, linked to predefined (observed) variables, and unguided factors. This structure ensures that each observed variable (known biological and technical effects) is captured by a corresponding guided factor, disentangling the observed variables from the residual information, which is in turn captured by the unguided factors. Additionally, SOFA works with both continous and categorical guiding variables and it employs a hierarchical horseshoe prior on loading weights, applying adaptive shrinkage at the view, factor, and feature levels.">
            <td class="details-control"></td>
@@ -172,14 +175,14 @@ Multi-component Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CellCap is a deep generative model that extends CPA by incorporating cross-attention mechanisms between cell states, aimed at understanding transcriptional response programs and reconstructing perturbed profiles. Further, CellCap uses a variational autoencoder (VAE) framework with a linear decoder to identify sparse and interpretable latent factors.">
+         <tr data-description="CellCap is a deep generative model that extends CPA by incorporating cross-attention mechanisms between cell state and perturbation response (i.e., its basal latent space and the perturbation design matrix). Further, CellCap uses a variational autoencoder (VAE) framework with a linear decoder to identify sparse and interpretable latent factors.">
            <td class="details-control"></td>
            <td><a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(25)00078-X">CellCap</a></td>
            <td>2024</td>
 
            <td><ul><li>Multi-component Disentanglement</li><li>Linear Gene Programmes</li></ul></td>
 
-           <td><ul><li>VAE</li><li>Attention</li></ul></td>
+           <td><ul><li>VAE</li><li>Attention</li><li>Linear Decoder</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -220,7 +223,23 @@ Multi-component Disentanglement
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings—a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice—once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
+         <tr data-description="scPRINT is implemented as a bidirectional transformer, focusing on scalable zero-shot applications to new datasets. During pre-training, it optimises a single composite loss that sums: (1) a denoising objective, which up-samples down-sampled transcript counts via a zero-inflated negative-binomial decoder; (2) a bottleneck reconstruction objective, where the model must regenerate full expression profiles from its compressed cell embedding; and (3) a hierarchical label-prediction objective that forces disentanglement of latent factors for cell type, disease, platform and other metadata. Each gene token is the sum of: a learned protein embedding for its gene ID; an MLP encoding of its log-normalized count; and a positional encoding of its genomic locus . Pre-training contexts consist of 2,200 randomly sampled expressed genes per cell. At inference, cell-specific gene networks are derived from the model’s multi-head attention maps by either averaging all heads or selecting a subset post hoc based on correlation with external priors (e.g., protein–protein interaction databases, ChIP-seq, perturbation-ground-truth networks).">
+           <td class="details-control"></td>
+           <td><a href="https://www.nature.com/articles/s41467-025-58699-1">scPrint</a></td>
+           <td>2025</td>
+
+           <td><ul><li>Gene Programmes</li><li>GRN Inference</li><li>Multi-component Disentanglement</li></ul></td>
+
+           <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>BERT-like Bidirectional transformers (with flashattention2)</li><li>Self-supervised masked regression</li><li>A classifier decoder</li><li>ZINB likelihood decoder</li><li>PK Representations</li></ul></td>
+
+
+           <td class="published">✓</td>
+            <td><a href="https://github.com/cantinilab/scPRINT" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
+         </tr>
+         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings - a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice - once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/forum?id=o16sYKHk3S&noteId=2EQ6cmfPHg">discrepancy-VAE</a></td>
            <td>2023</td>

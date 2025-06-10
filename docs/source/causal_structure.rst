@@ -63,7 +63,7 @@ Causal Structure
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph. The use of a diffusion model, instead of a traditional variational autoencoder, improves sample fidelity and better preserves underlying causal relationships during generation.">
+         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/12/17/2024.12.11.628077.full.pdf">CausCell</a></td>
            <td>2024</td>
@@ -74,7 +74,10 @@ Causal Structure
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/bm2-lab/CausCell" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="GSFA is a two-layer, guided Factor Analysis model that quantifies the effects of genetic perturbations on latent factors. The model first factorizes the expression matrix Y into a factor matrix Z (normal prior) and gene loadings W (normal-mixture prior). Then, it captures the effect (β) of perturbation on factors using multivariate linear regression. Spike-and-slab prior is used to enforce sparsity on β, which can also analogously be seen as a causal graph. The linearity of GSFA further enables perturbation-associated, differentially-expressed genes to be identified. GSFA uses Gibbs sampling for inference.">
            <td class="details-control"></td>
@@ -92,6 +95,19 @@ Causal Structure
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
+         <tr data-description="TODO">
+           <td class="details-control"></td>
+           <td><a href="https://www.nature.com/articles/s42256-023-00719-0">CIV</a></td>
+           <td>2023</td>
+
+           <td><ul><li>Causal Structure</li></ul></td>
+
+           <td><ul><li>Active Learning</li><li>Structural Causal Model</li><li>DAG-Bayesian linear regression</li></ul></td>
+
+
+           <td class="published">✓</td>
+            <td>✗</td>
+         </tr>
          <tr data-description="NOTEARS replaced traditional statistical DAG learning techniques for observational data with a continuous optimization problem, by reformulating the acyclicity constraint. This reduces the computational complexity and facilitated first small scale biological applications. ">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/1803.01422">NOTEARS</a></td>
@@ -99,7 +115,7 @@ Causal Structure
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Continuous optimization for acyclicity</li></ul></td>
+           <td><ul><li>Continuous optimisation for acyclicity</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -115,7 +131,7 @@ Causal Structure
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Continuous optimization for acyclicity</li><li>DNN</li></ul></td>
+           <td><ul><li>Continuous optimisation for acyclicity</li><li>DNN</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -131,7 +147,7 @@ Causal Structure
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Continuous optimization for acyclicity</li><li>GNN</li></ul></td>
+           <td><ul><li>Continuous optimisation for acyclicity</li><li>GNN</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -179,7 +195,7 @@ Causal Structure
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Graph interventions</li><li>Ornstein–Uhlenbeck process\n-Steady-State ODE</li></ul></td>
+           <td><ul><li>Graph interventions</li><li>Ornstein-Uhlenbeck process</li><li>Steady-State ODE</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -188,7 +204,7 @@ Causal Structure
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings—a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice—once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
+         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings - a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice - once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/forum?id=o16sYKHk3S&noteId=2EQ6cmfPHg">discrepancy-VAE</a></td>
            <td>2023</td>
@@ -220,7 +236,7 @@ Causal Structure
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Dictys integrates scRNA-seq and scATAC-seq data to infer gene regulatory networks (GRNs) and their changes across multiple conditions. By leveraging multiomic data, Dictys infers context-specific networks and dynamic GRNs using steady-state solutions of the Ornstein-Uhlenbeck process to model transcriptional kinetics and account for feedback loops. It reconstructs undirected GRNs by detecting transcription factor (TF) binding sites and refining these networks with single-cell transcriptomic data, capturing regulatory shifts that reflect TF activity beyond expression levels.">
+         <tr data-description="Dictys integrates scRNA-seq and scATAC-seq data to infer gene regulatory networks (GRNs) and their changes across multiple conditions. By leveraging multiomic data, Dictys infers context-specific networks and dynamic GRNs using steady-state solutions of the Ornstein-Uhlenbeck process to model transcriptional kinetics and account for feedback loops. It reconstructs GRNs by detecting transcription factor (TF) binding sites and refining these networks with single-cell transcriptomic data, capturing regulatory shifts that reflect TF activity beyond expression levels.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41592-023-01971-3">Dictys</a></td>
            <td>2023</td>
@@ -327,9 +343,12 @@ Causal Structure
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/Bertinus/FLeCS" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
-         <tr data-description="RENGE attempts to infer gene regulatory networks (GRNs) from time-series single-cell CRISPR knockout data. It models changes in gene expression following a knockout by propagating the effects through direct and higher-order (indirect) regulatory paths, where the gene network is represented as a matrix of regulatory strengths between gene pairs.">
+         <tr data-description="RENGE attempts to infer gene regulatory networks from time-series single-cell CRISPR knockout data. It models changes in gene expression following a knockout by propagating the effects through direct and higher-order (indirect) regulatory paths, where the gene network is represented as a matrix of regulatory strengths between gene pairs.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s42003-023-05594-4">RENGE</a></td>
            <td>2023</td>
@@ -339,8 +358,11 @@ Causal Structure
            <td><ul><li>Regression model</li></ul></td>
 
 
-           <td class="published">✗</td>
-            <td>✗</td>
+           <td class="published">✓</td>
+            <td><a href="https://github.com/masastat/RENGE" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
        </tbody>
      </table>

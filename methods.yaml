@@ -1,11 +1,11 @@
 - Code Availability: https://github.com/abidlabs/contrastive
   Description: "A modified version of PCA, where the covariance matrix (COV) is the\
-    \ difference between COV(case/target) and \u03B1COV(control/background). The hyperparameter\
-    \ \u03B1 is used to balance having a high case variance and a low control variance.\
-    \ To provide some intuition, when \u03B1 is 0, the model reduces to classic PCA\
-    \ on the case data.  Optimal alphas (equal to k clusters) are identified using\
-    \ spectral clustering over a range of cPCA runs with different alphas, with selection\
-    \ based on the similarity of cPCA outputs."
+    \ difference between COV(case/perturbed) and \u03B1COV(control/background). The\
+    \ hyperparameter \u03B1 is used to balance having a high case variance and a low\
+    \ control variance. To provide some intuition, when \u03B1 is 0, the model reduces\
+    \ to classic PCA on the case data. Optimal alphas (equal to k clusters) are identified\
+    \ using spectral clustering over a range of cPCA runs with different alphas, with\
+    \ selection based on the similarity of cPCA outputs."
   Inspired by:
   - PCA
   - Contrastive Mixture Models (Zou et al., 2013)
@@ -19,14 +19,14 @@
   - Contrastive Disentanglement
   Year: 2018
 - Code Availability: https://www.zhanglab-amss.org/homepage/software.html
-  Description: "A non-negative matrix factorisation that decomposes gene expression\
-    \ matrices into common and specific patterns. For each condition, the observed\
-    \ expression matrix is approximated as the sum of a common component - represented\
-    \ by a common feature matrix (Wc) with condition-specific coefficient matrices\
-    \ (Hc\u2081, Hc\u2082) - and a specific component unique to each condition, represented\
-    \ by its own feature matrix (Ws\u1D62) and coefficients (Hs\u1D62). The model\
-    \ uses an alternating approach to minimize the combined reconstruction error (squared\
-    \ Frobenius norm) across common and shared components."
+  Description: A non-negative matrix factorisation that decomposes gene expression
+    matrices into common and condition-specific patterns. For each condition, the
+    observed expression matrix is approximated as the sum of a common component -
+    represented by a common feature matrix with condition-specific coefficient matrices
+    - and a specific component unique to each condition, represented by its own feature
+    matrix  and coefficients. The model uses an alternating approach to minimize the
+    combined reconstruction error (squared Frobenius norm) across common and shared
+    components.
   Inspired by:
   - iNMF
   - NMF
@@ -45,11 +45,11 @@
     control data are reconstructed solely from background embeddings: - cLVM with
     Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize
     the weights - Robust cLVM with a Student''s t distribution - cLVM with automatic
-    relevance determination (ARD) to regularize (select) the columns of the weight
-    matrix - contrastive VAE, as a non-linear extension of the framework The shared
-    concept across these models is that each model learns a shared set of latent variables
-    for the background and target data, while salient latent variables are learnt
-    solely for the target data.'
+    relevance determination to regularise the columns of the weight matrix - contrastive
+    VAE, as a non-linear extension of the framework The shared concept across these
+    models is that each model learns a shared set of latent variables for the background
+    and target data, while salient latent variables are learnt solely for the target
+    data.'
   Inspired by:
   - Contrastive PCA
   Method: cLVM
@@ -84,9 +84,9 @@
   - Contrastive Disentanglement
   Year: 2019
 - Code Availability: https://github.com/PhilBoileau/EHDBDscPCA
-  Description: "A sparse version of contrastive PCA that enhances interpretability\
-    \ in high-dimensional settings by integrating \u21131regularization into an iterative\
-    \ procedure to estimate sparse loadings and principal components"
+  Description: A sparse version of contrastive PCA that enhances interpretability
+    in high-dimensional settings by integrating l1 regularization into an iterative
+    procedure to estimate sparse loadings and principal components
   Inspired by:
   - Contrastive PCA
   - Probabilistic PCA
@@ -361,14 +361,12 @@
   - Causal Structure
   - Nonlinear Gene Programmes
   Year: 2023
-- Code Availability: '-'
+- Code Availability: https://github.com/bm2-lab/CausCell
   Description: CausCell integrates causal representation learning with diffusion-based
     generative modeling to generate counterfactual single-cell data. It disentangles
     observed and unobserved concepts using concept-specific adversarial discriminators
     and links the resulting latent representations through a structural causal model
-    encoded as a directed acyclic graph. The use of a diffusion model, instead of
-    a traditional variational autoencoder, improves sample fidelity and better preserves
-    underlying causal relationships during generation.
+    encoded as a directed acyclic graph.
   Inspired by:
   - AnnealVAE
   - DDPM
@@ -407,25 +405,20 @@
   - Perturbation Responsiveness
   Year: 2024
 - Code Availability: https://github.com/Teichlab/celcomen
-  Description: "Celcomen (CCE) disentangles intra- and inter-cellular gene regulation\
-    \ in spatial transcriptomics data by processing gene expression through two parallel\
-    \ interaction functions. One function uses a graph convolution layer (k-hop GNN)\
-    \ to learn a gene-gene interaction matrix that captures cross-cell signaling,\
-    \ while the other applies a linear layer to model regulation within individual\
-    \ cells. During training, Celcomen combines a normalization term\u2014computed\
-    \ via a mean field approximation that decomposes the overall likelihood into a\
-    \ mean contribution and an interaction contribution - with a similarity measure\
-    \ that directly compares each cell\u2019s predicted gene expression (obtained\
-    \ via message passing) to its actual expression, thereby driving the model to\
-    \ adjust its interaction matrices so that the predictions closely match the observed\
-    \ data. Simcomen (SCE) then leverages these fixed, learned matrices to simulate\
-    \ spatial counterfactuals (e.g., gene knockouts) for in-silico experiments."
+  Description: Celcomen disentangles intra- and inter-cellular gene regulation in
+    spatial transcriptomics data by processing gene expression through two parallel
+    interaction functions. One function uses a single graph convolution layer (1-hop
+    GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling,
+    while the other applies a linear layer to model regulation within individual cells.
+    Training maximises an approximate likelihood that aligns the model-predicted weight
+    matrices to the average gene expression across all cells. Simcomen then leverages
+    these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene
+    knockouts) for in-silico experiments.
   Inspired by:
   - '-'
   Method: Celcomen
   Model:
   - K-hop Convolution
-  - Mean field estimation
   - Spatially-informed
   Publication: https://openreview.net/pdf?id=Tqdsruwyac
   Published: true
@@ -442,7 +435,7 @@
     genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence,
     encouraging non-perturbed cells to map to the null region of the salient space.
     For datasets with a larger number of perturbations, the method also re-introduces
-    and minimizes the Maximum Mean Discrepancy (MMD) between the salient and background
+    and minimizes the Maximum Mean Discrepancy between the salient and background
     latent variables. This discourages the leakage of perturbation-induced information
     into the background latent variables, ensuring a clearer separation of perturbation
     effects.
@@ -568,7 +561,7 @@
     interaction term z_{tx} from both z_x and z_t, is promoted through permutation-based
     discriminators.'
   Inspired by:
-  - -iVAE
+  - iVAE
   Method: FCR
   Model:
   - VAE
@@ -631,13 +624,13 @@
     \ variability into two latent factors: an intrinsic variable z, which captures\
     \ cell type\u2013specific signals, and a spatial variable s, which quantifies\
     \ spatial effects. The spatial latent variable s is inferred by aggregating the\
-    \ intrinsic representations of neighboring cells via a Graph Attention Network\
-    \ (GAT), thereby incorporating local spatial context. To promote independence\
-    \ between z and s, SIMVI employs an asymmetric regularization on z using maximum\
-    \ mean discrepancy (MMD) or, alternatively, a  mutual information estimator, ensuring\
-    \ that z retains minimal non-cell-intrinsic information. Furthermore, leveraging\
-    \ debiased machine learning principles, the model decomposes gene expression variance\
-    \ by treating s as a continuous treatment and z as confounding covariates, thereby\
+    \ intrinsic representations of neighboring cells via a Graph Attention Network,\
+    \ thereby incorporating local spatial context. To promote independence between\
+    \ z and s, SIMVI employs an asymmetric regularization on z using maximum mean\
+    \ discrepancy or, alternatively, a  mutual information estimator, ensuring that\
+    \ z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased\
+    \ machine learning principles, the model decomposes gene expression variance by\
+    \ treating s as a continuous treatment and z as confounding covariates, thereby\
     \ quantifying the specific impact of spatial context on gene expression."
   Inspired by:
   - Debiased ML
@@ -658,10 +651,10 @@
   Year: 2025
 - Code Availability: github.com/theislab/trvae
   Description: 'trVAE enhances the scGEN model by incorporating condition embeddings
-    and leveraging maximum mean discrepancy (MMD) regularization to manage distributions
-    across binary conditions. By utilizing a conditional variational autoencoder (CVAE),
+    and leveraging maximum mean discrepancy regularization to manage distributions
+    across binary conditions. By utilizing a conditional variational autoencoder,
     trVAE aims to create a compact and consistent representation of cross-condition
-    distributions, enhancing out-of-distribution (OOD) prediction accuracy. '
+    distributions, enhancing out-of-distribution prediction accuracy. '
   Inspired by:
   - scGen
   Method: trVAE
@@ -674,8 +667,8 @@
   - Seen Perturbation Prediction
   Year: 2020
 - Code Availability: https://github.com/rampasek/DrVAE
-  Description: Dr.VAE uses a Variational Autoencoder (VAE) architecture to predict
-    drug response from transcriptomic perturbation signatures. It models transcription
+  Description: Dr.VAE uses a Variational Autoencoder architecture to predict drug
+    response from transcriptomic perturbation signatures. It models transcription
     change as a linear function within a low-dimensional latent space, defined by
     encoder and decoder neural networks. For paired expression samples from treated
     and control conditions, Dr.VAE accurately predicts treated expression.
@@ -691,13 +684,13 @@
   - Seen Perturbation Prediction
   Year: 2019
 - Code Availability: https://github.com/theislab/scgen
-  Description: "scGen is VAE that uses latent space vector arithmetics to predict\
-    \ single-cell perturbation responses. The method first encodes high-dimensional\
-    \ gene expression profiles into a latent space, where it computes a difference\
-    \ vector (\u03B4) representing the change between perturbed and unperturbed conditions.\
-    \ At inference, this \u03B4 is linearly added to the latent representation of\
-    \ unperturbed cells, and the adjusted latent vector is then decoded back into\
-    \ the original gene expression space, thereby simulating the perturbed state. "
+  Description: 'scGen is VAE that uses latent space vector arithmetics to predict
+    single-cell perturbation responses. The method first encodes high-dimensional
+    gene expression profiles into a latent space, where it computes a difference vector
+    (delta) representing the change between perturbed and unperturbed conditions.
+    At inference, this delta vector is linearly added to the latent representation
+    of unperturbed cells, and the adjusted latent vector is then decoded back into
+    the original gene expression space, thereby simulating the perturbed state. '
   Inspired by:
   - Conditional VAE (CVAE)
   Method: scGEN
@@ -718,7 +711,7 @@
   - '-'
   Method: CellBox
   Model:
-  - -ODE
+  - ODE
   Publication: https://www.cell.com/cell-systems/pdf/S2405-4712(20)30464-6.pdf
   Published: true
   Task:
@@ -733,14 +726,10 @@
     To ensure that the basal embedding is disentangled from perturbations and covariates,
     CPA employs an adversarial training scheme: auxiliary classifiers are trained
     to predict perturbations and covariates from the basal embedding, while the encoder
-    is updated using a combined loss (including reconstruction, KL divergence, adversarial
-    classification losses) that discourages the basal representation from encoding
-    such information. Perturbation embeddings are modulated by neural networks applied
-    to continuous covariates (e.g., dose or time), enabling modeling of dose-response
-    and combinatorial effects. The combined latent state is decoded to reconstruct
-    gene expression under a Gaussian likelihood, and for counterfactual inference
-    the basal embedding (from control cells) is combined with alternative perturbation
-    and covariate representations to generate predictions for unobserved conditions.'
+    is updated using a combined loss that discourages the basal representation from
+    encoding such information. Perturbation embeddings are modulated by neural networks
+    applied to continuous covariates (e.g., dose or time), enabling modeling of dose-response
+    and combinatorial effects. '
   Inspired by:
   - scGEN
   - DANN
@@ -794,8 +783,8 @@
 - Code Availability: https://github.com/theislab/multicpa
   Description: MultiCPA extends CPA to predict combinatorial perturbation responses
     from CITE-seq data by integrating gene and protein modalities using either concatenation
-    or a Product-of-Experts (PoE) framework. It employs totalVI-inspired decoders
-    and likelihoods to model modality-specific outputs.
+    or a product of experts. It employs totalVI-inspired decoders and likelihoods
+    to model modality-specific outputs.
   Inspired by:
   - CPA (theirs)
   Method: MultiCPA
@@ -809,8 +798,8 @@
   Year: 2022
 - Code Availability: https://github.com/broadinstitute/CellCap
   Description: CellCap is a deep generative model that extends CPA by incorporating
-    cross-attention mechanisms between cell states, aimed at understanding transcriptional
-    response programs and reconstructing perturbed profiles. Further, CellCap uses
+    cross-attention mechanisms between cell state and perturbation response (i.e.,
+    its basal latent space and the perturbation design matrix). Further, CellCap uses
     a variational autoencoder (VAE) framework with a linear decoder to identify sparse
     and interpretable latent factors.
   Inspired by:
@@ -820,6 +809,7 @@
   Model:
   - VAE
   - Attention
+  - Linear Decoder
   Publication: https://www.cell.com/cell-systems/fulltext/S2405-4712(25)00078-X
   Published: true
   Task:
@@ -835,8 +825,8 @@
     enabling predictions for unSeen Perturbation Prediction. These embeddings are
     integrated by adding the aggregated perturbation signal to the gene representations
     and then decoded using gene-specific layers augmented by a cross-gene context
-    module, ultimately reconstructing the post-perturbation transcriptomic profile
-    (DEGs). The model is trained end-to-end with a combined autofocus and direction-aware
+    module, ultimately reconstructing the post-perturbation transcriptomic profile.
+    The model is trained end-to-end with a combined autofocus and direction-aware
     loss, and it can optionally quantify uncertainty through a Gaussian likelihood
     framework.
   Inspired by:
@@ -871,7 +861,7 @@
   - Combinatorial Effect Prediction
   - Unseen Perturbation Prediction
   Year: 2024
-- Code Availability: '-'
+- Code Availability: https://github.com/Perturbation-Response-Prediction/PRnet
   Description: 'PRnet is a generative framework to predict the transcriptional response
     of cells to chemical perturbations. To learn the respose, the model randomly assigns
     control and perturbed cell pairs which are conditioned on the smiles embedding
@@ -927,15 +917,14 @@
   - Context Transfer
   Year: 2024
 - Code Availability: https://github.com/mims-harvard/PDGrapher
-  Description: "PDGrapher builds on graph neural network (GNN) to predict therapeutic\
-    \ perturbations that can reverse disease phenotypes, focusing directly on identifying\
-    \ perturbation targets rather than modeling the perturbation effects. By embedding\
-    \ diseased cell states into gene regulatory networks (GRNs) or protein-protein\
-    \ interaction (PPI) networks, PDGrapher learns latent representations to infer\
-    \ optimal perturbations that drive diseased states toward desired healthy outcomes.\
-    \ The method utilizes dual GNNs \u2014 a response prediction module and a perturbagen\
-    \ discovery module \u2014 both employing causal graphs as priors and adjusting\
-    \ edges to model interventions. "
+  Description: 'PDGrapher builds on graph neural network (GNN) to predict therapeutic
+    perturbations that can reverse disease phenotypes, focusing directly on identifying
+    perturbation targets rather than modeling the perturbation effects. By embedding
+    diseased cell states into gene regulatory networks or protein-protein interaction
+    networks, PDGrapher learns latent representations to infer optimal perturbations
+    that drive diseased states toward desired healthy outcomes. The method utilizes
+    dual GNNs - a response prediction module and a perturbagen discovery module -
+    both employing causal graphs as priors and adjusting edges to model interventions. '
   Inspired by:
   - GEARS
   Method: PDGrapher
@@ -1009,7 +998,7 @@
   - chemCPA
   Method: cycleCDR
   Model:
-  - AE
+  - Autoencoder
   Publication: https://academic.oup.com/bioinformatics/article/40/Supplement_1/i462/7700878
   Published: true
   Task:
@@ -1060,7 +1049,7 @@
   Publication: https://www.biorxiv.org/content/10.1101/2024.11.16.623974v1
   Published: false
   Task:
-  - Unseen Perturbation Prediction
+  - Combinatorial Effect Prediction
   - Context Transfer
   Year: 2024
 - Code Availability: https://github.com/const-ae/pylemur
@@ -1068,7 +1057,7 @@
     to analyze differences in differentialy expressed genes across conditions. For
     each condition a separate embeding matrix is learned and reconstructed using a
     shared matrix. This is used to generate counterfactual estimates for each cell
-    and condition, which is used to infer DE neighborhoods. '
+    and condition, which is used to infer label-free DE genes and neighborhoods. '
   Inspired by:
   - PCA
   Method: LEMUR
@@ -1182,7 +1171,7 @@
   - Spatially-informed
   - PK Representations
   - 'Multi-modal '
-  Publication: https://scholar.google.com/scholar_url?url=https://www.nature.com/articles/s41588-025-02120-6&hl=en&sa=X&d=4385431678967561370&ei=jfHcZ9q4G5yV6rQP4Zul2Qo&scisig=AFWwaea2QWdmQLBJLz29SV6YD2cm&oi=scholaralrt&hist=dDujacgAAAAJ:12160454169637496643:AFWwaebf1S6Ukws-5zfatGcdJi9a&html=&pos=0&folt=art
+  Publication: https://www.nature.com/articles/s41588-025-02120-6
   Published: true
   Task:
   - Linear Gene Programmes
@@ -1318,7 +1307,7 @@
   Publication: https://www.nature.com/articles/s41592-023-02040-5#Sec11
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Perturbation Responsiveness
   - Unsupervised Disentanglement
   Year: 2023
@@ -1339,7 +1328,7 @@
   Publication: https://www.nature.com/articles/s41592-023-01969-x
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Perturbation Responsiveness
   - Context Transfer
   Year: 2023
@@ -1347,14 +1336,13 @@
   Description: 'CondOT builds on CellOT to learn context-aware optimal transport maps
     by conditioning on an auxiliary variable. Instead of learning a fixed transport
     map, it learns a context-dependent transport map that adapts based on this auxiliary
-    information. For each condition, CondOT learns how to transform a source distribution
-    so that it closely matches a corresponding target distribution. The OT map is
-    modeled as the gradient of a convex potential using partially input convex neural
-    networks (PICNN), which ensures mathematical properties required for parametrised
-    optimal transport. The auxiliary variables can be of different types: continuous
-    (like dosage or spatial coordinates), categorical (like treatment groups, represented
-    via one-hot encoding), or learned embeddings learned. Additionally, CondOT includes
-    a separate neural module, a combinator network, for combinatorial predictions.'
+    information. The OT map is modeled as the gradient of a convex potential using
+    partially input convex neural networks, which ensures mathematical properties
+    required for parametrised optimal transport. The auxiliary variables can be of
+    different types: continuous (like dosage or spatial coordinates), categorical
+    (like treatment groups, represented via one-hot encoding), or learned embeddings
+    learned. Additionally, CondOT includes a separate neural module, a combinator
+    network, for combinatorial predictions.'
   Inspired by:
   - Amos et al., 2017
   - Makkuva et al., 2020
@@ -1365,13 +1353,21 @@
   Publication: https://proceedings.neurips.cc/paper_files/paper/2022/file/2d880acd7b31e25d45097455c8e8257f-Paper-Conference.pdf
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - Context Transfer
   Year: 2022
 - Code Availability: https://genentech.github.io/Perturb-OT/
-  Description: TODO
+  Description: The paper extends entropic Gromov-Wasserstein Optimal Transport and
+    Co-Optimal Transport to incorporate perturbation labels for aligning data across
+    different modalities from large-scale perturbation screens. The core innovation
+    involves constraining the learned cross-modality coupling matrix to be "label-compatible",
+    meaning that the transport plan is informed by the perturbation labels and is
+    only allowed to match between cells that have received the same perturbation label,
+    which is achieved by modifying the Sinkhorn algorithm. This label-compatible alignment
+    is used to train a model to estimate cellular responses to perturbations when
+    measurements are available in only one modality.
   Inspired by:
   - '-'
   Method: GWOT
@@ -1381,7 +1377,7 @@
   Publication: https://arxiv.org/pdf/2405.00838
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Context Transfer
   Year: 2025
 - Code Availability: github.com/Genentech/MMFM
@@ -1400,7 +1396,7 @@
   Publication: https://openreview.net/pdf?id=hwnObmOTrV
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Context Transfer
   - Seen Perturbation Prediction
   Year: 2024
@@ -1421,21 +1417,9 @@
   Publication: https://proceedings.neurips.cc/paper_files/paper/2024/file/f381114cf5aba4e45552869863deaaa7-Paper-Conference.pdf
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Context Transfer
   - Seen Perturbation Prediction
-  Year: 2024
-- Code Availability: '-'
-  Description: TODO
-  Inspired by:
-  - '-'
-  Method: sc-OTGM
-  Model:
-  - '-'
-  Publication: https://arxiv.org/pdf/2405.03726
-  Published: true
-  Task:
-  - '-'
   Year: 2024
 - Code Availability: https://github.com/EperLuo/scDiffusion
   Description: 'scDiffusion employs a Latent Diffusion Model for generating single-cell
@@ -1446,9 +1430,8 @@
   - '-'
   Method: scDiffusion
   Model:
-  - 'Diffusion
-
-    -VAE'
+  - Diffusion
+  - VAE
   Publication: https://academic.oup.com/bioinformatics/article/40/9/btae518/7738782
   Published: true
   Task:
@@ -1468,15 +1451,15 @@
   Publication: https://openreview.net/forum?id=3MnMGLctKb
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Context Transfer
   Year: 2024
 - Code Availability: '-'
   Description: CellFlow learns a vector field to predict time-dependent expression
     profiles under diverse conditions. The model encodes various covariates (perturbation,
-    dosage, batch, etc.) , aggregates the embeddings via attention and deep sets,
-    and uses a conditional flow matching framework to learn the underlying flow of
-    the effect.
+    dosage, batch, etc.), aggregates the embeddings via attention and deep sets, and
+    uses a conditional flow matching framework to learn the underlying flow of the
+    effect.
   Inspired by:
   - CellOT
   Method: cellFlow
@@ -1486,7 +1469,7 @@
   Publication: https://www.biorxiv.org/content/10.1101/2025.04.11.648220v1.full.pdf
   Published: false
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Context Transfer
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
@@ -1508,44 +1491,57 @@
   Publication: https://www.sciencedirect.com/science/article/pii/S009286741930039X?via%3Dihub
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   - Linear Gene Programmes
   Year: 2019
 - Code Availability: https://github.com/atong01/conditional-flow-matching
-  Description: TODO
+  Description: "The paper introduces two key Flow Matching variants: (i) Optimal Transport\
+    \ CFM (OT-CFM), which uses optimal transport couplings (approximated with minibatch\
+    \ OT), to produce more robust flow inference and (ii) Schr\xF6dinger Bridge CFM\
+    \ solving the Schr\xF6dinger Bridge problem by using entropy-regularized OT couplings. "
   Inspired by:
-  - '-'
+  - Flow Matching
   Method: OT-CFM
   Model:
-  - '-'
+  - Flow Matching
+  - "Schr\xF6dinger Bridge"
   Publication: https://openreview.net/forum?id=CD9Snc73AW
   Published: true
   Task:
-  - '-'
+  - Trace Cell Populations
   Year: 2024
-- Code Availability: '-'
-  Description: TODO
+- Code Availability: 'https://github.com/vsomnath/aligned_diffusion_bridges '
+  Description: "SBALIGN solves a Diffusion Schr\xF6dinger Bridge Problem with aligned\
+    \ data, i.e. where each sample from the source distribution is paired with a corresponding\
+    \ sample from the target distribution. It combines classical SB theory with Doob's\
+    \ h-transform to derive a novel loss -- parameterizing the drift and h-function\
+    \ with neural networks, enabling more stable training than iterative procedures."
   Inspired by:
-  - '-'
+  - "Schr\xF6dinger Bridges"
   Method: SBALIGN
   Model:
-  - '-'
+  - "Schr\xF6dinger Bridge"
   Publication: https://proceedings.mlr.press/v216/somnath23a/somnath23a.pdf
   Published: true
   Task:
-  - '-'
+  - Trace Cell Populations
   Year: 2023
 - Code Availability: https://github.com/KrishnaswamyLab/MIOFlow
-  Description: TODO
+  Description: MIOFlow learns (stochastic) continuous dynamics from snapshot data
+    by combining neural ODEs, manifold learning, and optimal transport. The method
+    first trains a Geodesic Autoencoder to embed data into a latent space where geodesic-based
+    distances are preserved, then models trajectories via a neural ODE and an ODE
+    solver, and optimizes the Wasserstein loss between actual and predicted distributions.
   Inspired by:
   - '-'
   Method: MioFlow
   Model:
-  - '-'
+  - Neural ODE
+  - Geodasic Autoencoder
   Publication: https://proceedings.neurips.cc/paper_files/paper/2022/file/bfc03f077688d8885c0a9389d77616d0-Paper-Conference.pdf
   Published: true
   Task:
-  - '-'
+  - Trace Cell Populations
   Year: 2022
 - Code Availability: https://github.com/theislab/moscot
   Description: "Moscot is a broad and scalable framework that recasts various single-cell\
@@ -1569,7 +1565,7 @@
   Publication: https://www.nature.com/articles/s41586-024-08453-2
   Published: true
   Task:
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   Year: 2025
 - Code Availability: https://github.com/jkobject/geneformer
   Description: "Geneformer is a context-aware transformer encoder comprising six layers\
@@ -1614,7 +1610,6 @@
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
-  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/HelloWorldLTY/scELMo
   Description: "scELMo first converts gene and cell metadata into textual descriptions\
@@ -1637,29 +1632,64 @@
   Task:
   - Seen Perturbation Prediction
   Year: 2024
-- Code Availability: '-'
-  Description: '-'
+- Code Availability: https://github.com/vandijklab/cell2sentence
+  Description: "C2S-Scale is a family of large language models (LLMs) for single-cell\
+    \ RNA-seq analysis that extends the Cell2Sentence (C2S) framework by converting\
+    \ cell gene-expression profiles into ordered \u201Ccell sentences\u201D for natural-language\
+    \ processing.Each C2S-Scale model is initialized from a publicly released Gemma-2\
+    \ or Pythia checkpoint, i.e. leverages pre-existing language representations,\
+    \ and is then further pre-trained on a multimodal corpus of over a billion tokens.\
+    \ Each cell sentence is paired with the abstract (and, where available, additional\
+    \ free-text annotations) from the same study, allowing the model to learn matched\
+    \ transcriptomic and experimental context. "
   Inspired by:
-  - '-'
+  - Cell2Sentence (theirs)
   Method: C2S-Scale
   Model:
-  - '-'
+  - Family of LLMs with to 27B parameters
   Publication: https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1
   Published: false
   Task:
-  - '-'
+  - Unseen Perturbation Prediction
+  - Combinatorial Effect Prediction
   Year: 2025
 - Code Availability: '-'
-  Description: '-'
+  Description: LPM is a decoder-only deep neural network designed for large-scale
+    integration and prediction across heterogeneous perturbation datasets. LPM encodes
+    perturbation (P), readout (R), and context (C) as discrete variables, each with
+    its own embedding space implemented via learnable look-up tables. These embeddings
+    are concatenated to and used for inference
   Inspired by:
   - '-'
   Method: LPM
   Model:
-  - '-'
+  - DNN Decoder
   Publication: https://arxiv.org/pdf/2503.23535
   Published: false
   Task:
-  - '-'
+  - Unseen Perturbation Prediction
+  - Combinatorial Effect Prediction
+  - GRN Inference
+  Year: 2025
+- Code Availability: '-'
+  Description: "scGenePT combines CRISPR single\u2010cell RNA\u2010seq perturbation\
+    \ data with language\u2010based gene embeddings. It builds on a pretrained scGPT\
+    \ by adding gene\u2010level text embeddings from NCBI Gene/UniProt summaries or\
+    \ GO annotations, to the token, count, and perturbation embeddings of the model\
+    \ during fine-tuning on perturbational data."
+  Inspired by:
+  - scGPT
+  - GenePT
+  Method: scGenePT
+  Model:
+  - scGPT
+  - ChatGPT prompts
+  Publication: https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1
+  Published: false
+  Task:
+  - Unseen Perturbation Prediction
+  - Combinatorial Effect Prediction
+  - GRN Inference
   Year: 2025
 - Code Availability: https://github.com/biomap-research/scFoundation
   Description: "scFoundation uses an asymmetric transformer encoder\u2013decoder:\
@@ -1689,7 +1719,6 @@
   - Nonlinear Gene Programmes
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
-  - Feature Relationships
   Year: 2024
 - Code Availability: https://github.com/xCompass-AI/GeneCompass
   Description: "GeneCompass is a knowledge-informed, cross-species foundation model.\
@@ -1715,14 +1744,13 @@
   Publication: https://www.nature.com/articles/s41422-024-01034-y
   Published: true
   Task:
-  - Nonlinear Gene Programmes
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
   Year: 2024
 - Code Availability: https://github.com/cantinilab/scPRINT
   Description: "scPRINT is implemented as a bidirectional transformer, focusing on\
-    \ scalable zero-shot applications to new datasets. During pre-training, it optimizes\
+    \ scalable zero-shot applications to new datasets. During pre-training, it optimises\
     \ a single composite loss that sums: (1) a denoising objective, which up-samples\
     \ down-sampled transcript counts via a zero-inflated negative-binomial decoder;\
     \ (2) a bottleneck reconstruction objective, where the model must regenerate full\
@@ -1748,12 +1776,12 @@
   - A classifier decoder
   - ZINB likelihood decoder
   - PK Representations
-  Publication: https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1
+  Publication: https://www.nature.com/articles/s41467-025-58699-1
   Published: true
   Task:
-  - Gene Programmes
   - GRN Inference
-  Year: 2024
+  - Multi-component Disentanglement
+  Year: 2025
 - Code Availability: '-'
   Description: 'The method embeds each gene using two LLM-derived representations
     - GPT-3.5 text embeddings of NCBI gene descriptions and ProtT5 protein sequence
@@ -1774,11 +1802,27 @@
 - Code Availability: '-'
   Description: TODO
   Inspired by:
+  - Kuipers et al (2022)
+  Method: CIV
+  Model:
+  - Active Learning
+  - Structural Causal Model
+  - DAG-Bayesian linear regression
+  Publication: https://www.nature.com/articles/s42256-023-00719-0
+  Published: true
+  Task:
+  - Causal Structure
+  Year: 2023
+- Code Availability: https://github.com/Durenlab/LINGER
+  Description: TODO
+  Inspired by:
   - '-'
   Method: LINGER
   Model:
-  - ''
   - Multi-modal
+  - Prior Knowledge Informed
+  - Shapley values
+  - DNN
   Publication: https://www.nature.com/articles/s41587-024-02182-7
   Published: true
   Task:
@@ -1787,11 +1831,12 @@
 - Code Availability: https://github.com/aertslab/scenicplus
   Description: TODO
   Inspired by:
-  - '-'
+  - SCENIC/GENIE3(theirs)
   Method: SCENIC+
   Model:
-  - ''
   - Multi-modal
+  - Prior Knowledge Informed
+  - Gradient Boosting
   Publication: https://www.nature.com/articles/s41592-023-01938-4
   Published: true
   Task:
@@ -1803,8 +1848,9 @@
   - '-'
   Method: CellOracle
   Model:
-  - ''
   - Multi-modal
+  - Prior Knowledge Informed
+  - Regularised (Linear) Regression
   Publication: https://www.nature.com/articles/s41586-022-05688-9
   Published: true
   Task:
@@ -1819,7 +1865,7 @@
   - '-'
   Method: NOTEARS
   Model:
-  - Continuous optimization for acyclicity
+  - Continuous optimisation for acyclicity
   Publication: https://arxiv.org/abs/1803.01422
   Published: true
   Task:
@@ -1833,7 +1879,7 @@
   - NOTEARS
   Method: NOTEARS-MLP
   Model:
-  - Continuous optimization for acyclicity
+  - Continuous optimisation for acyclicity
   - DNN
   Publication: https://arxiv.org/abs/1909.13189
   Published: true
@@ -1849,7 +1895,7 @@
   - NOTEARS
   Method: DAG-GNN
   Model:
-  - Continuous optimization for acyclicity
+  - Continuous optimisation for acyclicity
   - GNN
   Publication: https://arxiv.org/abs/1904.10098
   Published: true
@@ -1909,7 +1955,8 @@
   Method: Bicycle
   Model:
   - Graph interventions
-  - "Ornstein\u2013Uhlenbeck process\n-Steady-State ODE"
+  - Ornstein-Uhlenbeck process
+  - Steady-State ODE
   Publication: https://proceedings.mlr.press/v236/rohbeck24a.html
   Published: true
   Task:
@@ -1918,14 +1965,14 @@
 - Code Availability: https://github.com/uhlerlab/discrepancy_vae
   Description: "A VAE that disentangles control and pertubed cells into a latent space\
     \ organized by a causal DAG. The encoder produces a Gaussian latent code z, while\
-    \ an intervention encoder transforms intervention one-hot encodings into two embeddings\u2014\
-    a soft assignment vector that targets specific latent dimensions and a scalar\
+    \ an intervention encoder transforms intervention one-hot encodings into two embeddings\
+    \ - a soft assignment vector that targets specific latent dimensions and a scalar\
     \ capturing the intervention\u2019s magnitude. Multiplying and adding these embeddings\
     \ to z yields a modified latent vector that simulates a soft intervention, whereas\
     \ zeroing them recovers the control condition. A causal layer then processes the\
     \ latent vectors using an upper-triangular matrix G, which enforces an acyclic\
     \ causal structure and propagates intervention effects among the latent factors.\
-    \ The decoder is applied twice\u2014once to the modified latent code to generate\
+    \ The decoder is applied twice - once to the modified latent code to generate\
     \ virtual counterfactual outputs that reconstruct interventional outcomes, and\
     \ once to the unmodified code to recover control samples. This dual decoding forces\
     \ the model to disentangle intervention-specific effects from the intrinsic data\
@@ -1973,7 +2020,7 @@
     networks (GRNs) and their changes across multiple conditions. By leveraging multiomic
     data, Dictys infers context-specific networks and dynamic GRNs using steady-state
     solutions of the Ornstein-Uhlenbeck process to model transcriptional kinetics
-    and account for feedback loops. It reconstructs undirected GRNs by detecting transcription
+    and account for feedback loops. It reconstructs GRNs by detecting transcription
     factor (TF) binding sites and refining these networks with single-cell transcriptomic
     data, capturing regulatory shifts that reflect TF activity beyond expression levels.
   Inspired by:
@@ -2163,7 +2210,7 @@
     \ likelihoods, cell indicator vectors, and similarity graphs to cluster cells\
     \ with similar transcriptomics and perturbation profiles."
   Inspired by:
-  - PLIER (PK representation)
+  - '-'
   Method: MELD(-VCF)
   Model:
   - Manifold Learning
@@ -2335,14 +2382,14 @@
     \ signature by subtracting each cell\u2019s mRNA expression from the average of\
     \ its k nearest NT (non-targeted) control neighbors. Differential expression testing\
     \ between targeted and NT cells then identifies a set of DEGs that capture the\
-    \ perturbation response. These DEGs are used to define a perturbation vector\u2014\
-    essentially, the average difference in expression between targeted and NT cells\u2014\
-    which projects each cell\u2019s DEG expression onto a single perturbation score.\
-    \ The Gaussian mixture model is applied to these perturbation scores, with one\
-    \ component fixed to match the NT distribution, while the other represents the\
-    \ perturbation effect. This model assigns probabilities that classify each targeted\
-    \ cell as either perturbed or escaping. Additionally, the authors propose visualization\
-    \ with Linear Discriminant Analysis (LDA) and UMAP, aiming to identify a low-dimensional\
+    \ perturbation response. These DEGs are used to define a perturbation vector-essentially,\
+    \ the average difference in expression between targeted and NT cells, which projects\
+    \ each cell\u2019s DEG expression onto a single perturbation score. The Gaussian\
+    \ mixture model is applied to these perturbation scores, with one component fixed\
+    \ to match the NT distribution, while the other represents the perturbation effect.\
+    \ This model assigns probabilities that classify each targeted cell as either\
+    \ perturbed or escaping. Additionally, the authors propose visualization with\
+    \ Linear Discriminant Analysis and UMAP, aiming to identify a low-dimensional\
     \ subspace that maximally discriminates the mixscape-derived classes."
   Inspired by:
   - '-'
@@ -2359,17 +2406,23 @@
   - Linear Gene Programmes
   Year: 2021
 - Code Availability: https://github.com/davidliwei/PS
-  Description: Perturbation Score (PS) quantifies single-cell responses to perturbations
-    in three steps. First, differentially expressed genes (DEGs) are identified. Second,
-    existing algorithms, such as MUSIC, MIMOSCA, scMAGeCK or SCEPTRE, are used to
-    infer the average perturbation effect on these genes. Finally, each cell is assigned
-    a Perturbation Score by minimizing the error between predicted and observed changes
-    in gene expression.
+  Description: "Perturbation Score (PS) quantifies single-cell responses to (\"dosage\"\
+    -informed) perturbations in three steps. First, a signature gene set is defined\
+    \ for each perturbation - either via differential expression or pre-defined gene\
+    \ sets. Second, scMAGeCK\u2019s regression framework estimates gene-level coefficients\
+    \ (\u03B2) reflecting the average effect of each perturbation on its target genes.\
+    \ Third, a regularised regression model is fitted per cell to estimate a scalar\
+    \ PS [0-to-1], reflecting how well the cell\u2019s gene expression profile matches\
+    \ the \u03B2-weighted perturbation signature. This is done through constrained\
+    \ optimisation, where scores are inferred only for cells annotated as receiving\
+    \ the perturbation."
   Inspired by:
   - scMageck (theirs)
   Method: Perturbation Score
   Model:
-  - Pipeline
+  - Robust Rank Aggregate
+  - Ridge Regression
+  - Regularised Linear Models
   Publication: https://www.nature.com/articles/s41556-025-01626-9
   Published: true
   Task:
@@ -2572,54 +2625,106 @@
   - Differential Analysis
   Year: 2024
 - Code Availability: https://github.com/czi-ai/sub-cell-embed
-  Description: TODO
+  Description: SubCell is a set of self-supervised vision transformer (ViT) models
+    trained on low-plex single-cell immunofluorescence images from the Human Protein
+    Atlas to learn biologically meaningful representations of protein localisation
+    and tissue morphology. The models are optimised using a multi-task objective that
+    combines masked autoencoding for spatial reconstruction, a cell-specific contrastive
+    loss to enforce consistency across augmented views of the same cell, and a protein-specific
+    contrastive loss to align embeddings of cells stained for the same protein across
+    different cell lines and experiments. An attention pooling module is used to priotise
+    informative subcellular regions. The resulting models, particularly ViT-ProtS-Pool
+    and MAE-CellS-ProtS-Pool, are shown to generalise across datasets, imaging modalities,
+    cell types, and perturbations without fine-tuning.
   Inspired by:
-  - '-'
+  - Contrastive Masked Autoencoders
+  - Contrastive Learning(Chen et al.)
   Method: SubCell
   Model:
-  - '-'
-  Publication: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zrxafGsAAAAJ&sortby=pubdate&citation_for_view=zrxafGsAAAAJ:738O_yMBCRsC
+  - A collection of Vision Transformer Models
+  - Contrastive loss
+  Publication: https://www.biorxiv.org/content/10.1101/2024.12.06.627299v1.abstract
   Published: false
   Task:
-  - '-'
+  - Context Transfer
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/bunnelab/virtues
-  Description: TODO
+  Description: VirTues is a multi-modal foundation model based on a vision transformer
+    architecture, trained on multiplex spatial proteomics data from lung, breast,
+    and melanoma tumors. It combines image representations with protein language model
+    (PLM) embeddings of molecular markers and constructs hierarchical summary tokens
+    at the cell, niche, and tissue levels. This PLM-based tokenisation enables the
+    model to predict previously unseen markers. The architecture employs a sparse
+    attention mechanism that factorises attention into spatial and marker components
+    to manage the computational complexity of high-dimensional input. Training is
+    performed using a masked autoencoding objective - i.e. it reconstructs missing
+    subsets of spatial and protein data.
   Inspired by:
-  - '-'
+  - Masked Autoencoders
   Method: VirTues
   Model:
-  - '-'
+  - ViT
+  - Maked Autoencoder
+  - Multi-modal
   Publication: https://arxiv.org/abs/2501.06039
   Published: false
   Task:
-  - '-'
+  - Context Transfer
   Year: 2025
-- Code Availability: http://www.github.com/snap-stanford/BioDiscoveryAgent
-  Description: TODO
+- Code Availability: https://github.com/GuangyuWangLab2021/Loki
+  Description: "OmiCLIP is a dual-encoder foundation model that encodes H&E histology\
+    \ patches with a Vision Transformer and \u201Cgene-sentence\u201D representations\
+    \ of (10X Visium) spatial transcriptomics (ST) using a Transformer initialised\
+    \ on LAION-5B. It projects both modalities into a shared latent space using symmetric\
+    \ contrastive learning, which pulls matched histology-transcriptome pairs. The\
+    \ model is pretrained on paired H&E images and ST data across diverse organs and\
+    \ disease states. These aligned embeddings underpin downstream tasks such as spatial\
+    \ registration of histology to transcriptomic spots, zero-shot tissue annotation,\
+    \ cell-type deconvolution, retrieval of matching transcriptomic profiles for novel\
+    \ histology inputs, and prediction of spatial gene-expression patterns directly\
+    \ from histology."
   Inspired by:
-  - '-'
-  Method: BioDiscoveryAgent
+  - CLIP
+  - CoCa(Yu et al)
+  - Cell2Setence
+  - GenePT
+  Method: OmiCLIP
   Model:
-  - '-'
-  Publication: https://openreview.net/forum?id=HAwZGLcye3
+  - ViT
+  - Contrastive Learning
+  - Multi-modal
+  Publication: https://www.nature.com/articles/s41592-025-02707-1
   Published: true
   Task:
-  - '-'
+  - Context Transfer
   Year: 2025
-- Code Availability: '-'
-  Description: TODO
+- Code Availability: https://github.com/theislab/prophet
+  Description: "Prophet represents each experiment as a set of three axes - cellular\
+    \ state (cell lines), treatments (perturbations), and phenotypic readouts - and\
+    \ projects diverse prior knowledge types (e.g., CCLE bulk RNA-seq for cell lines;\
+    \ chemical fingerprints or transcriptomic/genomic vectors for perturbations; learnable\
+    \ embeddings for readouts) into a shared token space. It is pre-trained on a set\
+    \ of diverse perturbation experiments covering readouts such as cell viability,\
+    \ compound IC50, Cell Painting morphology features, mRNA transcript abundance,\
+    \ and cell type proportions. A transformer-based encoder integrates these tokenised\
+    \ inputs, feeding a regression head that\u2019s trained end-to-end to minimise\
+    \ mean squared error across all outcome types. The model is fine-tuned for assay-specific\
+    \ data applications."
   Inspired by:
   - '-'
-  Method: CIV
+  Method: Prophet
   Model:
-  - '-'
-  Publication: https://www.nature.com/articles/s42256-023-00719-0
-  Published: true
+  - Transformer
+  - Multi-modal
+  - Knowledge Informed
+  Publication: https://www.biorxiv.org/content/10.1101/2024.08.12.607533v2
+  Published: false
   Task:
-  - '-'
-  Year: 2023
-- Code Availability: '-'
+  - Unseen Perturbation Prediction
+  - Context Transfer
+  Year: 2024
+- Code Availability: https://github.com/Genentech/iterative-perturb-seq
   Description: "Iterpert is an active learning framework for Perturb-seq experiments\
     \ that uses GEARS to predict gene expression gene expression perturbation effects.\
     \ The method iteratively retrains GEARS on new data and selects the next batch\
@@ -2635,6 +2740,7 @@
   - GEARS
   Method: IterPert
   Model:
+  - GEARS
   - Active Learning
   Publication: https://www.biorxiv.org/content/10.1101/2023.12.12.571389v1.full.pdf
   Published: false
@@ -2643,23 +2749,24 @@
   - Combinatorial Effect Prediction
   Year: 2024
 - Code Availability: https://github.com/azizilab/decipher
-  Description: "Decipher is a hierarchical deep generative model to integrate and\
-    \ visualize single-cell RNA-seq data from both normal and perturbed conditions,\
-    \ identifying shared and disrupted cell-state trajectories. Its architecture includes\
-    \ dual latent spaces\u2014a low-dimensional state for detailed cell-state modeling\
-    \ and a two-dimensional space for visualization\u2014connected to gene expression\
-    \ through linear or single-layer neural network transformations. The model aligns\
-    \ trajectories by maintaining shared transcriptional programs for common biological\
-    \ processes across conditions."
+  Description: Decipher is a hierarchical deep generative model to integrate and visualize
+    single-cell RNA-seq data from both normal and perturbed conditions, identifying
+    shared and disrupted cell-state trajectories. Its architecture includes dual latent
+    spaces -a low-dimensional state for detailed cell-state modeling and a two-dimensional
+    space for visualization-connected to gene expression through linear or single-layer
+    neural network transformations. The model aligns trajectories by maintaining shared
+    transcriptional programs for common biological processes across conditions.
   Inspired by:
   - '-'
   Method: Decipher
   Model:
   - VAE
+  - Linear Decoder
   Publication: https://www.biorxiv.org/content/10.1101/2023.11.11.566719v2.full
   Published: false
   Task:
-  - Context Transfer
+  - Unsupervised Disentanglement
+  - Linear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/hsmaan/SpatialDIVA
   Description: SpatialDIVA learns distinct latent spaces capturing intrinsic (transcriptomic),
@@ -2685,7 +2792,7 @@
   Task:
   - Multi-component Disentanglement
   Year: 2025
-- Code Availability: '-'
+- Code Availability: https://github.com/Bertinus/FLeCS
   Description: "FLeCS models single-cell gene expression dynamics using coupled ordinary\
     \ differential equations (ODEs) parameterized by a gene regulatory network. Cells\
     \ are grouped into temporal bins\u2014either via pseudotime inference or experimental\
@@ -2705,26 +2812,29 @@
   - GRN Inference
   - Causal Structure
   Year: 2025
-- Code Availability: '-'
-  Description: RENGE attempts to infer gene regulatory networks (GRNs) from time-series
-    single-cell CRISPR knockout data. It models changes in gene expression following
-    a knockout by propagating the effects through direct and higher-order (indirect)
-    regulatory paths, where the gene network is represented as a matrix of regulatory
-    strengths between gene pairs.
+- Code Availability: https://github.com/masastat/RENGE
+  Description: RENGE attempts to infer gene regulatory networks from time-series single-cell
+    CRISPR knockout data. It models changes in gene expression following a knockout
+    by propagating the effects through direct and higher-order (indirect) regulatory
+    paths, where the gene network is represented as a matrix of regulatory strengths
+    between gene pairs.
   Inspired by:
   - '-'
   Method: RENGE
   Model:
   - Regression model
   Publication: https://www.nature.com/articles/s42003-023-05594-4
-  Published: false
+  Published: true
   Task:
   - Context Transfer
   - GRN Inference
   - Causal Structure
   Year: 2023
 - Code Availability: https://github.com/daifengwanglab/ARTEMIS
-  Description: '-'
+  Description: "ARTEMIS combines variational autoencoder with an unbalanced Diffusion\
+    \ Schr\xF6dinger Bridge to reconstruct continuous trajectories from time-series\
+    \ data. The methods trains a VAE first, then jointly trains the VAE and uDSB by\
+    \ solving the forward-backward SDEs in the latent space using neural networks."
   Inspired by:
   - '-'
   Method: ARTEMIS
@@ -2734,20 +2844,20 @@
   Publication: https://www.biorxiv.org/content/biorxiv/early/2025/01/26/2025.01.23.634618.full.pdf
   Published: false
   Task:
-  - '-'
+  - Trace Cell Populations
   Year: 2025
 - Code Availability: https://github.com/jiang-q19/scPRAM
   Description: 'scPRAM is a computational framework for predicting single-cell gene
     expression changes in response to perturbations. The method integrates three main
     components: a variational autoencoder (VAE), optimal transport, and an attention
-    mechanism. The VAE encodes high-dimensional, sparse gene expression data into
-    a latent space. Optimal transport is applied in this latent space to match unpaired
-    cells before and after perturbation by finding an optimal coupling between their
-    distributions. For each test cell, the attention mechanism computes a perturbation
-    vector by comparing its latent representation (query) against those of matched
-    training cells (keys and values). The predicted post-perturbation response is
-    generated by adding the perturbation vector to the query and decoding it back
-    to gene expression space using the VAE decoder.'
+    mechanism. The VAE encodes the gene expression data into a latent space. Optimal
+    transport is applied in this latent space to match unpaired cells before and after
+    perturbation by finding an optimal coupling between their distributions. For each
+    test cell, the attention mechanism computes a perturbation vector by comparing
+    its latent representation (query) against those of matched training cells (keys
+    and values). The predicted post-perturbation response is generated by adding the
+    perturbation vector to the query and decoding it back to gene expression space
+    using the VAE decoder.'
   Inspired by:
   - '-'
   Method: scPRAM
@@ -2759,7 +2869,7 @@
   Published: true
   Task:
   - Context Transfer
-  - Counterfactual Cell Maps
+  - Trace Cell Populations
   Year: 2024
 - Code Availability: https://saezlab.github.io/mistyR/
   Description: MISTy extracts intra- and intercellular relationships from spatial
@@ -2773,7 +2883,7 @@
   - SVCA
   Method: MISTy
   Model:
-  - Spatial Niches
+  - Spatially-informed
   - Random Forrest (or other regression models)
   Publication: https://link.springer.com/article/10.1186/s13059-022-02663-5
   Published: true
@@ -2784,12 +2894,12 @@
   Description: SpaCeNet aims to untangle the complex relationships between molecular
     interactions within and between cells by analyzing spatially resolved single-cell
     data. To achieve this, SpaCeNet leverages an adaptation of probabilistic graphical
-    models (PGMs) to enable spatially resolved conditional independence testing. This
-    approach allows for the identification of direct and indirect dependencies, as
-    well as the removal of spurious gene association patterns. Additionally, SpaCeNet
-    incorporates explicit cell-cell distance information to differentiate between
-    short- and long-range interactions, thereby distinguishing between baseline cellular
-    variability and interactions influenced by a cell's microenvironment.
+    models  to enable spatially resolved conditional independence testing. This approach
+    allows for the identification of direct and indirect dependencies, as well as
+    the removal of spurious gene association patterns. Additionally, SpaCeNet incorporates
+    explicit cell-cell distance information to differentiate between short- and long-range
+    interactions, thereby distinguishing between baseline cellular variability and
+    interactions influenced by a cell's microenvironment.
   Inspired by:
   - '-'
   Method: SpaCeNet
@@ -2801,17 +2911,16 @@
   Task:
   - Feature Relationships
   Year: 2024
-- Code Availability: '-'
-  Description: "Kasumi extends MISTy by focusing on identifying localized relationship\
-    \ patterns that are persistent across tissue samples. Instead of modeling global\
-    \ relationships, it uses a sliding-window approach to learn representations of\
-    \ local tissue patches (neighborhoods), characterized by multivariate, potentially\
-    \ non-linear relationships across views. These window-specific relationship signatures\
-    \ are clustered (using graph-based community detection) into spatial patterns,\
-    \ which are retained based on a persistence criterion\u2014i.e., being consistently\
-    \ observed across multiple samples. This enables Kasumi to represent each sample\
-    \ as a distribution over interpretable, shared local patterns, facilitating tasks\
-    \ like patient stratification while maintaining model explainability."
+- Code Availability: https://www.github.com/jtanevski/kasumi
+  Description: Kasumi extends MISTy by focusing on identifying localised relationship
+    patterns that are persistent across tissue samples. Instead of modeling global
+    relationships, it uses a sliding-window approach to learn representations of local
+    tissue patches (neighborhoods), characterized by multivariate, potentially non-linear
+    relationships across views. These window-specific relationship signatures are
+    clustered (using graph-based community detection) into spatial patterns, which
+    are consistently observed across multiple samples. This enables Kasumi to represent
+    each sample as a distribution over interpretable, shared local patterns, facilitating
+    tasks like patient stratification while maintaining model explainability.
   Inspired by:
   - MISTy
   Method: Kasumi
@@ -2825,26 +2934,24 @@
   - Feature Relationships
   Year: 2025
 - Code Availability: https://github.com/gifford-lab/prescient
-  Description: TODO
+  Description: PRESCIENT models cellular differentiation as a stochastic diffusion
+    process, where the drift term is parameterised as the negative gradient of a neural
+    network-learned potential function. The model is trained using time-series single-cell
+    RNA-seq data, and fits the potential function by minimizing the regularised Wasserstein
+    distance between simulated and observed cell populations at each time point, explicitly
+    incorporating cell proliferation by weighting cells according to their expected
+    number of descendants. PRESCIENT can simulate differentiation trajectories for
+    both observed and (in silico) perturbed cell states, enabling the prediction of
+    cell fate outcomes under various genetic interventions.
   Inspired by:
-  - TODO
+  - '-'
   Method: Prescient
   Model:
-  - TODO
+  - Diffusion
   Publication: https://www.nature.com/articles/s41467-021-23518-w
   Published: true
   Task:
-  - TODO
+  - Trace Cell Populations
+  - Seen Perturbation Prediction
+  - Context Transfer
   Year: 2021
-- Code Availability: '-'
-  Description: TODO
-  Inspired by:
-  - TODO
-  Method: D-SPIN
-  Model:
-  - TODO
-  Publication: https://pmc.ncbi.nlm.nih.gov/articles/PMC10153191/
-  Published: false
-  Task:
-  - TODO
-  Year: 2024

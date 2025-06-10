@@ -159,14 +159,14 @@ Differential Analysis
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Perturbation Score (PS) quantifies single-cell responses to perturbations in three steps. First, differentially expressed genes (DEGs) are identified. Second, existing algorithms, such as MUSIC, MIMOSCA, scMAGeCK or SCEPTRE, are used to infer the average perturbation effect on these genes. Finally, each cell is assigned a Perturbation Score by minimizing the error between predicted and observed changes in gene expression.">
+         <tr data-description="Perturbation Score (PS) quantifies single-cell responses to (&#34;dosage&#34;-informed) perturbations in three steps. First, a signature gene set is defined for each perturbation - either via differential expression or pre-defined gene sets. Second, scMAGeCK’s regression framework estimates gene-level coefficients (β) reflecting the average effect of each perturbation on its target genes. Third, a regularised regression model is fitted per cell to estimate a scalar PS [0-to-1], reflecting how well the cell’s gene expression profile matches the β-weighted perturbation signature. This is done through constrained optimisation, where scores are inferred only for cells annotated as receiving the perturbation.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41556-025-01626-9">Perturbation Score</a></td>
            <td>2025</td>
 
            <td><ul><li>Perturbation Responsiveness</li><li>Differential Analysis</li></ul></td>
 
-           <td><ul><li>Pipeline</li></ul></td>
+           <td><ul><li>Robust Rank Aggregate</li><li>Ridge Regression</li><li>Regularised Linear Models</li></ul></td>
 
 
            <td class="published">✓</td>

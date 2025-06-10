@@ -44,7 +44,7 @@ Perturbation Responsiveness
            <td class="published">✓</td>
             <td>✗</td>
          </tr>
-         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy (MMD) between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
+         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/2411.08072">ContrastiveVI+</a></td>
            <td>2024</td>
@@ -65,7 +65,7 @@ Perturbation Responsiveness
            <td><a href="https://www.nature.com/articles/s41592-023-02040-5#Sec11">CINEMA-OT</a></td>
            <td>2023</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Perturbation Responsiveness</li><li>Unsupervised Disentanglement</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Perturbation Responsiveness</li><li>Unsupervised Disentanglement</li></ul></td>
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
@@ -81,7 +81,7 @@ Perturbation Responsiveness
            <td><a href="https://www.nature.com/articles/s41592-023-01969-x">CellOT</a></td>
            <td>2023</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Perturbation Responsiveness</li><li>Context Transfer</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Perturbation Responsiveness</li><li>Context Transfer</li></ul></td>
 
            <td><ul><li>Dual (min-max) Formulation OT</li></ul></td>
 
@@ -188,7 +188,7 @@ Perturbation Responsiveness
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Mixscape aims to classify CRISPR-targeted cells into perturbed and not perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature by subtracting each cell’s mRNA expression from the average of its k nearest NT (non-targeted) control neighbors. Differential expression testing between targeted and NT cells then identifies a set of DEGs that capture the perturbation response. These DEGs are used to define a perturbation vector—essentially, the average difference in expression between targeted and NT cells—which projects each cell’s DEG expression onto a single perturbation score. The Gaussian mixture model is applied to these perturbation scores, with one component fixed to match the NT distribution, while the other represents the perturbation effect. This model assigns probabilities that classify each targeted cell as either perturbed or escaping. Additionally, the authors propose visualization with Linear Discriminant Analysis (LDA) and UMAP, aiming to identify a low-dimensional subspace that maximally discriminates the mixscape-derived classes.">
+         <tr data-description="Mixscape aims to classify CRISPR-targeted cells into perturbed and not perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature by subtracting each cell’s mRNA expression from the average of its k nearest NT (non-targeted) control neighbors. Differential expression testing between targeted and NT cells then identifies a set of DEGs that capture the perturbation response. These DEGs are used to define a perturbation vector-essentially, the average difference in expression between targeted and NT cells, which projects each cell’s DEG expression onto a single perturbation score. The Gaussian mixture model is applied to these perturbation scores, with one component fixed to match the NT distribution, while the other represents the perturbation effect. This model assigns probabilities that classify each targeted cell as either perturbed or escaping. Additionally, the authors propose visualization with Linear Discriminant Analysis and UMAP, aiming to identify a low-dimensional subspace that maximally discriminates the mixscape-derived classes.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41588-021-00778-2#Sec11">Mixscape</a></td>
            <td>2021</td>
@@ -204,14 +204,14 @@ Perturbation Responsiveness
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Perturbation Score (PS) quantifies single-cell responses to perturbations in three steps. First, differentially expressed genes (DEGs) are identified. Second, existing algorithms, such as MUSIC, MIMOSCA, scMAGeCK or SCEPTRE, are used to infer the average perturbation effect on these genes. Finally, each cell is assigned a Perturbation Score by minimizing the error between predicted and observed changes in gene expression.">
+         <tr data-description="Perturbation Score (PS) quantifies single-cell responses to (&#34;dosage&#34;-informed) perturbations in three steps. First, a signature gene set is defined for each perturbation - either via differential expression or pre-defined gene sets. Second, scMAGeCK’s regression framework estimates gene-level coefficients (β) reflecting the average effect of each perturbation on its target genes. Third, a regularised regression model is fitted per cell to estimate a scalar PS [0-to-1], reflecting how well the cell’s gene expression profile matches the β-weighted perturbation signature. This is done through constrained optimisation, where scores are inferred only for cells annotated as receiving the perturbation.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41556-025-01626-9">Perturbation Score</a></td>
            <td>2025</td>
 
            <td><ul><li>Perturbation Responsiveness</li><li>Differential Analysis</li></ul></td>
 
-           <td><ul><li>Pipeline</li></ul></td>
+           <td><ul><li>Robust Rank Aggregate</li><li>Ridge Regression</li><li>Regularised Linear Models</li></ul></td>
 
 
            <td class="published">✓</td>

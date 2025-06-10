@@ -108,7 +108,7 @@ Nonlinear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy (MMD) between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
+         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/2411.08072">ContrastiveVI+</a></td>
            <td>2024</td>
@@ -156,7 +156,7 @@ Nonlinear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="SIMVI is a spatially-informed VAE that disentangles gene expression variability into two latent factors: an intrinsic variable z, which captures cell type–specific signals, and a spatial variable s, which quantifies spatial effects. The spatial latent variable s is inferred by aggregating the intrinsic representations of neighboring cells via a Graph Attention Network (GAT), thereby incorporating local spatial context. To promote independence between z and s, SIMVI employs an asymmetric regularization on z using maximum mean discrepancy (MMD) or, alternatively, a  mutual information estimator, ensuring that z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased machine learning principles, the model decomposes gene expression variance by treating s as a continuous treatment and z as confounding covariates, thereby quantifying the specific impact of spatial context on gene expression.">
+         <tr data-description="SIMVI is a spatially-informed VAE that disentangles gene expression variability into two latent factors: an intrinsic variable z, which captures cell type–specific signals, and a spatial variable s, which quantifies spatial effects. The spatial latent variable s is inferred by aggregating the intrinsic representations of neighboring cells via a Graph Attention Network, thereby incorporating local spatial context. To promote independence between z and s, SIMVI employs an asymmetric regularization on z using maximum mean discrepancy or, alternatively, a  mutual information estimator, ensuring that z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased machine learning principles, the model decomposes gene expression variance by treating s as a continuous treatment and z as confounding covariates, thereby quantifying the specific impact of spatial context on gene expression.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-025-58089-7">SIMVI</a></td>
            <td>2025</td>
@@ -172,50 +172,18 @@ Nonlinear Gene Programmes
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="scGPT processes each cell as a sequence of gene tokens, expression-value tokens and condition tokens (e.g., batch, perturbation or modality), embedding each and summing before feeding them into stacked transformer blocks whose specialised, masked multi-head attention layers enable autoregressive prediction of masked gene expressions from non-sequential data. scGPT is pretrained using a masked gene expression-prediction objective that jointly optimizes cell and gene embeddings, and can be fine-tuned on smaller datasets with task-specific supervised losses. For gene regulatory network inference, scGPT derives k-nearest neighbor similarity graphs from learned gene embeddings and analyses attention maps to extract context-specific Gene Programmes and gene-gene interactions.">
-           <td class="details-control"></td>
-           <td><a href="https://www.nature.com/articles/s41592-024-02201-0">scGPT</a></td>
-           <td>2024</td>
-
-           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li><li>Nonlinear Gene Programmes</li></ul></td>
-
-           <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
-
-
-           <td class="published">✓</td>
-            <td><a href="https://github.com/bowang-lab/scGPT" class="github-link">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">GitHub</span>
-                </a></td>
-         </tr>
          <tr data-description="scFoundation uses an asymmetric transformer encoder–decoder: its embedding module converts each continuous gene expression scalar directly into a high-dimensional learnable vector without discretization; the encoder takes as input only nonzero and unmasked embeddings through vanilla transformer blocks to model gene–gene dependencies efficiently. The zero and masked gene embeddings, along with the encoder embeddings, are passed to the decoder, which uses Performer-style attention to reconstruct transcriptome-wide representations, specifically those of masked genes. Specifically, scFoundation is trained using a masked regression objective on both raw and downsampled count vectors, with two total-count tokens concatenated to inputs to account for sequencing depth variance. The decoder-derived gene context embeddings are then used as node features in GEARS for single-cell perturbation response prediction.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41592-024-02305-7">scFoundation</a></td>
            <td>2024</td>
 
-           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Feature Relationships</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
 
            <td class="published">✓</td>
             <td><a href="https://github.com/biomap-research/scFoundation" class="github-link">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">GitHub</span>
-                </a></td>
-         </tr>
-         <tr data-description="GeneCompass is a knowledge-informed, cross-species foundation model. During pre-training it integrates four types of prior biological knowledge - gene regulatory networks (ENCODE PECA2‐derived GRNs), promoter sequences (fine‐tuned DNABert embeddings), gene family annotations (gene2vec HGNC/esnembl embeddings), and gene co-expression relationships (Pearson Correlations in their dataset) - into a unified embedding space. It employs a masked-language-modeling strategy by randomly masking 15 % of gene inputs and simultaneously reconstructs both gene identities and expression values; this is optimized via a multi-task loss combining mean squared error for expression recovery and cross-entropy for gene ID prediction, balanced by a weighting hyperparameter β. Combined with GEARS for extrapolation tasks.">
-           <td class="details-control"></td>
-           <td><a href="https://www.nature.com/articles/s41422-024-01034-y">GeneCompass</a></td>
-           <td>2024</td>
-
-           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
-
-           <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
-
-
-           <td class="published">✓</td>
-            <td><a href="https://github.com/xCompass-AI/GeneCompass" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>
@@ -245,6 +213,22 @@ Nonlinear Gene Programmes
 
            <td class="published">✓</td>
             <td><a href="https://github.com/YosefLab/Hotspot/tree/master" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
+         </tr>
+         <tr data-description="SubCell is a set of self-supervised vision transformer (ViT) models trained on low-plex single-cell immunofluorescence images from the Human Protein Atlas to learn biologically meaningful representations of protein localisation and tissue morphology. The models are optimised using a multi-task objective that combines masked autoencoding for spatial reconstruction, a cell-specific contrastive loss to enforce consistency across augmented views of the same cell, and a protein-specific contrastive loss to align embeddings of cells stained for the same protein across different cell lines and experiments. An attention pooling module is used to priotise informative subcellular regions. The resulting models, particularly ViT-ProtS-Pool and MAE-CellS-ProtS-Pool, are shown to generalise across datasets, imaging modalities, cell types, and perturbations without fine-tuning.">
+           <td class="details-control"></td>
+           <td><a href="https://www.biorxiv.org/content/10.1101/2024.12.06.627299v1.abstract">SubCell</a></td>
+           <td>2024</td>
+
+           <td><ul><li>Context Transfer</li><li>Nonlinear Gene Programmes</li></ul></td>
+
+           <td><ul><li>A collection of Vision Transformer Models</li><li>Contrastive loss</li></ul></td>
+
+
+           <td class="published">✗</td>
+            <td><a href="https://github.com/czi-ai/sub-cell-embed" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>

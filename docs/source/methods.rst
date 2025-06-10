@@ -31,7 +31,7 @@ All Methods
          </tr>
        </thead>
        <tbody>
-         <tr data-description="A modified version of PCA, where the covariance matrix (COV) is the difference between COV(case/target) and αCOV(control/background). The hyperparameter α is used to balance having a high case variance and a low control variance. To provide some intuition, when α is 0, the model reduces to classic PCA on the case data.  Optimal alphas (equal to k clusters) are identified using spectral clustering over a range of cPCA runs with different alphas, with selection based on the similarity of cPCA outputs.">
+         <tr data-description="A modified version of PCA, where the covariance matrix (COV) is the difference between COV(case/perturbed) and αCOV(control/background). The hyperparameter α is used to balance having a high case variance and a low control variance. To provide some intuition, when α is 0, the model reduces to classic PCA on the case data. Optimal alphas (equal to k clusters) are identified using spectral clustering over a range of cPCA runs with different alphas, with selection based on the similarity of cPCA outputs.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-018-04608-8#Sec7">cPCA</a></td>
            <td>2018</td>
@@ -47,7 +47,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A non-negative matrix factorisation that decomposes gene expression matrices into common and specific patterns. For each condition, the observed expression matrix is approximated as the sum of a common component - represented by a common feature matrix (Wc) with condition-specific coefficient matrices (Hc₁, Hc₂) - and a specific component unique to each condition, represented by its own feature matrix (Wsᵢ) and coefficients (Hsᵢ). The model uses an alternating approach to minimize the combined reconstruction error (squared Frobenius norm) across common and shared components.">
+         <tr data-description="A non-negative matrix factorisation that decomposes gene expression matrices into common and condition-specific patterns. For each condition, the observed expression matrix is approximated as the sum of a common component - represented by a common feature matrix with condition-specific coefficient matrices - and a specific component unique to each condition, represented by its own feature matrix  and coefficients. The model uses an alternating approach to minimize the combined reconstruction error (squared Frobenius norm) across common and shared components.">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/nar/article/47/13/6606/5512984">CSMF</a></td>
            <td>2019</td>
@@ -63,7 +63,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A family of contrastive latent variable models (cLVMs), where case data are modeled as the sum of background and salient latent embeddings, while control data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust cLVM with a Student&#39;s t distribution - cLVM with automatic relevance determination (ARD) to regularize (select) the columns of the weight matrix - contrastive VAE, as a non-linear extension of the framework The shared concept across these models is that each model learns a shared set of latent variables for the background and target data, while salient latent variables are learnt solely for the target data.">
+         <tr data-description="A family of contrastive latent variable models (cLVMs), where case data are modeled as the sum of background and salient latent embeddings, while control data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust cLVM with a Student&#39;s t distribution - cLVM with automatic relevance determination to regularise the columns of the weight matrix - contrastive VAE, as a non-linear extension of the framework The shared concept across these models is that each model learns a shared set of latent variables for the background and target data, while salient latent variables are learnt solely for the target data.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/1811.06094">cLVM</a></td>
            <td>2019</td>
@@ -95,7 +95,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A sparse version of contrastive PCA that enhances interpretability in high-dimensional settings by integrating ℓ1regularization into an iterative procedure to estimate sparse loadings and principal components">
+         <tr data-description="A sparse version of contrastive PCA that enhances interpretability in high-dimensional settings by integrating l1 regularization into an iterative procedure to estimate sparse loadings and principal components">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/36/11/3422/5807607">scPCA</a></td>
            <td>2020</td>
@@ -300,7 +300,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph. The use of a diffusion model, instead of a traditional variational autoencoder, improves sample fidelity and better preserves underlying causal relationships during generation.">
+         <tr data-description="CausCell integrates causal representation learning with diffusion-based generative modeling to generate counterfactual single-cell data. It disentangles observed and unobserved concepts using concept-specific adversarial discriminators and links the resulting latent representations through a structural causal model encoded as a directed acyclic graph.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/biorxiv/early/2024/12/17/2024.12.11.628077.full.pdf">CausCell</a></td>
            <td>2024</td>
@@ -311,7 +311,10 @@ All Methods
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/bm2-lab/CausCell" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="A VAE that combines the contrastiveVI/cVAE architecture with a classifier that learns the pairing of perturbation labels to cells. As in ContrastiveVI, unperturbed cells are drawn solely from background latent space, while cells classified as perturbed are reconstructed from both the background and salient sapces. Additionally, Hilbert-Schmidt Independence Criterion (HSIC) is used to disentagle the background and salient latent spaces.">
            <td class="details-control"></td>
@@ -326,14 +329,14 @@ All Methods
            <td class="published">✓</td>
             <td>✗</td>
          </tr>
-         <tr data-description="Celcomen (CCE) disentangles intra- and inter-cellular gene regulation in spatial transcriptomics data by processing gene expression through two parallel interaction functions. One function uses a graph convolution layer (k-hop GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling, while the other applies a linear layer to model regulation within individual cells. During training, Celcomen combines a normalization term—computed via a mean field approximation that decomposes the overall likelihood into a mean contribution and an interaction contribution - with a similarity measure that directly compares each cell’s predicted gene expression (obtained via message passing) to its actual expression, thereby driving the model to adjust its interaction matrices so that the predictions closely match the observed data. Simcomen (SCE) then leverages these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico experiments.">
+         <tr data-description="Celcomen disentangles intra- and inter-cellular gene regulation in spatial transcriptomics data by processing gene expression through two parallel interaction functions. One function uses a single graph convolution layer (1-hop GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling, while the other applies a linear layer to model regulation within individual cells. Training maximises an approximate likelihood that aligns the model-predicted weight matrices to the average gene expression across all cells. Simcomen then leverages these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico experiments.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/pdf?id=Tqdsruwyac">Celcomen</a></td>
            <td>2025</td>
 
            <td><ul><li>Unsupervised Disentanglement</li><li>Feature Relationships</li></ul></td>
 
-           <td><ul><li>K-hop Convolution</li><li>Mean field estimation</li><li>Spatially-informed</li></ul></td>
+           <td><ul><li>K-hop Convolution</li><li>Spatially-informed</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -342,7 +345,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy (MMD) between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
+         <tr data-description="An extension of ContrastiveVI that incorporates an auxiliary classifier to estimate the effects of perturbations, where the classifier operates on the salient variables and is sampled from a relaxed straight-through Bernoulli distribution. The output from the classifier also directly informs the salient latent space, indicating whether a cell expressing a gRNA successfully underwent a corresponding genetic perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging non-perturbed cells to map to the null region of the salient space. For datasets with a larger number of perturbations, the method also re-introduces and minimizes the Maximum Mean Discrepancy between the salient and background latent variables. This discourages the leakage of perturbation-induced information into the background latent variables, ensuring a clearer separation of perturbation effects.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/2411.08072">ContrastiveVI+</a></td>
            <td>2024</td>
@@ -470,7 +473,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="SIMVI is a spatially-informed VAE that disentangles gene expression variability into two latent factors: an intrinsic variable z, which captures cell type–specific signals, and a spatial variable s, which quantifies spatial effects. The spatial latent variable s is inferred by aggregating the intrinsic representations of neighboring cells via a Graph Attention Network (GAT), thereby incorporating local spatial context. To promote independence between z and s, SIMVI employs an asymmetric regularization on z using maximum mean discrepancy (MMD) or, alternatively, a  mutual information estimator, ensuring that z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased machine learning principles, the model decomposes gene expression variance by treating s as a continuous treatment and z as confounding covariates, thereby quantifying the specific impact of spatial context on gene expression.">
+         <tr data-description="SIMVI is a spatially-informed VAE that disentangles gene expression variability into two latent factors: an intrinsic variable z, which captures cell type–specific signals, and a spatial variable s, which quantifies spatial effects. The spatial latent variable s is inferred by aggregating the intrinsic representations of neighboring cells via a Graph Attention Network, thereby incorporating local spatial context. To promote independence between z and s, SIMVI employs an asymmetric regularization on z using maximum mean discrepancy or, alternatively, a  mutual information estimator, ensuring that z retains minimal non-cell-intrinsic information. Furthermore, leveraging debiased machine learning principles, the model decomposes gene expression variance by treating s as a continuous treatment and z as confounding covariates, thereby quantifying the specific impact of spatial context on gene expression.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-025-58089-7">SIMVI</a></td>
            <td>2025</td>
@@ -486,7 +489,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="trVAE enhances the scGEN model by incorporating condition embeddings and leveraging maximum mean discrepancy (MMD) regularization to manage distributions across binary conditions. By utilizing a conditional variational autoencoder (CVAE), trVAE aims to create a compact and consistent representation of cross-condition distributions, enhancing out-of-distribution (OOD) prediction accuracy. ">
+         <tr data-description="trVAE enhances the scGEN model by incorporating condition embeddings and leveraging maximum mean discrepancy regularization to manage distributions across binary conditions. By utilizing a conditional variational autoencoder, trVAE aims to create a compact and consistent representation of cross-condition distributions, enhancing out-of-distribution prediction accuracy. ">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/36/Supplement_2/i610/6055927#409207818">trVAE</a></td>
            <td>2020</td>
@@ -502,7 +505,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Dr.VAE uses a Variational Autoencoder (VAE) architecture to predict drug response from transcriptomic perturbation signatures. It models transcription change as a linear function within a low-dimensional latent space, defined by encoder and decoder neural networks. For paired expression samples from treated and control conditions, Dr.VAE accurately predicts treated expression.">
+         <tr data-description="Dr.VAE uses a Variational Autoencoder architecture to predict drug response from transcriptomic perturbation signatures. It models transcription change as a linear function within a low-dimensional latent space, defined by encoder and decoder neural networks. For paired expression samples from treated and control conditions, Dr.VAE accurately predicts treated expression.">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/35/19/3743/5372343">Dr.VAE</a></td>
            <td>2019</td>
@@ -518,7 +521,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="scGen is VAE that uses latent space vector arithmetics to predict single-cell perturbation responses. The method first encodes high-dimensional gene expression profiles into a latent space, where it computes a difference vector (δ) representing the change between perturbed and unperturbed conditions. At inference, this δ is linearly added to the latent representation of unperturbed cells, and the adjusted latent vector is then decoded back into the original gene expression space, thereby simulating the perturbed state. ">
+         <tr data-description="scGen is VAE that uses latent space vector arithmetics to predict single-cell perturbation responses. The method first encodes high-dimensional gene expression profiles into a latent space, where it computes a difference vector (delta) representing the change between perturbed and unperturbed conditions. At inference, this delta vector is linearly added to the latent representation of unperturbed cells, and the adjusted latent vector is then decoded back into the original gene expression space, thereby simulating the perturbed state. ">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41592-019-0494-8#Abs1">scGEN</a></td>
            <td>2019</td>
@@ -541,7 +544,7 @@ All Methods
 
            <td><ul><li>Context Transfer</li><li>Seen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
-           <td><ul><li>-ODE</li></ul></td>
+           <td><ul><li>ODE</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -550,7 +553,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Compositional Perturbation Autoencoder (CPA) models single-cell gene expression under perturbations and covariates by decomposing expression into additive latent embeddings: a basal state, perturbation effects, and covariate effects. To ensure that the basal embedding is disentangled from perturbations and covariates, CPA employs an adversarial training scheme: auxiliary classifiers are trained to predict perturbations and covariates from the basal embedding, while the encoder is updated using a combined loss (including reconstruction, KL divergence, adversarial classification losses) that discourages the basal representation from encoding such information. Perturbation embeddings are modulated by neural networks applied to continuous covariates (e.g., dose or time), enabling modeling of dose-response and combinatorial effects. The combined latent state is decoded to reconstruct gene expression under a Gaussian likelihood, and for counterfactual inference the basal embedding (from control cells) is combined with alternative perturbation and covariate representations to generate predictions for unobserved conditions.">
+         <tr data-description="Compositional Perturbation Autoencoder (CPA) models single-cell gene expression under perturbations and covariates by decomposing expression into additive latent embeddings: a basal state, perturbation effects, and covariate effects. To ensure that the basal embedding is disentangled from perturbations and covariates, CPA employs an adversarial training scheme: auxiliary classifiers are trained to predict perturbations and covariates from the basal embedding, while the encoder is updated using a combined loss that discourages the basal representation from encoding such information. Perturbation embeddings are modulated by neural networks applied to continuous covariates (e.g., dose or time), enabling modeling of dose-response and combinatorial effects. ">
            <td class="details-control"></td>
            <td><a href="https://www.embopress.org/doi/full/10.15252/msb.202211517">CPA</a></td>
            <td>2023</td>
@@ -598,7 +601,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="MultiCPA extends CPA to predict combinatorial perturbation responses from CITE-seq data by integrating gene and protein modalities using either concatenation or a Product-of-Experts (PoE) framework. It employs totalVI-inspired decoders and likelihoods to model modality-specific outputs.">
+         <tr data-description="MultiCPA extends CPA to predict combinatorial perturbation responses from CITE-seq data by integrating gene and protein modalities using either concatenation or a product of experts. It employs totalVI-inspired decoders and likelihoods to model modality-specific outputs.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/10.1101/2022.07.08.499049v1.abstract">MultiCPA</a></td>
            <td>2022</td>
@@ -614,14 +617,14 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CellCap is a deep generative model that extends CPA by incorporating cross-attention mechanisms between cell states, aimed at understanding transcriptional response programs and reconstructing perturbed profiles. Further, CellCap uses a variational autoencoder (VAE) framework with a linear decoder to identify sparse and interpretable latent factors.">
+         <tr data-description="CellCap is a deep generative model that extends CPA by incorporating cross-attention mechanisms between cell state and perturbation response (i.e., its basal latent space and the perturbation design matrix). Further, CellCap uses a variational autoencoder (VAE) framework with a linear decoder to identify sparse and interpretable latent factors.">
            <td class="details-control"></td>
            <td><a href="https://www.cell.com/cell-systems/fulltext/S2405-4712(25)00078-X">CellCap</a></td>
            <td>2024</td>
 
            <td><ul><li>Multi-component Disentanglement</li><li>Linear Gene Programmes</li></ul></td>
 
-           <td><ul><li>VAE</li><li>Attention</li></ul></td>
+           <td><ul><li>VAE</li><li>Attention</li><li>Linear Decoder</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -630,7 +633,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="GEARS is uses graph neural networks to learn multidimensional embeddings for genes and their perturbations by respectively leveraging gene co-expression and GO-derived similarity graphs. It first derives refined gene embeddings through a co-expression-based GNN and separately processes perturbation embeddings via a GO graph to incorporate prior biological relationships, with the latter design enabling predictions for unSeen Perturbation Prediction. These embeddings are integrated by adding the aggregated perturbation signal to the gene representations and then decoded using gene-specific layers augmented by a cross-gene context module, ultimately reconstructing the post-perturbation transcriptomic profile (DEGs). The model is trained end-to-end with a combined autofocus and direction-aware loss, and it can optionally quantify uncertainty through a Gaussian likelihood framework.">
+         <tr data-description="GEARS is uses graph neural networks to learn multidimensional embeddings for genes and their perturbations by respectively leveraging gene co-expression and GO-derived similarity graphs. It first derives refined gene embeddings through a co-expression-based GNN and separately processes perturbation embeddings via a GO graph to incorporate prior biological relationships, with the latter design enabling predictions for unSeen Perturbation Prediction. These embeddings are integrated by adding the aggregated perturbation signal to the gene representations and then decoded using gene-specific layers augmented by a cross-gene context module, ultimately reconstructing the post-perturbation transcriptomic profile. The model is trained end-to-end with a combined autofocus and direction-aware loss, and it can optionally quantify uncertainty through a Gaussian likelihood framework.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41587-023-01905-6#Abs1">GEARS</a></td>
            <td>2023</td>
@@ -673,7 +676,10 @@ All Methods
 
 
            <td class="published">✓</td>
-            <td>✗</td>
+            <td><a href="https://github.com/Perturbation-Response-Prediction/PRnet" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="CODEX uses a Deep Neural Network to map cells from control to perturbed states, learning perturbation effects in respective perturbation-dependent latent spaces. These latent spaces can be arbitrarily combined to infer unseen combinatorial effects, allowing the model to predict the outcomes of complex treatment combinations. Additionally, CODEX can leverage prior information from Gene Ontologies to inform the effects of completely unSeen Perturbation Prediction.">
            <td class="details-control"></td>
@@ -707,7 +713,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="PDGrapher builds on graph neural network (GNN) to predict therapeutic perturbations that can reverse disease phenotypes, focusing directly on identifying perturbation targets rather than modeling the perturbation effects. By embedding diseased cell states into gene regulatory networks (GRNs) or protein-protein interaction (PPI) networks, PDGrapher learns latent representations to infer optimal perturbations that drive diseased states toward desired healthy outcomes. The method utilizes dual GNNs — a response prediction module and a perturbagen discovery module — both employing causal graphs as priors and adjusting edges to model interventions. ">
+         <tr data-description="PDGrapher builds on graph neural network (GNN) to predict therapeutic perturbations that can reverse disease phenotypes, focusing directly on identifying perturbation targets rather than modeling the perturbation effects. By embedding diseased cell states into gene regulatory networks or protein-protein interaction networks, PDGrapher learns latent representations to infer optimal perturbations that drive diseased states toward desired healthy outcomes. The method utilizes dual GNNs - a response prediction module and a perturbagen discovery module - both employing causal graphs as priors and adjusting edges to model interventions. ">
            <td class="details-control"></td>
            <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10802439/">PDGrapher</a></td>
            <td>2025</td>
@@ -762,7 +768,7 @@ All Methods
 
            <td><ul><li>Unseen Perturbation Prediction</li></ul></td>
 
-           <td><ul><li>AE</li></ul></td>
+           <td><ul><li>Autoencoder</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -805,7 +811,7 @@ All Methods
            <td><a href="https://www.biorxiv.org/content/10.1101/2024.11.16.623974v1">Squidiff</a></td>
            <td>2024</td>
 
-           <td><ul><li>Unseen Perturbation Prediction</li><li>Context Transfer</li></ul></td>
+           <td><ul><li>Combinatorial Effect Prediction</li><li>Context Transfer</li></ul></td>
 
            <td><ul><li>Diffusion Model</li></ul></td>
 
@@ -816,7 +822,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="LEMUR is a PCA based algorithm that defines condition dependent embedings to analyze differences in differentialy expressed genes across conditions. For each condition a separate embeding matrix is learned and reconstructed using a shared matrix. This is used to generate counterfactual estimates for each cell and condition, which is used to infer DE neighborhoods. ">
+         <tr data-description="LEMUR is a PCA based algorithm that defines condition dependent embedings to analyze differences in differentialy expressed genes across conditions. For each condition a separate embeding matrix is learned and reconstructed using a shared matrix. This is used to generate counterfactual estimates for each cell and condition, which is used to infer label-free DE genes and neighborhoods. ">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41588-024-01996-0">LEMUR</a></td>
            <td>2025</td>
@@ -898,7 +904,7 @@ All Methods
          </tr>
          <tr data-description="NicheCompass, the spatial sucessor of ExpiMap, employs multiple decoders: one graph decoder reconstructs the spatial adjacency matrix via an adjacency loss to ensure that spatially-neighboring observations have similar latent representations, while separate (masked) decoders - one for each cell’s own features and one for its aggregated neighborhood features - reconstruct the omics data. By masking the data reconstruction according to prior knowledge, each latent variable is associated with a gene program (subclassified according inter- or  intracellular signalling). Additionally, it learns de novo gene programs that capture novel, spatially coherent expression patterns, not covered by the prior knowledge. By default, it replaces the Group lasso loss of Expimap with a a dropout mechanism to prune uninformative prior knowledge sets.">
            <td class="details-control"></td>
-           <td><a href="https://scholar.google.com/scholar_url?url=https://www.nature.com/articles/s41588-025-02120-6&hl=en&sa=X&d=4385431678967561370&ei=jfHcZ9q4G5yV6rQP4Zul2Qo&scisig=AFWwaea2QWdmQLBJLz29SV6YD2cm&oi=scholaralrt&hist=dDujacgAAAAJ:12160454169637496643:AFWwaebf1S6Ukws-5zfatGcdJi9a&html=&pos=0&folt=art">NicheCompass</a></td>
+           <td><a href="https://www.nature.com/articles/s41588-025-02120-6">NicheCompass</a></td>
            <td>2024</td>
 
            <td><ul><li>Linear Gene Programmes</li></ul></td>
@@ -997,7 +1003,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-023-02040-5#Sec11">CINEMA-OT</a></td>
            <td>2023</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Perturbation Responsiveness</li><li>Unsupervised Disentanglement</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Perturbation Responsiveness</li><li>Unsupervised Disentanglement</li></ul></td>
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>ICA</li></ul></td>
 
@@ -1013,7 +1019,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-023-01969-x">CellOT</a></td>
            <td>2023</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Perturbation Responsiveness</li><li>Context Transfer</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Perturbation Responsiveness</li><li>Context Transfer</li></ul></td>
 
            <td><ul><li>Dual (min-max) Formulation OT</li></ul></td>
 
@@ -1024,12 +1030,12 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CondOT builds on CellOT to learn context-aware optimal transport maps by conditioning on an auxiliary variable. Instead of learning a fixed transport map, it learns a context-dependent transport map that adapts based on this auxiliary information. For each condition, CondOT learns how to transform a source distribution so that it closely matches a corresponding target distribution. The OT map is modeled as the gradient of a convex potential using partially input convex neural networks (PICNN), which ensures mathematical properties required for parametrised optimal transport. The auxiliary variables can be of different types: continuous (like dosage or spatial coordinates), categorical (like treatment groups, represented via one-hot encoding), or learned embeddings learned. Additionally, CondOT includes a separate neural module, a combinator network, for combinatorial predictions.">
+         <tr data-description="CondOT builds on CellOT to learn context-aware optimal transport maps by conditioning on an auxiliary variable. Instead of learning a fixed transport map, it learns a context-dependent transport map that adapts based on this auxiliary information. The OT map is modeled as the gradient of a convex potential using partially input convex neural networks, which ensures mathematical properties required for parametrised optimal transport. The auxiliary variables can be of different types: continuous (like dosage or spatial coordinates), categorical (like treatment groups, represented via one-hot encoding), or learned embeddings learned. Additionally, CondOT includes a separate neural module, a combinator network, for combinatorial predictions.">
            <td class="details-control"></td>
            <td><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/2d880acd7b31e25d45097455c8e8257f-Paper-Conference.pdf">CondOT</a></td>
            <td>2022</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Context Transfer</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Context Transfer</li></ul></td>
 
            <td><ul><li>Conditioned Dual (min-max) Formulation OT</li></ul></td>
 
@@ -1040,12 +1046,12 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="The paper extends entropic Gromov-Wasserstein Optimal Transport and Co-Optimal Transport to incorporate perturbation labels for aligning data across different modalities from large-scale perturbation screens. The core innovation involves constraining the learned cross-modality coupling matrix to be &#34;label-compatible&#34;, meaning that the transport plan is informed by the perturbation labels and is only allowed to match between cells that have received the same perturbation label, which is achieved by modifying the Sinkhorn algorithm. This label-compatible alignment is used to train a model to estimate cellular responses to perturbations when measurements are available in only one modality.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/pdf/2405.00838">GWOT</a></td>
            <td>2025</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li></ul></td>
 
            <td><ul><li>Optimal Transport</li><li>Multi-modal</li></ul></td>
 
@@ -1061,7 +1067,7 @@ All Methods
            <td><a href="https://openreview.net/pdf?id=hwnObmOTrV">MMFM</a></td>
            <td>2024</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
@@ -1077,7 +1083,7 @@ All Methods
            <td><a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/f381114cf5aba4e45552869863deaaa7-Paper-Conference.pdf">MFM</a></td>
            <td>2024</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li><li>Seen Perturbation Prediction</li></ul></td>
 
            <td><ul><li>Flow Matching</li><li>Optimal Transport</li></ul></td>
 
@@ -1088,19 +1094,6 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
-           <td class="details-control"></td>
-           <td><a href="https://arxiv.org/pdf/2405.03726">sc-OTGM</a></td>
-           <td>2024</td>
-
-           <td><ul><li>-</li></ul></td>
-
-           <td><ul><li>-</li></ul></td>
-
-
-           <td class="published">✓</td>
-            <td>✗</td>
-         </tr>
          <tr data-description="scDiffusion employs a Latent Diffusion Model for generating single-cell RNA sequencing data, using a three-part framework: a fine-tuned autoencoder for initial data transformation, a skip-connected multilayer perceptron denoising network, and a condition controller for cell-type-specific data generation. ">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/40/9/btae518/7738782">scDiffusion</a></td>
@@ -1108,7 +1101,7 @@ All Methods
 
            <td><ul><li>Context Transfer</li></ul></td>
 
-           <td><ul><li>Diffusion\n-VAE</li></ul></td>
+           <td><ul><li>Diffusion</li><li>VAE</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1122,7 +1115,7 @@ All Methods
            <td><a href="https://openreview.net/forum?id=3MnMGLctKb">CFGen</a></td>
            <td>2024</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li></ul></td>
 
            <td><ul><li>Optimal Transport</li><li>Multi-modal</li><li>Conditional Flow Matching</li></ul></td>
 
@@ -1133,12 +1126,12 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="CellFlow learns a vector field to predict time-dependent expression profiles under diverse conditions. The model encodes various covariates (perturbation, dosage, batch, etc.) , aggregates the embeddings via attention and deep sets, and uses a conditional flow matching framework to learn the underlying flow of the effect.">
+         <tr data-description="CellFlow learns a vector field to predict time-dependent expression profiles under diverse conditions. The model encodes various covariates (perturbation, dosage, batch, etc.), aggregates the embeddings via attention and deep sets, and uses a conditional flow matching framework to learn the underlying flow of the effect.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/10.1101/2025.04.11.648220v1.full.pdf">cellFlow</a></td>
            <td>2024</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Context Transfer</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Context Transfer</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
            <td><ul><li>Conditional Flow Matching</li><li>Optimal Transport</li></ul></td>
 
@@ -1151,7 +1144,7 @@ All Methods
            <td><a href="https://www.sciencedirect.com/science/article/pii/S009286741930039X?via%3Dihub">Waddington-OT</a></td>
            <td>2019</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li><li>Linear Gene Programmes</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Linear Gene Programmes</li></ul></td>
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li></ul></td>
 
@@ -1162,14 +1155,14 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="The paper introduces two key Flow Matching variants: (i) Optimal Transport CFM (OT-CFM), which uses optimal transport couplings (approximated with minibatch OT), to produce more robust flow inference and (ii) Schrödinger Bridge CFM solving the Schrödinger Bridge problem by using entropy-regularized OT couplings. ">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/forum?id=CD9Snc73AW">OT-CFM</a></td>
            <td>2024</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Flow Matching</li><li>Schrödinger Bridge</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1178,27 +1171,30 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="SBALIGN solves a Diffusion Schrödinger Bridge Problem with aligned data, i.e. where each sample from the source distribution is paired with a corresponding sample from the target distribution. It combines classical SB theory with Doob&#39;s h-transform to derive a novel loss -- parameterizing the drift and h-function with neural networks, enabling more stable training than iterative procedures.">
            <td class="details-control"></td>
            <td><a href="https://proceedings.mlr.press/v216/somnath23a/somnath23a.pdf">SBALIGN</a></td>
            <td>2023</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Schrödinger Bridge</li></ul></td>
 
 
            <td class="published">✓</td>
-            <td>✗</td>
+            <td><a href="https://github.com/vsomnath/aligned_diffusion_bridges " class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="MIOFlow learns (stochastic) continuous dynamics from snapshot data by combining neural ODEs, manifold learning, and optimal transport. The method first trains a Geodesic Autoencoder to embed data into a latent space where geodesic-based distances are preserved, then models trajectories via a neural ODE and an ODE solver, and optimizes the Wasserstein loss between actual and predicted distributions.">
            <td class="details-control"></td>
            <td><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/bfc03f077688d8885c0a9389d77616d0-Paper-Conference.pdf">MioFlow</a></td>
            <td>2022</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Neural ODE</li><li>Geodasic Autoencoder</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1212,7 +1208,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41586-024-08453-2">moscot</a></td>
            <td>2025</td>
 
-           <td><ul><li>Counterfactual Cell Maps</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li></ul></td>
 
            <td><ul><li>Unbalanced OT</li><li>Entropy‐regularized Sinkhorn</li><li>Low-rank OT</li><li>Sparse Map OT</li></ul></td>
 
@@ -1244,7 +1240,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-024-02201-0">scGPT</a></td>
            <td>2024</td>
 
-           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li><li>Nonlinear Gene Programmes</li></ul></td>
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >33M human cells)</li><li>Self-supervised masked expression prediction</li><li>Customised non-sequential (flash) attention</li></ul></td>
 
@@ -1271,27 +1267,43 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="-">
+         <tr data-description="C2S-Scale is a family of large language models (LLMs) for single-cell RNA-seq analysis that extends the Cell2Sentence (C2S) framework by converting cell gene-expression profiles into ordered “cell sentences” for natural-language processing.Each C2S-Scale model is initialized from a publicly released Gemma-2 or Pythia checkpoint, i.e. leverages pre-existing language representations, and is then further pre-trained on a multimodal corpus of over a billion tokens. Each cell sentence is paired with the abstract (and, where available, additional free-text annotations) from the same study, allowing the model to learn matched transcriptomic and experimental context. ">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1">C2S-Scale</a></td>
            <td>2025</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Family of LLMs with to 27B parameters</li></ul></td>
+
+
+           <td class="published">✗</td>
+            <td><a href="https://github.com/vandijklab/cell2sentence" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
+         </tr>
+         <tr data-description="LPM is a decoder-only deep neural network designed for large-scale integration and prediction across heterogeneous perturbation datasets. LPM encodes perturbation (P), readout (R), and context (C) as discrete variables, each with its own embedding space implemented via learnable look-up tables. These embeddings are concatenated to and used for inference">
+           <td class="details-control"></td>
+           <td><a href="https://arxiv.org/pdf/2503.23535">LPM</a></td>
+           <td>2025</td>
+
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
+
+           <td><ul><li>DNN Decoder</li></ul></td>
 
 
            <td class="published">✗</td>
             <td>✗</td>
          </tr>
-         <tr data-description="-">
+         <tr data-description="scGenePT combines CRISPR single‐cell RNA‐seq perturbation data with language‐based gene embeddings. It builds on a pretrained scGPT by adding gene‐level text embeddings from NCBI Gene/UniProt summaries or GO annotations, to the token, count, and perturbation embeddings of the model during fine-tuning on perturbational data.">
            <td class="details-control"></td>
-           <td><a href="https://arxiv.org/pdf/2503.23535">LPM</a></td>
+           <td><a href="https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1">scGenePT</a></td>
            <td>2025</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>scGPT</li><li>ChatGPT prompts</li></ul></td>
 
 
            <td class="published">✗</td>
@@ -1302,7 +1314,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41592-024-02305-7">scFoundation</a></td>
            <td>2024</td>
 
-           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Feature Relationships</li></ul></td>
+           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
 
@@ -1318,7 +1330,7 @@ All Methods
            <td><a href="https://www.nature.com/articles/s41422-024-01034-y">GeneCompass</a></td>
            <td>2024</td>
 
-           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>GRN Inference</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li><li>PK-informed</li></ul></td>
 
@@ -1329,12 +1341,12 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="scPRINT is implemented as a bidirectional transformer, focusing on scalable zero-shot applications to new datasets. During pre-training, it optimizes a single composite loss that sums: (1) a denoising objective, which up-samples down-sampled transcript counts via a zero-inflated negative-binomial decoder; (2) a bottleneck reconstruction objective, where the model must regenerate full expression profiles from its compressed cell embedding; and (3) a hierarchical label-prediction objective that forces disentanglement of latent factors for cell type, disease, platform and other metadata. Each gene token is the sum of: a learned protein embedding for its gene ID; an MLP encoding of its log-normalized count; and a positional encoding of its genomic locus . Pre-training contexts consist of 2,200 randomly sampled expressed genes per cell. At inference, cell-specific gene networks are derived from the model’s multi-head attention maps by either averaging all heads or selecting a subset post hoc based on correlation with external priors (e.g., protein–protein interaction databases, ChIP-seq, perturbation-ground-truth networks).">
+         <tr data-description="scPRINT is implemented as a bidirectional transformer, focusing on scalable zero-shot applications to new datasets. During pre-training, it optimises a single composite loss that sums: (1) a denoising objective, which up-samples down-sampled transcript counts via a zero-inflated negative-binomial decoder; (2) a bottleneck reconstruction objective, where the model must regenerate full expression profiles from its compressed cell embedding; and (3) a hierarchical label-prediction objective that forces disentanglement of latent factors for cell type, disease, platform and other metadata. Each gene token is the sum of: a learned protein embedding for its gene ID; an MLP encoding of its log-normalized count; and a positional encoding of its genomic locus . Pre-training contexts consist of 2,200 randomly sampled expressed genes per cell. At inference, cell-specific gene networks are derived from the model’s multi-head attention maps by either averaging all heads or selecting a subset post hoc based on correlation with external priors (e.g., protein–protein interaction databases, ChIP-seq, perturbation-ground-truth networks).">
            <td class="details-control"></td>
-           <td><a href="https://www.biorxiv.org/content/10.1101/2024.07.29.605556v1">scPrint</a></td>
-           <td>2024</td>
+           <td><a href="https://www.nature.com/articles/s41467-025-58699-1">scPrint</a></td>
+           <td>2025</td>
 
-           <td><ul><li>Gene Programmes</li><li>GRN Inference</li></ul></td>
+           <td><ul><li>Gene Programmes</li><li>GRN Inference</li><li>Multi-component Disentanglement</li></ul></td>
 
            <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>BERT-like Bidirectional transformers (with flashattention2)</li><li>Self-supervised masked regression</li><li>A classifier decoder</li><li>ZINB likelihood decoder</li><li>PK Representations</li></ul></td>
 
@@ -1360,16 +1372,32 @@ All Methods
          </tr>
          <tr data-description="TODO">
            <td class="details-control"></td>
+           <td><a href="https://www.nature.com/articles/s42256-023-00719-0">CIV</a></td>
+           <td>2023</td>
+
+           <td><ul><li>Causal Structure</li></ul></td>
+
+           <td><ul><li>Active Learning</li><li>Structural Causal Model</li><li>DAG-Bayesian linear regression</li></ul></td>
+
+
+           <td class="published">✓</td>
+            <td>✗</td>
+         </tr>
+         <tr data-description="TODO">
+           <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41587-024-02182-7">LINGER</a></td>
            <td>2024</td>
 
            <td><ul><li>GRN Inference</li></ul></td>
 
-           <td><ul><li>Multi-modal</li></ul></td>
+           <td><ul><li>Multi-modal</li><li>Prior Knowledge Informed</li><li>Shapley values</li><li>DNN</li></ul></td>
 
 
            <td class="published">✓</td>
-            <td>✗</td>
+            <td><a href="https://github.com/Durenlab/LINGER" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="TODO">
            <td class="details-control"></td>
@@ -1378,7 +1406,7 @@ All Methods
 
            <td><ul><li>GRN Inference</li></ul></td>
 
-           <td><ul><li>Multi-modal</li></ul></td>
+           <td><ul><li>Multi-modal</li><li>Prior Knowledge Informed</li><li>Gradient Boosting</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1394,7 +1422,7 @@ All Methods
 
            <td><ul><li>GRN Inference</li></ul></td>
 
-           <td><ul><li>Multi-modal</li></ul></td>
+           <td><ul><li>Multi-modal</li><li>Prior Knowledge Informed</li><li>Regularised (Linear) Regression</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1410,7 +1438,7 @@ All Methods
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Continuous optimization for acyclicity</li></ul></td>
+           <td><ul><li>Continuous optimisation for acyclicity</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1426,7 +1454,7 @@ All Methods
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Continuous optimization for acyclicity</li><li>DNN</li></ul></td>
+           <td><ul><li>Continuous optimisation for acyclicity</li><li>DNN</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1442,7 +1470,7 @@ All Methods
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Continuous optimization for acyclicity</li><li>GNN</li></ul></td>
+           <td><ul><li>Continuous optimisation for acyclicity</li><li>GNN</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1490,7 +1518,7 @@ All Methods
 
            <td><ul><li>Causal Structure</li></ul></td>
 
-           <td><ul><li>Graph interventions</li><li>Ornstein–Uhlenbeck process\n-Steady-State ODE</li></ul></td>
+           <td><ul><li>Graph interventions</li><li>Ornstein-Uhlenbeck process</li><li>Steady-State ODE</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1499,7 +1527,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings—a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice—once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
+         <tr data-description="A VAE that disentangles control and pertubed cells into a latent space organized by a causal DAG. The encoder produces a Gaussian latent code z, while an intervention encoder transforms intervention one-hot encodings into two embeddings - a soft assignment vector that targets specific latent dimensions and a scalar capturing the intervention’s magnitude. Multiplying and adding these embeddings to z yields a modified latent vector that simulates a soft intervention, whereas zeroing them recovers the control condition. A causal layer then processes the latent vectors using an upper-triangular matrix G, which enforces an acyclic causal structure and propagates intervention effects among the latent factors. The decoder is applied twice - once to the modified latent code to generate virtual counterfactual outputs that reconstruct interventional outcomes, and once to the unmodified code to recover control samples. This dual decoding forces the model to disentangle intervention-specific effects from the intrinsic data distribution. The training objective combines reconstruction error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual counterfactuals with observed interventional data, KL divergence on the latent space, and an L1 penalty on G to enforce sparsity.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/forum?id=o16sYKHk3S&noteId=2EQ6cmfPHg">discrepancy-VAE</a></td>
            <td>2023</td>
@@ -1531,7 +1559,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Dictys integrates scRNA-seq and scATAC-seq data to infer gene regulatory networks (GRNs) and their changes across multiple conditions. By leveraging multiomic data, Dictys infers context-specific networks and dynamic GRNs using steady-state solutions of the Ornstein-Uhlenbeck process to model transcriptional kinetics and account for feedback loops. It reconstructs undirected GRNs by detecting transcription factor (TF) binding sites and refining these networks with single-cell transcriptomic data, capturing regulatory shifts that reflect TF activity beyond expression levels.">
+         <tr data-description="Dictys integrates scRNA-seq and scATAC-seq data to infer gene regulatory networks (GRNs) and their changes across multiple conditions. By leveraging multiomic data, Dictys infers context-specific networks and dynamic GRNs using steady-state solutions of the Ornstein-Uhlenbeck process to model transcriptional kinetics and account for feedback loops. It reconstructs GRNs by detecting transcription factor (TF) binding sites and refining these networks with single-cell transcriptomic data, capturing regulatory shifts that reflect TF activity beyond expression levels.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41592-023-01971-3">Dictys</a></td>
            <td>2023</td>
@@ -1803,7 +1831,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Mixscape aims to classify CRISPR-targeted cells into perturbed and not perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature by subtracting each cell’s mRNA expression from the average of its k nearest NT (non-targeted) control neighbors. Differential expression testing between targeted and NT cells then identifies a set of DEGs that capture the perturbation response. These DEGs are used to define a perturbation vector—essentially, the average difference in expression between targeted and NT cells—which projects each cell’s DEG expression onto a single perturbation score. The Gaussian mixture model is applied to these perturbation scores, with one component fixed to match the NT distribution, while the other represents the perturbation effect. This model assigns probabilities that classify each targeted cell as either perturbed or escaping. Additionally, the authors propose visualization with Linear Discriminant Analysis (LDA) and UMAP, aiming to identify a low-dimensional subspace that maximally discriminates the mixscape-derived classes.">
+         <tr data-description="Mixscape aims to classify CRISPR-targeted cells into perturbed and not perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature by subtracting each cell’s mRNA expression from the average of its k nearest NT (non-targeted) control neighbors. Differential expression testing between targeted and NT cells then identifies a set of DEGs that capture the perturbation response. These DEGs are used to define a perturbation vector-essentially, the average difference in expression between targeted and NT cells, which projects each cell’s DEG expression onto a single perturbation score. The Gaussian mixture model is applied to these perturbation scores, with one component fixed to match the NT distribution, while the other represents the perturbation effect. This model assigns probabilities that classify each targeted cell as either perturbed or escaping. Additionally, the authors propose visualization with Linear Discriminant Analysis and UMAP, aiming to identify a low-dimensional subspace that maximally discriminates the mixscape-derived classes.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41588-021-00778-2#Sec11">Mixscape</a></td>
            <td>2021</td>
@@ -1819,14 +1847,14 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Perturbation Score (PS) quantifies single-cell responses to perturbations in three steps. First, differentially expressed genes (DEGs) are identified. Second, existing algorithms, such as MUSIC, MIMOSCA, scMAGeCK or SCEPTRE, are used to infer the average perturbation effect on these genes. Finally, each cell is assigned a Perturbation Score by minimizing the error between predicted and observed changes in gene expression.">
+         <tr data-description="Perturbation Score (PS) quantifies single-cell responses to (&#34;dosage&#34;-informed) perturbations in three steps. First, a signature gene set is defined for each perturbation - either via differential expression or pre-defined gene sets. Second, scMAGeCK’s regression framework estimates gene-level coefficients (β) reflecting the average effect of each perturbation on its target genes. Third, a regularised regression model is fitted per cell to estimate a scalar PS [0-to-1], reflecting how well the cell’s gene expression profile matches the β-weighted perturbation signature. This is done through constrained optimisation, where scores are inferred only for cells annotated as receiving the perturbation.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41556-025-01626-9">Perturbation Score</a></td>
            <td>2025</td>
 
            <td><ul><li>Perturbation Responsiveness</li><li>Differential Analysis</li></ul></td>
 
-           <td><ul><li>Pipeline</li></ul></td>
+           <td><ul><li>Robust Rank Aggregate</li><li>Ridge Regression</li><li>Regularised Linear Models</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -1976,14 +2004,14 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="SubCell is a set of self-supervised vision transformer (ViT) models trained on low-plex single-cell immunofluorescence images from the Human Protein Atlas to learn biologically meaningful representations of protein localisation and tissue morphology. The models are optimised using a multi-task objective that combines masked autoencoding for spatial reconstruction, a cell-specific contrastive loss to enforce consistency across augmented views of the same cell, and a protein-specific contrastive loss to align embeddings of cells stained for the same protein across different cell lines and experiments. An attention pooling module is used to priotise informative subcellular regions. The resulting models, particularly ViT-ProtS-Pool and MAE-CellS-ProtS-Pool, are shown to generalise across datasets, imaging modalities, cell types, and perturbations without fine-tuning.">
            <td class="details-control"></td>
-           <td><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=zrxafGsAAAAJ&sortby=pubdate&citation_for_view=zrxafGsAAAAJ:738O_yMBCRsC">SubCell</a></td>
+           <td><a href="https://www.biorxiv.org/content/10.1101/2024.12.06.627299v1.abstract">SubCell</a></td>
            <td>2024</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Context Transfer</li><li>Nonlinear Gene Programmes</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>A collection of Vision Transformer Models</li><li>Contrastive loss</li></ul></td>
 
 
            <td class="published">✗</td>
@@ -1992,14 +2020,14 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="VirTues is a multi-modal foundation model based on a vision transformer architecture, trained on multiplex spatial proteomics data from lung, breast, and melanoma tumors. It combines image representations with protein language model (PLM) embeddings of molecular markers and constructs hierarchical summary tokens at the cell, niche, and tissue levels. This PLM-based tokenisation enables the model to predict previously unseen markers. The architecture employs a sparse attention mechanism that factorises attention into spatial and marker components to manage the computational complexity of high-dimensional input. Training is performed using a masked autoencoding objective - i.e. it reconstructs missing subsets of spatial and protein data.">
            <td class="details-control"></td>
            <td><a href="https://arxiv.org/abs/2501.06039">VirTues</a></td>
            <td>2025</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Context Transfer</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>ViT</li><li>Maked Autoencoder</li><li>Multi-modal</li></ul></td>
 
 
            <td class="published">✗</td>
@@ -2008,34 +2036,37 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="OmiCLIP is a dual-encoder foundation model that encodes H&amp;E histology patches with a Vision Transformer and “gene-sentence” representations of (10X Visium) spatial transcriptomics (ST) using a Transformer initialised on LAION-5B. It projects both modalities into a shared latent space using symmetric contrastive learning, which pulls matched histology-transcriptome pairs. The model is pretrained on paired H&amp;E images and ST data across diverse organs and disease states. These aligned embeddings underpin downstream tasks such as spatial registration of histology to transcriptomic spots, zero-shot tissue annotation, cell-type deconvolution, retrieval of matching transcriptomic profiles for novel histology inputs, and prediction of spatial gene-expression patterns directly from histology.">
            <td class="details-control"></td>
-           <td><a href="https://openreview.net/forum?id=HAwZGLcye3">BioDiscoveryAgent</a></td>
+           <td><a href="https://www.nature.com/articles/s41592-025-02707-1">OmiCLIP</a></td>
            <td>2025</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Context Transfer</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>ViT</li><li>Contrastive Learning</li><li>Multi-modal</li></ul></td>
 
 
            <td class="published">✓</td>
-            <td><a href="http://www.github.com/snap-stanford/BioDiscoveryAgent" class="github-link">
+            <td><a href="https://github.com/GuangyuWangLab2021/Loki" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="Prophet represents each experiment as a set of three axes - cellular state (cell lines), treatments (perturbations), and phenotypic readouts - and projects diverse prior knowledge types (e.g., CCLE bulk RNA-seq for cell lines; chemical fingerprints or transcriptomic/genomic vectors for perturbations; learnable embeddings for readouts) into a shared token space. It is pre-trained on a set of diverse perturbation experiments covering readouts such as cell viability, compound IC50, Cell Painting morphology features, mRNA transcript abundance, and cell type proportions. A transformer-based encoder integrates these tokenised inputs, feeding a regression head that’s trained end-to-end to minimise mean squared error across all outcome types. The model is fine-tuned for assay-specific data applications.">
            <td class="details-control"></td>
-           <td><a href="https://www.nature.com/articles/s42256-023-00719-0">CIV</a></td>
-           <td>2023</td>
+           <td><a href="https://www.biorxiv.org/content/10.1101/2024.08.12.607533v2">Prophet</a></td>
+           <td>2024</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Unseen Perturbation Prediction</li><li>Context Transfer</li></ul></td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Transformer</li><li>Multi-modal</li><li>Knowledge Informed</li></ul></td>
 
 
-           <td class="published">✓</td>
-            <td>✗</td>
+           <td class="published">✗</td>
+            <td><a href="https://github.com/theislab/prophet" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
          <tr data-description="Iterpert is an active learning framework for Perturb-seq experiments that uses GEARS to predict gene expression gene expression perturbation effects. The method iteratively retrains GEARS on new data and selects the next batch of perturbations using an enhanced kernel, which is constructed by fusing the GEARS-derived kernel with kernels from six prior information sources (additional Perturb-seq data, optical pooled screens, scRNA-seq atlases, protein structures, protein–protein interaction networks, and literature-derived features). Each prior source is mapped into a kernel matrix, normalized, and combined with the model kernel via a mean fusion operator. The fused kernel is then used with a greedy distance maximization rule to select perturbation batches under budget constraints (a limited set of experiments per round). ">
            <td class="details-control"></td>
@@ -2044,20 +2075,23 @@ All Methods
 
            <td><ul><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li></ul></td>
 
-           <td><ul><li>Active Learning</li></ul></td>
+           <td><ul><li>GEARS</li><li>Active Learning</li></ul></td>
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/Genentech/iterative-perturb-seq" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
-         <tr data-description="Decipher is a hierarchical deep generative model to integrate and visualize single-cell RNA-seq data from both normal and perturbed conditions, identifying shared and disrupted cell-state trajectories. Its architecture includes dual latent spaces—a low-dimensional state for detailed cell-state modeling and a two-dimensional space for visualization—connected to gene expression through linear or single-layer neural network transformations. The model aligns trajectories by maintaining shared transcriptional programs for common biological processes across conditions.">
+         <tr data-description="Decipher is a hierarchical deep generative model to integrate and visualize single-cell RNA-seq data from both normal and perturbed conditions, identifying shared and disrupted cell-state trajectories. Its architecture includes dual latent spaces -a low-dimensional state for detailed cell-state modeling and a two-dimensional space for visualization-connected to gene expression through linear or single-layer neural network transformations. The model aligns trajectories by maintaining shared transcriptional programs for common biological processes across conditions.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/10.1101/2023.11.11.566719v2.full">Decipher</a></td>
            <td>2024</td>
 
-           <td><ul><li>Context Transfer</li></ul></td>
+           <td><ul><li>Unsupervised Disentanglement</li><li>Linear Gene Programmes</li></ul></td>
 
-           <td><ul><li>VAE</li></ul></td>
+           <td><ul><li>VAE</li><li>Linear Decoder</li></ul></td>
 
 
            <td class="published">✗</td>
@@ -2093,9 +2127,12 @@ All Methods
 
 
            <td class="published">✗</td>
-            <td>✗</td>
+            <td><a href="https://github.com/Bertinus/FLeCS" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
-         <tr data-description="RENGE attempts to infer gene regulatory networks (GRNs) from time-series single-cell CRISPR knockout data. It models changes in gene expression following a knockout by propagating the effects through direct and higher-order (indirect) regulatory paths, where the gene network is represented as a matrix of regulatory strengths between gene pairs.">
+         <tr data-description="RENGE attempts to infer gene regulatory networks from time-series single-cell CRISPR knockout data. It models changes in gene expression following a knockout by propagating the effects through direct and higher-order (indirect) regulatory paths, where the gene network is represented as a matrix of regulatory strengths between gene pairs.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s42003-023-05594-4">RENGE</a></td>
            <td>2023</td>
@@ -2105,15 +2142,18 @@ All Methods
            <td><ul><li>Regression model</li></ul></td>
 
 
-           <td class="published">✗</td>
-            <td>✗</td>
+           <td class="published">✓</td>
+            <td><a href="https://github.com/masastat/RENGE" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
-         <tr data-description="-">
+         <tr data-description="ARTEMIS combines variational autoencoder with an unbalanced Diffusion Schrödinger Bridge to reconstruct continuous trajectories from time-series data. The methods trains a VAE first, then jointly trains the VAE and uDSB by solving the forward-backward SDEs in the latent space using neural networks.">
            <td class="details-control"></td>
            <td><a href="https://www.biorxiv.org/content/biorxiv/early/2025/01/26/2025.01.23.634618.full.pdf">ARTEMIS</a></td>
            <td>2025</td>
 
-           <td><ul><li>-</li></ul></td>
+           <td><ul><li>Trajectory Inference</li></ul></td>
 
            <td><ul><li>VAE</li><li>Schrödinger Bridge</li></ul></td>
 
@@ -2124,12 +2164,12 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="scPRAM is a computational framework for predicting single-cell gene expression changes in response to perturbations. The method integrates three main components: a variational autoencoder (VAE), optimal transport, and an attention mechanism. The VAE encodes high-dimensional, sparse gene expression data into a latent space. Optimal transport is applied in this latent space to match unpaired cells before and after perturbation by finding an optimal coupling between their distributions. For each test cell, the attention mechanism computes a perturbation vector by comparing its latent representation (query) against those of matched training cells (keys and values). The predicted post-perturbation response is generated by adding the perturbation vector to the query and decoding it back to gene expression space using the VAE decoder.">
+         <tr data-description="scPRAM is a computational framework for predicting single-cell gene expression changes in response to perturbations. The method integrates three main components: a variational autoencoder (VAE), optimal transport, and an attention mechanism. The VAE encodes the gene expression data into a latent space. Optimal transport is applied in this latent space to match unpaired cells before and after perturbation by finding an optimal coupling between their distributions. For each test cell, the attention mechanism computes a perturbation vector by comparing its latent representation (query) against those of matched training cells (keys and values). The predicted post-perturbation response is generated by adding the perturbation vector to the query and decoding it back to gene expression space using the VAE decoder.">
            <td class="details-control"></td>
            <td><a href="https://academic.oup.com/bioinformatics/article/40/5/btae265/7646141">scPRAM</a></td>
            <td>2024</td>
 
-           <td><ul><li>Context Transfer</li><li>Counterfactual Cell Maps</li></ul></td>
+           <td><ul><li>Context Transfer</li><li>Trace Cell Populations</li></ul></td>
 
            <td><ul><li>VAE</li><li>OT</li><li>Attention</li></ul></td>
 
@@ -2147,7 +2187,7 @@ All Methods
 
            <td><ul><li>Feature Relationships</li></ul></td>
 
-           <td><ul><li>Spatial Niches</li><li>Random Forrest (or other regression models)</li></ul></td>
+           <td><ul><li>Spatially-informed</li><li>Random Forrest (or other regression models)</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -2156,7 +2196,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="SpaCeNet aims to untangle the complex relationships between molecular interactions within and between cells by analyzing spatially resolved single-cell data. To achieve this, SpaCeNet leverages an adaptation of probabilistic graphical models (PGMs) to enable spatially resolved conditional independence testing. This approach allows for the identification of direct and indirect dependencies, as well as the removal of spurious gene association patterns. Additionally, SpaCeNet incorporates explicit cell-cell distance information to differentiate between short- and long-range interactions, thereby distinguishing between baseline cellular variability and interactions influenced by a cell&#39;s microenvironment.">
+         <tr data-description="SpaCeNet aims to untangle the complex relationships between molecular interactions within and between cells by analyzing spatially resolved single-cell data. To achieve this, SpaCeNet leverages an adaptation of probabilistic graphical models  to enable spatially resolved conditional independence testing. This approach allows for the identification of direct and indirect dependencies, as well as the removal of spurious gene association patterns. Additionally, SpaCeNet incorporates explicit cell-cell distance information to differentiate between short- and long-range interactions, thereby distinguishing between baseline cellular variability and interactions influenced by a cell&#39;s microenvironment.">
            <td class="details-control"></td>
            <td><a href="https://genome.cshlp.org/content/34/9/1371">SpaCeNet</a></td>
            <td>2024</td>
@@ -2172,7 +2212,7 @@ All Methods
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Kasumi extends MISTy by focusing on identifying localized relationship patterns that are persistent across tissue samples. Instead of modeling global relationships, it uses a sliding-window approach to learn representations of local tissue patches (neighborhoods), characterized by multivariate, potentially non-linear relationships across views. These window-specific relationship signatures are clustered (using graph-based community detection) into spatial patterns, which are retained based on a persistence criterion—i.e., being consistently observed across multiple samples. This enables Kasumi to represent each sample as a distribution over interpretable, shared local patterns, facilitating tasks like patient stratification while maintaining model explainability.">
+         <tr data-description="Kasumi extends MISTy by focusing on identifying localised relationship patterns that are persistent across tissue samples. Instead of modeling global relationships, it uses a sliding-window approach to learn representations of local tissue patches (neighborhoods), characterized by multivariate, potentially non-linear relationships across views. These window-specific relationship signatures are clustered (using graph-based community detection) into spatial patterns, which are consistently observed across multiple samples. This enables Kasumi to represent each sample as a distribution over interpretable, shared local patterns, facilitating tasks like patient stratification while maintaining model explainability.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-025-59448-0">Kasumi</a></td>
            <td>2025</td>
@@ -2183,16 +2223,19 @@ All Methods
 
 
            <td class="published">✓</td>
-            <td>✗</td>
+            <td><a href="https://www.github.com/jtanevski/kasumi" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
-         <tr data-description="TODO">
+         <tr data-description="PRESCIENT models cellular differentiation as a stochastic diffusion process, where the drift term is parameterised as the negative gradient of a neural network-learned potential function. The model is trained using time-series single-cell RNA-seq data, and fits the potential function by minimizing the regularised Wasserstein distance between simulated and observed cell populations at each time point, explicitly incorporating cell proliferation by weighting cells according to their expected number of descendants. PRESCIENT can simulate differentiation trajectories for both observed and (in silico) perturbed cell states, enabling the prediction of cell fate outcomes under various genetic interventions.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-021-23518-w">Prescient</a></td>
            <td>2021</td>
 
-           <td><ul><li>TODO</li></ul></td>
+           <td><ul><li>Trace Cell Populations</li><li>Seen Perturbation Prediction</li><li>Context Transfer</li></ul></td>
 
-           <td><ul><li>TODO</li></ul></td>
+           <td><ul><li>Diffusion</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -2200,19 +2243,6 @@ All Methods
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>
-         </tr>
-         <tr data-description="TODO">
-           <td class="details-control"></td>
-           <td><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10153191/">D-SPIN</a></td>
-           <td>2024</td>
-
-           <td><ul><li>TODO</li></ul></td>
-
-           <td><ul><li>TODO</li></ul></td>
-
-
-           <td class="published">✗</td>
-            <td>✗</td>
          </tr>
        </tbody>
      </table>
@@ -2251,7 +2281,6 @@ All Methods
    combinatorial_effect_prediction
    context_transfer
    contrastive_disentanglement
-   counterfactual_cell_maps
    differential_analysis
    feature_relationships
    grn_inference
@@ -2260,5 +2289,6 @@ All Methods
    nonlinear_gene_programmes
    perturbation_responsiveness
    seen_perturbation_prediction
+   trace_cell_populations
    unseen_perturbation_prediction
    unsupervised_disentanglement

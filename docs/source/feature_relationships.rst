@@ -31,34 +31,18 @@ Feature Relationships
          </tr>
        </thead>
        <tbody>
-         <tr data-description="Celcomen (CCE) disentangles intra- and inter-cellular gene regulation in spatial transcriptomics data by processing gene expression through two parallel interaction functions. One function uses a graph convolution layer (k-hop GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling, while the other applies a linear layer to model regulation within individual cells. During training, Celcomen combines a normalization term—computed via a mean field approximation that decomposes the overall likelihood into a mean contribution and an interaction contribution - with a similarity measure that directly compares each cell’s predicted gene expression (obtained via message passing) to its actual expression, thereby driving the model to adjust its interaction matrices so that the predictions closely match the observed data. Simcomen (SCE) then leverages these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico experiments.">
+         <tr data-description="Celcomen disentangles intra- and inter-cellular gene regulation in spatial transcriptomics data by processing gene expression through two parallel interaction functions. One function uses a single graph convolution layer (1-hop GNN) to learn a gene-gene interaction matrix that captures cross-cell signaling, while the other applies a linear layer to model regulation within individual cells. Training maximises an approximate likelihood that aligns the model-predicted weight matrices to the average gene expression across all cells. Simcomen then leverages these fixed, learned matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico experiments.">
            <td class="details-control"></td>
            <td><a href="https://openreview.net/pdf?id=Tqdsruwyac">Celcomen</a></td>
            <td>2025</td>
 
            <td><ul><li>Unsupervised Disentanglement</li><li>Feature Relationships</li></ul></td>
 
-           <td><ul><li>K-hop Convolution</li><li>Mean field estimation</li><li>Spatially-informed</li></ul></td>
+           <td><ul><li>K-hop Convolution</li><li>Spatially-informed</li></ul></td>
 
 
            <td class="published">✓</td>
             <td><a href="https://github.com/Teichlab/celcomen" class="github-link">
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  <span class="sr-only">GitHub</span>
-                </a></td>
-         </tr>
-         <tr data-description="scFoundation uses an asymmetric transformer encoder–decoder: its embedding module converts each continuous gene expression scalar directly into a high-dimensional learnable vector without discretization; the encoder takes as input only nonzero and unmasked embeddings through vanilla transformer blocks to model gene–gene dependencies efficiently. The zero and masked gene embeddings, along with the encoder embeddings, are passed to the decoder, which uses Performer-style attention to reconstruct transcriptome-wide representations, specifically those of masked genes. Specifically, scFoundation is trained using a masked regression objective on both raw and downsampled count vectors, with two total-count tokens concatenated to inputs to account for sequencing depth variance. The decoder-derived gene context embeddings are then used as node features in GEARS for single-cell perturbation response prediction.">
-           <td class="details-control"></td>
-           <td><a href="https://www.nature.com/articles/s41592-024-02305-7">scFoundation</a></td>
-           <td>2024</td>
-
-           <td><ul><li>Nonlinear Gene Programmes</li><li>Unseen Perturbation Prediction</li><li>Combinatorial Effect Prediction</li><li>Feature Relationships</li></ul></td>
-
-           <td><ul><li>Foundational Gene expression embeddings (from >50M human cells)</li><li>Self-supervised masked regression with down-sampling</li><li>Sparse transformer encoder</li><li>Performer-style attention decoder</li></ul></td>
-
-
-           <td class="published">✓</td>
-            <td><a href="https://github.com/biomap-research/scFoundation" class="github-link">
                   <i class="fab fa-github" aria-hidden="true"></i>
                   <span class="sr-only">GitHub</span>
                 </a></td>
@@ -70,7 +54,7 @@ Feature Relationships
 
            <td><ul><li>Feature Relationships</li></ul></td>
 
-           <td><ul><li>Spatial Niches</li><li>Random Forrest (or other regression models)</li></ul></td>
+           <td><ul><li>Spatially-informed</li><li>Random Forrest (or other regression models)</li></ul></td>
 
 
            <td class="published">✓</td>
@@ -79,7 +63,7 @@ Feature Relationships
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="SpaCeNet aims to untangle the complex relationships between molecular interactions within and between cells by analyzing spatially resolved single-cell data. To achieve this, SpaCeNet leverages an adaptation of probabilistic graphical models (PGMs) to enable spatially resolved conditional independence testing. This approach allows for the identification of direct and indirect dependencies, as well as the removal of spurious gene association patterns. Additionally, SpaCeNet incorporates explicit cell-cell distance information to differentiate between short- and long-range interactions, thereby distinguishing between baseline cellular variability and interactions influenced by a cell&#39;s microenvironment.">
+         <tr data-description="SpaCeNet aims to untangle the complex relationships between molecular interactions within and between cells by analyzing spatially resolved single-cell data. To achieve this, SpaCeNet leverages an adaptation of probabilistic graphical models  to enable spatially resolved conditional independence testing. This approach allows for the identification of direct and indirect dependencies, as well as the removal of spurious gene association patterns. Additionally, SpaCeNet incorporates explicit cell-cell distance information to differentiate between short- and long-range interactions, thereby distinguishing between baseline cellular variability and interactions influenced by a cell&#39;s microenvironment.">
            <td class="details-control"></td>
            <td><a href="https://genome.cshlp.org/content/34/9/1371">SpaCeNet</a></td>
            <td>2024</td>
@@ -95,7 +79,7 @@ Feature Relationships
                   <span class="sr-only">GitHub</span>
                 </a></td>
          </tr>
-         <tr data-description="Kasumi extends MISTy by focusing on identifying localized relationship patterns that are persistent across tissue samples. Instead of modeling global relationships, it uses a sliding-window approach to learn representations of local tissue patches (neighborhoods), characterized by multivariate, potentially non-linear relationships across views. These window-specific relationship signatures are clustered (using graph-based community detection) into spatial patterns, which are retained based on a persistence criterion—i.e., being consistently observed across multiple samples. This enables Kasumi to represent each sample as a distribution over interpretable, shared local patterns, facilitating tasks like patient stratification while maintaining model explainability.">
+         <tr data-description="Kasumi extends MISTy by focusing on identifying localised relationship patterns that are persistent across tissue samples. Instead of modeling global relationships, it uses a sliding-window approach to learn representations of local tissue patches (neighborhoods), characterized by multivariate, potentially non-linear relationships across views. These window-specific relationship signatures are clustered (using graph-based community detection) into spatial patterns, which are consistently observed across multiple samples. This enables Kasumi to represent each sample as a distribution over interpretable, shared local patterns, facilitating tasks like patient stratification while maintaining model explainability.">
            <td class="details-control"></td>
            <td><a href="https://www.nature.com/articles/s41467-025-59448-0">Kasumi</a></td>
            <td>2025</td>
@@ -106,7 +90,10 @@ Feature Relationships
 
 
            <td class="published">✓</td>
-            <td>✗</td>
+            <td><a href="https://www.github.com/jtanevski/kasumi" class="github-link">
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <span class="sr-only">GitHub</span>
+                </a></td>
          </tr>
        </tbody>
      </table>
