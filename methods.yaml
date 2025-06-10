@@ -1421,7 +1421,7 @@
   Year: 2024
 - Code Availability: https://github.com/EperLuo/scDiffusion
   Description: scDiffusion employs a Latent Diffusion Model for generating single-cell
-    RNA sequencing data, using a three-part framework: a fine-tuned autoencoder for
+    RNA sequencing data, using a three-part framework - a fine-tuned autoencoder for
     initial data transformation, a skip-connected multilayer perceptron denoising
     network, and a condition controller for cell-type-specific data generation.
   Inspired by:
@@ -1473,13 +1473,13 @@
   - Combinatorial Effect Prediction
   Year: 2024
 - Code Availability: https://github.com/broadinstitute/wot
-  Description: Waddington-OT models developmental processes as time-varying
-    probability distributions in gene expression space and infers temporal couplings
-    by solving an entropy-regularized, unbalanced optimal transport problem.
-    Growth rate, estimated leveraging expression levels of genes associated with
-    proliferation and apoptosis, is taken into consideration via unbalanced OT.
-    Additionally, uses spectral clustering to obtain Gene Programmes, and subsequently
-    associate those to predictive TFs.
+  Description: "Waddington-OT models developmental processes as time-varying
+    \ probability distributions in gene expression space and infers temporal couplings\
+    \ by solving an entropy\u2010regularized, unbalanced optimal transport problem.\
+    \ Growth rate, estimated leveraging expression levels of genes associated with\
+    \ proliferation and apoptosis, is taken into consideration via unbalanced OT.\
+    \ Additionally, uses spectral clustering to obtain Gene Programmes, and subsequently\
+    \ associate those to predictive TFs."
   Inspired by:
   - '-'
   Method: Waddington-OT
