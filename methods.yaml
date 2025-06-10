@@ -640,9 +640,7 @@
   - ZINB Likelihood
   - VAE
   - Spatially-informed
-  - 'Multi-modal
-
-    '
+  - Multi-modal
   Publication: https://www.nature.com/articles/s41467-025-58089-7
   Published: true
   Task:
@@ -1559,7 +1557,7 @@
   Method: moscot
   Model:
   - Unbalanced OT
-  - "Entropy-regularised Sinkhorn"
+  - Entropy-regularised Sinkhorn
   - Low-rank OT
   - Sparse Map OT
   Publication: https://www.nature.com/articles/s41586-024-08453-2
