@@ -1065,6 +1065,7 @@
   Published: true
   Task:
   - Seen Perturbation Prediction
+  - Differential Analysis
   Year: 2025
 - Code Availability: https://github.com/theislab/scarches
   Description: "Expimap uses a nonlinear encoder and a masked linear decoder, where\
@@ -2546,7 +2547,6 @@
   Publication: https://www.sciencedirect.com/science/article/pii/S2405471221001149
   Published: true
   Task:
-  - Differential Analysis
   - Nonlinear Gene Programmes
   Year: 2021
 - Code Availability: https://github.com/livnatje/DIALOGUE
