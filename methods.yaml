@@ -1453,7 +1453,7 @@
   - Trace Cell Populations
   - Context Transfer
   Year: 2024
-- Code Availability: '-'
+- Code Availability: https://github.com/theislab/CellFlow
   Description: CellFlow learns a vector field to predict time-dependent expression
     profiles under diverse conditions. The model encodes various covariates (perturbation,
     dosage, batch, etc.), aggregates the embeddings via attention and deep sets, and
@@ -1748,21 +1748,18 @@
   - GRN Inference
   Year: 2024
 - Code Availability: https://github.com/cantinilab/scPRINT
-  Description: "scPRINT is implemented as a bidirectional transformer, focusing on\
-    \ scalable zero-shot applications to new datasets. During pre-training, it optimises\
-    \ a single composite loss that sums: (1) a denoising objective, which up-samples\
-    \ down-sampled transcript counts via a zero-inflated negative-binomial decoder;\
-    \ (2) a bottleneck reconstruction objective, where the model must regenerate full\
-    \ expression profiles from its compressed cell embedding; and (3) a hierarchical\
-    \ label-prediction objective that forces disentanglement of latent factors for\
-    \ cell type, disease, platform and other metadata. Each gene token is the sum\
-    \ of: a learned protein embedding for its gene ID; an MLP encoding of its log-normalized\
-    \ count; and a positional encoding of its genomic locus . Pre-training contexts\
-    \ consist of 2,200 randomly sampled expressed genes per cell. At inference, cell-specific\
-    \ gene networks are derived from the model\u2019s multi-head attention maps by\
-    \ either averaging all heads or selecting a subset post hoc based on correlation\
-    \ with external priors (e.g., protein\u2013protein interaction databases, ChIP-seq,\
-    \ perturbation-ground-truth networks)."
+  Description: scPRINT is a bidirectional transformer focused for scalable zero-shot
+   inference on new scRNA-seq datasets. It is pre-trained with a composite loss that 
+   combines the denoising of downsampled transcripts via a zero-inflated negative-binomial 
+   decoder, reconstruction of full expression profiles from bottleneck embeddings, and 
+   hierarchical label prediction that disentangles latent factors such as cell type, disease 
+   state and sequencing platform. Gene tokens merge a learned protein embedding for the gene ID, 
+   an MLP-encoded log-normalised count and a positional encoding of its genomic locus. 
+   Pre-training contexts sample 2,200 randomly selected expressed genes per cell (+ padded 
+   with unexpressed genes). At inference, cell-specific gene networks are extracted from 
+   multi-head attention maps either by averaging all heads or by selecting subsets post hoc 
+   based on their correlation with external priors (e.g., PPI databases, ChIP-seq, 
+   perturbation-ground-truth networks).
   Inspired by:
   - BERT
   - scVI
