@@ -56,7 +56,7 @@
   Model:
   - Factor Models
   - Contastive VAE
-  Publication: https://arxiv.org/abs/1811.06094
+  Publication: https://cdn.aaai.org/ojs/4414/4414-13-7453-1-10-20190706.pdf
   Published: true
   Task:
   - Linear Gene Programmes
@@ -181,8 +181,8 @@
 - Code Availability: https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi
   Description: 'The successor to mmVAE introducing improvements: counts are modeled
     using a negative binomial distribution, and the MMD loss is replaced with the
-    Wasserstein distance. More specifically, the Wasserstein distance is computed
-    exclusively for the salient latent variables of the control data, ensuring it
+    Wasserstein distance. More specifically, the Wasserstein distance is essentially calculated as the 
+    norm of the mean and variance of the salient latent variables of the control data, promoting that they
     approaches zero. The Wasserstein penalty is optional and is set to 0 (no penalty)
     by default'
   Inspired by:
@@ -374,8 +374,8 @@
   Model:
   - Diffusion
   - Auxilary Classifiers
-  Publication: https://www.biorxiv.org/content/biorxiv/early/2024/12/17/2024.12.11.628077.full.pdf
-  Published: false
+  Publication: https://www.nature.com/articles/s41467-025-62008-1
+  Published: true
   Task:
   - Multi-component Disentanglement
   - Causal Structure
@@ -493,7 +493,6 @@
   Publication: https://www.nature.com/articles/s41592-023-02017-4
   Published: true
   Task:
-  - Seen Perturbation Prediction
   - Multi-component Disentanglement
   - Causal Structure
   - Linear Gene Programmes
@@ -543,8 +542,8 @@
   - NB likelihood
   - Addative Decoders
   - Multi-modal
-  Publication: https://www.biorxiv.org/content/biorxiv/early/2024/11/08/2024.11.06.622266.full.pdf
-  Published: false
+  Publication: https://openreview.net/forum?id=8FcsvupyOn
+  Published: true
   Task:
   - Unsupervised Disentanglement
   - Nonlinear Gene Programmes
@@ -586,7 +585,7 @@
     unshared space.
   Inspired by:
   - '-'
-  Method: scDisInFac
+  Method: scDisInFact
   Model:
   - VAE
   - NB likelihood
@@ -1658,7 +1657,7 @@
     integration and prediction across heterogeneous perturbation datasets. LPM encodes
     perturbation (P), readout (R), and context (C) as discrete variables, each with
     its own embedding space implemented via learnable look-up tables. These embeddings
-    are concatenated to and used for inference
+    are concatenated to and used for inference.
   Inspired by:
   - '-'
   Method: LPM
@@ -1669,7 +1668,6 @@
   Task:
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
-  - GRN Inference
   Year: 2025
 - Code Availability: '-'
   Description: "scGenePT combines CRISPR single-cell RNA-seq perturbation\
@@ -1705,7 +1703,7 @@
     \ variance. The decoder-derived gene context embeddings are then used as node\
     \ features in GEARS for single-cell perturbation response prediction."
   Inspired by:
-  - 'xTrimoGene '
+  - 'xTrimoGene'
   - Performer
   Method: scFoundation
   Model:
@@ -2115,7 +2113,7 @@
     infer time-varying interaction graphs from multivariate time series data. RiTINI
     integrates dual attention mechanisms to enhance dynamic modeling and defines interaction
     graph inference as identifying a directed graph. Further, RiTINI utilizes prior
-    knowledge to initialize the causal graph and by penalizing deviations the prior.Additionally,
+    knowledge to initialise the causal graph and by penalizing deviations the prior. Additionally,
     RiTINI simulates perturbations in silico to further refine the graph structure.
   Inspired by:
   - PC Algorithm
@@ -2159,7 +2157,7 @@
     \ is then fitted to this null to yield calibrated p\u2011values."
   Inspired by:
   - '-'
-  Method: SPECTRE
+  Method: SCEPTRE
   Model:
   - Conditional Resampling
   - Generalised Linear Model
@@ -2196,9 +2194,9 @@
 - Code Availability: https://github.com/KrishnaswamyLab/MELD
   Description: "MELD models cells as samples drawn from a probability density defined\
     \ in a low-dimensional space (manifold). Each cell is assigned to a one-hot indicator\
-    \ according to its sample origin (e.g. treatment or control), normalized by the\
+    \ according to its sample origin (e.g. treatment or control), normalised by the\
     \ total cell count in that sample. A cell (transcriptomic) similarity graph is\
-    \ then built using a decaying kernel, and the normalized indicator vectors are\
+    \ then built using a decaying kernel, and the normalised indicator vectors are\
     \ smoothed across the graph, such that each cell\u2019s value is updated by averaging\
     \ with its neighbors to yield a density estimate for each sample (condition) for\
     \ that cell. Normalizing these estimates produces a perturbation-associated relative\
@@ -2212,7 +2210,7 @@
   - Manifold Learning
   - Vertex-frequency analysis
   - Graph Diffusion
-  Publication: https://www.nature.com/articles/s41587-020-00803-5#Sec13
+  Publication: https://www.nature.com/articles/s41587-020-00803-5
   Published: true
   Task:
   - Perturbation Responsiveness
@@ -2286,7 +2284,7 @@
     via Laplacian eigen-decomposition. In this low-dimensional space, the distances
     between corresponding gene nodes quantify gene-level changes due to the perturbation.
     These distances, weighted by network connectivity (e.g., outgoing edge strength
-    normalized by node degree) and extended through two-hop diffusion, are aggregated
+    normalised by node degree) and extended through two-hop diffusion, are aggregated
     to yield a composite perturbation score that ranks cell types by their predicted
     drug responsiveness.
   Inspired by:
@@ -2325,7 +2323,6 @@
   Published: false
   Task:
   - Perturbation Responsiveness
-  - Perturbation Responsiveness
   - Differential Analysis
   Year: 2024
 - Code Availability: https://github.com/C0nc/River
@@ -2354,7 +2351,7 @@
     effects using topic modeling. Following preprocessing steps, MUSIC removes low-efficiency
     (non-targeted) cells based on the cosine similarity of their differential expression
     genes, excluding perturbed cells with profiles more similar to controls. Next,
-    highly dispersed DE genes are selected and their normalized expression values
+    highly dispersed DE genes are selected and their normalised expression values
     are used as to fit a topic model, where cells are treated as documents and gene
     counts as words. Topics are then ranked according to overall effect, their relevance
     to each perturbation, and perturbation similarities.
@@ -2491,7 +2488,7 @@
 - Code Availability: '-'
   Description: 'GEASS is a causal feature selection framework in high-dimensional
     spatal & temporal omics data that identifies nonlinear Granger causal interactions
-    by maximizing a sparsity-regularized modified transfer entropy. It enforces sparsity
+    by maximizing a sparsity-regularised modified transfer entropy. It enforces sparsity
     using combinatorial stochastic gate layers that allow it to select a minimal subset
     of features with causal interactions - i.e. two sets of of non-overlapping genes
     as drivers (source) and receivers (sink). '
@@ -2508,12 +2505,13 @@
   - Nonlinear Gene Programmes
   Year: 2023
 - Code Availability: https://github.com/MarioniLab/miloDE
-  Description: 'GEASS is a causal feature selection framework in high-dimensional
-    spatal & temporal omics data that identifies nonlinear Granger causal interactions
-    by maximizing a sparsity-regularized modified transfer entropy. It enforces sparsity
-    using combinatorial stochastic gate layers that allow it to select a minimal subset
-    of features with causal interactions - i.e. two sets of of non-overlapping genes
-    as drivers (source) and receivers (sink). '
+  Description: 'miloDE is a cluster-free framework for differential expression analysis in scRNA-seq data that builds on Milo.
+   Similarly, MiloDE relies on pre-calculated latent representations 
+   to constructs overlapping neighborhoods on a kNN graph, now improved 
+   using a second-order approach to better capture local transcriptional similarity. 
+   Expression counts are aggregated within these neighborhoods and analyzed using edgeR’s generalised linear 
+   model framework, with dual corrections applied across genes and neighborhoods to control for multiple testing. 
+   Additionally, a post hoc neighborhood refinement step ensures complete cell coverage and computational efficiency.'
   Inspired by:
   - Milo (theirs)
   - edgeR
@@ -2742,10 +2740,10 @@
   - Combinatorial Effect Prediction
   Year: 2024
 - Code Availability: https://github.com/azizilab/decipher
-  Description: Decipher is a hierarchical deep generative model to integrate and visualize
-    single-cell RNA-seq data from both normal and perturbed conditions, identifying
+  Description: Decipher is a hierarchical deep generative model that integrates and visualises
+    single-cell RNA-seq data from normal and perturbed conditions, identifying
     shared and disrupted cell-state trajectories. Its architecture includes dual latent
-    spaces -a low-dimensional state for detailed cell-state modeling and a two-dimensional
+    spaces: a low-dimensional state for detailed cell-state modeling and a two-dimensional
     space for visualisation-connected to gene expression through linear or single-layer
     neural network transformations. The model aligns trajectories by maintaining shared
     transcriptional programs for common biological processes across conditions.
