@@ -11,7 +11,7 @@
 ## 🎯 **Overview**
 
 A **living catalogue** 📚 of computational methods that interpret or predict single‑cell perturbations.
-The project curates over **139 peer‑reviewed and pre‑print tools**, classifies them by task, and provides a browsable web interface with informative tables and technical descriptions.
+The project curates **139 peer‑reviewed and pre‑print tools**, classifies them by task, and provides a browsable web interface with informative tables and technical descriptions.
 
 ---
 
@@ -21,8 +21,6 @@ The project curates over **139 peer‑reviewed and pre‑print tools**, classifi
 | 🎯 **Resource**              | 🌐 **URL**                                                                                     |
 | ----------------------------- | ---------------------------------------------------------------------------------------------- |
 | 📖 **Documentation**         | [https://interp-extrap-perturb.readthedocs.io/](https://interp-extrap-perturb.readthedocs.io/) |
-| 🧪 **Individual Methods**    | [`methods/`](methods/) - *>100 curated methods*                                               |
-| ⚙️ **Generation Script**     | [`generate_methods.py`](generate_methods.py) - *Automated documentation builder*             |
 | 🤝 **Contribute**            | [Contribution Guidelines](docs/source/contribute.rst) - *Add your method!*                   |
 
 ---
