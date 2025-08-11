@@ -335,6 +335,7 @@
   - Seen Perturbation Prediction
   - Context Transfer
   - Multi-component Disentanglement
+  - Causal Structure
   Year: 2024
 - Code Availability: https://github.com/Genentech/sVAE
   Description: A VAE that integrates recent advances in sparse mechanism shift modeling
@@ -1609,6 +1610,7 @@
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/HelloWorldLTY/scELMo
   Description: "scELMo first converts gene and cell metadata into textual descriptions\
@@ -1688,6 +1690,7 @@
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
+  - Nonlinear Gene Programmes
   Year: 2025
 - Code Availability: https://github.com/biomap-research/scFoundation
   Description: "scFoundation uses an asymmetric transformer encoder\u2013decoder:\
@@ -1745,6 +1748,7 @@
   - Unseen Perturbation Prediction
   - Combinatorial Effect Prediction
   - GRN Inference
+  - Nonlinear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/cantinilab/scPRINT
   Description: scPRINT is a bidirectional transformer focused for scalable zero-shot
@@ -1776,6 +1780,7 @@
   Task:
   - GRN Inference
   - Multi-component Disentanglement
+  - Nonlinear Gene Programmes
   Year: 2025
 - Code Availability: '-'
   Description: 'The method embeds each gene using two LLM-derived representations
@@ -2078,7 +2083,7 @@
   Model:
   - Amortized pre-training
   - Transfomer
-  - 'Graph Attention '
+  - Graph Attention
   Publication: https://arxiv.org/abs/2402.01929
   Published: true
   Task:
@@ -2740,13 +2745,13 @@
   - Combinatorial Effect Prediction
   Year: 2024
 - Code Availability: https://github.com/azizilab/decipher
-  Description: Decipher is a hierarchical deep generative model that integrates and visualises
+  Description: "Decipher is a hierarchical deep generative model that integrates and visualises
     single-cell RNA-seq data from normal and perturbed conditions, identifying
     shared and disrupted cell-state trajectories. Its architecture includes dual latent
     spaces: a low-dimensional state for detailed cell-state modeling and a two-dimensional
     space for visualisation-connected to gene expression through linear or single-layer
     neural network transformations. The model aligns trajectories by maintaining shared
-    transcriptional programs for common biological processes across conditions.
+    transcriptional programs for common biological processes across conditions."
   Inspired by:
   - '-'
   Method: Decipher
@@ -2760,7 +2765,7 @@
   - Linear Gene Programmes
   Year: 2024
 - Code Availability: https://github.com/hsmaan/SpatialDIVA
-  Description: SpatialDIVA learns distinct latent spaces capturing intrinsic (transcriptomic),
+  Description: "SpatialDIVA learns distinct latent spaces capturing intrinsic (transcriptomic),
     morphological (histology), spatial neighborhood, technical (batch), and residual
     variations. To promote disentanglement, the model employs auxiliary classification
     heads - using cell type labels to supervise the transcriptomic latent space, pathology
@@ -2769,7 +2774,7 @@
     (MSE) loss is trained to ensure that the spatial latent space accurately reconstructs
     a PCA-based representation derived from concatenated histology and transcriptomic
     profiles from k-nearest spatial neighbours, thereby capturing both imaging and
-    expression data from adjacent spots.
+    expression data from adjacent spots."
   Inspired by:
   - DIVA
   Method: SpatialDIVA
@@ -2784,12 +2789,11 @@
   - Multi-component Disentanglement
   Year: 2025
 - Code Availability: https://github.com/Bertinus/FLeCS
-  Description: "FLeCS models single-cell gene expression dynamics using coupled ordinary\
-    \ differential equations (ODEs) parameterized by a gene regulatory network. Cells\
-    \ are grouped into temporal bins\u2014either via pseudotime inference or experimental\
-    \ timestamps\u2014and aligned across time with optimal transport to form (pseudo)time\
-    \ series. To model interventions FLeCS replicates interventions in the learned\
-    \ graph."
+  Description: 'FLeCS models single-cell gene expression dynamics using coupled ordinary
+    differential equations (ODEs) parameterized by a gene regulatory network. Cells
+    are grouped into temporal bins\u2014either via pseudotime inference or experimental
+    timestamps\u2014and aligned across time with optimal transport to form (pseudo)time
+    series. To model interventions FLeCS replicates interventions in the learned graph.'
   Inspired by:
   - '-'
   Method: FLeCS
@@ -2822,10 +2826,10 @@
   - Causal Structure
   Year: 2023
 - Code Availability: https://github.com/daifengwanglab/ARTEMIS
-  Description: "ARTEMIS combines variational autoencoder with an unbalanced Diffusion\
+  Description: 'ARTEMIS combines variational autoencoder with an unbalanced Diffusion\
     \ Schr\xF6dinger Bridge to reconstruct continuous trajectories from time-series\
     \ data. The methods trains a VAE first, then jointly trains the VAE and uDSB by\
-    \ solving the forward-backward SDEs in the latent space using neural networks."
+    \ solving the forward-backward SDEs in the latent space using neural networks.'
   Inspired by:
   - '-'
   Method: ARTEMIS
