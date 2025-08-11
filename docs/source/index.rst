@@ -116,11 +116,11 @@ it aims to help researchers pick the right tool and highlight open challenges fo
 -------------------------------
 
 .. toctree::
-   :maxdepth: 2
-   :caption: 📚 Explore the Catalog
+   :maxdepth: 1
+   :caption: 📚 Catalog Navigation
 
-   methods
-   contribute
+   ⚙️ All Methods <methods>
+   ➕ Contribute <contribute>
 
 ---
 
