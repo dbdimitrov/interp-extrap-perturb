@@ -1,0 +1,21 @@
+Code Availability: https://github.com/kksniak/metric-flow-matching.git
+Description: Metric Flow Matching (MFM) constructs probability paths between source
+  and target distributions by interpolating geodesics following a data-dependent Riemannian
+  metric, ensuring that interpolations remain close to the data manifold rather than
+  being straight lines in Euclidean space. MFM first learns these geodesics by minimizing
+  a special cost function, and then regresses a vector field along a geodesic-based
+  corrected path using a conditional flow matching objective.
+Inspired by:
+- Conditional Flow Matching
+- Optimal Transport
+Method: MFM
+Model:
+- Flow Matching
+- Optimal Transport
+Publication: https://proceedings.neurips.cc/paper_files/paper/2024/file/f381114cf5aba4e45552869863deaaa7-Paper-Conference.pdf
+Published: true
+Task:
+- Trace Cell Populations
+- Context Transfer
+- Seen Perturbation Prediction
+Year: 2024

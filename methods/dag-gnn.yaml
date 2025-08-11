@@ -1,0 +1,16 @@
+Code Availability: https://github.com/fishmoon1234/DAG-GNN
+Description: 'DAG-GNN introduced a polynomial alternative for the acyclicity constraint
+  of NOTEARS, and encodes the DAG in a Graph Neural Network. Experimental results
+  on synthetic data sets indicate that DAG-GNN learns more accurate graphs for non-linearly
+  generated samples. '
+Inspired by:
+- NOTEARS
+Method: DAG-GNN
+Model:
+- Continuous optimisation for acyclicity
+- GNN
+Publication: https://arxiv.org/abs/1904.10098
+Published: true
+Task:
+- Causal Structure
+Year: 2019

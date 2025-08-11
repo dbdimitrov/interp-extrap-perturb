@@ -1,0 +1,21 @@
+Code Availability: https://github.com/yelabucsf/scrna-parameter-estimation
+Description: Memento is a differential expression framework that uses method-of-moments
+  estimators under a multivariate hypergeometric model, where a gene’s mean is derived
+  from Good-Turing corrected counts scaled by total cell counts. Differential variability
+  is quantified as the variance remaining after accounting for mean-dependent effects
+  (residual variance), while the covariance (pairwise association) between genes is
+  estimated from the off-diagonal elements of the resulting variance-covariance matrix.
+  Efficient permutation is achieved through a bootstrapping strategy that leverages
+  the sparsity of unique transcript counts.
+Inspired by:
+- '-'
+Method: Memento
+Model:
+- Hypergeometric test
+- Probabilistic
+Publication: https://www.cell.com/cell/fulltext/S0092-8674(24)01144-9
+Published: true
+Task:
+- Differential Analysis
+- Linear Gene Programmes
+Year: 2024

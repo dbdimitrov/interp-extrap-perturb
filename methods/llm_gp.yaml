@@ -1,0 +1,17 @@
+Code Availability: '-'
+Description: 'The method embeds each gene using two LLM-derived representations -
+  GPT-3.5 text embeddings of NCBI gene descriptions and ProtT5 protein sequence embeddings;
+  and, after reducing them to the top 50 principal components, uses these as inputs
+  to a multi-output Gaussian Process regression model with an RBF kernel to predict
+  the differential expression response to single-gene knockouts. '
+Inspired by:
+- GenePT
+Method: LLM+GP
+Model:
+- Gaussian Process Model
+- Language embeddings
+Publication: https://openreview.net/forum?id=eb3ndUlkt4
+Published: true
+Task:
+- Unseen Perturbation Prediction
+Year: 2024

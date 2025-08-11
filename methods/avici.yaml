@@ -1,0 +1,17 @@
+Code Availability: https://github.com/larslorch/avici
+Description: AVICI proposes an amortized causal discovery approach, attempting to
+  directly predict causal structures from observational or interventional data using
+  variational inference rather than performing costly searches over possible structures.
+  Since no ground truth is not available for real data, the mode is pre-trained using
+  simulated data with known causal graphs and subsequently applied to real data.
+Inspired by:
+- '-'
+Method: AVICI
+Model:
+- Amortized pre-training
+- 'Variational Inference '
+Publication: https://arxiv.org/abs/2205.12934
+Published: true
+Task:
+- Causal Structure
+Year: 2022

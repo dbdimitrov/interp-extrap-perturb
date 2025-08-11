@@ -1,0 +1,19 @@
+Code Availability: https://github.com/theislab/CellFlow
+Description: CellFlow learns a vector field to predict time-dependent expression profiles
+  under diverse conditions. The model encodes various covariates (perturbation, dosage,
+  batch, etc.), aggregates the embeddings via attention and deep sets, and uses a
+  conditional flow matching framework to learn the underlying flow of the effect.
+Inspired by:
+- CellOT
+Method: cellFlow
+Model:
+- Conditional Flow Matching
+- Optimal Transport
+Publication: https://www.biorxiv.org/content/10.1101/2025.04.11.648220v1.full.pdf
+Published: false
+Task:
+- Trace Cell Populations
+- Context Transfer
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2024

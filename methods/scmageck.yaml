@@ -1,0 +1,18 @@
+Code Availability: https://bitbucket.org/weililab/scmageck/src/master/
+Description: 'scMAGeCK is a framework with two modules: 1) scMAGeCK-RRA ranks cells
+  by marker expression and uses rank aggregation, with a dropout filtering step, to
+  detect enrichment of specific perturbations; 2) scMAGeCK-LR applies ridge regression
+  on the expression matrix to compute the relevance of perturbations, including in
+  cells with multiple perturbations. Both modules rely on permutation tests and Benjamini-Hochberg
+  correction.'
+Inspired by:
+- '-'
+Method: scMAGeCK
+Model:
+- Robust Rank Aggregate
+- Ridge Regression
+Publication: https://link.springer.com/article/10.1186/s13059-020-1928-4#Sec10
+Published: true
+Task:
+- Differential Analysis
+Year: 2020

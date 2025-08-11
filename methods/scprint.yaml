@@ -1,0 +1,32 @@
+Code Availability: https://github.com/cantinilab/scPRINT
+Description: scPRINT is a bidirectional transformer focused for scalable zero-shot
+  inference on new scRNA-seq datasets. It is pre-trained with a composite loss that
+  combines the denoising of downsampled transcripts via a zero-inflated negative-binomial
+  decoder, reconstruction of full expression profiles from bottleneck embeddings,
+  and hierarchical label prediction that disentangles latent factors such as cell
+  type, disease state and sequencing platform. Gene tokens merge a learned protein
+  embedding for the gene ID, an MLP-encoded log-normalised count and a positional
+  encoding of its genomic locus. Pre-training contexts sample 2,200 randomly selected
+  expressed genes per cell (+ padded with unexpressed genes). At inference, cell-specific
+  gene networks are extracted from multi-head attention maps either by averaging all
+  heads or by selecting subsets post hoc based on their correlation with external
+  priors (e.g., PPI databases, ChIP-seq, perturbation-ground-truth networks).
+Inspired by:
+- BERT
+- scVI
+- UCE
+Method: scPrint
+Model:
+- Foundational Gene expression embeddings (from >50M human cells)
+- BERT-like Bidirectional transformers (with flashattention2)
+- Self-supervised masked regression
+- A classifier decoder
+- ZINB likelihood decoder
+- PK Representations
+Publication: https://www.nature.com/articles/s41467-025-58699-1
+Published: true
+Task:
+- GRN Inference
+- Multi-component Disentanglement
+- Nonlinear Gene Programmes
+Year: 2025

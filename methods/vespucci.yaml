@@ -1,0 +1,27 @@
+Code Availability: https://github.com/neurorestore/Vespucci
+Description: 'Vespucci builds on Augur, and similarly it trains a random forest classifier
+  to predict perturbation labels based on gene expression but extends this to spatial
+  barcodes, using cross-validation within small, neighbouring regions to compute the
+  area under the ROC curve (AUC) as a measure of transcriptional separability per
+  observation. To overcome the computational inefficiency of classification across
+  all observations, Vespucci employs a meta-learning approach: it first performs exhaustive
+  classification on a subset of barcodes, then trains a random forrest regression
+  model on derived distance metrics (e.g., Pearson correlation, Spearman correlation)
+  between all pairs of observations to impute AUCs across the full dataset. This is
+  done by iteratively expanding the number of observations in the training set until
+  convergence (according to prediction similarity to the previous iteration). Finally,
+  perturbation-responsive genes are identified by splitting the data (using an independent
+  set of observations) to avoid bias, then using negative binomial mixed models to
+  link gene expression to AUC scores.'
+Inspired by:
+- Augur (theirs)
+Method: Vespucci
+Model:
+- Random Forrest
+- Spatially-Informed
+Publication: https://www.biorxiv.org/content/10.1101/2024.06.13.598641v2.full
+Published: false
+Task:
+- Perturbation Responsiveness
+- Differential Analysis
+Year: 2024

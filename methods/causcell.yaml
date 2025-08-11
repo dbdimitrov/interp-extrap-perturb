@@ -1,0 +1,22 @@
+Code Availability: https://github.com/bm2-lab/CausCell
+Description: CausCell integrates causal representation learning with diffusion-based
+  generative modeling to generate counterfactual single-cell data. It disentangles
+  observed and unobserved concepts using concept-specific adversarial discriminators
+  and links the resulting latent representations through a structural causal model
+  encoded as a directed acyclic graph.
+Inspired by:
+- AnnealVAE
+- DDPM
+Method: CausCell
+Model:
+- Diffusion
+- Auxilary Classifiers
+Publication: https://www.nature.com/articles/s41467-025-62008-1
+Published: true
+Task:
+- Multi-component Disentanglement
+- Causal Structure
+- Combinatorial Effect Prediction
+- Context Transfer
+- Seen Perturbation Prediction
+Year: 2024

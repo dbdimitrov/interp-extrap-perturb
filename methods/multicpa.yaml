@@ -1,0 +1,16 @@
+Code Availability: https://github.com/theislab/multicpa
+Description: MultiCPA extends CPA to predict combinatorial perturbation responses
+  from CITE-seq data by integrating gene and protein modalities using either concatenation
+  or a product of experts. It employs totalVI-inspired decoders and likelihoods to
+  model modality-specific outputs.
+Inspired by:
+- CPA (theirs)
+Method: MultiCPA
+Model:
+- AE framework inspired by CPA
+- totalVI likelihood
+Publication: https://www.biorxiv.org/content/10.1101/2022.07.08.499049v1.abstract
+Published: true
+Task:
+- Combinatorial Effect Prediction
+Year: 2022

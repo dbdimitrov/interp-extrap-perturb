@@ -1,0 +1,20 @@
+Code Availability: https://github.com/broadinstitute/CellCap
+Description: CellCap is a deep generative model that extends CPA by incorporating
+  cross-attention mechanisms between cell state and perturbation response (i.e., its
+  basal latent space and the perturbation design matrix). Further, CellCap uses a
+  variational autoencoder (VAE) framework with a linear decoder to identify sparse
+  and interpretable latent factors.
+Inspired by:
+- CPA
+- PerturbNet
+Method: CellCap
+Model:
+- VAE
+- Attention
+- Linear Decoder
+Publication: https://www.cell.com/cell-systems/fulltext/S2405-4712(25)00078-X
+Published: true
+Task:
+- Multi-component Disentanglement
+- Linear Gene Programmes
+Year: 2024

@@ -1,0 +1,26 @@
+Code Availability: https://github.com/GuangyuWangLab2021/Loki
+Description: OmiCLIP is a dual-encoder foundation model that encodes H&E histology
+  patches with a Vision Transformer and “gene-sentence” representations of (10X Visium)
+  spatial transcriptomics (ST) using a Transformer initialised on LAION-5B. It projects
+  both modalities into a shared latent space using symmetric contrastive learning,
+  which pulls matched histology-transcriptome pairs. The model is pretrained on paired
+  H&E images and ST data across diverse organs and disease states. These aligned embeddings
+  underpin downstream tasks such as spatial registration of histology to transcriptomic
+  spots, zero-shot tissue annotation, cell-type deconvolution, retrieval of matching
+  transcriptomic profiles for novel histology inputs, and prediction of spatial gene-expression
+  patterns directly from histology.
+Inspired by:
+- CLIP
+- CoCa(Yu et al)
+- Cell2Setence
+- GenePT
+Method: OmiCLIP
+Model:
+- ViT
+- Contrastive Learning
+- Multi-modal
+Publication: https://www.nature.com/articles/s41592-025-02707-1
+Published: true
+Task:
+- Context Transfer
+Year: 2025

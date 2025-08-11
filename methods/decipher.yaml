@@ -1,0 +1,20 @@
+Code Availability: https://github.com/azizilab/decipher
+Description: 'Decipher is a hierarchical deep generative model that integrates and
+  visualises single-cell RNA-seq data from normal and perturbed conditions, identifying
+  shared and disrupted cell-state trajectories. Its architecture includes dual latent
+  spaces: a low-dimensional state for detailed cell-state modeling and a two-dimensional
+  space for visualisation-connected to gene expression through linear or single-layer
+  neural network transformations. The model aligns trajectories by maintaining shared
+  transcriptional programs for common biological processes across conditions.'
+Inspired by:
+- '-'
+Method: Decipher
+Model:
+- VAE
+- Linear Decoder
+Publication: https://www.biorxiv.org/content/10.1101/2023.11.11.566719v2.full
+Published: false
+Task:
+- Unsupervised Disentanglement
+- Linear Gene Programmes
+Year: 2024

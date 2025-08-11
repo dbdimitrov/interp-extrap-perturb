@@ -1,0 +1,17 @@
+Code Availability: https://github.com/reem12345/Cell-Type-Specific-Graphs
+Description: PrePR-CT is a framework designed to predict transcriptional responses
+  to chemical perturbations in unobserved cell types by utilizing cell-type-specific
+  graphs encoded within Graph Attention Networks (GANs). The approach constructs cell
+  graph priors using metacells which are randomly associated with perturbed cells
+  to transform the problem into a regression task.
+Inspired by:
+- GEARS
+Method: PrePR-CT
+Model:
+- Graph attention
+- Regression
+Publication: https://www.biorxiv.org/content/10.1101/2024.07.24.604816v1.full.pdf
+Published: false
+Task:
+- Context Transfer
+Year: 2024

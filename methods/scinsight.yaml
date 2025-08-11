@@ -1,0 +1,18 @@
+Code Availability: https://github.com/Vivianstats/scINSIGHT
+Description: A non-negative matrix factorisation method that decomposes single-cell
+  gene expression data into common and condition-specific gene modulees. Each sample’s
+  expression matrix is modeled as the sum of a shared component (W₂V) and condition-specific
+  components (W₁Hⱼ), plus residual noise. The approach minimizes a loss function combining
+  reconstruction error (Frobenius norm) with regularisation terms that control module
+  scale and inter-condition similarity.
+Inspired by:
+- '-'
+Method: scINSIGHT
+Model:
+- NMF
+Publication: https://link.springer.com/article/10.1186/s13059-022-02649-3#Sec11
+Published: true
+Task:
+- Contrastive Disentanglement
+- Linear Gene Programmes
+Year: 2022

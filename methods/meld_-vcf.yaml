@@ -1,0 +1,24 @@
+Code Availability: https://github.com/KrishnaswamyLab/MELD
+Description: MELD models cells as samples drawn from a probability density defined
+  in a low-dimensional space (manifold). Each cell is assigned to a one-hot indicator
+  according to its sample origin (e.g. treatment or control), normalised by the total
+  cell count in that sample. A cell (transcriptomic) similarity graph is then built
+  using a decaying kernel, and the normalised indicator vectors are smoothed across
+  the graph, such that each cell’s value is updated by averaging with its neighbors
+  to yield a density estimate for each sample (condition) for that cell. Normalizing
+  these estimates produces a perturbation-associated relative likelihood for each
+  cell. Vertex Frequency Clustering (VFC) then uses these likelihoods, cell indicator
+  vectors, and similarity graphs to cluster cells with similar transcriptomics and
+  perturbation profiles.
+Inspired by:
+- '-'
+Method: MELD(-VCF)
+Model:
+- Manifold Learning
+- Vertex-frequency analysis
+- Graph Diffusion
+Publication: https://www.nature.com/articles/s41587-020-00803-5
+Published: true
+Task:
+- Perturbation Responsiveness
+Year: 2021

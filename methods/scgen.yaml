@@ -1,0 +1,18 @@
+Code Availability: https://github.com/theislab/scgen
+Description: 'scGen is VAE that uses latent space vector arithmetics to predict single-cell
+  perturbation responses. The method first encodes high-dimensional gene expression
+  profiles into a latent space, where it computes a difference vector (delta) representing
+  the change between perturbed and unperturbed conditions. At inference, this delta
+  vector is linearly added to the latent representation of unperturbed cells, and
+  the adjusted latent vector is then decoded back into the original gene expression
+  space, thereby simulating the perturbed state. '
+Inspired by:
+- Conditional VAE (CVAE)
+Method: scGEN
+Model:
+- VAE
+Publication: https://www.nature.com/articles/s41592-019-0494-8#Abs1
+Published: true
+Task:
+- Context Transfer
+Year: 2019

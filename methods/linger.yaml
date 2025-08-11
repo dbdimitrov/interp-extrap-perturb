@@ -1,0 +1,15 @@
+Code Availability: https://github.com/Durenlab/LINGER
+Description: TODO
+Inspired by:
+- '-'
+Method: LINGER
+Model:
+- Multi-modal
+- Prior Knowledge Informed
+- Shapley values
+- DNN
+Publication: https://www.nature.com/articles/s41587-024-02182-7
+Published: true
+Task:
+- GRN Inference
+Year: 2024

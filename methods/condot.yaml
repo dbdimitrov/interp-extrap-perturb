@@ -1,0 +1,26 @@
+Code Availability: https://github.com/bunnech/condot/tree/main
+Description: 'CondOT builds on CellOT to learn context-aware optimal transport maps
+  by conditioning on an auxiliary variable. Instead of learning a fixed transport
+  map, it learns a context-dependent transport map that adapts based on this auxiliary
+  information. The OT map is modeled as the gradient of a convex potential using partially
+  input convex neural networks, which ensures mathematical properties required for
+  parametrised optimal transport. The auxiliary variables can be of different types:
+  continuous (like dosage or spatial coordinates), categorical (like treatment groups,
+  represented via one-hot encoding), or learned embeddings learned. Additionally,
+  CondOT includes a separate neural module, a combinator network, for combinatorial
+  predictions.'
+Inspired by:
+- Amos et al., 2017
+- Makkuva et al., 2020
+- CellOT (theirs)
+Method: CondOT
+Model:
+- Conditioned Dual (min-max) Formulation OT
+Publication: https://proceedings.neurips.cc/paper_files/paper/2022/file/2d880acd7b31e25d45097455c8e8257f-Paper-Conference.pdf
+Published: true
+Task:
+- Trace Cell Populations
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+- Context Transfer
+Year: 2022

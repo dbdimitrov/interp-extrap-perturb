@@ -1,0 +1,14 @@
+Code Availability: https://github.com/morris-lab/CellOracle
+Description: TODO
+Inspired by:
+- '-'
+Method: CellOracle
+Model:
+- Multi-modal
+- Prior Knowledge Informed
+- Regularised (Linear) Regression
+Publication: https://www.nature.com/articles/s41586-022-05688-9
+Published: true
+Task:
+- GRN Inference
+Year: 2023

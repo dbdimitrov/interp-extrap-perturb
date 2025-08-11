@@ -1,0 +1,25 @@
+Code Availability: https://github.com/nitzanlab/biolord
+Description: A deep generative model that disentangles (multi-omics) single-cell data
+  by separating sources of variation into known and unknown decomposed latent spaces,
+  which are then concatenated for reconstruction. It requires partial supervision
+  through known cell attributes, such as cell type, age, or perturbation, and employs
+  different encoding strategies for categorical and continuous attributes. Biolord
+  maximizes reconstruction accuracy using count likelihoods, along with an additional
+  MSE loss, while minimizing information in the unknown the per-cell embeddings, thus
+  promoting effective disentanglement. To further constrain the unknown latent space,
+  Biolord uses activation penalty (L2) and Gaussian noise.
+Inspired by:
+- LORD (Gabbay & Hoshen)
+Method: Biolord
+Model:
+- Probabilistic
+- ZINB likelihood
+- Protein-Count (totalVI) Likelihood
+Publication: https://www.nature.com/articles/s41587-023-02079-x#Sec6
+Published: true
+Task:
+- Multi-component Disentanglement
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+- Context Transfer
+Year: 2024

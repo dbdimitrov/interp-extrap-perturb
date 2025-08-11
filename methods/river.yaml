@@ -1,0 +1,20 @@
+Code Availability: https://github.com/C0nc/River
+Description: River identifies condition-relevant genes from spatial omics data across
+  multiple slices or conditions. It learns gene expression and spatial coordinate
+  embeddings using separate MLP-based encoders, which are then concatenated and used
+  to predict condition labels. Spatial alignment is thus required as a preprocessing
+  step. In a second step, River uses Integrated Gradients, DeepLift, and GradientShap
+  to attribute model predictions to input genes at the cell level. These attribution
+  scores are aggregated using rank aggregation to prioritize condition-relevant genes.
+Inspired by:
+- '-'
+Method: River
+Model:
+- Non-linear Classifier
+- Feature Attribution
+- Spatially-informed
+Publication: https://www.biorxiv.org/content/10.1101/2024.08.04.606512v1.abstract
+Published: false
+Task:
+- Differential Analysis
+Year: 2024

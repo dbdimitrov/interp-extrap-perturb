@@ -1,0 +1,17 @@
+Code Availability: '-'
+Description: LPM is a decoder-only deep neural network designed for large-scale integration
+  and prediction across heterogeneous perturbation datasets. LPM encodes perturbation
+  (P), readout (R), and context (C) as discrete variables, each with its own embedding
+  space implemented via learnable look-up tables. These embeddings are concatenated
+  to and used for inference.
+Inspired by:
+- '-'
+Method: LPM
+Model:
+- DNN Decoder
+Publication: https://arxiv.org/pdf/2503.23535
+Published: false
+Task:
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2025

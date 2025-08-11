@@ -39,7 +39,7 @@ def slugify(text: str) -> str:
 # Paths
 ################################################################################
 BASE_DIR      = Path(__file__).resolve().parent
-STATIC_YAML   = BASE_DIR / "methods.yaml"
+METHODS_DIR   = BASE_DIR / "methods"
 TASKLIST_TXT  = BASE_DIR / "tasklist.txt"
 TEMPLATE_DIR  = BASE_DIR
 TEMPLATE_FN   = "methods.rst.j2"
@@ -63,7 +63,35 @@ ALLOWED_TASKS = {t for t in raw_tasks if t}
 ################################################################################
 # Load and normalise methods
 ################################################################################
-methods: List[dict] = yaml.safe_load(STATIC_YAML.read_text())
+def load_methods_from_directory(methods_dir: Path) -> List[dict]:
+    """Load all method YAML files from the methods directory."""
+    methods = []
+    
+    if not methods_dir.exists():
+        print(f"ERROR: Methods directory {methods_dir} does not exist", file=sys.stderr)
+        return methods
+    
+    # Get all YAML files in the methods directory
+    yaml_files = list(methods_dir.glob("*.yaml")) + list(methods_dir.glob("*.yml"))
+    
+    if not yaml_files:
+        print(f"WARNING: No YAML files found in {methods_dir}", file=sys.stderr)
+        return methods
+    
+    print(f"Loading {len(yaml_files)} method files from {methods_dir}", file=sys.stderr)
+    
+    for yaml_file in sorted(yaml_files):
+        try:
+            with open(yaml_file, 'r', encoding='utf-8') as f:
+                method_data = yaml.safe_load(f)
+                if method_data:  # Skip empty files
+                    methods.append(method_data)
+        except Exception as e:
+            print(f"ERROR loading {yaml_file}: {e}", file=sys.stderr)
+    
+    return methods
+
+methods: List[dict] = load_methods_from_directory(METHODS_DIR)
 for m in methods:
     for key in ("Task", "Model", "Inspired by"):
         v = m.get(key)

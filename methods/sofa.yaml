@@ -1,0 +1,21 @@
+Code Availability: https://github.com/tcapraz/SOFA
+Description: A Group Factor Analysis for multi-omics data that separates latent variables
+  into guided factors, linked to predefined (observed) variables, and unguided factors.
+  This structure ensures that each observed variable (known biological and technical
+  effects) is captured by a corresponding guided factor, disentangling the observed
+  variables from the residual information, which is in turn captured by the unguided
+  factors. Additionally, SOFA works with both continous and categorical guiding variables
+  and it employs a hierarchical horseshoe prior on loading weights, applying adaptive
+  shrinkage at the view, factor, and feature levels.
+Inspired by:
+- MOFA+
+- Supervised Factor Analysis
+Method: SOFA
+Model:
+- ''
+- Group Factor Analysis
+Publication: https://www.biorxiv.org/content/10.1101/2024.10.10.617527v3.full
+Published: false
+Task:
+- Multi-component Disentanglement
+Year: 2024

@@ -1,0 +1,23 @@
+Code Availability: https://github.com/theislab/inVAE
+Description: 'VAE model, which incorporates technical and biological covariates into
+  two sets of latent variables:  - Z_I embeds biologically-relevant variables - Z_B
+  embeds the unwanted variability in the data (i.e. batch effect labels) These are
+  then fed into a shared encoder, along with the count data. The output of this shared
+  encoder is fed to the decoder. Optionally, further disentanglement of the two latent
+  variable sets is achieved by minimizing their total correlation, which is approximated
+  via a minibatch-weighted estimator that quantifies the difference between the joint
+  posterior and the product of individual marginal distributions.'
+Inspired by:
+- scVI
+- iVAE
+- β-TCVAE
+Method: inVAE
+Model:
+- VAE
+- NB Likelihood
+Publication: https://www.biorxiv.org/content/10.1101/2024.12.06.627196v1.full
+Published: false
+Task:
+- Multi-component Disentanglement
+- Nonlinear Gene Programmes
+Year: 2024

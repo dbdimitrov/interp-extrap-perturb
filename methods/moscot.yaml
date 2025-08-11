@@ -1,0 +1,23 @@
+Code Availability: https://github.com/theislab/moscot
+Description: Moscot is a broad and scalable framework that recasts various single-cell
+  mapping tasks as optimal transport problems, supporting formulations that compare
+  distributions in shared (Wasserstein-type OT), distinct (Gromov-Wasserstein OT),
+  and partially-overlapping feature spaces (fused-Gromov–Wasserstein OT). Beyond Entropy-regularized
+  sinkhorn (Cuturi et al., 2013), moscot provides a user-friendly API to more recent
+  OT strategies, such as low-rank and sparse Monge maps.
+Inspired by:
+- Waddington-OT
+- NovoSpaRc
+- PASTE
+- OTT
+Method: moscot
+Model:
+- Unbalanced OT
+- Entropy-regularised Sinkhorn
+- Low-rank OT
+- Sparse Map OT
+Publication: https://www.nature.com/articles/s41586-024-08453-2
+Published: true
+Task:
+- Trace Cell Populations
+Year: 2025

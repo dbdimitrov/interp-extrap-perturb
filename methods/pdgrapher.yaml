@@ -1,0 +1,21 @@
+Code Availability: https://github.com/mims-harvard/PDGrapher
+Description: 'PDGrapher builds on graph neural network (GNN) to predict therapeutic
+  perturbations that can reverse disease phenotypes, focusing directly on identifying
+  perturbation targets rather than modeling the perturbation effects. By embedding
+  diseased cell states into gene regulatory networks or protein-protein interaction
+  networks, PDGrapher learns latent representations to infer optimal perturbations
+  that drive diseased states toward desired healthy outcomes. The method utilizes
+  dual GNNs - a response prediction module and a perturbagen discovery module - both
+  employing causal graphs as priors and adjusting edges to model interventions. '
+Inspired by:
+- GEARS
+Method: PDGrapher
+Model:
+- GNN
+Publication: https://pmc.ncbi.nlm.nih.gov/articles/PMC10802439/
+Published: false
+Task:
+- Combinatorial Effect Prediction
+- Unseen Perturbation Prediction
+- Context Transfer
+Year: 2025

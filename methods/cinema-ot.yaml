@@ -1,0 +1,26 @@
+Code Availability: https://github.com/vandijklab/CINEMA-OT
+Description: CINEMA-OT disentangles perturbation effects from confounding variation
+  by decomposing the data with independent component analysis (ICA); ICA components
+  correlated with the perturbation labels are identified using Chatterjee’s coefficient
+  and excluded, yielding a background (confounder) latent space that predominantly
+  reflects confounding factors. Optimal transport is then applied to this background
+  space to align perturbed and control cells, thereby generating counterfactual cell
+  pairs, and this OT map is used in downstream analyses. They also propose a reweighting
+  variant (CINEMA-OT-W) to address differential cell type abundance by pre-aligning
+  treated cells with k-nearest neighbor controls and balancing clusters prior to ICA
+  and optimal transport.
+Inspired by:
+- Mixscape
+- OTT
+Method: CINEMA-OT
+Model:
+- Unbalanced OT
+- Entropy-regularized Sinkhorn
+- ICA
+Publication: https://www.nature.com/articles/s41592-023-02040-5#Sec11
+Published: true
+Task:
+- Trace Cell Populations
+- Perturbation Responsiveness
+- Unsupervised Disentanglement
+Year: 2023

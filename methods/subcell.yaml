@@ -1,0 +1,25 @@
+Code Availability: https://github.com/czi-ai/sub-cell-embed
+Description: SubCell is a set of self-supervised vision transformer (ViT) models trained
+  on low-plex single-cell immunofluorescence images from the Human Protein Atlas to
+  learn biologically meaningful representations of protein localisation and tissue
+  morphology. The models are optimised using a multi-task objective that combines
+  masked autoencoding for spatial reconstruction, a cell-specific contrastive loss
+  to enforce consistency across augmented views of the same cell, and a protein-specific
+  contrastive loss to align embeddings of cells stained for the same protein across
+  different cell lines and experiments. An attention pooling module is used to priotise
+  informative subcellular regions. The resulting models, particularly ViT-ProtS-Pool
+  and MAE-CellS-ProtS-Pool, are shown to generalise across datasets, imaging modalities,
+  cell types, and perturbations without fine-tuning.
+Inspired by:
+- Contrastive Masked Autoencoders
+- Contrastive Learning(Chen et al.)
+Method: SubCell
+Model:
+- A collection of Vision Transformer Models
+- Contrastive loss
+Publication: https://www.biorxiv.org/content/10.1101/2024.12.06.627299v1.abstract
+Published: false
+Task:
+- Context Transfer
+- Nonlinear Gene Programmes
+Year: 2024

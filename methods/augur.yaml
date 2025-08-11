@@ -1,0 +1,23 @@
+Code Availability: https://github.com/neurorestore/Augur
+Description: Augur rank cell types by quantifying how accurately perturbation labels
+  can be predicted from gene expression profiles using a random forest classifier
+  (or regressor depending on the perturbation label). For each cell type, it repeatedly
+  subsamples a fixed number of cells to mitigate biases from uneven cell numbers.
+  It also employs a two-step feature selection procedure, first, identifying highly
+  variable genes via local polynomial regression on the mean–variance relationship,
+  and second, random downsampling. AUGUR then uses cross-validation to compute the
+  area under the ROC curve (AUC) as a model performance metric that is used to quantify
+  the perturbation effect on each cell type. It also provides (gene) feature importances.
+  For multi-class or continous perturbations, cell-type effects (model performance)
+  are measured using macro-averaged AUC or concordance correlation coefficient, respectively.
+Inspired by:
+- '-'
+Method: AUGUR
+Model:
+- Random Forrest
+Publication: https://www.nature.com/articles/s41587-020-0605-1#Abs1
+Published: true
+Task:
+- Perturbation Responsiveness
+- Differential Analysis
+Year: 2020

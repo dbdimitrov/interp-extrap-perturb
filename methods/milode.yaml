@@ -1,0 +1,22 @@
+Code Availability: https://github.com/MarioniLab/miloDE
+Description: miloDE is a cluster-free framework for differential expression analysis
+  in scRNA-seq data that builds on Milo. Similarly, MiloDE relies on pre-calculated
+  latent representations to constructs overlapping neighborhoods on a kNN graph, now
+  improved using a second-order approach to better capture local transcriptional similarity.
+  Expression counts are aggregated within these neighborhoods and analyzed using edgeR’s
+  generalised linear model framework, with dual corrections applied across genes and
+  neighborhoods to control for multiple testing. Additionally, a post hoc neighborhood
+  refinement step ensures complete cell coverage and computational efficiency.
+Inspired by:
+- Milo (theirs)
+- edgeR
+- Cydar
+Method: MiloDE
+Model:
+- Generalised Linear Model
+- NB Likelihood
+Publication: https://link.springer.com/article/10.1186/s13059-024-03334-3
+Published: true
+Task:
+- Differential Analysis
+Year: 2024

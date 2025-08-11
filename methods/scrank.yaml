@@ -1,0 +1,25 @@
+Code Availability: https://github.com/ZJUFanLab/scRank
+Description: scRank infers cell type-specific Gene Programmes from untreated scRNA-seq
+  data by constructing co-expression networks via principal component regression with
+  random subsampling and integrating them using tensor decomposition. It simulates
+  drug perturbation by modifying the drug targets' outgoing edges to generate an in-sillico
+  perturbed network, and then aligns the untreated and perturbed networks via Laplacian
+  eigen-decomposition. In this low-dimensional space, the distances between corresponding
+  gene nodes quantify gene-level changes due to the perturbation. These distances,
+  weighted by network connectivity (e.g., outgoing edge strength normalised by node
+  degree) and extended through two-hop diffusion, are aggregated to yield a composite
+  perturbation score that ranks cell types by their predicted drug responsiveness.
+Inspired by:
+- '-'
+Method: scRANK
+Model:
+- PC Regression
+- Tensor Decomposition (PARAFAC)
+- Network Diffusion
+Publication: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(24)00260-X
+Published: true
+Task:
+- Linear Gene Programmes
+- Perturbation Responsiveness
+- GRN Inference
+Year: 2024

@@ -1,0 +1,24 @@
+Code Availability: https://github.com/ML4BM-Lab/SENA
+Description: 'SENA replaces discrepancy‑VAE''s encoder by using a gene-to-pathway
+  mask that applies a soft weighting, via the pathway activity scores α, to the gene
+  expression inputs. In this design, each weight in the encoder is elementwise multiplied
+  by a mask M that assigns full weight to genes known to belong to a pathway and a
+  tunable, lower weight (λ) to genes outside the pathway. This allows the model to
+  primarily capture the signal of annotated genes while still letting unannotated
+  genes contribute, thereby forming interpretable latent factors as linear combinations
+  of pathway activities. '
+Inspired by:
+- Discrepancy-VAE
+Method: SENA
+Model:
+- Discrepancy-VAE architecture
+- VAE
+- PK Representations
+Publication: https://openreview.net/forum?id=NjlafBAahz
+Published: true
+Task:
+- Causal Structure
+- Multi-component Disentanglement
+- Seen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2024

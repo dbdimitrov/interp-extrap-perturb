@@ -1,0 +1,24 @@
+Code Availability: https://github.com/hsmaan/SpatialDIVA
+Description: SpatialDIVA learns distinct latent spaces capturing intrinsic (transcriptomic),
+  morphological (histology), spatial neighborhood, technical (batch), and residual
+  variations. To promote disentanglement, the model employs auxiliary classification
+  heads - using cell type labels to supervise the transcriptomic latent space, pathology
+  annotations to guide the histology latent space, and batch labels to capture technical
+  variation. Additionally, an auxiliary regression head with mean squared error (MSE)
+  loss is trained to ensure that the spatial latent space accurately reconstructs
+  a PCA-based representation derived from concatenated histology and transcriptomic
+  profiles from k-nearest spatial neighbours, thereby capturing both imaging and expression
+  data from adjacent spots.
+Inspired by:
+- DIVA
+Method: SpatialDIVA
+Model:
+- VAE
+- Spatially-informed
+- NB Likelihood
+- Multi-modal
+Publication: https://www.biorxiv.org/content/10.1101/2025.02.19.638201v1.full.pdf
+Published: false
+Task:
+- Multi-component Disentanglement
+Year: 2025

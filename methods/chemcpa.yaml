@@ -1,0 +1,15 @@
+Code Availability: github.com/theislab/chemCPA
+Description: A CPA extension that embeds prior knowlegde about the compound structure
+  of drugs (SMILES representations), allowing it to extend CPA to unseen drug perturbations.
+Inspired by:
+- CPA (theirs)
+Method: ChemCPA
+Model:
+- AE framework inspired by CPA
+- Chemical representation embeddings
+Publication: https://proceedings.neurips.cc/paper_files/paper/2022/hash/aa933b5abc1be30baece1d230ec575a7-Abstract-Conference.html
+Published: true
+Task:
+- Unseen Perturbation Prediction
+- Context Transfer
+Year: 2022

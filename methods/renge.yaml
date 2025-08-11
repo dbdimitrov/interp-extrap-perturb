@@ -1,0 +1,18 @@
+Code Availability: https://github.com/masastat/RENGE
+Description: RENGE attempts to infer gene regulatory networks from time-series single-cell
+  CRISPR knockout data. It models changes in gene expression following a knockout
+  by propagating the effects through direct and higher-order (indirect) regulatory
+  paths, where the gene network is represented as a matrix of regulatory strengths
+  between gene pairs.
+Inspired by:
+- '-'
+Method: RENGE
+Model:
+- Regression model
+Publication: https://www.nature.com/articles/s42003-023-05594-4
+Published: true
+Task:
+- Context Transfer
+- GRN Inference
+- Causal Structure
+Year: 2023

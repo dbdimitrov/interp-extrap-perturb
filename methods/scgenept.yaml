@@ -1,0 +1,20 @@
+Code Availability: '-'
+Description: scGenePT combines CRISPR single-cell RNA-seq perturbation data with language-based
+  gene embeddings. It builds on a pretrained scGPT by adding gene-level text embeddings
+  from NCBI Gene/UniProt summaries or GO annotations, to the token, count, and perturbation
+  embeddings of the model during fine-tuning on perturbational data.
+Inspired by:
+- scGPT
+- GenePT
+Method: scGenePT
+Model:
+- scGPT
+- ChatGPT prompts
+Publication: https://www.biorxiv.org/content/10.1101/2024.10.23.619972v1
+Published: false
+Task:
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+- GRN Inference
+- Nonlinear Gene Programmes
+Year: 2025

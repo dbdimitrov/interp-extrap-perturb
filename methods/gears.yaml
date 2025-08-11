@@ -1,0 +1,25 @@
+Code Availability: https://github.com/snap-stanford/GEARS
+Description: GEARS is uses graph neural networks to learn multidimensional embeddings
+  for genes and their perturbations by respectively leveraging gene co-expression
+  and GO-derived similarity graphs. It first derives refined gene embeddings through
+  a co-expression-based GNN and separately processes perturbation embeddings via a
+  GO graph to incorporate prior biological relationships, with the latter design enabling
+  predictions for unSeen Perturbation Prediction. These embeddings are integrated
+  by adding the aggregated perturbation signal to the gene representations and then
+  decoded using gene-specific layers augmented by a cross-gene context module, ultimately
+  reconstructing the post-perturbation transcriptomic profile. The model is trained
+  end-to-end with a combined autofocus and direction-aware loss, and it can optionally
+  quantify uncertainty through a Gaussian likelihood framework.
+Inspired by:
+- '-'
+Method: GEARS
+Model:
+- GNNs for co-expression and GO relationships
+- Label embeddings
+- PK Representations
+Publication: https://www.nature.com/articles/s41587-023-01905-6#Abs1
+Published: true
+Task:
+- Combinatorial Effect Prediction
+- Unseen Perturbation Prediction
+Year: 2023

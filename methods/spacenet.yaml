@@ -1,0 +1,21 @@
+Code Availability: https://github.com/sschrod/SpaCeNet
+Description: SpaCeNet aims to untangle the complex relationships between molecular
+  interactions within and between cells by analyzing spatially resolved single-cell
+  data. To achieve this, SpaCeNet leverages an adaptation of probabilistic graphical
+  models  to enable spatially resolved conditional independence testing. This approach
+  allows for the identification of direct and indirect dependencies, as well as the
+  removal of spurious gene association patterns. Additionally, SpaCeNet incorporates
+  explicit cell-cell distance information to differentiate between short- and long-range
+  interactions, thereby distinguishing between baseline cellular variability and interactions
+  influenced by a cell's microenvironment.
+Inspired by:
+- '-'
+Method: SpaCeNet
+Model:
+- Generalised Gaussian Graphical Model
+- Spatially-informed
+Publication: https://genome.cshlp.org/content/34/9/1371
+Published: true
+Task:
+- Feature Relationships
+Year: 2024

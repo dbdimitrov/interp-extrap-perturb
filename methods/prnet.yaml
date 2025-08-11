@@ -1,0 +1,19 @@
+Code Availability: https://github.com/Perturbation-Response-Prediction/PRnet
+Description: 'PRnet is a generative framework to predict the transcriptional response
+  of cells to chemical perturbations. To learn the respose, the model randomly assigns
+  control and perturbed cell pairs which are conditioned on the smiles embedding of
+  the chemical perturbation and the dose. PRnet consists of three components: Perturb-adapter,
+  Perturb-encoder, and Perturb-decoder, which work together to generate a distribution
+  of transcriptional responses. Changing the smiles embedding can be used to predict
+  the response of cells to novel chemical perturbations at both bulk and single-cell
+  levels.'
+Inspired by:
+- '-'
+Method: PRNet
+Model:
+- DNN
+Publication: https://www.nature.com/articles/s41467-024-53457-1
+Published: true
+Task:
+- Unseen Perturbation Prediction
+Year: 2024

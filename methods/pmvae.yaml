@@ -1,0 +1,17 @@
+Code Availability: 'https://github.com/ratschlab/pmvae '
+Description: 'In pmVAE, each predefined pathway is modeled as a VAE that learns a
+  (local) multidimensional latent embedding for the genes in that pathway. Each VAE
+  module minimizes a size-weighted local reconstruction loss based solely on its pathway’s
+  genes, while the (local) latent embeddings from all pathways are concatenated to
+  form a global representation. '
+Inspired by:
+- '-'
+Method: pmVAE
+Model:
+- Multiple VAEs
+- PK Representations
+Publication: https://icml-compbio.github.io/2021/papers/WCBICML2021_paper_24.pdf
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2021

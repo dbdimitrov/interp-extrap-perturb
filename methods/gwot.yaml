@@ -1,0 +1,22 @@
+Code Availability: https://genentech.github.io/Perturb-OT/
+Description: The paper extends entropic Gromov-Wasserstein Optimal Transport and Co-Optimal
+  Transport to incorporate perturbation labels for aligning data across different
+  modalities from large-scale perturbation screens. The core innovation involves constraining
+  the learned cross-modality coupling matrix to be "label-compatible", meaning that
+  the transport plan is informed by the perturbation labels and is only allowed to
+  match between cells that have received the same perturbation label, which is achieved
+  by modifying the Sinkhorn algorithm. This label-compatible alignment is used to
+  train a model to estimate cellular responses to perturbations when measurements
+  are available in only one modality.
+Inspired by:
+- '-'
+Method: GWOT
+Model:
+- Optimal Transport
+- Multi-modal
+Publication: https://arxiv.org/pdf/2405.00838
+Published: true
+Task:
+- Trace Cell Populations
+- Context Transfer
+Year: 2025

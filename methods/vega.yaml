@@ -1,0 +1,16 @@
+Code Availability: https://github.com/LucasESBS/vega/
+Description: VEGA replaces conventional fully connected decoder with a sparse linear
+  decoder that uses a binary gene membership mask, assingning latent variables to
+  a pre-defined collection of gene sets.
+Inspired by:
+- '-'
+Method: VEGA
+Model:
+- VAE
+- Linear Decoder
+- PK Representations
+Publication: https://www.nature.com/articles/s41467-021-26017-0
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2023

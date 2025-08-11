@@ -1,0 +1,21 @@
+Code Availability: '-'
+Description: A VAE that combines the contrastiveVI/cVAE architecture with a classifier
+  that learns the pairing of perturbation labels to cells. As in ContrastiveVI, unperturbed
+  cells are drawn solely from background latent space, while cells classified as perturbed
+  are reconstructed from both the background and salient sapces. Additionally, Hilbert-Schmidt
+  Independence Criterion (HSIC) is used to disentagle the background and salient latent
+  spaces.
+Inspired by:
+- ContrastiveVI
+- scVI
+- cVAE
+Method: SC-VAE
+Model:
+- VAE
+- NB likelihood
+Publication: https://www.biorxiv.org/content/10.1101/2024.01.05.574421v1.full
+Published: true
+Task:
+- Contrastive Disentanglement
+- Perturbation Responsiveness
+Year: 2024

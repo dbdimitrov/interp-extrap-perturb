@@ -1,0 +1,23 @@
+Code Availability: https://github.com/xinhe-lab/GSFA
+Description: GSFA is a two-layer, guided Factor Analysis model that quantifies the
+  effects of genetic perturbations on latent factors. The model first factorizes the
+  expression matrix Y into a factor matrix Z (normal prior) and gene loadings W (normal-mixture
+  prior). Then, it captures the effect (β) of perturbation on factors using multivariate
+  linear regression. Spike-and-slab prior is used to enforce sparsity on β, which
+  can also analogously be seen as a causal graph. The linearity of GSFA further enables
+  perturbation-associated, differentially-expressed genes to be identified. GSFA uses
+  Gibbs sampling for inference.
+Inspired by:
+- Sparse Factor Analysis
+- Supervised factor analysis
+Method: GSFA
+Model:
+- Factor Analysis
+- Probabilistic
+Publication: https://www.nature.com/articles/s41592-023-02017-4
+Published: true
+Task:
+- Multi-component Disentanglement
+- Causal Structure
+- Linear Gene Programmes
+Year: 2024

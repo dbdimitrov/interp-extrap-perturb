@@ -1,0 +1,14 @@
+Code Availability: https://github.com/aertslab/scenicplus
+Description: TODO
+Inspired by:
+- SCENIC/GENIE3(theirs)
+Method: SCENIC+
+Model:
+- Multi-modal
+- Prior Knowledge Informed
+- Gradient Boosting
+Publication: https://www.nature.com/articles/s41592-023-01938-4
+Published: true
+Task:
+- GRN Inference
+Year: 2022

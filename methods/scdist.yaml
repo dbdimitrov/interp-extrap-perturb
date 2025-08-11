@@ -1,0 +1,20 @@
+Code Availability: https://github.com/phillipnicol/scDist
+Description: scDist is a statistical framework that uses linear mixed-effects models
+  to estimate gene-level condition effects while accounting for individual and technical
+  variability. In the model, baseline expression levels are first captured, and then
+  a parameter representing the condition-induced change is estimated. The overall
+  shift between conditions is quantified by computing the Euclidean distance between
+  the condition-specific mean expression profiles - essentially, by taking the norm
+  of the condition effect vector. This high-dimensional metric is then efficiently
+  approximated in a lower-dimensional space via principal component analysis.
+Inspired by:
+- AUGUR
+Method: scDIST
+Model:
+- Generalised Linear Model
+Publication: https://www.nature.com/articles/s41467-024-51649-3
+Published: true
+Task:
+- Perturbation Responsiveness
+- Differential Analysis
+Year: 2024

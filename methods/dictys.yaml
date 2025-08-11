@@ -1,0 +1,20 @@
+Code Availability: https://github.com/pinellolab/dictys
+Description: Dictys integrates scRNA-seq and scATAC-seq data to infer gene regulatory
+  networks (GRNs) and their changes across multiple conditions. By leveraging multiomic
+  data, Dictys infers context-specific networks and dynamic GRNs using steady-state
+  solutions of the Ornstein-Uhlenbeck process to model transcriptional kinetics and
+  account for feedback loops. It reconstructs GRNs by detecting transcription factor
+  (TF) binding sites and refining these networks with single-cell transcriptomic data,
+  capturing regulatory shifts that reflect TF activity beyond expression levels.
+Inspired by:
+- '-'
+Method: Dictys
+Model:
+- Ornstein–Uhlenbeck process
+- Steady-State ODE
+Publication: https://www.nature.com/articles/s41592-023-01971-3
+Published: true
+Task:
+- GRN Inference
+- Causal Structure
+Year: 2023

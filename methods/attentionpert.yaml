@@ -1,0 +1,19 @@
+Code Availability: https://github.com/BaiDing1234/AttentionPert
+Description: AttentionPert is a complex generative model that utilizes attention-based
+  mechanisms to reconstruct perturbed cellular profiles from perturbation condition
+  and precomputed Gene2Vec embeddings. It uses two encoders to capture global and
+  local relationships between genes and perturbations (following GEARS). The PertWeight
+  encoder models attention-based interactions between perturbations, while the PertLocal
+  encoder identifies localized perturbation effects using an augmented GO graph.
+Inspired by:
+- GEARS
+Method: AttentionPert
+Model:
+- Transformer Model
+- GNN
+Publication: https://academic.oup.com/bioinformatics/article/40/Supplement_1/i453/7700899
+Published: true
+Task:
+- Combinatorial Effect Prediction
+- Unseen Perturbation Prediction
+Year: 2024

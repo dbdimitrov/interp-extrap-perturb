@@ -1,0 +1,20 @@
+Code Availability: https://github.com/abidlabs/contrastive_vae
+Description: 'VAE with two sets of latent variables (two encoders): salient and background,
+  each learned using amortised inference from both case and control observations,
+  respectively. The latent variables are concatenated and then decoded simultaneously
+  via a shared decoder. During the generative process (decoding), the control observations
+  are reconstructed solely from the background latent space, with salient latent variables
+  being set to 0, while the case observations are generated from both sets of latent
+  variables. Optionally, the two sets of latent variables can be further disentagled
+  by minimizing their total correlation, in practice done by training a discriminator
+  to distinguish real from permuted latent samples.'
+Inspired by:
+- Contrastive PCA
+Method: cVAE
+Model:
+- Contrastive VAE
+Publication: https://arxiv.org/pdf/1902.04601
+Published: false
+Task:
+- Contrastive Disentanglement
+Year: 2019

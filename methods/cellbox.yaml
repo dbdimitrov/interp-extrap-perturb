@@ -1,0 +1,18 @@
+Code Availability: https://github.com/sanderlab/CellBox
+Description: 'CellBox models cellular responses to perturbations, by linking molecular
+  and phenotypic outcomes through a unified nonlinear ODE-based model, aimed at simulating
+  dynamic cellular behavior. The framework uses gradient descent with automatic differentiation
+  to infer ODE network interaction parameters, facilitating exposure to novel perturbations
+  and prediction of cell responses. '
+Inspired by:
+- '-'
+Method: CellBox
+Model:
+- ODE
+Publication: https://www.cell.com/cell-systems/pdf/S2405-4712(20)30464-6.pdf
+Published: true
+Task:
+- Context Transfer
+- Seen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2021

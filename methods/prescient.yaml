@@ -1,0 +1,22 @@
+Code Availability: https://github.com/gifford-lab/prescient
+Description: PRESCIENT models cellular differentiation as a stochastic diffusion process,
+  where the drift term is parameterised as the negative gradient of a neural network-learned
+  potential function. The model is trained using time-series single-cell RNA-seq data,
+  and fits the potential function by minimizing the regularised Wasserstein distance
+  between simulated and observed cell populations at each time point, explicitly incorporating
+  cell proliferation by weighting cells according to their expected number of descendants.
+  PRESCIENT can simulate differentiation trajectories for both observed and (in silico)
+  perturbed cell states, enabling the prediction of cell fate outcomes under various
+  genetic interventions.
+Inspired by:
+- '-'
+Method: Prescient
+Model:
+- Diffusion
+Publication: https://www.nature.com/articles/s41467-021-23518-w
+Published: true
+Task:
+- Trace Cell Populations
+- Seen Perturbation Prediction
+- Context Transfer
+Year: 2021

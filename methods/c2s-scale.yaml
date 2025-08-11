@@ -1,0 +1,20 @@
+Code Availability: https://github.com/vandijklab/cell2sentence
+Description: 'C2S-Scale is a family of large language models (LLMs) for single-cell
+  RNA-seq analysis that extends the Cell2Sentence (C2S) framework by converting cell
+  gene-expression profiles into ordered “cell sentences” for natural-language processing.Each
+  C2S-Scale model is initialized from a publicly released Gemma-2 or Pythia checkpoint,
+  i.e. leverages pre-existing language representations, and is then further pre-trained
+  on a multimodal corpus of over a billion tokens. Each cell sentence is paired with
+  the abstract (and, where available, additional free-text annotations) from the same
+  study, allowing the model to learn matched transcriptomic and experimental context. '
+Inspired by:
+- Cell2Sentence (theirs)
+Method: C2S-Scale
+Model:
+- Family of LLMs with to 27B parameters
+Publication: https://www.biorxiv.org/content/10.1101/2025.04.14.648850v1
+Published: false
+Task:
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2025

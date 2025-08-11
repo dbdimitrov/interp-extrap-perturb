@@ -1,0 +1,25 @@
+Code Availability: https://github.com/andrewcharlesjones/cplvm
+Description: 'A family of contrastive Poisson latent variable models (CPLVMs), based
+  on a Gamma-Poisson hierarchical generative process: - CPLVM: The variational posterior
+  is approximated using log-normal distributions, preserving non-negativity in the
+  latent factors. - CGLVM: Extends CPLVM by allowing latent factors to take negative
+  values, replacing Gamma priors with Gaussian priors and using a log-link function
+  for the Poisson rates. Variational posteriors are modeled as multivariate Gaussians.
+  The authors also propose a hypothesis testing framework, in which log-(ELBO)-Bayes
+  is calculated between a Null model, omitting the salient latent space, and the full
+  contrastive model. This framework is used to quantify global (across all genes)
+  and joint expression changes in subsets of genes (akin to gene set enrichment analysis).'
+Inspired by:
+- cPCA
+- cLVMs
+- scVI (hypothesis testing)
+Method: CPLVMs
+Model:
+- NB likelihood
+- Factor Models
+Publication: https://projecteuclid.org/journals/annals-of-applied-statistics/volume-16/issue-3/Contrastive-latent-variable-modeling-with-application-to-case-control-sequencing/10.1214/21-AOAS1534.short
+Published: true
+Task:
+- Linear Gene Programmes
+- Contrastive Disentanglement
+Year: 2022

@@ -1,0 +1,20 @@
+Code Availability: https://github.com/ JaneJiayiDong/scPreGAN
+Description: scPreGAN is a deep generative model that predicts the response of single-cell
+  expression to perturbation by integrating an autoencoder and a generative adversarial
+  network. The model extracts common information from unperturbed and perturbed data
+  using an encoder network, and then generates perturbed data using a generator network.
+  scPreGAN outperforms state-of-the-art methods on three real world datasets, capturing
+  the complicated distribution of cell expression and generating prediction data with
+  the same expression abundance as real data.
+Inspired by:
+- scGEN
+- CPA
+Method: scPreGan
+Model:
+- AE
+- GAN
+Publication: https://academic.oup.com/bioinformatics/article/38/13/3377/6593485
+Published: true
+Task:
+- Seen Perturbation Prediction
+Year: 2022

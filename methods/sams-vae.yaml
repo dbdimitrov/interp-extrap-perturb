@@ -1,0 +1,31 @@
+Code Availability: https://github.com/insitro/sams-vae
+Description: 'A VAE that encodes input data into background latent variables and learns
+  sparse, global (salient) embeddings representing the effects of perturbations. These
+  sparse salient embeddings are modeled using a joint relaxed straight-through (Beta-)Bernoulli
+  distribution (mask) and a normally distributed latent space. This method captures
+  perturbation-specific effects as an additive shift to the background representation,
+  analogous to additive shift methods, but it can also be thought as a multi-condition
+  extention to the contrastive framework (limited to two latent variables (case vs.
+  control), to a more general setup capable of learning global embeddings for each
+  perturbation. As in some contrastive methods, for perturbation samples, the perturbation
+  (global) embeddings are added to the background latent variables to reconstruct
+  the data, while for control samples, the perturbation embeddings are effectively
+  set to zero. '
+Inspired by:
+- CPA
+- SVAE/SVAE+
+Method: SAMS-VAE
+Model:
+- VAE
+- NB likelihood
+- Conditional Latent Embeddings
+- Addative Shift
+- Sparse Mechanism Shift
+Publication: https://proceedings.neurips.cc/paper_files/paper/2023/hash/0001ca33ba34ce0351e4612b744b3936-Abstract-Conference.html
+Published: true
+Task:
+- Multi-component Disentanglement
+- Causal Structure
+- Seen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2023

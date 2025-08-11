@@ -1,0 +1,22 @@
+Code Availability: https://github.com/bunnelab/virtues
+Description: VirTues is a multi-modal foundation model based on a vision transformer
+  architecture, trained on multiplex spatial proteomics data from lung, breast, and
+  melanoma tumors. It combines image representations with protein language model (PLM)
+  embeddings of molecular markers and constructs hierarchical summary tokens at the
+  cell, niche, and tissue levels. This PLM-based tokenisation enables the model to
+  predict previously unseen markers. The architecture employs a sparse attention mechanism
+  that factorises attention into spatial and marker components to manage the computational
+  complexity of high-dimensional input. Training is performed using a masked autoencoding
+  objective - i.e. it reconstructs missing subsets of spatial and protein data.
+Inspired by:
+- Masked Autoencoders
+Method: VirTues
+Model:
+- ViT
+- Maked Autoencoder
+- Multi-modal
+Publication: https://arxiv.org/abs/2501.06039
+Published: false
+Task:
+- Context Transfer
+Year: 2025

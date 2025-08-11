@@ -1,0 +1,19 @@
+Code Availability: '-'
+Description: 'GEASS is a causal feature selection framework in high-dimensional spatal
+  & temporal omics data that identifies nonlinear Granger causal interactions by maximizing
+  a sparsity-regularised modified transfer entropy. It enforces sparsity using combinatorial
+  stochastic gate layers that allow it to select a minimal subset of features with
+  causal interactions - i.e. two sets of of non-overlapping genes as drivers (source)
+  and receivers (sink). '
+Inspired by:
+- Transfer Entropy
+Method: GEASS
+Model:
+- Non-linear Granger Causality
+- Stochastic Gate Layers (Feature Selectors)
+- Time-resolved / Spatially-informed
+Publication: https://openreview.net/forum?id=aKcS3xojnwY
+Published: true
+Task:
+- Nonlinear Gene Programmes
+Year: 2023

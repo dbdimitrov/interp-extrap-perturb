@@ -1,0 +1,14 @@
+Code Availability: https://github.com/yulun-rayn/variational-causal-inference
+Description: GraphVCI predecessor, almost identical architecture, excluding the prior
+  knowledge graphs.
+Inspired by:
+- '-'
+Method: VCI
+Model:
+- Dual-branch variational bayes causal inference framework
+Publication: https://arxiv.org/abs/2209.05935
+Published: false
+Task:
+- Context Transfer
+- Seen Perturbation Prediction
+Year: 2024

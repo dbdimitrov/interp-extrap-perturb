@@ -1,0 +1,24 @@
+Code Availability: https://github.com/theislab/prophet
+Description: Prophet represents each experiment as a set of three axes - cellular
+  state (cell lines), treatments (perturbations), and phenotypic readouts - and projects
+  diverse prior knowledge types (e.g., CCLE bulk RNA-seq for cell lines; chemical
+  fingerprints or transcriptomic/genomic vectors for perturbations; learnable embeddings
+  for readouts) into a shared token space. It is pre-trained on a set of diverse perturbation
+  experiments covering readouts such as cell viability, compound IC50, Cell Painting
+  morphology features, mRNA transcript abundance, and cell type proportions. A transformer-based
+  encoder integrates these tokenised inputs, feeding a regression head that’s trained
+  end-to-end to minimise mean squared error across all outcome types. The model is
+  fine-tuned for assay-specific data applications.
+Inspired by:
+- '-'
+Method: Prophet
+Model:
+- Transformer
+- Multi-modal
+- Knowledge Informed
+Publication: https://www.biorxiv.org/content/10.1101/2024.08.12.607533v2
+Published: false
+Task:
+- Unseen Perturbation Prediction
+- Context Transfer
+Year: 2024

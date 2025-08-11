@@ -1,0 +1,19 @@
+Code Availability: https://github.com/sschrod/CODEX
+Description: CODEX uses a Deep Neural Network to map cells from control to perturbed
+  states, learning perturbation effects in respective perturbation-dependent latent
+  spaces. These latent spaces can be arbitrarily combined to infer unseen combinatorial
+  effects, allowing the model to predict the outcomes of complex treatment combinations.
+  Additionally, CODEX can leverage prior information from Gene Ontologies to inform
+  the effects of completely unSeen Perturbation Prediction.
+Inspired by:
+- GEARS
+Method: CODEX
+Model:
+- DNN
+Publication: https://academic.oup.com/bioinformatics/article/40/Supplement_1/i91/7700898
+Published: true
+Task:
+- Combinatorial Effect Prediction
+- Unseen Perturbation Prediction
+- Context Transfer
+Year: 2024

@@ -1,0 +1,16 @@
+Code Availability: https://github.com/PhilBoileau/EHDBDscPCA
+Description: A sparse version of contrastive PCA that enhances interpretability in
+  high-dimensional settings by integrating l1 regularisation into an iterative procedure
+  to estimate sparse loadings and principal components
+Inspired by:
+- Contrastive PCA
+- Probabilistic PCA
+Method: scPCA
+Model:
+- Modified PCA
+Publication: https://academic.oup.com/bioinformatics/article/36/11/3422/5807607
+Published: true
+Task:
+- Linear Gene Programmes
+- Contrastive Disentanglement
+Year: 2020

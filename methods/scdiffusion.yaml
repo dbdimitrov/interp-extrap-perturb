@@ -1,0 +1,16 @@
+Code Availability: https://github.com/EperLuo/scDiffusion
+Description: scDiffusion employs a Latent Diffusion Model for generating single-cell
+  RNA sequencing data, using a three-part framework - a fine-tuned autoencoder for
+  initial data transformation, a skip-connected multilayer perceptron denoising network,
+  and a condition controller for cell-type-specific data generation.
+Inspired by:
+- '-'
+Method: scDiffusion
+Model:
+- Diffusion
+- VAE
+Publication: https://academic.oup.com/bioinformatics/article/40/9/btae518/7738782
+Published: true
+Task:
+- Context Transfer
+Year: 2024

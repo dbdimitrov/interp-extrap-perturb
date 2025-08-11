@@ -1,0 +1,22 @@
+Code Availability: https://github.com/theislab/svaeligr
+Description: A VAE  that combines the sparse mechanism shift from SVAE+ with learning
+  a probabilistic pairing between cells and unobserved auxiliary variables. These
+  auxilary variables correspond to the observed perturbation labels in SVAE+, but
+  here they are learned in a data-driven way (rather than passed as static labels)
+  which in turn enables counterfactual context-transfer scenarios.
+Inspired by:
+- SVAE+
+Method: svae-ligr
+Model:
+- VAE
+- NB likelihood
+- Sparse Mechanism Shift
+- Generative/Experience Replay
+Publication: https://openreview.net/pdf?id=8hptqO7sfG
+Published: true
+Task:
+- Seen Perturbation Prediction
+- Context Transfer
+- Multi-component Disentanglement
+- Causal Structure
+Year: 2024

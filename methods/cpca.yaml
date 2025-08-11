@@ -1,0 +1,20 @@
+Code Availability: https://github.com/abidlabs/contrastive
+Description: A modified version of PCA, where the covariance matrix (COV) is the difference
+  between COV(case/perturbed) and αCOV(control/background). The hyperparameter α is
+  used to balance having a high case variance and a low control variance. To provide
+  some intuition, when α is 0, the model reduces to classic PCA on the case data.
+  Optimal alphas (equal to k clusters) are identified using spectral clustering over
+  a range of cPCA runs with different alphas, with selection based on the similarity
+  of cPCA outputs.
+Inspired by:
+- PCA
+- Contrastive Mixture Models (Zou et al., 2013)
+Method: cPCA
+Model:
+- Modified PCA
+Publication: https://www.nature.com/articles/s41467-018-04608-8#Sec7
+Published: true
+Task:
+- Linear Gene Programmes
+- Contrastive Disentanglement
+Year: 2018

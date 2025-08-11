@@ -1,0 +1,19 @@
+Code Availability: https://github.com/broadinstitute/wot
+Description: Waddington-OT models developmental processes as time-varying  probability
+  distributions in gene expression space and infers temporal couplings by solving
+  an entropy-regularized, unbalanced optimal transport problem. Growth rate, estimated
+  leveraging expression levels of genes associated with proliferation and apoptosis,
+  is taken into consideration via unbalanced OT. Additionally, uses spectral clustering
+  to obtain Gene Programmes, and subsequently associate those to predictive TFs.
+Inspired by:
+- '-'
+Method: Waddington-OT
+Model:
+- Unbalanced OT
+- Entropy-regularized Sinkhorn
+Publication: https://www.sciencedirect.com/science/article/pii/S009286741930039X?via%3Dihub
+Published: true
+Task:
+- Trace Cell Populations
+- Linear Gene Programmes
+Year: 2019

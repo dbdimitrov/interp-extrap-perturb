@@ -1,0 +1,15 @@
+Code Availability: https://github.com/gemoran/sparse-vae-code
+Description: Spike and Slab Lasso applied to (non-linear) decoder weights. They show
+  poofs of identifiability when at least 2 "anchor features" are present.
+Inspired by:
+- oi-VAE
+- VSC
+- beta-VAE
+Method: sparseVAE
+Model:
+- VAE
+Publication: https://arxiv.org/pdf/2110.10804
+Published: true
+Task:
+- Unsupervised Disentanglement
+Year: 2022

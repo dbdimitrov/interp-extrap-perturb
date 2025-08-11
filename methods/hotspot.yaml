@@ -1,0 +1,20 @@
+Code Availability: https://github.com/YosefLab/Hotspot/tree/master
+Description: Hotspot proposes a modified autocorrelation metrics that detect genes
+  with coherent expression among neighboring cells (K-nearest neighbours graph in
+  a latent space, spatial proximities, or lineage). By comparing these local autocorrelation
+  scores to a permutation-free null model (e.g. using negative binomial or Bernoulli
+  assumptions), it calculates the significance of autocorrelated genes. Additionally,
+  for module detection, Hotspot computes pairwise correlations that capture how similarly
+  two genes are expressed across nearby cells and then applies hierarchical clustering
+  to group genes into biologically coherent modules.
+Inspired by:
+- Spatial Autocorrelation Metrics (e.g. Morans I)
+Method: Hotspot
+Model:
+- Autocorrelation
+- Pairwise Local Correlations
+Publication: https://www.sciencedirect.com/science/article/pii/S2405471221001149
+Published: true
+Task:
+- Nonlinear Gene Programmes
+Year: 2021

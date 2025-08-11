@@ -1,0 +1,22 @@
+Code Availability: https://github.com/kseverso/contrastive-LVM
+Description: 'A family of contrastive latent variable models (cLVMs), where case data
+  are modeled as the sum of background and salient latent embeddings, while control
+  data are reconstructed solely from background embeddings: - cLVM with Gaussian likelihoods
+  and priors - Sparse cLVM with horseshoe prior used to regularize the weights - Robust
+  cLVM with a Student''s t distribution - cLVM with automatic relevance determination
+  to regularise the columns of the weight matrix - contrastive VAE, as a non-linear
+  extension of the framework The shared concept across these models is that each model
+  learns a shared set of latent variables for the background and target data, while
+  salient latent variables are learnt solely for the target data.'
+Inspired by:
+- Contrastive PCA
+Method: cLVM
+Model:
+- Factor Models
+- Contastive VAE
+Publication: https://cdn.aaai.org/ojs/4414/4414-13-7453-1-10-20190706.pdf
+Published: true
+Task:
+- Linear Gene Programmes
+- Contrastive Disentanglement
+Year: 2019

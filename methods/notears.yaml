@@ -1,0 +1,15 @@
+Code Availability: https://github.com/xunzheng/notears
+Description: 'NOTEARS replaced traditional statistical DAG learning techniques for
+  observational data with a continuous optimisation problem, by reformulating the
+  acyclicity constraint. This reduces the computational complexity and facilitated
+  first small scale biological applications. '
+Inspired by:
+- '-'
+Method: NOTEARS
+Model:
+- Continuous optimisation for acyclicity
+Publication: https://arxiv.org/abs/1803.01422
+Published: true
+Task:
+- Causal Structure
+Year: 2018

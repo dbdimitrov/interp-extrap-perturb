@@ -1,0 +1,24 @@
+Code Availability: https://github.com/KANG-BIOINFO/CellDrift
+Description: CellDrift fits a negative binomial GLM to scRNA-seq counts using cell
+  type, perturbation, and their interaction as independent (predictor) variables,
+  while also incorporating library size and batch effects. Pairwise contrast coefficients
+  are then derived to quantify the difference between perturbed and control states
+  across time points. These time series of contrast coefficients, representing the
+  temporal trajectory of perturbation effects per gene, are subsequently analyzed
+  using Fuzzy C-means clustering to group similar temporal patterns and Functional
+  PCA to extract the dominant modes of temporal variance.
+Inspired by:
+- '-'
+Method: CellDrift
+Model:
+- Generalised Linear Model
+- NB Likelihood
+- Functional PCA
+- Fuzzy Clustering
+- Time-resolved
+- Perturbation-Covariate Interactions
+Publication: https://academic.oup.com/bib/article/23/5/bbac324/6673850#373524408
+Published: true
+Task:
+- Differential Analysis
+Year: 2022

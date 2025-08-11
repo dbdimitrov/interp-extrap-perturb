@@ -1,0 +1,27 @@
+Code Availability: https://github.com/KlugerLab/SIMVI
+Description: 'SIMVI is a spatially-informed VAE that disentangles gene expression
+  variability into two latent factors: an intrinsic variable z, which captures cell
+  type–specific signals, and a spatial variable s, which quantifies spatial effects.
+  The spatial latent variable s is inferred by aggregating the intrinsic representations
+  of neighboring cells via a Graph Attention Network, thereby incorporating local
+  spatial context. To promote independence between z and s, SIMVI employs an asymmetric
+  regularisation on z using maximum mean discrepancy or, alternatively, a  mutual
+  information estimator, ensuring that z retains minimal non-cell-intrinsic information.
+  Furthermore, leveraging debiased machine learning principles, the model decomposes
+  gene expression variance by treating s as a continuous treatment and z as confounding
+  covariates, thereby quantifying the specific impact of spatial context on gene expression.'
+Inspired by:
+- Debiased ML
+- scVI
+Method: SIMVI
+Model:
+- ZINB Likelihood
+- VAE
+- Spatially-informed
+- Multi-modal
+Publication: https://www.nature.com/articles/s41467-025-58089-7
+Published: true
+Task:
+- Nonlinear Gene Programmes
+- Unsupervised Disentanglement
+Year: 2025

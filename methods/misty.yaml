@@ -1,0 +1,19 @@
+Code Availability: https://saezlab.github.io/mistyR/
+Description: MISTy extracts intra- and intercellular relationships from spatial omics
+  data by learning multivariate interactions through a multi-view approach, where
+  each view represents a collection of variables (e.g., a modality or an aggragation
+  of a spatial niche). It jointly models spatial and functional aspects of the data,
+  supporting any number of views with arbitrary numbers of variables. Target variables
+  (intrinsic view) are predicted using random forests (by default), either via leave-feature-one-out
+  within the intrinsic view or using the remaining (extrinsic) views.
+Inspired by:
+- SVCA
+Method: MISTy
+Model:
+- Spatially-informed
+- Random Forrest (or other regression models)
+Publication: https://link.springer.com/article/10.1186/s13059-022-02663-5
+Published: true
+Task:
+- Feature Relationships
+Year: 2022

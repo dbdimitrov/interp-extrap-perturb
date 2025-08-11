@@ -1,0 +1,19 @@
+Code Availability: https://github.com/csglab/GEDI
+Description: GEDI learns a shared latent space and, for each sample, estimates a specific
+  reconstruction function that maps latent states to observed gene expression profiles.
+  This design captures inter-sample variability and enables differential expression
+  analysis along continuous cell-state gradients without relying on predefined clusters.
+  Optionally, it can incorporate prior knowledge.
+Inspired by:
+- PLIER (PK representation)
+Method: GEDI
+Model:
+- Probabilistic
+- Sample-specific Decoders
+- PK Representations (optional)
+- RNA Velocity (optional)
+Publication: https://www.nature.com/articles/s41467-024-50963-0?fromPaywallRec=false
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2024

@@ -1,0 +1,24 @@
+Code Availability: https://github.com/Genentech/iterative-perturb-seq
+Description: 'Iterpert is an active learning framework for Perturb-seq experiments
+  that uses GEARS to predict gene expression gene expression perturbation effects.
+  The method iteratively retrains GEARS on new data and selects the next batch of
+  perturbations using an enhanced kernel, which is constructed by fusing the GEARS-derived
+  kernel with kernels from six prior information sources (additional Perturb-seq data,
+  optical pooled screens, scRNA-seq atlases, protein structures, protein–protein interaction
+  networks, and literature-derived features). Each prior source is mapped into a kernel
+  matrix, normalized, and combined with the model kernel via a mean fusion operator.
+  The fused kernel is then used with a greedy distance maximisation rule to select
+  perturbation batches under budget constraints (a limited set of experiments per
+  round). '
+Inspired by:
+- GEARS
+Method: IterPert
+Model:
+- GEARS
+- Active Learning
+Publication: https://www.biorxiv.org/content/10.1101/2023.12.12.571389v1.full.pdf
+Published: false
+Task:
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2024

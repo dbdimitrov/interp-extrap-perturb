@@ -1,0 +1,28 @@
+Code Availability: https://github.com/Lotfollahi-lab/nichecompass.
+Description: 'NicheCompass, the spatial sucessor of ExpiMap, employs multiple decoders:
+  one graph decoder reconstructs the spatial adjacency matrix via an adjacency loss
+  to ensure that spatially-neighboring observations have similar latent representations,
+  while separate (masked) decoders - one for each cell’s own features and one for
+  its aggregated neighborhood features - reconstruct the omics data. By masking the
+  data reconstruction according to prior knowledge, each latent variable is associated
+  with a gene program (subclassified according inter- or  intracellular signalling).
+  Additionally, it learns de novo gene programs that capture novel, spatially coherent
+  expression patterns, not covered by the prior knowledge. By default, it replaces
+  the Group lasso loss of Expimap with a a dropout mechanism to prune uninformative
+  prior knowledge sets.'
+Inspired by:
+- ExpiMap
+- GraphVAE
+Method: NicheCompass
+Model:
+- Graph VAE
+- Linear Decoder
+- NB Likelihood
+- Spatially-informed
+- PK Representations
+- Multi-modal
+Publication: https://www.nature.com/articles/s41588-025-02120-6
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2024

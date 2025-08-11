@@ -1,0 +1,15 @@
+Code Availability: https://github.com/andrewcharlesjones/pcpca
+Description: A probabilistic model that builds on cPCA, additionally proposing a case-control-ratio-adjusted
+  α as a more interpretable alternative to the same parameter in cPCA (see comment
+  above).
+Inspired by:
+- '-'
+Method: PCPCA
+Model:
+- modified PCA
+Publication: https://projecteuclid.org/journals/annals-of-applied-statistics/volume-18/issue-3/Probabilistic-contrastive-dimension-reduction-for-case-control-study-data/10.1214/24-AOAS1877.short
+Published: true
+Task:
+- Linear Gene Programmes
+- Contrastive Disentanglement
+Year: 2024

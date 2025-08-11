@@ -1,0 +1,20 @@
+Code Availability: github.com/Genentech/MMFM
+Description: MMFM (Multi-Marginal Flow Matching) builds on Flow Matching to model
+  cell trajectories across time and conditions. MMFM generalizes the Conditional Flow
+  Matching framework to incorporate multiple time points using a spline-based conditional
+  probability path. Moreover, it leverages ideas from classifier-free guidance to
+  incorporate multiple conditions.
+Inspired by:
+- Conditional Flow Matching
+- Optimal Transport
+Method: MMFM
+Model:
+- Flow Matching
+- Optimal Transport
+Publication: https://openreview.net/pdf?id=hwnObmOTrV
+Published: true
+Task:
+- Trace Cell Populations
+- Context Transfer
+- Seen Perturbation Prediction
+Year: 2024

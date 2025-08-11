@@ -1,0 +1,17 @@
+Code Availability: https://github.com/const-ae/pylemur
+Description: 'LEMUR is a PCA based algorithm that defines condition dependent embedings
+  to analyze differences in differentialy expressed genes across conditions. For each
+  condition a separate embeding matrix is learned and reconstructed using a shared
+  matrix. This is used to generate counterfactual estimates for each cell and condition,
+  which is used to infer label-free DE genes and neighborhoods. '
+Inspired by:
+- PCA
+Method: LEMUR
+Model:
+- Multi-condition PCA
+Publication: https://www.nature.com/articles/s41588-024-01996-0
+Published: true
+Task:
+- Seen Perturbation Prediction
+- Differential Analysis
+Year: 2025

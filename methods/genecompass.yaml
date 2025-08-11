@@ -1,0 +1,28 @@
+Code Availability: https://github.com/xCompass-AI/GeneCompass
+Description: GeneCompass is a knowledge-informed, cross-species foundation model.
+  During pre-training it integrates four types of prior biological knowledge - gene
+  regulatory networks (ENCODE PECA2-derived GRNs), promoter sequences (fine-tuned
+  DNABert embeddings), gene family annotations (gene2vec HGNC/esnembl embeddings),
+  and gene co-expression relationships (Pearson Correlations in their dataset) - into
+  a unified embedding space. It employs a masked-language-modeling strategy by randomly
+  masking 15 % of gene inputs and simultaneously reconstructs both gene identities
+  and expression values; this is optimized via a multi-task loss combining mean squared
+  error for expression recovery and cross-entropy for gene ID prediction, balanced
+  by a weighting hyperparameter β. Combined with GEARS for extrapolation tasks.
+Inspired by:
+- Geneformer
+Method: GeneCompass
+Model:
+- Foundational Gene expression embeddings (from >50M human cells)
+- Self-supervised masked regression with down-sampling
+- Sparse transformer encoder
+- Performer-style attention decoder
+- PK-informed
+Publication: https://www.nature.com/articles/s41422-024-01034-y
+Published: true
+Task:
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+- GRN Inference
+- Nonlinear Gene Programmes
+Year: 2024

@@ -1,0 +1,20 @@
+Code Availability: https://github.com/hdsu-bioquant/onto-vae
+Description: ontoVAE uses a multi-layer, linear decoder, structured to represent hierarchical
+  prior knowledge - e.g. layers can represent gene ontology level.  To preserve connections
+  beyond adjacent layers, the decoder concatenates outputs from previous layers with
+  the current layer’s input, with binary masks ensuring that only valid parent–child
+  and gene set relationships are captured. Decoder weights are constrained to be positive
+  to preserve directional pathway activity, with each ontology term represented by
+  three neurons whose average activation reflects its activity.
+Inspired by:
+- DenseNet
+Method: ontoVAE
+Model:
+- VAE
+- Linear Decoder
+- PK Representations
+Publication: https://academic.oup.com/bioinformatics/article/39/6/btad387/7199588
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2023

@@ -1,0 +1,26 @@
+Code Availability: http://github.com/theislab/drvi
+Description: A VAE that learns disentangled latent representations in an unsupervised
+  manner by employing additive decoders followed by a nonlinear pooling function (by
+  default, log-sum-exp pooling). The decoder splits the latent vector into K variables,
+  each decoded separately, and then aggregates these outputs. This architecture enforces
+  disentanglement under theoretical assumptions, such as the additivity of independent
+  processes, the existence of process-specific gene markers, and reconstruction quality,
+  ensuring that distinct biological processes map to different latent dimensions.
+  Additionally, DRVI performs batch-correction by optionally incorporating covariate
+  information. Finally, DRVI enables the of ranking latent dimensions based on reconstruction
+  and providing a gene interpretability pipeline via latent variable perturbations.
+Inspired by:
+- Addative Decoder ICA
+- scVI
+Method: DRVI
+Model:
+- VAE
+- NB likelihood
+- Addative Decoders
+- Multi-modal
+Publication: https://openreview.net/forum?id=8FcsvupyOn
+Published: true
+Task:
+- Unsupervised Disentanglement
+- Nonlinear Gene Programmes
+Year: 2024

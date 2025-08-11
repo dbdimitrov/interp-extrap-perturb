@@ -1,0 +1,26 @@
+Code Availability: https://github.com/insitro/contrastive_vi_plus
+Description: An extension of ContrastiveVI that incorporates an auxiliary classifier
+  to estimate the effects of perturbations, where the classifier operates on the salient
+  variables and is sampled from a relaxed straight-through Bernoulli distribution.
+  The output from the classifier also directly informs the salient latent space, indicating
+  whether a cell expressing a gRNA successfully underwent a corresponding genetic
+  perturbation. Additionally, Wasserstein distance is replaced by KL divergence, encouraging
+  non-perturbed cells to map to the null region of the salient space. For datasets
+  with a larger number of perturbations, the method also re-introduces and minimizes
+  the Maximum Mean Discrepancy between the salient and background latent variables.
+  This discourages the leakage of perturbation-induced information into the background
+  latent variables, ensuring a clearer separation of perturbation effects.
+Inspired by:
+- ContrastiveVI (theirs)
+Method: ContrastiveVI+
+Model:
+- ZINB Likelihood
+- VAE
+- Contrastive
+Publication: https://arxiv.org/abs/2411.08072
+Published: true
+Task:
+- Perturbation Responsiveness
+- Contrastive Disentanglement
+- Nonlinear Gene Programmes
+Year: 2024

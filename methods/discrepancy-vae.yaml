@@ -1,0 +1,31 @@
+Code Availability: https://github.com/uhlerlab/discrepancy_vae
+Description: A VAE that disentangles control and pertubed cells into a latent space
+  organized by a causal DAG. The encoder produces a Gaussian latent code z, while
+  an intervention encoder transforms intervention one-hot encodings into two embeddings
+  - a soft assignment vector that targets specific latent dimensions and a scalar
+  capturing the intervention’s magnitude. Multiplying and adding these embeddings
+  to z yields a modified latent vector that simulates a soft intervention, whereas
+  zeroing them recovers the control condition. A causal layer then processes the latent
+  vectors using an upper-triangular matrix G, which enforces an acyclic causal structure
+  and propagates intervention effects among the latent factors. The decoder is applied
+  twice - once to the modified latent code to generate virtual counterfactual outputs
+  that reconstruct interventional outcomes, and once to the unmodified code to recover
+  control samples. This dual decoding forces the model to disentangle intervention-specific
+  effects from the intrinsic data distribution. The training objective combines reconstruction
+  error to reconstruct control samples, a discrepancy loss (e.g., MMD) to align virtual
+  counterfactuals with observed interventional data, KL divergence on the latent space,
+  and an L1 penalty on G to enforce sparsity.
+Inspired by:
+- DSCM
+Method: discrepancy-VAE
+Model:
+- VAE
+- Disentanglement via Virtual Counterfactuals
+Publication: https://openreview.net/forum?id=o16sYKHk3S&noteId=2EQ6cmfPHg
+Published: true
+Task:
+- Multi-component Disentanglement
+- Seen Perturbation Prediction
+- Combinatorial Effect Prediction
+- Causal Structure
+Year: 2023

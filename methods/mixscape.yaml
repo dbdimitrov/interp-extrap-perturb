@@ -1,0 +1,28 @@
+Code Availability: https://github.com/satijalab/seurat
+Description: Mixscape aims to classify CRISPR-targeted cells into perturbed and not
+  perturbed (escaping). To eachive that, Mixscape computes a local perturbation signature
+  by subtracting each cell’s mRNA expression from the average of its k nearest NT
+  (non-targeted) control neighbors. Differential expression testing between targeted
+  and NT cells then identifies a set of DEGs that capture the perturbation response.
+  These DEGs are used to define a perturbation vector-essentially, the average difference
+  in expression between targeted and NT cells, which projects each cell’s DEG expression
+  onto a single perturbation score. The Gaussian mixture model is applied to these
+  perturbation scores, with one component fixed to match the NT distribution, while
+  the other represents the perturbation effect. This model assigns probabilities that
+  classify each targeted cell as either perturbed or escaping. Additionally, the authors
+  propose visualisation with Linear Discriminant Analysis and UMAP, aiming to identify
+  a low-dimensional subspace that maximally discriminates the mixscape-derived classes.
+Inspired by:
+- '-'
+Method: Mixscape
+Model:
+- Gaussian Mixture Model
+- 'LDA
+
+  '
+Publication: https://www.nature.com/articles/s41588-021-00778-2#Sec11
+Published: true
+Task:
+- Perturbation Responsiveness
+- Linear Gene Programmes
+Year: 2021

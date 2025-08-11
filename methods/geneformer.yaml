@@ -1,0 +1,19 @@
+Code Availability: https://github.com/jkobject/geneformer
+Description: Geneformer is a context-aware transformer encoder comprising six layers
+  of full dense self-attention over an input sequence of up to 2,048 genes, producing
+  embeddings for genes and cells. Genes in each single-cell transcriptome are encoded
+  as  rank value vectors - each gene’s expression is ranked within each cell. Pretraining
+  uses a self-supervised masked learning objective (masking 15% of gene tokens and
+  minimizing a prediction loss to recover their identities).
+Inspired by:
+- '-'
+Method: Geneformer
+Model:
+- Foundational Gene expression embeddings (from ~30M human cells)
+- Self-supervised masked regression
+- Standard transformer attention
+Publication: https://www.nature.com/articles/s41586-023-06139-9
+Published: true
+Task:
+- GRN Inference
+Year: 2023

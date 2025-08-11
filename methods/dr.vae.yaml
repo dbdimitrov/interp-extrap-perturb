@@ -1,0 +1,17 @@
+Code Availability: https://github.com/rampasek/DrVAE
+Description: Dr.VAE uses a Variational Autoencoder architecture to predict drug response
+  from transcriptomic perturbation signatures. It models transcription change as a
+  linear function within a low-dimensional latent space, defined by encoder and decoder
+  neural networks. For paired expression samples from treated and control conditions,
+  Dr.VAE accurately predicts treated expression.
+Inspired by:
+- '-'
+Method: Dr.VAE
+Model:
+- VAE
+Publication: https://academic.oup.com/bioinformatics/article/35/19/3743/5372343
+Published: true
+Task:
+- Context Transfer
+- Seen Perturbation Prediction
+Year: 2019

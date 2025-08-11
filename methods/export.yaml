@@ -1,0 +1,17 @@
+Code Availability: https://github.com/namini94/EXPORT
+Description: 'EXPORT builds on the VEGA architecture by adding an auxiliary decoder
+  that functions as an ordinal regressor, with an additional cumulative link loss
+  to explicitly model dose-dependent response. '
+Inspired by:
+- VEGA
+- Cumulative link models
+Method: EXPORT
+Model:
+- VAE
+- Linear Decoder
+- PK Representations
+Publication: https://openreview.net/forum?id=f4nMJPKMkQ&referrer=%5Bthe%20profile%20of%20Xiaoning%20Qian%5D(%2Fprofile%3Fid%3D~Xiaoning_Qian1)
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2024

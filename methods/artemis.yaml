@@ -1,0 +1,16 @@
+Code Availability: https://github.com/daifengwanglab/ARTEMIS
+Description: ARTEMIS combines variational autoencoder with an unbalanced Diffusion\
+  \ Schr\xF6dinger Bridge to reconstruct continuous trajectories from time-series\
+  \ data. The methods trains a VAE first, then jointly trains the VAE and uDSB by\
+  \ solving the forward-backward SDEs in the latent space using neural networks.
+Inspired by:
+- '-'
+Method: ARTEMIS
+Model:
+- VAE
+- Schrödinger Bridge
+Publication: https://www.biorxiv.org/content/biorxiv/early/2025/01/26/2025.01.23.634618.full.pdf
+Published: false
+Task:
+- Trace Cell Populations
+Year: 2025

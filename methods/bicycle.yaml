@@ -1,0 +1,19 @@
+Code Availability: https://github.com/PMBio/bicycle
+Description: Bicycle addresses the challenge of robustly identifying cyclic causal
+  graphs, particularly in domains like single-cell genomics, by leveraging perturbation
+  data and explicitly replicating the perturbations on the graph. Following Dictys
+  Bicycle assumes the perturbed cell states to be the steady-state solution of the
+  Ornstein-Uhlenbeck process.
+Inspired by:
+- Dictys
+- NODAGS-Flow
+Method: Bicycle
+Model:
+- Graph interventions
+- Ornstein-Uhlenbeck process
+- Steady-State ODE
+Publication: https://proceedings.mlr.press/v236/rohbeck24a.html
+Published: true
+Task:
+- Causal Structure
+Year: 2023

@@ -1,0 +1,18 @@
+Code Availability: https://github.com/hliulab/cycleCDR
+Description: cycle CDR uses a Cycle Consistent Learning strategy with a Complex AE
+  architecture, consisting of two Encoder-Decoder pairs, to reconstruct control and
+  perturbed samples. The two submodels are used in an alternating order to reconstruct
+  the perturbed samples, and a GAN loss is applied to remove irrelevant information
+  in the latent space. Additionally, chemical representations are added to the latent
+  representation of each submodel to enhance the model's ability to capture chemical
+  information.
+Inspired by:
+- chemCPA
+Method: cycleCDR
+Model:
+- Autoencoder
+Publication: https://academic.oup.com/bioinformatics/article/40/Supplement_1/i462/7700878
+Published: true
+Task:
+- Unseen Perturbation Prediction
+Year: 2024

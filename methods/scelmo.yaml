@@ -1,0 +1,20 @@
+Code Availability: https://github.com/HelloWorldLTY/scELMo
+Description: scELMo first converts gene and cell metadata into textual descriptions
+  and uses GPT-3.5 to generate fixed-length embeddings, which are integrated with
+  normalised expression values by arithmetic or weighted averaging in a zero-shot
+  framework to yield cell embeddings. For some tasks, these embeddings and are fine-tuned
+  via a compact neural adaptor trained with combined classification and contrastive
+  losses. These embeddings are also fed into CPA’s conditional variational autoencoder
+  and GEARS’s graph neural network for perturbation response prediction
+Inspired by:
+- GenePT
+Method: scELMo
+Model:
+- Converts gene/cell metadata into text embeddings
+- 'Integrates text and expression embeddings '
+- Fine-tunes embeddings via a lightweight neural adaptor
+Publication: https://www.biorxiv.org/content/10.1101/2023.12.07.569910v2
+Published: true
+Task:
+- Seen Perturbation Prediction
+Year: 2024

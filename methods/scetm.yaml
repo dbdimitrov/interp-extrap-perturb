@@ -1,0 +1,21 @@
+Code Availability: https://github.com/hui2000ji/scETM
+Description: scETM uses a standard VAE encoder with a softmax layer to obtain a cell-by-topic
+  matrix, paired with a linear decoder based on matrix tri-factorisation that reconstructs
+  the data from the cell-by-topic matrix, along with topics-by-embedding α, and embedding-by-genes
+  ρ matrices. This structure allows the latent topics to be directly interpreted as
+  groups of co-expressed genes and can optionally integrate prior pathway (prior knowledge)
+  information as a binary mask.
+Inspired by:
+- LDA
+- ETM
+Method: scETM
+Model:
+- VAE
+- Embedding Topic Model
+- Linear Decoder
+- PK Representations
+Publication: https://www.nature.com/articles/s41467-021-25534-2
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2021

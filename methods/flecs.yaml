@@ -1,0 +1,19 @@
+Code Availability: https://github.com/Bertinus/FLeCS
+Description: FLeCS models single-cell gene expression dynamics using coupled ordinary
+  differential equations (ODEs) parameterized by a gene regulatory network. Cells
+  are grouped into temporal bins\u2014either via pseudotime inference or experimental
+  timestamps\u2014and aligned across time with optimal transport to form (pseudo)time
+  series. To model interventions FLeCS replicates interventions in the learned graph.
+Inspired by:
+- '-'
+Method: FLeCS
+Model:
+- ODE
+- Optimal Transp
+Publication: https://arxiv.org/pdf/2503.20027
+Published: false
+Task:
+- Context Transfer
+- GRN Inference
+- Causal Structure
+Year: 2025

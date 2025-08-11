@@ -1,0 +1,22 @@
+Code Availability: https://longmanz.github.io/Mixscale/
+Description: Mixscale extends Mixscape by converting the binary perturbed/non-perturbed
+  assignment into a continuous perturbation score. As it's predecessor, it first identifies
+  DE genes between gRNA-targeted and non-targeting control cells, then computes perturbation
+  vector and projects each cell’s expression profile onto this vector to yield a quantitative
+  score (computed independently per cell line). A weighted multivariate regression
+  is then applied where each cell’s contribution is scaled according to its perturbation
+  score, so that cells with weaker perturbation (and thus lower scores) have reduced
+  influence on the model. This regression also incorporates covariates such as cell
+  line identity and sequencing depth, and uses a leave-one-feature-out procedure.
+Inspired by:
+- '-'
+Method: Mixscale
+Model:
+- Gaussian Mixture Model
+- Weighted multivariate regression
+Publication: https://www.nature.com/articles/s41556-025-01622-z
+Published: true
+Task:
+- Differential Analysis
+- Perturbation Responsiveness
+Year: 2025

@@ -1,0 +1,22 @@
+Code Availability: https://github.com/welch-lab/MichiGAN
+Description: MichiGAN is a two-step approach that first uses a β-TCVAE - a variant
+  of the variational autoencoder that penalizes total correlation among latent variables
+  to promote disentangled representations. These latent representations (posterior
+  means or samples) are then used to condition a Wasserstein GAN, the generator of
+  which similarly to the VAE reconstructs the data from the latent variables, while
+  attempting to 'fool' a discriminator whether the samples were real or generated.
+  Counterfactual predictions are done via latent space arithmetics as in scGEN.
+Inspired by:
+- scGEN
+- InfoGAN
+Method: MichiGAN
+Model:
+- VAE
+- conditioned GAN
+Publication: https://link.springer.com/article/10.1186/s13059-021-02373-4
+Published: true
+Task:
+- Unsupervised Disentanglement
+- Seen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2021

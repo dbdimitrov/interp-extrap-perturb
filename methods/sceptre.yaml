@@ -1,0 +1,22 @@
+Code Availability: https://github.com/Katsevich-Lab/sceptre
+Description: For each gene-gRNA pair, SCEPTRE fits a negative binomial regression
+  where the response is the gene’s expression across cells and the predictors are
+  binary indicator denoting gRNA presence, plus technical covariates. Concurrently,
+  a logistic regression using the same technical factors estimates π - the probability
+  of detecting the gRNA in a cell. In a conditional resampling step, gRNA assignments
+  are independently redrawn per cell based on π, generating an empirical null distribution
+  of z-scores; a skew‑t distribution is then fitted to this null to yield calibrated
+  p‑values.
+Inspired by:
+- '-'
+Method: SCEPTRE
+Model:
+- Conditional Resampling
+- Generalised Linear Model
+- NB Likelihood
+Publication: https://link.springer.com/article/10.1186/s13059-021-02545-2
+Published: true
+Task:
+- Differential Analysis
+- Perturbation Responsiveness
+Year: 2021

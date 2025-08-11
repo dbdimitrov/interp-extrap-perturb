@@ -1,0 +1,22 @@
+Code Availability: https://www.github.com/jtanevski/kasumi
+Description: Kasumi extends MISTy by focusing on identifying localised relationship
+  patterns that are persistent across tissue samples. Instead of modeling global relationships,
+  it uses a sliding-window approach to learn representations of local tissue patches
+  (neighborhoods), characterized by multivariate, potentially non-linear relationships
+  across views. These window-specific relationship signatures are clustered (using
+  graph-based community detection) into spatial patterns, which are consistently observed
+  across multiple samples. This enables Kasumi to represent each sample as a distribution
+  over interpretable, shared local patterns, facilitating tasks like patient stratification
+  while maintaining model explainability.
+Inspired by:
+- MISTy
+Method: Kasumi
+Model:
+- Spatially-informed
+- Random Forrest (or other regression models)
+- Convolution Operations
+Publication: https://www.nature.com/articles/s41467-025-59448-0
+Published: true
+Task:
+- Feature Relationships
+Year: 2025

@@ -1,0 +1,24 @@
+Code Availability: https://github.com/scverse/scvi-tools/tree/main/src/scvi/external/contrastivevi
+Description: 'The successor to mmVAE introducing improvements: counts are modeled
+  using a negative binomial distribution, and the MMD loss is replaced with the Wasserstein
+  distance. More specifically, the Wasserstein distance is essentially calculated
+  as the norm of the mean and variance of the salient latent variables of the control
+  data, promoting that they approaches zero. The Wasserstein penalty is optional and
+  is set to 0 (no penalty) by default'
+Inspired by:
+- scVI / totalVI
+- cVAE
+- Conditional VAE
+- mmVAE (theirs)
+Method: ContrastiveVI
+Model:
+- ZINB Likelihood
+- Protein-Count (totalVI) Likelihood
+- Contrastive VAE
+- Multi-modal
+Publication: https://www.nature.com/articles/s41592-023-01955-3
+Published: true
+Task:
+- Nonlinear Gene Programmes
+- Contrastive Disentanglement
+Year: 2023

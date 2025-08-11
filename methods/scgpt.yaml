@@ -1,0 +1,26 @@
+Code Availability: https://github.com/bowang-lab/scGPT
+Description: scGPT processes each cell as a sequence of gene tokens, expression-value
+  tokens and condition tokens (e.g., batch, perturbation or modality), embedding each
+  and summing before feeding them into stacked transformer blocks whose specialised,
+  masked multi-head attention layers enable autoregressive prediction of masked gene
+  expressions from non-sequential data. scGPT is pretrained using a masked gene expression-prediction
+  objective that jointly optimizes cell and gene embeddings, and can be fine-tuned
+  on smaller datasets with task-specific supervised losses. For gene regulatory network
+  inference, scGPT derives k-nearest neighbor similarity graphs from learned gene
+  embeddings and analyses attention maps to extract context-specific Gene Programmes
+  and gene-gene interactions.
+Inspired by:
+- GPT series
+Method: scGPT
+Model:
+- Foundational Gene expression embeddings (from >33M human cells)
+- Self-supervised masked expression prediction
+- Customised non-sequential (flash) attention
+Publication: https://www.nature.com/articles/s41592-024-02201-0
+Published: true
+Task:
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+- GRN Inference
+- Nonlinear Gene Programmes
+Year: 2024

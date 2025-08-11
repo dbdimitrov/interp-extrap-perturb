@@ -1,0 +1,16 @@
+Code Availability: https://github.com/saezlab/MOFAcellulaR
+Description: 'Multicellular factor analysis repurposes MOFA by treating pseudobulked
+  cell types as views. Each patient is represented by multiple views - one per cell
+  type - summarizing gene expression. MOFA+ ised then used to identify latent factors
+  that capture coordinated variability across these views, with loadings indicating
+  cell-type-specific gene contributions. '
+Inspired by:
+- MOFA+
+Method: MOFAcell
+Model:
+- Group Factor Analysis (MOFA+)
+Publication: https://elifesciences.org/articles/93161
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2023

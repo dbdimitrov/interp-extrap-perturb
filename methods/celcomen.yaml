@@ -1,0 +1,22 @@
+Code Availability: https://github.com/Teichlab/celcomen
+Description: Celcomen disentangles intra- and inter-cellular gene regulation in spatial
+  transcriptomics data by processing gene expression through two parallel interaction
+  functions. One function uses a single graph convolution layer (1-hop GNN) to learn
+  a gene-gene interaction matrix that captures cross-cell signaling, while the other
+  uses a linear layer to model regulation within individual cells. Training maximises
+  an approximate likelihood that aligns the model-predicted weight matrices to the
+  average gene expression across all cells. Simcomen then leverages these fixed, learned
+  matrices to simulate spatial counterfactuals (e.g., gene knockouts) for in-silico
+  experiments.
+Inspired by:
+- '-'
+Method: Celcomen
+Model:
+- K-hop Convolution
+- Spatially-informed
+Publication: https://openreview.net/pdf?id=Tqdsruwyac
+Published: true
+Task:
+- Unsupervised Disentanglement
+- Feature Relationships
+Year: 2025

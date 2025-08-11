@@ -1,0 +1,16 @@
+Code Availability: http://uhlerlab.github.io/causaldag/dci
+Description: DCI introduced a reformulated version of the PC algorithm. Rather than
+  inferring the Causal Graph directly DCI attempts to identify causal differences
+  between condition-dependent gene regulatory networks (GRNs) by focusing on edges
+  that appear, disappear, or change between conditions. This significantly reduces
+  the computational complexity in comparison to the original PC algorithm.
+Inspired by:
+- PC Algorithm
+Method: DCI
+Model:
+- PC Algorithm
+Publication: https://academic.oup.com/bioinformatics/article/37/18/3067/6168117
+Published: true
+Task:
+- Causal Structure
+Year: 2021

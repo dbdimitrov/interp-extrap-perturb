@@ -1,0 +1,14 @@
+Code Availability: '-'
+Description: TODO
+Inspired by:
+- Kuipers et al (2022)
+Method: CIV
+Model:
+- Active Learning
+- Structural Causal Model
+- DAG-Bayesian linear regression
+Publication: https://www.nature.com/articles/s42256-023-00719-0
+Published: true
+Task:
+- Causal Structure
+Year: 2023

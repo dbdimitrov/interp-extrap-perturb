@@ -1,0 +1,23 @@
+Code Availability: https://github.com/Genentech/fcr
+Description: 'The Factorized Causal Representation (FCR) framework disentangles cell
+  representations into three latent blocks: z_x, which captures context-specific (covariate)
+  effects and is invariant to treatment; z_t, which encodes direct treatment effects
+  and is invariant to context; and z_{tx}, which represents interactions between treatment
+  and context. It additionally handles interacting covariates by using a variational
+  autoencoder framework augmented with adversarial regularisation. This regularisation
+  enforces the invariance of z_x across treatments and the variability of z_t with
+  respect to covariates. Moreover, the conditional independence of the interaction
+  term z_{tx} from both z_x and z_t, is promoted through permutation-based discriminators.'
+Inspired by:
+- iVAE
+Method: FCR
+Model:
+- VAE
+- Adversarial
+- Perturbation-covariate Interactions
+Publication: https://arxiv.org/pdf/2410.22472
+Published: true
+Task:
+- Multi-component Disentanglement
+- Seen Perturbation Prediction
+Year: 2024

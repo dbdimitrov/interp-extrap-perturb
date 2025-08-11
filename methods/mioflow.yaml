@@ -1,0 +1,17 @@
+Code Availability: https://github.com/KrishnaswamyLab/MIOFlow
+Description: MIOFlow learns (stochastic) continuous dynamics from snapshot data by
+  combining neural ODEs, manifold learning, and optimal transport. The method first
+  trains a Geodesic Autoencoder to embed data into a latent space where geodesic-based
+  distances are preserved, then models trajectories via a neural ODE and an ODE solver,
+  and optimizes the Wasserstein loss between actual and predicted distributions.
+Inspired by:
+- '-'
+Method: MioFlow
+Model:
+- Neural ODE
+- Geodasic Autoencoder
+Publication: https://proceedings.neurips.cc/paper_files/paper/2022/file/bfc03f077688d8885c0a9389d77616d0-Paper-Conference.pdf
+Published: true
+Task:
+- Trace Cell Populations
+Year: 2022

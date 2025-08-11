@@ -1,0 +1,16 @@
+Code Availability: 'https://github.com/vsomnath/aligned_diffusion_bridges '
+Description: SBALIGN solves a Diffusion Schrödinger Bridge Problem with aligned data,
+  i.e. where each sample from the source distribution is paired with a corresponding
+  sample from the target distribution. It combines classical SB theory with Doob's
+  h-transform to derive a novel loss -- parameterizing the drift and h-function with
+  neural networks, enabling more stable training than iterative procedures.
+Inspired by:
+- Schrödinger Bridges
+Method: SBALIGN
+Model:
+- Schrödinger Bridge
+Publication: https://proceedings.mlr.press/v216/somnath23a/somnath23a.pdf
+Published: true
+Task:
+- Trace Cell Populations
+Year: 2023

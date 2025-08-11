@@ -1,0 +1,21 @@
+Code Availability: https://github.com/bm2-lab/MUSIC
+Description: MUSIC evaluates sgRNA knockout efficiency and summarises perturbation
+  effects using topic modeling. Following preprocessing steps, MUSIC removes low-efficiency
+  (non-targeted) cells based on the cosine similarity of their differential expression
+  genes, excluding perturbed cells with profiles more similar to controls. Next, highly
+  dispersed DE genes are selected and their normalised expression values are used
+  as to fit a topic model, where cells are treated as documents and gene counts as
+  words. Topics are then ranked according to overall effect, their relevance to each
+  perturbation, and perturbation similarities.
+Inspired by:
+- LDA
+- Correlated topic model
+Method: MUSIC
+Model:
+- Topic Model
+Publication: https://www.nature.com/articles/s41467-019-10216-x
+Published: true
+Task:
+- Perturbation Responsiveness
+- Linear Gene Programmes
+Year: 2019

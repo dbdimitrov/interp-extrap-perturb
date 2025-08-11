@@ -1,0 +1,26 @@
+Code Availability: https://github.com/theislab/scarches
+Description: Expimap uses a nonlinear encoder and a masked linear decoder, where the
+  latent space’s dimensions are set equal to the number of gene programs, and decoder
+  weights are masked according to prior knowledge to ensure that each latent variable
+  reconstructs only genes associated with the geneset (fixed membership), with L1
+  sparsity regularisation allowing soft membership for additional genes, not included
+  in the prior knowledge. Group lasso is additionally used to 'deactivate' uniformative
+  Gene Programmes.
+Inspired by:
+- Rybakov et al., 2020
+- VEGA
+- scVI
+- scArches (theirs)
+- oi-VAE
+- Conditional VAE
+Method: Expimap
+Model:
+- VAE
+- Linear Decoder
+- NB likelihood
+- PK Representations
+Publication: https://www.nature.com/articles/s41556-022-01072-x
+Published: true
+Task:
+- Nonlinear Gene Programmes
+Year: 2023

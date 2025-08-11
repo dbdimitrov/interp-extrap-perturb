@@ -1,0 +1,25 @@
+Code Availability: https://github.com/livnatje/DIALOGUE
+Description: DIALOGUE identifies shared multicellular patterns across cell types and
+  samples. It first constructs cell-type–specific data matrices by averaging features
+  (e.g., gene expression or PCs) over samples or spatial niches. Then it applies multi-factor
+  sparse canonical correlation analysis (referred to as penalized matrix decomposition
+  (PMD)) to derive latent feature matrices that maximize cross-cell-type correlations
+  under LASSO constraints. Following this initial PMD step, DIALOGUE employs correlation
+  coefficients and permutation tests to determine which cell types contribute to each
+  multicellular progarmmes (MCP). It then re-applies the PMD procedure in both a multi-way
+  and a pairwise fashion, incorporating programs unique to the pairwise analysis into
+  the downstream modeling. Finally, gene associated with MCPs are first identified
+  using partial Spearman correlation and then refined through hierarchical mixed-effects
+  modeling with covariate control.
+Inspired by:
+- CCA
+Method: DIALOGUE
+Model:
+- Sparse CCA
+- Partial Correlations
+- Mixed Linear Model
+Publication: https://www.nature.com/articles/s41587-022-01288-0
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2022

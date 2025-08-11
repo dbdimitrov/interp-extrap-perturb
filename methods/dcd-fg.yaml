@@ -1,0 +1,20 @@
+Code Availability: https://github.com/Genentech/dcdfg
+Description: 'DCD-FG leverages a Gaussian low-rank structural equation model to model
+  factor directed acyclic graphs (f-DAGs). The f-DAG assumption posits that many nodes
+  share a similar set of parents and children, reflecting the behavior of genes acting
+  collectively in biological programs. This method restricts the search space to low-rank
+  causal interactions to improve causal discovery accuracy and scalability for high-dimensional
+  data. '
+Inspired by:
+- DCDI
+- NOTEARS
+Method: DCD-FG
+Model:
+- Factor Model
+- DAGs
+- Latent DAGs
+Publication: https://proceedings.neurips.cc/paper_files/paper/2022/file/7a8fa1382ea068f3f402b72081df16be-Paper-Conference.pdf
+Published: true
+Task:
+- Causal Structure
+Year: 2022

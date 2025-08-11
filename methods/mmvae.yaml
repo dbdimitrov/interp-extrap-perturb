@@ -1,0 +1,15 @@
+Code Availability: https://github.com/suinleelab/MM-cVAE
+Description: A Contrastive VAE framework, similar to cVAE, which additionally incorporates
+  a maximum mean discrepancy (MMD) loss to enforce salient latent variables in the
+  control data to approach zero, while also using it to align the background latent
+  variables between case and control conditions.
+Inspired by:
+- '-'
+Method: mmVAE
+Model:
+- Contrastive VAE
+Publication: https://arxiv.org/pdf/2202.10560
+Published: true
+Task:
+- Contrastive Disentanglement
+Year: 2022

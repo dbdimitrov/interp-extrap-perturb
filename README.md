@@ -15,8 +15,8 @@ The project curates over 100 peer‑reviewed and pre‑print tools, classifies t
 | Resource              | URL                                                                                            |
 | --------------------- | ---------------------------------------------------------------------------------------------- |
 | **Docs / Browser**    | [https://interp-extrap-perturb.readthedocs.io/](https://interp-extrap-perturb.readthedocs.io/) |
-| **YAML catalogue**    | [`methods.yaml`](methods.yaml)                                                                 |
-| **Generation script** | [`generate_methods.py`](generate_methods.py)                                           |
+| **Individual Methods**| [`methods/`](methods/)                                                                          |
+| **Generation script** | [`generate_methods.py`](generate_methods.py)                                                   |
 
 ---
 

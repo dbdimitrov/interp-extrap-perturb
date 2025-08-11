@@ -1,0 +1,21 @@
+Code Availability: https://github.com/Genentech/nodags-flows
+Description: NODAGS-Flow utilizes contractive residual flows to model perturbational
+  data as generated from the steady state of a dynamical system with explicit noise.
+  Following DCDI, NODAGS-Flow replicates perturbations on the graph. Further, NODAGS-Flow
+  drops the acyclicity constraint to model cyclic causal models and better explain
+  the feedback loops inherent to biological data.
+Inspired by:
+- NOTEARS
+- DCDI
+Method: NODAGS-Flow
+Model:
+- Graph interventions
+- DNN
+- 'Residual Flow
+
+  Steady-State ODE'
+Publication: https://proceedings.mlr.press/v206/sethuraman23a/sethuraman23a.pdf
+Published: true
+Task:
+- Causal Structure
+Year: 2023

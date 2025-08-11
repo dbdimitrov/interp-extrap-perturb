@@ -1,0 +1,21 @@
+Code Availability: https://github.com/rmwu/sea
+Description: SEA predicts large causal graphs by leveraging small graphs generated
+  from subsets of variables using standard causal discovery algorithms like FCI or
+  GIES. To tackle the challenges of causal discovery with large variable sets, SEA
+  employs an amortized learning approach and utilizes a complex architecture, including
+  transformer modules and diverse embeddings, to aggregate the subgraphs. SEA is pre-trained
+  on synthetic data with known causal structures and encodes interventions by replicating
+  the effects on the encoded graph.
+Inspired by:
+- GIES
+- AVICI
+Method: SEA
+Model:
+- Amortized pre-training
+- Transfomer
+- Graph Attention
+Publication: https://arxiv.org/abs/2402.01929
+Published: true
+Task:
+- Causal Structure
+Year: 2024

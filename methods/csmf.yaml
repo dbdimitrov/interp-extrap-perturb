@@ -1,0 +1,20 @@
+Code Availability: https://www.zhanglab-amss.org/homepage/software.html
+Description: A non-negative matrix factorisation that decomposes gene expression matrices
+  into common and condition-specific patterns. For each condition, the observed expression
+  matrix is approximated as the sum of a common component - represented by a common
+  feature matrix with condition-specific coefficient matrices - and a specific component
+  unique to each condition, represented by its own feature matrix  and coefficients.
+  The model uses an alternating approach to minimize the combined reconstruction error
+  (squared Frobenius norm) across common and shared components.
+Inspired by:
+- iNMF
+- NMF
+Method: CSMF
+Model:
+- NMF
+Publication: https://academic.oup.com/nar/article/47/13/6606/5512984
+Published: true
+Task:
+- Linear Gene Programmes
+- Contrastive Disentanglement
+Year: 2019

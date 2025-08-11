@@ -1,0 +1,16 @@
+Code Availability: https://github.com/atong01/conditional-flow-matching
+Description: 'The paper introduces two key Flow Matching variants: (i) Optimal Transport
+  CFM (OT-CFM), which uses optimal transport couplings (approximated with minibatch
+  OT), to produce more robust flow inference and (ii) Schrödinger Bridge CFM solving
+  the Schrödinger Bridge problem by using entropy-regularized OT couplings. '
+Inspired by:
+- Flow Matching
+Method: OT-CFM
+Model:
+- Flow Matching
+- Schrödinger Bridge
+Publication: https://openreview.net/forum?id=CD9Snc73AW
+Published: true
+Task:
+- Trace Cell Populations
+Year: 2024

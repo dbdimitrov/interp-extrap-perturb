@@ -1,0 +1,25 @@
+Code Availability: https://github.com/yulun-rayn/graphVCI
+Description: 'GraphVCI employs two parallel inference branches to estimate latent
+  variables from factual and counterfactual inputs. In the factual branch, observed
+  gene expressions, treatments, and covariates are encoded via an MLP combined with
+  a GCN/GAT module that integrates a gene regulatory network; its corresponding decoder
+  then reconstructs the observed expression profile. The sparse gene regulatory network
+  is generated using a prior-informed drop out mechanism, based on ATAC-Seq data.  A
+  parallel branch processes counterfactual treatments to generate alternative expression
+  profiles. Training minimizes three losses: an individual-specific reconstruction
+  loss computed as the negative log likelihood (e.g., under a normal or negative binomial
+  distribution) of the observed expressions; a covariate-specific loss implemented
+  as an adversarial network using a binary cross-entropy loss on the counterfactual
+  outputs; and a KL divergence loss that regularizes and aligns the latent space between
+  the factual and counterfactual branches.'
+Inspired by:
+- VCI (theirs)
+Method: graphVCI
+Model:
+- Dual-branch variational bayes causal inference framework
+- PK Representations
+Publication: https://openreview.net/pdf?id=ICYasJBlZNs
+Published: true
+Task:
+- Context Transfer
+Year: 2023

@@ -1,0 +1,24 @@
+Code Availability: https://github.com/C0nc/TAICHI
+Description: Taichi identifies perturbation-relevant cell niches in spatial omics
+  data without predefined spatial clustering. It first constructs spatially-informed
+  embeddings using MENDER, which are then used in a logistic regression model to predict
+  slice-level condition labels. Using the trained model each cell (niche) is assigned
+  a probability of belonging to the condition group. These probabilities are clustered
+  using k-means (k=2) to separate condition-relevant and control-like niches. Graph
+  heat diffusion is applied to refine these labels by propagating information across
+  spatially adjacent cells. Finally, a second k-means clustering step is performed
+  on the diffused results to define the final niche segmentation.
+Inspired by:
+- MELD
+Method: Taichi
+Model:
+- Graph Diffusion
+- K-means
+- Logistic Regression
+- Spatially-informed
+Publication: https://www.biorxiv.org/content/10.1101/2024.05.30.596656v1.abstract
+Published: false
+Task:
+- Perturbation Responsiveness
+- Differential Analysis
+Year: 2024

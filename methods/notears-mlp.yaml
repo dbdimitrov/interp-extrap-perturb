@@ -1,0 +1,15 @@
+Code Availability: https://github.com/xunzheng/notears
+Description: NOTEARS-MLP  further generalized the continuous DAG objective introduced
+  by NOTEARS to nonparametric and semi-parametric models, such as deep neural networks
+  (DNNs), to better facilitate non-linear data.
+Inspired by:
+- NOTEARS
+Method: NOTEARS-MLP
+Model:
+- Continuous optimisation for acyclicity
+- DNN
+Publication: https://arxiv.org/abs/1909.13189
+Published: true
+Task:
+- Causal Structure
+Year: 2020

@@ -1,0 +1,24 @@
+Code Availability: https://github.com/dpeerlab/spectra
+Description: Spectra decomposes a gene expression matrix into cell-by-factor and factor-by-gene
+  matrices, while integrating prior knowledge gene sets and cell-type labels. It explicitly
+  models both global and cell-type–specific factors by incorporating cell-type labels,
+  thereby disentagling the typically dominating cell-type variation from shared Gene
+  Programmes. Gene sets are represented as a gene–gene knowledge graph, and a penalty
+  term based on a weighted Bernoulli likelihood, guides the factorisation toward preserving
+  this graph. Yet, it also permits the data-driven discovery of novel programs by
+  'detaching' factors from the prior. Spectra can also include cell-type-specific
+  prior knowledge gene sets (e.g. T cell antigen receptor activation programmes can
+  be limited to T cells)
+Inspired by:
+- '-'
+Method: Spectra
+Model:
+- Poisson Likelihood
+- Factor Analysis
+- PK Representations
+Publication: https://www.nature.com/articles/s41587-023-01940-3
+Published: true
+Task:
+- Linear Gene Programmes
+- Multi-component Disentanglement
+Year: 2023

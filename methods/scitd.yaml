@@ -1,0 +1,19 @@
+Code Availability: https://github.com/kharchenkolab/scITD
+Description: scITD constructs a three-dimensional tensor (donors × genes × cell types)
+  by generating donor-by-gene pseudobulk matrices for each cell type. Tucker decomposition
+  then decomposes this tensor into separate factor matrices for donors, genes, and
+  cell types, along with a core tensor that captures their interactions as latent
+  multicellular expression patterns. The gene factors and core tensor are rearranged
+  into a loading tensor analogous to PCA loadings, while the donor factor matrix represents
+  sample scores. Finally, to improve interpretability, a two-step rotation is carried
+  out - first applying ICA to the gene factors and then varimax to the donor factors.
+Inspired by:
+- Tucker Decomposition
+Method: scITD
+Model:
+- Tensor Decomposition (Tucker)
+Publication: https://www.nature.com/articles/s41587-024-02411-z
+Published: true
+Task:
+- Linear Gene Programmes
+Year: 2024

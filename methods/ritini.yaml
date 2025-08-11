@@ -1,0 +1,21 @@
+Code Availability: https://github.com/KrishnaswamyLab/RiTINI
+Description: RiTINI employs graph ordinary differential equations (graph-ODEs) to
+  infer time-varying interaction graphs from multivariate time series data. RiTINI
+  integrates dual attention mechanisms to enhance dynamic modeling and defines interaction
+  graph inference as identifying a directed graph. Further, RiTINI utilizes prior
+  knowledge to initialise the causal graph and by penalizing deviations the prior.
+  Additionally, RiTINI simulates perturbations in silico to further refine the graph
+  structure.
+Inspired by:
+- PC Algorithm
+Method: RiTINI
+Model:
+- Graph interventions
+- Graph-ODE
+Publication: https://proceedings.mlr.press/v231/bhaskar24a.html
+Published: true
+Task:
+- GRN Inference
+- Causal Structure
+- Context Transfer
+Year: 2024

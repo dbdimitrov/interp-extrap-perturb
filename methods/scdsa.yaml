@@ -1,0 +1,28 @@
+Code Availability: '-'
+Description: 'A VAE that disentangles disease (case) from healthy (control) cells
+  by learning invariant background and salient space representations. The background
+  and salient representations are summed to reconstruct the count data, with an (optional)
+  interaction term capturing the interplay between cell type and disease. As done
+  in contrastive methods, the salient representation for control cells is set to 0
+  during the generative (data reconstruction) process. The invariance of the background
+  latent variables is enforced through two GAN-style neural networks: one encouraging
+  the prediction of cell types from the background space, while the other penalises
+  the prediction of disease labels, ensuring that disease-specific information is
+  isolated in the salient space.'
+Inspired by:
+- DANN
+- DIVA
+- CPA
+- 'scVI '
+Method: scDSA
+Model:
+- NB likelihood
+- Domain-Adversarial NNs
+- VAE
+- Addative Shift
+Publication: https://openreview.net/pdf?id=fkoqMdTlEg
+Published: true
+Task:
+- Nonlinear Gene Programmes
+- Contrastive Disentanglement
+Year: 2023

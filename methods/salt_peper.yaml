@@ -1,0 +1,18 @@
+Code Availability: '-'
+Description: SALT & PEPER represents a straightforward two-step approach. The initial
+  SALT model assumes additive effects of individual perturbations. Building on this
+  foundation, PEPER leverages a neural network to learn a non-linear correction, effectively
+  accounting for non-additive combinatorial effects. Notably, despite its simplicity,
+  this approach has demonstrated impressive performance on standard extrapolation
+  benchmarks.
+Inspired by:
+- Linear Models
+Method: SALT&PEPER
+Model:
+- Additive Model
+- DNN
+Publication: https://arxiv.org/abs/2404.16907
+Published: true
+Task:
+- Combinatorial Effect Prediction
+Year: 2024

@@ -1,0 +1,28 @@
+Code Availability: https://github.com/biomap-research/scFoundation
+Description: 'scFoundation uses an asymmetric transformer encoder–decoder: its embedding
+  module converts each continuous gene expression scalar directly into a high-dimensional
+  learnable vector without discretisation; the encoder takes as input only nonzero
+  and unmasked embeddings through vanilla transformer blocks to model gene–gene dependencies
+  efficiently. The zero and masked gene embeddings, along with the encoder embeddings,
+  are passed to the decoder, which uses Performer-style attention to reconstruct transcriptome-wide
+  representations, specifically those of masked genes. Specifically, scFoundation
+  is trained using a masked regression objective on both raw and downsampled count
+  vectors, with two total-count tokens concatenated to inputs to account for sequencing
+  depth variance. The decoder-derived gene context embeddings are then used as node
+  features in GEARS for single-cell perturbation response prediction.'
+Inspired by:
+- xTrimoGene
+- Performer
+Method: scFoundation
+Model:
+- Foundational Gene expression embeddings (from >50M human cells)
+- Self-supervised masked regression with down-sampling
+- Sparse transformer encoder
+- Performer-style attention decoder
+Publication: https://www.nature.com/articles/s41592-024-02305-7
+Published: true
+Task:
+- Nonlinear Gene Programmes
+- Unseen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2024

@@ -1,0 +1,23 @@
+Code Availability: https://github.com/theislab/tardis
+Description: A VAE that partitions each cell’s latent representation into covariate-specific
+  and covariate-agnostic (invariant) variables. It enforces disentanglement by making
+  the covariate-specific latents more similar for positive pairs of cells (those sharing
+  a covariate) and more dissimilar for negative pairs (those differing in that covariate).
+  Simultaneously, TarDis maximizes or minimizes the distance between these positive/negative
+  pairs and the covariate-agnostic latent space in a way that ensures its independence
+  from the targeted covariates. This is accomplished via multiple distance-based loss
+  terms for each covariate. TarDis supports both categorical and continuous covariates.
+Inspired by:
+- scVI
+- IRM/ERM
+Method: TarDis
+Model:
+- VAE
+- NB likelihood
+- Multi-modal
+Publication: https://link.springer.com/chapter/10.1007/978-3-031-90252-9_23
+Published: true
+Task:
+- Multi-component Disentanglement
+- Context Transfer
+Year: 2024

@@ -1,0 +1,16 @@
+Code Availability: https://github.com/Genentech/multiGroupVI
+Description: An extension of ContrastiveVI to multi-case (multi-group) disentaglement
+  via multiple group-specific salient encoders.
+Inspired by:
+- ContrastiveVI (theirs)
+Method: MultiGroupVI
+Model:
+- ZINB Likelihood
+- VAE
+- Contrastive
+Publication: https://proceedings.mlr.press/v200/weinberger22a
+Published: true
+Task:
+- Nonlinear Gene Programmes
+- Contrastive Disentanglement
+Year: 2022

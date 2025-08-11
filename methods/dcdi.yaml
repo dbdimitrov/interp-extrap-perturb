@@ -1,0 +1,20 @@
+Code Availability: https://github.com/slachapelle/dcdi
+Description: DCDI advanced DAG learning by introducing a framework for causal discovery
+  using interventional data. DCDI encoding interventions using a binary adjacency
+  matrix, to replicate the interventional effects directly the DAG and uses neural
+  networks to model the conditional densities. Further, the authors provided theoretical
+  guarantees for DAG learning using interventional data and showed that the inferred
+  graphs can scale to 100 nodes.
+Inspired by:
+- NOTEARS
+- Normalizing Flows
+Method: DCDI
+Model:
+- Graph interventions
+- DNN
+- Normalizing-Flows
+Publication: https://arxiv.org/pdf/2007.01754
+Published: true
+Task:
+- Causal Structure
+Year: 2020

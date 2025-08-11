@@ -1,0 +1,27 @@
+Code Availability: https://github.com/ZhangLabGT/scDisInFact
+Description: A VAE that encodes shared-bio latent factors that capture biological
+  variation (e.g. cell-type differences) and unshared-bio factors that capture condition-specific
+  signals via separate encoders. Shared factors follow a standard normal prior, while
+  unshared factors use a condition-specific Gaussian mixture prior. The invariance
+  of the shared latent variables is enforced via an MMD penalty, while conditon-encoding
+  in the unshared latent variables is promoted via a classification penalty. Group
+  lasso is used to regularise condition-specific encoders, and it's (penalty) weights
+  are used to select key genes per condition. scDisInFac enables perturbation predictions
+  in multi-batch, multi-condition settings using scGEN-style arithmetics on the unshared
+  space.
+Inspired by:
+- '-'
+Method: scDisInFact
+Model:
+- VAE
+- NB likelihood
+- Adversarial
+- Gaussian Mixture Model
+Publication: https://www.nature.com/articles/s41467-024-45227-w
+Published: true
+Task:
+- Contrastive Disentanglement
+- Nonlinear Gene Programmes
+- Seen Perturbation Prediction
+- Combinatorial Effect Prediction
+Year: 2024

@@ -1,0 +1,21 @@
+Code Availability: https://github.com/bunnech/cellot
+Description: CellOT learns mappings between control and perturbed cell state distributions
+  by solving a dual formulation of the optimal transport problem. The approach learns
+  optimal transport maps as the gradient of a convex potential function, which is
+  approximated using input convex neural networks - (briefly) a specific type of neural
+  network with convex-preserving constraints, such as non-negative weights and a predefined
+  set of activation functions (e.g. ReLU). Instead of relying on regularisation-based
+  OT (e.g. Entropy-regularised Sinkhorn), it jointly optimizes dual potentials (a
+  pair of functions) via a max–min loss.
+Inspired by:
+- Makkuva et al, 2020
+Method: CellOT
+Model:
+- Dual (min-max) Formulation OT
+Publication: https://www.nature.com/articles/s41592-023-01969-x
+Published: true
+Task:
+- Trace Cell Populations
+- Perturbation Responsiveness
+- Context Transfer
+Year: 2023
