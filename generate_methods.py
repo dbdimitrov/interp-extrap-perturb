@@ -35,6 +35,55 @@ def slugify(text: str) -> str:
     """Return a file‑safe, lower‑case slug using underscores."""
     return re.sub(r"[^a-z0-9_]+", "_", text.lower().replace("-", "_").replace(" ", "_")).strip("_")
 
+def update_method_count_in_files(method_count: int, base_dir: Path) -> None:
+    """Update method count in README.md and documentation files."""
+    
+    # Update main README.md
+    readme_path = base_dir / "README.md"
+    if readme_path.exists():
+        content = readme_path.read_text(encoding='utf-8')
+        # Update methods count badge (handle both "140+" and just "140" patterns)
+        old_badge_pattern = r'https://img\.shields\.io/badge/methods-\d+\+?-blue\.svg'
+        new_badge_url = f'https://img.shields.io/badge/methods-{method_count}-blue.svg'
+        content = re.sub(old_badge_pattern, new_badge_url, content)
+        
+        # Update text mentioning method count
+        content = re.sub(r'over \*\*\d+', f'over **{method_count}', content)
+        content = re.sub(r'\*\*\d+\+? curated methods', f'**{method_count} curated methods', content)
+        content = re.sub(r'\*\*\d+\+? Methods\*\*', f'**{method_count} Methods**', content)
+        
+        readme_path.write_text(content, encoding='utf-8')
+        print(f"Updated method count to {method_count} in README.md", file=sys.stderr)
+    
+    # Update methods README.md
+    methods_readme_path = base_dir / "methods" / "README.md"
+    if methods_readme_path.exists():
+        content = methods_readme_path.read_text(encoding='utf-8')
+        # Update methods count badge
+        old_badge_pattern = r'https://img\.shields\.io/badge/methods-\d+\+?-blue\.svg'
+        new_badge_url = f'https://img.shields.io/badge/methods-{method_count}-blue.svg'
+        content = re.sub(old_badge_pattern, new_badge_url, content)
+        
+        methods_readme_path.write_text(content, encoding='utf-8')
+        print(f"Updated method count to {method_count} in methods/README.md", file=sys.stderr)
+    
+    # Update index.rst
+    index_rst_path = base_dir / "docs" / "source" / "index.rst"
+    if index_rst_path.exists():
+        content = index_rst_path.read_text(encoding='utf-8')
+        # Update methods count badge
+        old_badge_pattern = r'https://img\.shields\.io/badge/methods-\d+\+?-blue\.svg'
+        new_badge_url = f'https://img.shields.io/badge/methods-{method_count}-blue.svg'
+        content = re.sub(old_badge_pattern, new_badge_url, content)
+        
+        # Update text mentioning method count
+        content = re.sub(r'more than \*\*\d+', f'more than **{method_count}', content)
+        content = re.sub(r'\*\*\d+\+? curated methods', f'**{method_count} curated methods', content)
+        content = re.sub(r'\d+\+ curated methods', f'{method_count} curated methods', content)
+        
+        index_rst_path.write_text(content, encoding='utf-8')
+        print(f"Updated method count to {method_count} in docs/source/index.rst", file=sys.stderr)
+
 ################################################################################
 # Paths
 ################################################################################
@@ -129,4 +178,8 @@ for task, slug in tasks_info:
     content = template.render(methods=subset, title=task)
     (OUTPUT_DIR / f"{slug}.rst").write_text(content)
 
+# Update method count in documentation files
+update_method_count_in_files(len(methods), BASE_DIR)
+
 print(f"Generated methods.rst and {len(tasks_info)} task pages in '{OUTPUT_DIR}/'", file=sys.stderr)
+print(f"Updated method count ({len(methods)}) in documentation files", file=sys.stderr)

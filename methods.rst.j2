@@ -34,7 +34,7 @@
        </thead>
        <tbody>
        {% for m in display_methods %}
-         <tr data-description="{{ m.Description|e }}">
+         <tr data-description="{{ m.Description|replace('\n', ' ')|replace('\r', '')|e }}">
            <td class="details-control"></td>
            <td><a href="{{ m.Publication }}">{{ m.Method }}</a></td>
            <td>{{ m.Year }}</td>
