@@ -113,7 +113,7 @@ If you wish to preview the changes locally before pushing your PR:
 
 **For Method Descriptions:**
 
-- 📝 Be **comprehensive but concise** - aim for 2-4 sentences
+- 📝 Be **comprehensive but concise** - aim for 3-5 sentences
 - 🎯 **Focus on the key innovation** or distinguishing features  
 - 🔗 **Mention the main application** area or use case
 - ⚙️ **Include technical details** that help users understand the approach
