@@ -38,15 +38,6 @@ We welcome contributions! 🎉 Whether you want to:
 
 ---
 
-<div align="center">
-
-**🌟 Star this repo if you find it useful! 🌟**
-
-*Made with ❤️ for the single-cell community*
-
-</div>ion of Single Cells
-
-
 ## 🔄 Data flow
 
 ```
