@@ -1,8 +1,8 @@
 Code Availability: https://github.com/daifengwanglab/ARTEMIS
-Description: ARTEMIS combines variational autoencoder with an unbalanced Diffusion\
-  \ Schr\xF6dinger Bridge to reconstruct continuous trajectories from time-series\
-  \ data. The methods trains a VAE first, then jointly trains the VAE and uDSB by\
-  \ solving the forward-backward SDEs in the latent space using neural networks.
+Description: "ARTEMIS combines variational autoencoder with an unbalanced Diffusion
+  Schr\xF6dinger Bridge to reconstruct continuous trajectories from time-series
+  data. The methods trains a VAE first, then jointly trains the VAE and uDSB by
+  solving the forward-backward SDEs in the latent space using neural networks."
 Inspired by:
 - '-'
 Method: ARTEMIS

@@ -10,7 +10,7 @@
 
 ## 🎯 **Overview**
 
-A **living catalogue** 📚 of computational methods that interpret or predict single‑cell perturbations.
+A **living catalogue** 📚 of computational methods that attempt to identify mechanistic cause‑and‑effect links and predict responses in unobserved settings.
 The project curates **139 peer‑reviewed and pre‑print tools**, classifies them by task, and provides a browsable web interface with informative tables and technical descriptions.
 
 ---
