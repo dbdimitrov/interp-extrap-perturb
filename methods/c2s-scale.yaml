@@ -6,7 +6,7 @@ Description: 'C2S-Scale is a family of large language models (LLMs) for single-c
   i.e. leverages pre-existing language representations, and is then further pre-trained
   on a multimodal corpus of over a billion tokens. Each cell sentence is paired with
   the abstract (and, where available, additional free-text annotations) from the same
-  study, allowing the model to learn matched transcriptomic and experimental context. '
+  study, allowing the model to learn matched transcriptomic and experimental context.'
 Inspired by:
 - Cell2Sentence (theirs)
 Method: C2S-Scale
