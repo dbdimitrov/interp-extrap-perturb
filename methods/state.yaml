@@ -1,0 +1,14 @@
+Code Availability: https://github.com/ArcInstitute/State
+Description: State predicts cellular perturbation responses from single-cell transcriptomics by mapping control to perturbed profiles. It combines (1) a State Embedding (SE) model trained on large-scale observational single-cell data to create gene- and cell-level embeddings, and (2) a State Transition (ST) model with a transformer backbone and bidirectional self-attention to capture heterogeneity across matched sets of perturbed and control cells. The ST model is optimized using a maximum mean discrepancy (MMD) loss between predicted and actual perturbed profiles, enabling robust and context-aware prediction of gene expression responses to perturbations.
+Method: State
+Inspired by:
+- '-'
+Model:
+- DNN
+- Attention 
+Publication: https://arcinstitute.org/manuscripts/State
+Published: false
+Task:
+- Combinatorial Effect Prediction
+- Context Transfer
+Year: 2025
