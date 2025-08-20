@@ -1,0 +1,14 @@
+Code Availability: https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1.full.pdf
+Description: CellDISECT integrates disentangled representations and causal inference. It uses a mixture of expert variational autoencoders (VAEs), each specializing in learning latent spaces for specific observed covariates (e.g., tissue, donor, protocol), alongside an unsupervised VAE for unobserved factors. During training CellDISECT generates synthetic counterfactual cell profiles and evaluates the quality of these predictions to improve generalization.
+Inspired by:
+- CPA (theirs)
+Method: CellDISECT
+Model:
+- VAE
+- Mixture of Experts
+Publication: https://www.biorxiv.org/content/10.1101/2025.06.03.657578v1.full.pdf
+Published: false
+Task:
+- Nonlinear Gene Programmes
+- Contrastive Disentanglement
+Year: 2025
