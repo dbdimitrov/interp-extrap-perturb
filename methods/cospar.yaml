@@ -1,0 +1,13 @@
+Code Availability: https://github.com/ShouWenWang-Lab/cospar/tree/master
+Description: CoSpar is a computational method for inferring cell state transition maps from single-cell transcriptomics and lineage tracing data. It formalizes cell dynamics by estimating, for each initial cell state, the fractional transition probability to future states across time using optimal transport and incorporating clonal information through barcoding. CoSpar further constrains the inferred transition map to be both sparse—reflecting limited accessible states during differentiation or response—and locally coherent—so that similar initial states yield similar fate outcomes. 
+Inspired by:
+- "-"
+Method: CoSpar
+Model:
+- Optimal Transport
+- Sparsity
+Publication: https://www.nature.com/articles/s41587-022-01209-1
+Published: true
+Task:
+- Trace Cell Populations
+Year: 2022
