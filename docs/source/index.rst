@@ -17,7 +17,7 @@
    :target: https://github.com/dbdimitrov/interp-extrap-perturb
    :alt: Project repository
 
-.. |methods-badge| image:: https://img.shields.io/badge/methods-139-blue.svg
+.. |methods-badge| image:: https://img.shields.io/badge/methods-143-blue.svg
    :target: methods.html
    :alt: Methods count
 
@@ -36,7 +36,7 @@
 📚 **A Living Catalogue of Single-Cell Perturbation Methods**
 
 Single-cell genomics is moving beyond cell atlases toward models that **interpret and extrapolate cellular responses to perturbations**. 
-This webpage lists technical details for more than **139 of these methods**. Moreover, as part of a perspective *(under review)*, 
+This webpage lists technical details for more than **143 of these methods**. Moreover, as part of a perspective *(under review)*, 
 it aims to help researchers pick the right tool and highlight open challenges for future method advances.
 
 .. raw:: html

@@ -17,9 +17,7 @@ Inspired by:
 Method: Mixscape
 Model:
 - Gaussian Mixture Model
-- 'LDA
-
-  '
+- 'LDA'
 Publication: https://www.nature.com/articles/s41588-021-00778-2#Sec11
 Published: true
 Task:

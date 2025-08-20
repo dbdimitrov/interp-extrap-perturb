@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/dbdimitrov/interp-extrap-perturb?style=social)](https://github.com/dbdimitrov/interp-extrap-perturb/stargazers)
 [![License](https://img.shields.io/github/license/dbdimitrov/interp-extrap-perturb)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/source/contribute.rst)
-[![Methods Count](https://img.shields.io/badge/methods-139-blue.svg)](methods/)
+[![Methods Count](https://img.shields.io/badge/methods-143-blue.svg)](methods/)
 
 ---
 

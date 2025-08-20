@@ -4,7 +4,7 @@
 
 *Individual YAML files for each computational method in the catalog*
 
-![Methods Count](https://img.shields.io/badge/methods-139-blue.svg)
+![Methods Count](https://img.shields.io/badge/methods-143-blue.svg)
 ![Format](https://img.shields.io/badge/format-YAML-green.svg)
 ![Structure](https://img.shields.io/badge/structure-standardized-orange.svg)
 
