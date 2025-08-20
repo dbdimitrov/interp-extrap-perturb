@@ -1,0 +1,15 @@
+Code Availability: https://github.com/uhlerlab/sccvae
+Description: SCCVAE combines mechanistic causal modeling with variational deep learning to predict single-cell transcriptomic responses to perturbations. It features an expression encoder that converts gene expression data from control cells into exogenous variables, a shift encoder that processes perturbation labels, a structural causal model (SCM) to represent perturbations as shift interventions, and an expression decoder.
+Inspired by:
+- "-"
+Method: SCCVAE
+Model:
+- VAE
+- Variational Inference
+- Latent Causal Structure
+Publication: https://www.biorxiv.org/content/10.1101/2025.06.05.657988v1.full.pdf
+Published: false
+Task:
+- Unseen Perturbation Prediction
+- Causal Structure
+Year: 2025
