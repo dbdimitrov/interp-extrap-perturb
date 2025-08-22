@@ -4,14 +4,13 @@
 [![GitHub stars](https://img.shields.io/github/stars/dbdimitrov/interp-extrap-perturb?style=social)](https://github.com/dbdimitrov/interp-extrap-perturb/stargazers)
 [![License](https://img.shields.io/github/license/dbdimitrov/interp-extrap-perturb)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](docs/source/contribute.rst)
-[![Methods Count](https://img.shields.io/badge/methods-143-blue.svg)](methods/)
 
 ---
 
 ## 🎯 **Overview**
 
 A **living catalogue** 📚 of computational methods that attempt to identify mechanistic cause‑and‑effect links and predict responses in unobserved settings.
-The project curates **139 peer‑reviewed and pre‑print tools**, classifies them by task, and provides a browsable web interface with informative tables and technical descriptions.
+The project curates **> 100 peer‑reviewed and pre‑print tools**, classifies them by task, and provides a browsable web interface with informative tables and technical descriptions.
 
 ---
 

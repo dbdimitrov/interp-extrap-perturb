@@ -8,8 +8,8 @@ Description: 'SIMVI is a spatially-informed VAE that disentangles gene expressio
   regularisation on z using maximum mean discrepancy or, alternatively, a  mutual
   information estimator, ensuring that z retains minimal non-cell-intrinsic information.
   Furthermore, leveraging debiased machine learning principles, the model decomposes
-  gene expression variance by treating s as a continuous treatment and z as confounding
-  covariates, thereby quantifying the specific impact of spatial context on gene expression.'
+  s using archetypal analysis, and then uses it as the treatment variable and z as confounding
+  covariate, thereby quantifying the specific impact of spatial context on gene expression.'
 Inspired by:
 - Debiased ML
 - scVI
